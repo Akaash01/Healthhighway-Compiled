@@ -1,0 +1,261 @@
+.login-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.8s;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+  animation: slideDown 0.8s;
+}
+
+@keyframes slideDown {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0vh;
+  }
+}
+
+.login-modal {
+  background-color: #fff;
+  width: 28%;
+  height: 64%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.loginBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginLogo {
+  margin-top: 32px;
+  width: 180px;
+  height: 120px;
+}
+
+.loginLogoText {
+  font-size: 2rem;
+  margin-top: 14px;
+}
+
+.loginInput {
+  background-color: transparent;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+
+.loginInputBar {
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.loginInputBar::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.loginButton {
+  margin-top: 32px;
+  border-color: #4ca9ee;
+  color: #fff !important;
+  padding: 8px 35px !important;
+  border-radius: 20px !important;
+  transition: 0.3s ease;
+  background-color: #4ca9ee;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22px;
+  width: 360px;
+  font-size: 1.4rem;
+  height: 42px;
+}
+
+.loginCondition {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: grey;
+  margin-top: 32px;
+  width: 350px;
+}
+
+.loginContinueButton {
+  margin-top: 32px;
+  background-color: #fff !important;
+  padding: 8px 35px !important;
+  border-radius: 20px !important;
+  transition: 0.3s ease;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22px;
+  width: 360px;
+  font-size: 1rem;
+  height: 42px;
+  color: #000 !important;
+  box-shadow: 0 5px 15px grey;
+}
+
+.loginContinueButton:hover {
+  color: #000 !important;
+}
+
+.loginImageSideView,
+.loginImage {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+  .login-modal {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .login-modal {
+    width: 34%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .login-modal {
+    width: 36%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-modal {
+    width: 38%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .login-modal {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .login-modal {
+    width: 42%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .login-modal {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-modal {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .login-modal {
+    width: 320px;
+  }
+  .loginInput {
+    font-size: 1.2rem;
+    width: 240px;
+    display: flex;
+  }
+  .loginInputBar {
+    font-size: 1.2rem;
+  }
+  .loginButton {
+    width: 240px;
+  }
+  .loginCondition {
+    width: 240px;
+  }
+  .loginContinueButton {
+    width: 240px;
+  }
+  .loginInputBar {
+    margin-left: 5px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .login-modal {
+    width: 280px;
+  }
+  .loginInput {
+    width: 200px;
+  }
+  .loginButton {
+    width: 200px;
+  }
+  .loginCondition {
+    width: 200px;
+  }
+  .loginContinueButton {
+    width: 200px;
+  }
+  .loginInputBar {
+    width: 160px;
+  }
+  .loginLogoText {
+    font-size: 1.6rem;
+  }
+  .loginLogo {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .login-modal {
+    width: 260px;
+  }
+  .loginInput {
+    width: 180px;
+  }
+  .loginButton {
+    width: 180px;
+  }
+  .loginCondition {
+    width: 180px;
+  }
+  .loginContinueButton {
+    width: 180px;
+  }
+  .loginInputBar {
+    width: 120px;
+  }
+}
+
+
