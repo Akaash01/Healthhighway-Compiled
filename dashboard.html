@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="dash-navbar">
+            <div class="dash-brandwrap"><img src="images/full-logo.svg" alt="logo"></div>
+            <nav class="notif-user">
+                <div class="dash-notification"><img class="notif-icon" src="images/notification.svg" alt=""></div>
+                <div class="dash-user"><img class="icon" src="images/user.jpg" alt=""></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="mobile-version">
+            <h2>Download our App</h2>
+            <a href="#" class="download-btn">Download</a>
+        </section>
+        <section class="dashboard">
+            <!-- Tiles  -->
+            <div class="title-filter">
+                <h1>Dashboard</h1>
+                <select name="days" id="filter">
+                    <option value="30 days">30 Days</option>
+                    <option value="30 days">60 Days</option>
+                </select>
+            </div>
+            <div class="tiles">
+                <div class="message-tile">
+                    <h2>Hi, Clarke R.</h2>
+                    <p>You have 6 classes to finish in this week. Your progress activity is Excellent.</p>
+                    <div class="dash-progress">
+                        <div class="progress-tracker">
+                            <div class="circle">
+                                <h1>80</h1>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <p>Your Score</p>
+                            <h2>Awesome</h2>
+                        </div>
+                    </div>
+                    <div class="dash-progressbar">
+                        <div class="bar-progress"></div>
+                    </div>
+                </div>
+                <div class="stats-tiles">
+                    <div class="time">
+                        <div class="icon"></div>
+                        <div class="stat">
+                            <h4>40K Min</h4>
+                            <p>Total Time</p>
+                        </div>
+                    </div>
+                    <div class="attended">
+                        <div class="icon"></div>
+                        <div class="stat">
+                            <h4>150</h4>
+                            <p>Sessions Attended</p>
+                        </div>
+                    </div>
+                    <div class="level">
+                        <div class="icon"></div>
+                        <div class="stat">
+                            <h4>Advanced</h4>
+                            <p>Level Yogi</p>
+                        </div>
+                    </div>
+                    <div class="missed">
+                        <div class="icon"></div>
+                        <div class="stat">
+                            <h4>5</h4>
+                            <p>Sessions Missed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tiles(End)  -->
+
+            <!-- Calendar -->
+            <div class="month">
+                <h1>August 2021</h1>
+                <div class="arrows">
+                    <button><img src="images/left-arrow.svg" alt=""></button>
+                    <button><img src="images/right-arrow.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="days">
+
+                <div class="tablet">
+                    <h1>August 2021</h1>
+                    <div class="arrows">
+                        <button><img src="images/left-arrow.svg" alt=""></button>
+                        <button><img src="images/right-arrow.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="dayname">Sun</div>
+                <div class="dayname">Mon</div>
+                <div class="dayname">Tue</div>
+                <div class="dayname">Wed</div>
+                <div class="dayname">Thu</div>
+                <div class="dayname">Fri</div>
+                <div class="dayname">Sat</div>
+
+
+                <div class="day">1</div>
+                <div class="day reminder">2
+                    <span class="rem-span">
+                        <div class="set-reminder">
+                            <div class="clock-dur">
+                                <div class="clock"></div>
+                                <div class="duration">45 MIN</div>
+                            </div>
+                            <div class="rem-content">
+                                <p class="session-type">Personalized Session</p>
+                                <h4>Hatha Yoga</h4>
+                                <p class="session-timing">6:00 AM</p>
+                                <button>Set Reminder</button>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+
+                <div class="event"></div>
+
+
+                <!-- set-reminder -->
+
+                <!-- set-reminder -->
+            </div>
+            <!-- Calendar(END) -->
+
+            <!-- Upcoming-Events -->
+            <div class="upcoming">
+                <h1>Upcoming Sessions</h1>
+                <div class="session">
+                    <div><img class="icon" src="images/user.jpg" alt=""></div>
+                    <div class="session-details">
+                        <h4>Hatha Yoga</h4>
+                        <p>6:00 AM - 7:00 AM</p>
+                    </div>
+                    <div class="arrow">
+                        <img src="images/arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="session">
+                    <div><img class="icon" src="images/user.jpg" alt=""></div>
+                    <div class="session-details">
+                        <h4>Hatha Yoga</h4>
+                        <p>6:00 AM - 7:00 AM</p>
+                    </div>
+                    <div class="arrow">
+                        <img src="images/arrow.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!-- Upcoming-Events(END) -->
+            <!-- Graph -->
+            <div class="events-graph">
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+                <div class="day-name">Sun</div>
+                <div class="day-blank"></div>
+
+                <div class="timings">5:00</div>
+                <div class="timings">6:00</div>
+                <div class="timings">7:00</div>
+                <div class="timings">8:00</div>
+                <div class="timings">9:00</div>
+                <div class="timings">10:00</div>
+                <div class="timings">11:00</div>
+                <div class="timings">12:00</div>
+                <div class="timings">13:00</div>
+                <div class="timings">14:00</div>
+                <div class="timings">15:00</div>
+
+
+                <div class="bar-blue"></div>
+                <div class="bar-cyan"></div>
+            </div>
+            <!-- Graph{END} -->
+
+
+
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
