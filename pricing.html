@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/fix_budget.css" />
+    <link rel="stylesheet" href="css/login.css" />
 
     <title>Health Highway | Pricing</title>
 </head>
@@ -83,7 +84,9 @@
             >
               Join Us
             </button>
-            <i class="fas fa-user fa-2x loginImage"></i>
+            <div id="open">
+                <i class="fas fa-user fa-2x loginImage" id="loginImageLg"></i>
+            </div>
           </ul>
         </div>
         <!-- sidebar overlay -->
@@ -99,7 +102,7 @@
           >
             Join Us
           </button></br>
-          <i class="fas fa-user fa-2x loginImageSideView"></i>
+          <i class="fas fa-user fa-2x loginImageSideView" id="loginImageSm"></i>
           <a style="color: #fff; cursor: pointer">Blogs</a>
                             <a style="color: #fff; cursor: pointer">Support</a>
                             <a style="color: #fff; cursor: pointer">About Us</a>
@@ -443,11 +446,42 @@
             </div>
         </section>
         <!-- Call-Us Section (END) -->
+
+           <!-- login div -->
+           <div class="login-modal-bg">
+            <div class="login-modal">
+                <div class="loginBody">
+                    <img src="images/logo.png" class="loginLogo">
+                    <div class="loginLogoText">
+                        <span style="color: #4ca9ee" class="logo-span">Health</span>
+                        <span style="color: #29e7cd" class="logo-span"> Highway</span>
+                    </div>
+                    <p class="loginInput" >+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" ></p>
+                    <button
+                    type="button"
+                    class="btn btn-light loginButton"
+                    >
+                    Continue
+                    </button>
+                    <p class="loginCondition"><span style="margin-right: 5px;"><i class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:red;text-decoration: underline">Terms of Services</a> and <a style="color:red; text-decoration: underline">Privacy policy</a>.</p>
+                    <button
+                    type="button"
+                    class="btn btn-light loginContinueButton"
+                    >
+                    Continue with <span style="color:grey; margin-left: 5px;"><i class="fab fa-google"></i></span>
+                    </button>
+                    <span> <i class="fa fa-times fa-1x close"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- login div (END) -->
+
     </footer>
 
     <script src="js/video-component.js"></script>
     <script src="js/pricing.js"></script>
     <script src="js/landing.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 
 </html>
