@@ -15,4 +15,6 @@ modalClose.addEventListener("click",function() {
     modalBg.classList.remove("bg-active");
 });
 
-
+document.getElementById("loginContinue").onclick = function () {
+    location.href = "../dashboard.html";
+};
