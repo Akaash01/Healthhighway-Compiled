@@ -20,6 +20,7 @@ html {
 nav {
   display: block;
   line-height: 1.15;
+  background:white;
 }
 
 .container-fluid {
@@ -62,11 +63,11 @@ nav {
 }
 .navbar-toggler {
   margin-right: 20px;
-  color: black;
+  color: #4ca9ee;
   border: none;
 }
 .navbar-toggler i {
-  color: black;
+  color: #4ca9ee;
   border: none;
 }
 .d-inline-block {
@@ -156,7 +157,7 @@ nav {
 }
 
 .btn-light:hover {
-  color: white !important;
+  color: white;
 }
 
 .btn-light:focus,
