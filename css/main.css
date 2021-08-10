@@ -96,8 +96,8 @@ body::-webkit-scrollbar-thumb {
   margin-left: 30px;
   margin-bottom: 25px;
 }
-#sidebar-joinus:hover{
-    color: #4ca9ee;
+#sidebar-joinus:hover {
+  color: #4ca9ee;
 }
 .sidenav a:hover {
   color: #f1f1f1;
@@ -269,6 +269,9 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: translate(-54%, -50%);
   transform: translate(-54%, -50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .landing-main-text1 {
   font-family: Open Sans;
@@ -287,12 +290,13 @@ body::-webkit-scrollbar-thumb {
 }
 .landing-main-button {
   background: #4ca9ee;
+  display: block;
   -webkit-box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
   box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
   border-radius: 8px;
   width: 214px;
   height: 55px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -300,6 +304,7 @@ body::-webkit-scrollbar-thumb {
   color: #ffffff;
   border-color: #4ca9ee;
   margin-top: 36px;
+  padding: 12px 0 0 0;
 }
 .fa-arrow-down {
   color: #4ca9ee;
@@ -421,7 +426,8 @@ body::-webkit-scrollbar-thumb {
   .landing-main-button {
     width: 140px;
     height: 50px;
-    font-size: 22px;
+    padding: 10px 0 0 0;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -731,9 +737,9 @@ body::-webkit-scrollbar-thumb {
     line-height: 28px;
   }
   .landing-main-button {
-    font-size: 16px !important;
+    font-size: 14px;
     margin-top: 10px;
-    padding: 0px 5px !important;
+    padding: 3px 0 0 0;
     width: 110px;
     height: 36px;
   }
