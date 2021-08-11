@@ -11,10 +11,10 @@ loginImageSm.addEventListener("click", function() {
     modalBg.classList.add("bg-active");
 });
 
-modalClose.addEventListener("click",function() {
+modalClose.addEventListener("click", function() {
     modalBg.classList.remove("bg-active");
 });
 
-document.getElementById("loginContinue").onclick = function () {
-    location.href = "../dashboard.html";
+document.getElementById("loginContinue").onclick = function() {
+    location.href = "dashboard.html";
 };
