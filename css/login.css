@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
 .login-modal-bg {
   position: fixed;
   top: 0;
@@ -11,33 +13,38 @@
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  transition: visibility 0s, opacity 0.8s;
+  transition: visibility 0s, opacity 0.4s;
+  backdrop-filter: blur(5px);
 }
 
 .bg-active {
   visibility: visible;
   opacity: 1;
-  animation: slideDown 0.8s;
 }
 
-@keyframes slideDown {
-  from {
-    top: 100vh;
-  }
-  to {
-    top: 0vh;
-  }
+.navBlur {
+  z-index: -1 !important;
 }
 
 .login-modal {
   background-color: #fff;
-  width: 28%;
-  height: 64%;
+  width: 422px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
+  z-index: 100;
+  border-radius: 15px;
+  height: 523px;
+}
+
+.phoneDivActive {
+  height: 523px;
+}
+
+.OTPActive {
+  height: 430px;
 }
 
 .close {
@@ -45,6 +52,7 @@
   top: 25px;
   right: 25px;
   cursor: pointer;
+  color: #B2B2B2;
 }
 
 .loginBody {
@@ -56,8 +64,8 @@
 
 .loginLogo {
   margin-top: 32px;
-  width: 180px;
-  height: 120px;
+  width: 120px;
+  height: 80px;
 }
 
 .loginLogoText {
@@ -71,12 +79,14 @@
   box-sizing: border-box;
   font-size: 1.4rem;
   margin-top: 50px;
+  width: 300px;
 }
 
 .loginInputBar {
   border: none;
   outline: none;
   font-size: 1.4rem;
+  width: 200px;
 }
 
 .loginInputBar::-webkit-input-placeholder {
@@ -90,12 +100,12 @@
   padding: 8px 35px !important;
   border-radius: 20px !important;
   transition: 0.3s ease;
-  background-color: #4ca9ee;
+  background-color: #4ca9ee !important;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   line-height: 22px;
-  width: 360px;
+  width: 300px;
   font-size: 1.4rem;
   height: 42px;
 }
@@ -103,30 +113,25 @@
 .loginCondition {
   font-size: 0.8rem;
   font-weight: bold;
-  color: grey;
   margin-top: 32px;
-  width: 350px;
+  width: 300px;
 }
 
 .loginContinueButton {
-  margin-top: 32px;
-  background-color: #fff !important;
-  padding: 8px 35px !important;
-  border-radius: 20px !important;
-  transition: 0.3s ease;
   font-family: Open Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 22px;
-  width: 360px;
-  font-size: 1rem;
-  height: 42px;
-  color: #000 !important;
-  box-shadow: 0 5px 15px grey;
-}
-
-.loginContinueButton:hover {
-  color: #000 !important;
+  color: #4ca9ee;
+  width: 300px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 15px !important;
+  margin-top: 25px;
+  box-shadow: 1px 1px 3px #a5d4f8;
+  display: flex;
+  justify-content:center;
 }
 
 .loginImageSideView,
@@ -134,78 +139,126 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1600px) {
-  .login-modal {
-    width: 32%;
-  }
+.google {
+  margin-right: 12px;
 }
 
-@media only screen and (max-width: 1400px) {
-  .login-modal {
-    width: 34%;
-  }
+#OTP {
+  width: 422px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  display: none;
 }
 
-@media only screen and (max-width: 1300px) {
-  .login-modal {
-    width: 36%;
-  }
+.fa-angle-left {
+  color: #4ca9ee;
 }
 
-@media only screen and (max-width: 1200px) {
-  .login-modal {
-    width: 38%;
-  }
+.OTPText {
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  letter-spacing: 0px;
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 1100px) {
-  .login-modal {
-    width: 40%;
-  }
+.OTPTitle {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 80px;
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .login-modal {
-    width: 42%;
-  }
+.enterText {
+  font-size: 18px;
+  width: 360px;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 100px;
 }
 
-@media only screen and (max-width: 900px) {
-  .login-modal {
-    width: 450px;
-  }
+.otp-container {
+	display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
-  .login-modal {
-    width: 420px;
-  }
+.otp-container input {
+  width: 26px;
+  height: 33px;
+  margin:0 2px;
+  border:none;
+  border-bottom: 2px solid black;
+  padding: 0;
+  color: black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  box-shadow: none;
+  text-align: center;
+  background-color:none;
+  font-weight: 600;
+  border-radius: 0;
+  outline:0;
+  transition: border .3s ease;
 }
 
-@media only screen and (max-width: 460px) {
+.OTPPara {
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+margin-top: 25px;
+}
+
+.phone {
+  color: #4ca9ee;
+  text-decoration: 1px underline #4ca9ee;  
+}
+
+@media only screen and (max-width: 540px) {
   .login-modal {
-    width: 320px;
+    width: 360px;
   }
   .loginInput {
-    font-size: 1.2rem;
     width: 240px;
-    display: flex;
   }
   .loginInputBar {
-    font-size: 1.2rem;
+    width: 160px;
   }
-  .loginButton {
-    width: 240px;
+  .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
+    width: 260px;
   }
   .loginCondition {
-    width: 240px;
+    width: 260px;
   }
-  .loginContinueButton {
-    width: 240px;
+  
+  .OTPTitle {
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .login-modal {
+    width: 300px;
+  }
+  .loginInput {
+    width: 200px;
   }
   .loginInputBar {
-    margin-left: 5px;
-    width: 200px;
+    width: 120px;
+  }
+  .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
+    width: 220px;
+  }
+  .loginCondition {
+    width: 220px;
   }
 }
 
@@ -216,46 +269,63 @@
   .loginInput {
     width: 200px;
   }
-  .loginButton {
+  .loginInputBar {
+    width: 120px;
+  }
+  .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
     width: 200px;
   }
   .loginCondition {
     width: 200px;
   }
-  .loginContinueButton {
-    width: 200px;
-  }
-  .loginInputBar {
-    width: 160px;
+  .loginContinueButton, .loginButton{
+    font-size: 16px;
   }
   .loginLogoText {
     font-size: 1.6rem;
   }
-  .loginLogo {
-    width: 150px;
-    height: 100px;
+  .otp-container input {
+    width: 22px;
+    height: 30px;
+  }
+  .OTPActive {
+    height: 460px;
   }
 }
 
 @media only screen and (max-width: 320px) {
+  .OTPActive {
+    height: 470px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
   .login-modal {
     width: 260px;
   }
   .loginInput {
     width: 180px;
   }
-  .loginButton {
-    width: 180px;
+  .loginInputBar {
+    width: 100px;
+  }
+  .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
+    width: 200px;
   }
   .loginCondition {
-    width: 180px;
+    width: 200px;
   }
-  .loginContinueButton {
-    width: 180px;
+  .loginContinueButton, .loginButton{
+    font-size: 16px;
   }
-  .loginInputBar {
-    width: 120px;
+  .loginLogoText {
+    font-size: 1.6rem;
+  }
+  .otp-container input {
+    width: 22px;
+    height: 30px;
+  }
+  .OTPActive {
+    height: 460px;
   }
 }
-
-

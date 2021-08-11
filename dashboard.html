@@ -235,47 +235,58 @@
       </section>
 
       <!-- login div -->
-      <div class="login-modal-bg">
-        <div class="login-modal">
-          <div class="loginBody">
-            <img src="images/logo.png" class="loginLogo" />
-            <div class="loginLogoText">
-              <span style="color: #4ca9ee" class="logo-span">Health</span>
-              <span style="color: #29e7cd" class="logo-span"> Highway</span>
+              <!-- login div -->
+              <div class="login-modal-bg">
+                <div class="login-modal">
+                    <div class="loginBody" id="phoneDiv">
+                        <img src="images/logo.png" class="loginLogo">
+                        <div class="loginLogoText">
+                            <span style="color: #4ca9ee" class="logo-span">Health</span>
+                            <span style="color: #29e7cd" class="logo-span"> Highway</span>
+                        </div>
+                        <p class="loginInput" >+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p>
+                        <button
+                        type="button"
+                        class="btn loginButton"
+                        id="loginContinue"
+                        >
+                        Continue
+                        </button>
+                        <p class="loginCondition"><span style="margin-right: 5px;"><i class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                        <button
+                        type="button"
+                        class="btn loginContinueButton"
+                        style="display: flex; align-content: flex-start;"
+                        >
+                        <img src="images/google.png" class="google">Login Using Gmail</span>
+                        </button>
+                    </div>
+                    <div id="OTP">
+                        <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                        <div class="loginBody">
+                          <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed</p>
+                          <div class="otp-container">
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        </div>
+                        <button
+                        type="button"
+                        class="btn btn-light loginButton"
+                        id="confirmLogin"
+                      >
+                        Confirm
+                      </button>
+                      <p class="OTPPara" style="color: #29E7CD;">Get OTP on Call</p>
+                      <p class="OTPPara">Didn’t Recieve OTP ? <span style="color: #4ca9ee" >Resend</span></p>
+                        </div>
+                </div>
+                <span> <i class="fa fa-times fa-1x close"></i></span>
             </div>
-            <p class="loginInput">
-              +91 <i class="fa fa-caret-down"></i>
-              <input
-                class="loginInputBar"
-                placeholder="Please Enter Your Phone Number"
-                type="text"
-              />
-            </p>
-            <button type="button" class="btn btn-light loginButton" id="loginContinue">
-              Continue
-            </button>
-            <p class="loginCondition">
-              <span style="margin-right: 5px"
-                ><i class="fas fa-star-of-life"></i></span
-              >By Continuing you agree to the
-              <a style="color: red; text-decoration: underline"
-                >Terms of Services</a
-              >
-              and
-              <a style="color: red; text-decoration: underline"
-                >Privacy policy</a
-              >.
-            </p>
-            <button type="button" class="btn btn-light loginContinueButton">
-              Continue with
-              <span style="color: grey; margin-left: 5px"
-                ><i class="fab fa-google"></i
-              ></span>
-            </button>
-            <span> <i class="fa fa-times fa-1x close"></i></span>
-          </div>
-        </div>
-      </div>
+            <!-- login div (END) -->
       <!-- login div (END) -->
     </main>
     <footer></footer>
@@ -284,13 +295,111 @@
       var modalBg = document.querySelector(".login-modal-bg");
       var modalClose = document.querySelector(".close");
 
-      loginDashboard.addEventListener("click", function () {
-        modalBg.classList.add("bg-active");
-      });
+var modalBg = document.querySelector(".login-modal-bg");
+var modalClose = document.querySelector(".close");
+var navbar = document.querySelector("nav");
+var OTP = document.getElementById("OTP");
+var phoneNumber = document.getElementById("phoneNumber");
+var loginContinue = document.getElementById("loginContinue");
+var phoneDiv = document.getElementById("phoneDiv");
+var loginModal = document.querySelector(".login-modal");
+var modalBack = document.getElementById("modalBack");
 
-      modalClose.addEventListener("click", function () {
-        modalBg.classList.remove("bg-active");
-      });
+phoneDivActive = () => {
+  phoneDiv.style.display = "block";
+  loginModal.classList.add("phoneDivActive");
+  OTP.style.display = "none";
+  loginModal.classList.remove("OTPActive");
+  phoneNumber.innerHTML = "";
+  phoneDiv.style.display = "flex";
+};
+
+OTPDivActive = () => {
+  phoneDiv.style.display = "none";
+  loginModal.classList.remove("phoneDivActive");
+  OTP.style.display = "block";
+  loginModal.classList.add("OTPActive");
+  phoneNumber.classList.add("phone");
+};
+
+modalCloseFunction = () => {
+  modalBg.classList.remove("bg-active");
+  phoneDivActive();
+};
+
+modalOpenFunction = () => {
+  modalBg.classList.add("bg-active");
+  navbar.style.zIndex = "0";
+};
+
+loginDashboard.addEventListener("click", function () {
+  modalOpenFunction();
+});
+
+loginDashboard.addEventListener("click", function () {
+  modalOpenFunction();
+});
+
+modalClose.addEventListener("click", function () {
+  modalCloseFunction();
+});
+
+loginContinue.onclick = function () {
+  let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
+  phoneNumber.innerHTML = inputText;
+  OTPDivActive();
+};
+
+modalBack.onclick = function () {
+  phoneDivActive();
+};
+
+// code for otp input
+$(function () {
+  "use strict";
+
+  var body = $("body");
+
+  function goToNextInput(e) {
+    var key = e.which,
+      t = $(e.target),
+      sib = t.next("input");
+
+    if (key != 9 && (key < 48 || key > 57)) {
+      e.preventDefault();
+      return false;
+    }
+
+    if (key === 9) {
+      return true;
+    }
+
+    if (!sib || !sib.length) {
+      sib = body.find("input").eq(0);
+    }
+    sib.select().focus();
+  }
+
+  function onKeyDown(e) {
+    var key = e.which;
+
+    if (key === 9 || (key >= 48 && key <= 57)) {
+      return true;
+    }
+
+    e.preventDefault();
+    return false;
+  }
+
+  function onFocus(e) {
+    $(e.target).select();
+  }
+
+  body.on("keyup", "input", goToNextInput);
+  body.on("keydown", "input", onKeyDown);
+  body.on("click", "input", onFocus);
+});
+
     </script>
   </body>
 </html>

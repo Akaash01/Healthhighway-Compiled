@@ -728,6 +728,14 @@ nav {
   display: block;
 }
 
+#landing-main-div {
+  z-index: 0;
+}
+
+.sidenav {
+  z-index: 1;
+}
+
 @media only screen and (max-width: 991px) {
 .navbar-collapse {
   display: none;
