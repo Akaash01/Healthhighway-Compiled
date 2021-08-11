@@ -16,5 +16,5 @@ modalClose.addEventListener("click",function() {
 });
 
 document.getElementById("loginContinue").onclick = function () {
-    location.href = "../dashboard.html";
+    location.href = "dashboard.html";
 };
