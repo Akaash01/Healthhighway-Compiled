@@ -18,5 +18,4 @@ $(window).scroll(function() {
     } else {
         nav.style.backgroundColor = "white";
     }
-    console.log(nav)
 });
