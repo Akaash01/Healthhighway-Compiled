@@ -11,96 +11,96 @@ var loginModal = document.querySelector(".login-modal");
 var modalBack = document.getElementById("modalBack");
 
 phoneDivActive = () => {
-  phoneDiv.style.display = "block";
-  loginModal.classList.add("phoneDivActive");
-  OTP.style.display = "none";
-  loginModal.classList.remove("OTPActive");
-  phoneNumber.innerHTML = "";
-  phoneDiv.style.display = "flex";
+    phoneDiv.style.display = "block";
+    loginModal.classList.add("phoneDivActive");
+    OTP.style.display = "none";
+    loginModal.classList.remove("OTPActive");
+    phoneNumber.innerHTML = "";
+    phoneDiv.style.display = "flex";
 };
 
 OTPDivActive = () => {
-  phoneDiv.style.display = "none";
-  loginModal.classList.remove("phoneDivActive");
-  OTP.style.display = "block";
-  loginModal.classList.add("OTPActive");
-  phoneNumber.classList.add("phone");
+    phoneDiv.style.display = "none";
+    loginModal.classList.remove("phoneDivActive");
+    OTP.style.display = "block";
+    loginModal.classList.add("OTPActive");
+    phoneNumber.classList.add("phone");
 };
 
 modalCloseFunction = () => {
-  modalBg.classList.remove("bg-active");
-  phoneDivActive();
+    modalBg.classList.remove("bg-active");
+    phoneDivActive();
 };
 
 modalOpenFunction = () => {
-  modalBg.classList.add("bg-active");
-  navbar.style.zIndex = "0";
+    modalBg.classList.add("bg-active");
+    navbar.style.zIndex = "0";
 };
 
-loginImageLg.addEventListener("click", function () {
-  modalOpenFunction();
+loginImageLg.addEventListener("click", function() {
+    modalOpenFunction();
 });
 
-loginImageSm.addEventListener("click", function () {
-  modalOpenFunction();
+loginImageSm.addEventListener("click", function() {
+    modalOpenFunction();
 });
 
-modalClose.addEventListener("click", function () {
-  modalCloseFunction();
+modalClose.addEventListener("click", function() {
+    modalCloseFunction();
 });
 
-loginContinue.onclick = function () {
-  let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
-  phoneNumber.innerHTML = inputText;
-  OTPDivActive();
+loginContinue.onclick = function() {
+    let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
+    phoneNumber.innerHTML = inputText;
+    OTPDivActive();
 };
 
-modalBack.onclick = function () {
-  phoneDivActive();
+modalBack.onclick = function() {
+    phoneDivActive();
 };
 
 // code for otp input
-$(function () {
-  "use strict";
+$(function() {
+    "use strict";
 
-  var body = $("body");
+    var body = $("body");
 
-  function goToNextInput(e) {
-    var key = e.which,
-      t = $(e.target),
-      sib = t.next("input");
+    function goToNextInput(e) {
+        var key = e.which,
+            t = $(e.target),
+            sib = t.next("input");
 
-    if (key != 9 && (key < 48 || key > 57)) {
-      e.preventDefault();
-      return false;
+        if (key != 9 && (key < 48 || key > 57)) {
+            e.preventDefault();
+            return false;
+        }
+
+        if (key === 9) {
+            return true;
+        }
+
+        if (!sib || !sib.length) {
+            sib = body.find("input").eq(0);
+        }
+        sib.select().focus();
     }
 
-    if (key === 9) {
-      return true;
+    function onKeyDown(e) {
+        var key = e.which;
+
+        if (key === 9 || (key >= 48 && key <= 57)) {
+            return true;
+        }
+
+        e.preventDefault();
+        return false;
     }
 
-    if (!sib || !sib.length) {
-      sib = body.find("input").eq(0);
-    }
-    sib.select().focus();
-  }
-
-  function onKeyDown(e) {
-    var key = e.which;
-
-    if (key === 9 || (key >= 48 && key <= 57)) {
-      return true;
+    function onFocus(e) {
+        $(e.target).select();
     }
 
-    e.preventDefault();
-    return false;
-  }
-
-  function onFocus(e) {
-    $(e.target).select();
-  }
-
-  body.on("keyup", "input", goToNextInput);
-  body.on("keydown", "input", onKeyDown);
-  body.on("click", "input", onFocus);
+    body.on("keyup", "input", goToNextInput);
+    body.on("keydown", "input", onKeyDown);
+    body.on("click", "input", onFocus);
 });

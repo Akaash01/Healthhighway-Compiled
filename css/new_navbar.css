@@ -1,38 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-}
-
 *,
 *::before,
 *::after {
@@ -41,7 +7,6 @@
 
 html {
   font-family: sans-serif;
-  line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -54,6 +19,8 @@ html {
 
 nav {
   display: block;
+  line-height: 1.15;
+  background:transparent;
 }
 
 .container-fluid {
@@ -96,11 +63,12 @@ nav {
 }
 .navbar-toggler {
   margin-right: 20px;
-  color: black;
+  color: #4ca9ee;
   border: none;
+  background-color: #fff !important;
 }
 .navbar-toggler i {
-  color: black;
+  color: #4ca9ee !important;
   border: none;
 }
 .d-inline-block {
@@ -190,7 +158,7 @@ nav {
 }
 
 .btn-light:hover {
-  color: white !important;
+  color: white;
 }
 
 .btn-light:focus,
@@ -359,7 +327,7 @@ nav {
   position: relative;
 }
 
-.logo-text{
+.logo-text {
   position: absolute;
   top: 18px;
   left: 80px;
@@ -737,17 +705,16 @@ nav {
 }
 
 @media only screen and (max-width: 991px) {
-.navbar-collapse {
-  display: none;
-}
-}
-
-@media only screen and (max-width: 550px) {
-  .logo-text{
-    left: 80px;
+  .navbar-collapse {
+    display: none;
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .logo-text {
+    left: 80px;
+  }
+}
 
 @media only screen and (max-width: 550px) {
   .navbar-brand {
@@ -807,7 +774,7 @@ nav {
     align-items: center;
     margin-top: 0;
   }
-  .logo-text{
+  .logo-text {
     left: 64px;
     top: 12px;
   }
@@ -831,7 +798,7 @@ nav {
   .navbar-toggler {
     margin-right: 10px;
   }
-  .logo-text{
+  .logo-text {
     left: 54px;
     top: 10px;
   }
@@ -839,7 +806,7 @@ nav {
 
 .loginImage {
   margin-left: 36px;
-  color: #4CA9EE;
+  color: #4ca9ee;
   margin-top: 2px;
 }
 
@@ -847,4 +814,12 @@ nav {
   margin-left: 52px;
   color: #fff;
   margin-top: 2px;
+}
+
+#landing-main-div {
+  z-index: 0;
+}
+
+.sidenav, nav {
+  z-index: 1 !important;
 }

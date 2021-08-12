@@ -49,7 +49,7 @@
                       font-weight: 500;
                       color: #4ca9ee;
                       cursor: pointer;
-                    " class="nav-link">Blogs</a
+                    " class="nav-link" href="./blogs/blogs.html">Blogs</a
                   >
                 </li>
                 <li style="margin-right: 40px" class="nav-item">
@@ -120,7 +120,7 @@
             <div class="landing-main-center">
                 <p class="landing-main-text1">Live Yoga Classes</p>
                 <p class="landing-main-text2">From world yoga capital to your home</p>
-                <button class="landing-main-button btn">Get Started</button>
+                <a class="landing-main-button" href="#get-started-section">Get Started</a>
             </div>
             <div class="landing-main-right">
                 <img src="images/Student.png" class="student" />
@@ -129,11 +129,9 @@
         </div>
         <!-- landing (END)-->
 
-        <!-- know more div (START) -->
-        <div class="know-more-div">
-            <p>Know More</p>
-            <i class="fa fa-arrow-down"></i>
-        </div>
+        <!-- know more div (START) --> 
+        <p style="text-align: center"><a href="#usp" class="know-more">Know More</a></p>
+        <p style="text-align: center"><a href="#usp" class="know-more"><i class="fa fa-arrow-down"></i></a></p>
         <!-- know more div (END) -->
 
         <!-- About-Us Section (START) -->
@@ -213,7 +211,7 @@
       <!-- VIdeo Section (END) -->
 
       <!-- Get Started -->
-      <section class="get-started">
+      <section class="get-started" id="get-started-section">
         <h2 class="get-started-heading">Take your <span>First Step</span></h2>
             <div class="get-started-grid">
                 <div class="private-sessions">
@@ -489,13 +487,13 @@
             </div>
             <div class="cb-form">
                 <input id="phone-num" type="text" placeholder="+91  Phone number" />
-                <button class="call-back-btn" type="submit">Schedule callBack</button>
+                <button class="call-back-btn" type="submit">Schedule Callback</button>
             </div>
         </section>
         <!-- Call-Us Section (END) -->
 
-           <!-- login div -->
-           <div class="login-modal-bg">
+        <!-- login div -->
+        <div class="login-modal-bg">
             <div class="login-modal">
                 <div class="loginBody" id="phoneDiv">
                     <img src="images/logo.png" class="loginLogo">
@@ -503,56 +501,44 @@
                         <span style="color: #4ca9ee" class="logo-span">Health</span>
                         <span style="color: #29e7cd" class="logo-span"> Highway</span>
                     </div>
-                    <p class="loginInput" >+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p>
-                    <button
-                    type="button"
-                    class="btn btn-light loginButton"
-                    id="loginContinue"
-                    >
+                    <p class="loginInput">+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p>
+                    <button type="button" class="btn btn-light loginButton" id="loginContinue">
                     Continue
                     </button>
                     <p class="loginCondition"><span style="margin-right: 5px;"><i class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
-                    <button
-                    type="button"
-                    class="btn loginContinueButton"
-                    style="display: flex; align-content: flex-start;"
-                    >
+                    <button type="button" class="btn loginContinueButton" style="display: flex; align-content: flex-start;">
                     <img src="images/google.png" class="google">Login Using Gmail</span>
                     </button>
                 </div>
                 <div id="OTP">
                     <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
-                      <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed</p>
-                      <div class="otp-container">
-                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                    </div>
-                    <button
-                    type="button"
-                    class="btn btn-light loginButton"
-                    id="confirmLogin"
-                  >
+                        <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed</p>
+                        <div class="otp-container">
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        </div>
+                        <button type="button" class="btn btn-light loginButton" id="confirmLogin">
                     Confirm
                   </button>
-                  <p class="OTPPara" style="color: #29E7CD;">Get OTP on Call</p>
-                  <p class="OTPPara">Didn’t Recieve OTP ? <span style="color: #4ca9ee" >Resend</span></p>
+                        <p class="OTPPara" style="color: #29E7CD;">Get OTP on Call</p>
+                        <p class="OTPPara">Didn’t Recieve OTP ? <span style="color: #4ca9ee">Resend</span></p>
                     </div>
+                </div>
+                <span> <i class="fa fa-times fa-1x close"></i></span>
             </div>
-            <span> <i class="fa fa-times fa-1x close"></i></span>
-        </div>
-        <!-- login div (END) -->
+            <!-- login div (END) -->
 
     </main>
     <footer></footer>
-    
+
     <script type="text/javascript" src="js/event.js"></script>
     <script type="text/javascript" src="js/landing.js"></script>
-    <script src="JS/video-component.js"></script>
+    <script src="js/video-component.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
 </body>
 
