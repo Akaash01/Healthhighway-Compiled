@@ -820,6 +820,12 @@ nav {
   z-index: 0;
 }
 
+.nav-landing {
+  z-index: 0;
+  width: 100vw;
+  background-color: transparent;
+}
+
 .sidenav, nav {
-  z-index: 1 !important;
+  z-index: 0 !important;
 }
