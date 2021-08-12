@@ -411,6 +411,12 @@ option {
     left: 10%;
     z-index: 4;
 }
+@media (max-width: 1034px) {
+  .trending-heading,
+  .yoga-session-heading {
+    padding-left: 80px;
+  }
+}
 
 @media (max-width: 890px) {
     .time-filter {
@@ -494,6 +500,7 @@ option {
         width: 85%;
     }
 }
+
 
 @media (max-width: 450px) {
     /* 1.253 */
