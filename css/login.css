@@ -15,6 +15,7 @@
   visibility: hidden;
   transition: visibility 0s, opacity 0.4s;
   backdrop-filter: blur(5px);
+  z-index: 200;
 }
 
 .bg-active {
