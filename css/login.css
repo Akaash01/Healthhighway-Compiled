@@ -246,37 +246,37 @@ margin-top: 25px;
 
 @media only screen and (max-width: 420px) {
   .login-modal {
-    width: 300px;
+    width: 360px;
   }
   .loginInput {
-    width: 200px;
+    width: 240px;
   }
   .loginInputBar {
     width: 120px;
   }
   .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
-    width: 220px;
+    width: 240px;
   }
   .loginCondition {
-    width: 220px;
+    width: 240px;
   }
 }
 
 @media only screen and (max-width: 360px) {
   .login-modal {
-    width: 280px;
+    width: 320px;
   }
   .loginInput {
-    width: 200px;
+    width: 260px;
   }
   .loginInputBar {
-    width: 120px;
+    width: 180px;
   }
   .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
-    width: 200px;
+    width: 260px;
   }
   .loginCondition {
-    width: 200px;
+    width: 260px;
   }
   .loginContinueButton, .loginButton{
     font-size: 16px;
@@ -297,23 +297,26 @@ margin-top: 25px;
   .OTPActive {
     height: 470px;
   }
+  .login-modal {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
   .login-modal {
-    width: 260px;
+    width: 270px;
   }
   .loginInput {
-    width: 180px;
+    width: 190px;
   }
   .loginInputBar {
-    width: 100px;
+    width: 110px;
   }
   .loginButton, .loginContinueButton, .OTPPara, #OTP, .OTPText, .enterText, .OTPPara {
-    width: 200px;
+    width: 220px;
   }
   .loginCondition {
-    width: 200px;
+    width: 220px;
   }
   .loginContinueButton, .loginButton{
     font-size: 16px;

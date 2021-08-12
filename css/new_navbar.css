@@ -20,7 +20,7 @@ html {
 nav {
   display: block;
   line-height: 1.15;
-  background:white;
+  background:transparent;
 }
 
 .container-fluid {
@@ -65,9 +65,10 @@ nav {
   margin-right: 20px;
   color: #4ca9ee;
   border: none;
+  background-color: #fff !important;
 }
 .navbar-toggler i {
-  color: #4ca9ee;
+  color: #4ca9ee !important;
   border: none;
 }
 .d-inline-block {
@@ -813,4 +814,12 @@ nav {
   margin-left: 52px;
   color: #fff;
   margin-top: 2px;
+}
+
+#landing-main-div {
+  z-index: 0;
+}
+
+.sidenav, nav {
+  z-index: 1 !important;
 }

@@ -303,38 +303,26 @@ body::-webkit-scrollbar-thumb {
   line-height: 30px;
   color: #ffffff;
   border-color: #4ca9ee;
-  margin-top: 36px;
+  margin-top: 54px;
   padding: 12px 0 0 0;
 }
 .fa-arrow-down {
   color: #4ca9ee;
   margin-top: 5px;
 }
-.know-more-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
+.know-more {
   margin-top: -80px;
-}
-.know-more-div p {
+  cursor: pointer;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: #4ca9ee;
+  text-align: center;
+
 }
+
 @media only screen and (max-width: 2300px) {
   #landing-main-div {
     background-size: 75% 70%;
@@ -370,6 +358,7 @@ body::-webkit-scrollbar-thumb {
   #landing-main-div {
     background-size: 75% 65%;
     background-position: 0 380px 0 0;
+    height: 680px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -410,6 +399,7 @@ body::-webkit-scrollbar-thumb {
   #landing-main-div {
     background-size: 65% 60%;
     background-position: 0 420px 0 0;
+    height: 650px;
   }
   .landing-main-text1 {
     font-size: 44px;
@@ -422,6 +412,7 @@ body::-webkit-scrollbar-thumb {
   #landing-main-div {
     background-size: 65% 60%;
     background-position: 0 400px 0 0;
+    height: 600px
   }
   .landing-main-button {
     width: 140px;
@@ -545,6 +536,7 @@ body::-webkit-scrollbar-thumb {
     background-color: transparent;
     background-size: 45% 30%;
     background-position: 0 360px 0 0;
+    height: 580px;
   }
   .landing-main-left {
     top: 300px;
@@ -577,7 +569,6 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 550px) {
   #landing-main-div {
-    height: 750px;
     background-color: transparent;
     background-size: 48% 32%;
     background-position: 0 280px 0 0;
@@ -608,7 +599,6 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 500px) {
   #landing-main-div {
-    height: 750px;
     background-size: 46% 30%;
     background-position: 0 260px 0 0;
   }
@@ -635,7 +625,7 @@ body::-webkit-scrollbar-thumb {
   .instructor,
   .student {
     width: 150px;
-    height: 260px;
+    height: 200px;
   }
   .landing-main-center {
     top: 25%;
@@ -654,11 +644,18 @@ body::-webkit-scrollbar-thumb {
   #landing-main-div {
     background-size: 45% 28%;
     background-position: 0 230px 0 0;
+    height: 520px !important;
+  }
+  .landing-main-center {
+    top: 34%;
+    left: 32%;
+    -webkit-transform: translate(-23%, -30%);
+    transform: translate(-23%, -30%);
   }
 }
 @media only screen and (max-width: 422px) {
   .landing-main-center {
-    top: 23%;
+    top: 30%;
     left: 30%;
     -webkit-transform: translate(-23%, -30%);
     transform: translate(-23%, -30%);
@@ -677,7 +674,6 @@ body::-webkit-scrollbar-thumb {
     margin-left: 1px;
   }
   #landing-main-div {
-    height: 850px;
     background-size: 45% 23%;
     background-position: 0 215px 0 0;
   }
@@ -712,7 +708,7 @@ body::-webkit-scrollbar-thumb {
   .instructor,
   .student {
     width: 120px;
-    height: 240px;
+    height: 180px;
   }
   .landing-main-center {
     left: 28%;
@@ -727,6 +723,7 @@ body::-webkit-scrollbar-thumb {
   #landing-main-div {
     background-size: 45% 26%;
     background-position: 0 200px 0 0;
+    height: 480px;
   }
   .landing-main-text1 {
     font-size: 24px;
@@ -756,6 +753,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 330px) {
   #landing-main-div {
     background-image: none;
+    height: 480px !important;
   }
   .navbar-toggler i {
     color: #4ca9ee !important;
@@ -769,7 +767,7 @@ body::-webkit-scrollbar-thumb {
   .instructor,
   .student {
     width: 100px;
-    height: 200px;
+    height: 160px;
   }
   .pattern {
     height: 400px;
@@ -801,7 +799,7 @@ body::-webkit-scrollbar-thumb {
   .instructor,
   .student {
     width: 80px;
-    height: 180px;
+    height: 140px;
   }
   .landing-main-left,
   .landing-main-right {
