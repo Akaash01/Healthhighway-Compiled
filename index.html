@@ -516,14 +516,18 @@
                     <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
                         <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed</p>
-                        <div class="otp-container">
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        </div>
+                        <form class="otp" name="one-time-code" id="otp-div">
+                            <fieldset>
+                                <div>
+                                <input type="number" pattern="[0-9]*"  value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-2" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-3" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-4" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-5" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-6" required>
+                                </div>
+                            </fieldset>
+                        </form>
                         <button type="button" class="btn btn-light loginButton" id="confirmLogin">
                     Confirm
                   </button>
