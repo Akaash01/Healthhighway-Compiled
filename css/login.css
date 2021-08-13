@@ -184,12 +184,24 @@
   margin-top: 100px;
 }
 
-.otp-container {
-	display: inline-block;
+.otp {
+	position: relative;
+	margin: 15px auto 10px auto;
 }
 
-.otp-container input {
-  width: 26px;
+.otp fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.otp fieldset div {
+	display: flex;
+	align-items: center;
+}
+
+input[type="number"] {
+	 width: 26px;
   height: 33px;
   margin:0 2px;
   border:none;
@@ -206,6 +218,19 @@
   border-radius: 0;
   outline:0;
   transition: border .3s ease;
+	text-align: center;
+	appearance: textfield;
+	-webkit-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:nth-child(n+4) {
+	order: 2;
 }
 
 .OTPPara {
