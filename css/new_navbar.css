@@ -811,7 +811,6 @@ nav {
 }
 
 .loginImageSideView {
-  margin-left: 52px;
   color: #fff;
   margin-top: 2px;
 }
@@ -822,6 +821,3 @@ nav {
   background-color: transparent;
 }
 
-.sidenav, nav {
-  z-index: 1 !important;
-}
