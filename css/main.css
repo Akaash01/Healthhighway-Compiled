@@ -2293,6 +2293,17 @@ button img {
     margin-left: 20px;
   }
 }
+@media (min-width: 1550px) {
+  .event-text {
+    margin-left: 11rem;
+  }
+}
+@media (min-width: 1750px) {
+  .event-text {
+    margin-left: 18rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
