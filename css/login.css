@@ -132,6 +132,17 @@
 .loginImageSideView,
 .loginImage {
   cursor: pointer;
+  border-color: #4ca9ee;
+  padding: 8px 35px !important;
+  border-radius: 20px !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color:white;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .google {
