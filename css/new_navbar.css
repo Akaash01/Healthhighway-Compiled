@@ -20,7 +20,7 @@ html {
 nav {
   display: block;
   line-height: 1.15;
-  background:transparent;
+  background: transparent;
 }
 
 .container-fluid {
@@ -315,6 +315,8 @@ nav {
   line-height: inherit;
   white-space: nowrap;
   height: 54px;
+  display: flex;
+  align-items: center;  
 }
 
 .navbar-brand:hover,
@@ -804,4 +806,3 @@ nav {
   width: 100vw;
   background-color: transparent;
 }
-
