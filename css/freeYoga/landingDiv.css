@@ -13,12 +13,12 @@
 }
 
 #landing-main-div {
-  width: 100%;
+  width: 100vw;
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 120px 150px 0 150px;
+  padding: 120px 6vw 0 6vw;
   justify-content: space-evenly;
 }
 
@@ -29,11 +29,11 @@
 
 .landing-main-right {
   margin-top: 50px;
-  margin-right: 300px;
 }
 
 .landing-main-left {
-  width: 50vw;
+  width: 40vw;
+  margin-right: 4vw;
 }
 
 .dot-container {
@@ -102,28 +102,48 @@
   flex-direction: row;
   align-items: center;
   margin-top: 24px;
-  width: 25vw;
+  width: 50%;
+}
+
+.points-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+  width: auto;
+  font-size: 18px;
 }
 
 .points-div {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: start;
 }
 
+.points-common, .points-recommended, .points-not-recommended {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .points div:nth-child(1) {
-  width: 56px;
+  margin-right: 20px;
 }
 
-
-@media only screen and (max-width: 1680px) {
-  #landing-main-div {
-    margin: 120px 100px 0 100px;
-  }
-  .landing-main-right {
-    margin-right: 240px;
-  }
+#book-now {
+  border-color: #4ca9ee;
+    color: #fff !important;
+    padding: 8px 35px !important;
+    border-radius: 20px !important;
+    transition: 0.3s ease;
+    background-color: #4ca9ee;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
 }
+
 
 @media only screen and (max-width: 1582px) {
   .slides img {
@@ -131,23 +151,6 @@
   }
 }
 
-@media only screen and (max-width: 1540px) {
-  #landing-main-div {
-    margin: 120px 60px 0 100px;
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-  #landing-main-div {
-    margin: 120px 0 0 100px;
-  }
-}
-
-@media only screen and (max-width: 1490px) {
-  .landing-main-right {
-    margin-right: 200px;
-  }
-}
 
 @media only screen and (max-width: 1400px) {
   .points {
@@ -161,9 +164,6 @@
 @media only screen and (max-width: 1370px) {
   .slides img {
     width: 460px;
-  }
-  .landing-main-right {
-    margin-right: 200px;
   }
 }
 
@@ -179,139 +179,112 @@
   .slides img {
     width: 432px;
   }
-
-#landing-main-div {
-  margin: 120px 100px 0 100px;
-}
 }
 
-@media only screen and (max-width: 1200px) {
-  #landing-main-div {
-    margin: 120px 75px 0 75px;
-  }
-  .landing-main-right {
-    margin-right: 150px;
-  }
-  .landing-main-left {
-    width: 100vw;
-    padding: 0 18vw;
-  }
-  .points {
-    width: 32vw;
-  }
-}
-
-@media only screen and (max-width: 1132px) {
+@media only screen and (max-width: 1140px) {
   #landing-main-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 0;
+    padding: 120px 0 0 0;
+  }
+  .landing-main-left{
+    width: 88vw;
+    padding: 0 6vw;
+    margin-right: 0;
+  }
+  .title-para {
+    width: 76vw;
+  }
+  .landing-main-right {
+    padding: 40px 10vw 0 10vw;
   }
   .slides img {
     width: 602px;
     height: 332px;
   }
+  .points {
+    width: 32%;
+    margin: 0 0.5%;
+  }
+  .points-common, .points-recommended, .points-not-recommended {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   .landing-main-right {
-    margin-top: 75px;
+    padding: 40px 15vw 0 15vw;
+  }
+  .landing-main-left {
     margin-right: 0;
   }
-  .points div:nth-child(1) {
-    width: 8vw;
-  }
-  .points-div {
-    text-align: start;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .landing-main-left {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-  }
-  .points-div {
-    padding: 0 20vw;
-  }
-  .points {
-    width: 30vw;
-  }
-  .points-text {
-    width: 20vw;
-  }
-}
-
-@media only screen and (max-width: 780px) {
-  .points-div {
-    padding: 0 8vw;
-  }
-  .points {
-    width: 36vw;
-    margin-left: 3vw;
-  }
-  .points-text {
-    width: 28vw;
-  }
-}
-
-@media only screen and (max-width: 760px) {
   .slides img {
-    width: 502px;
+    width: 70vw;
     height: 332px;
   }
+  .points {
+    width: 48%;
+    margin: 0 1%;
+  }
 }
 
-@media only screen and (max-width: 620px) {
-
+@media only screen and (max-width: 600px) {
+  .slides img {
+    width: 64vw;
+    height: 302px;
+  }
+  .points-common, .points-recommended, .points-not-recommended {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .points {
+    width: 60vw;
+    margin-left: 0;
+    text-align: start;
+  }
+  .landing-main-left{
+    width: 84vw;
+    margin: 0;
+    padding: 0;
+  }
+  .landing-main-right {
+    width: 84vw;
+    margin-left: 0 ;
+    margin-right: 0 ;
+    padding: 0;
+  }
+  .points-common {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100vw;
+  }
+  .points {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 
 @media only screen and (max-width: 560px) {
   .slides img {
-    width: 400px;
+    width: 80vw;
     height: 280px;
   }
   .title {
     font-size: 36px;
   }
-  .title-para {
-    margin-left: 0;
-  }
   .sub-title {
     font-size: 20px;
   }
-  .points-div {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .points {
-    width: 60vw;
-    margin-left: 0;
-  }
-  .points-text {
-    width: 50vw;
-  }
-  .points div:nth-child(1) {
-    width: 10vw;
-  }
 }
 
-@media only screen and (max-width: 530px) {
-  .slides img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  #landing-main-div {
-    align-items: start;
-  }
-}
 
 @media only screen and (max-width: 500px) {
   .points-div {
@@ -321,31 +294,18 @@
   .title-para {
     width: 72vw;
   }
-  .points div:nth-child(1) {
-    width: 15vw;
+  .points-title {
+    width: 80vw;
+    text-align: start;
+  }
+  .landing-main-right, .landing-main-left {
+    width: 80vw;
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .points {
-    width: 80vw;
-  }
-  .points-text {
-    width: 65vw;
-  }
-  .points div:nth-child(1) {
-    width: 15vw;
-  }
+@media only screen and (max-width: 280px) {
+.points {
+  width: 70vw;
+  margin-left: 0vw;
 }
-
-@media only screen and (max-width: 320px) {
-  .points {
-    width: 80vw;
-  }
-  .points-text {
-    width: 62vw;
-  }
-  .points div:nth-child(1) {
-    width: 18vw;
-  }
 }
