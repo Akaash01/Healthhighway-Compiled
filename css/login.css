@@ -37,15 +37,7 @@
   position: relative;
   z-index: 100;
   border-radius: 15px;
-  height: 523px;
-}
-
-.phoneDivActive {
-  height: 523px;
-}
-
-.OTPActive {
-  height: 430px;
+  height: auto;
 }
 
 .close {
@@ -61,6 +53,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 32px;
+  height: auto;
 }
 
 .loginLogo {

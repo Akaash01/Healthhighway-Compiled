@@ -12,18 +12,14 @@ var modalBack = document.getElementById("modalBack");
 
 phoneDivActive = () => {
     phoneDiv.style.display = "block";
-    loginModal.classList.add("phoneDivActive");
     OTP.style.display = "none";
-    loginModal.classList.remove("OTPActive");
     phoneNumber.innerHTML = "";
     phoneDiv.style.display = "flex";
 };
 
 OTPDivActive = () => {
     phoneDiv.style.display = "none";
-    loginModal.classList.remove("phoneDivActive");
     OTP.style.display = "block";
-    loginModal.classList.add("OTPActive");
     phoneNumber.classList.add("phone");
 };
 
