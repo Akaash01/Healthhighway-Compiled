@@ -61,7 +61,6 @@ modalBack.onclick = function() {
 };
 
 // code for otp input
-
 let in1 = document.getElementById('otp-1'),
     ins = document.querySelectorAll('input[type="number"]'),
 	 splitNumber = function(e) {
