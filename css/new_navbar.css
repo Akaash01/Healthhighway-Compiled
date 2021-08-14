@@ -76,12 +76,6 @@ nav {
   display: flex;
 }
 
-.navbar-brand {
-  margin-left: 70px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .navbar-brand img {
   width: 80px;
   height: 53.33px;
@@ -200,7 +194,7 @@ nav {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 11px 1rem;
 }
 
 .nav-link:hover,
@@ -316,21 +310,11 @@ nav {
 }
 
 .navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
   height: 54px;
-  position: relative;
-}
-
-.logo-text {
-  position: absolute;
-  top: 18px;
-  left: 80px;
 }
 
 .navbar-brand:hover,
@@ -710,11 +694,11 @@ nav {
   }
 }
 
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
   .logo-text {
     left: 80px;
   }
-}
+} */
 
 @media only screen and (max-width: 550px) {
   .navbar-brand {
@@ -774,10 +758,10 @@ nav {
     align-items: center;
     margin-top: 0;
   }
-  .logo-text {
+  /* .logo-text {
     left: 64px;
     top: 12px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 330px) {

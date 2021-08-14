@@ -1050,21 +1050,15 @@ nav {
   justify-content: space-between;
 }
 .navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 5px;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  height: 54px;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
-.logo-text {
-  position: absolute;
-  top: 18px;
-  left: 80px;
-}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -1536,6 +1530,10 @@ nav {
     font-size: 15px;
     padding: 10px 20px;
   }
+  .sidenav .closebtn {
+    top: 13px;
+    right: 27px;
+}
 }
 #main-form {
   display: -webkit-box;
@@ -1603,6 +1601,9 @@ nav {
   #main-form {
     margin: 0px 0 50px 25px;
   }
+  .sidenav .closebtn {
+    right: 16px;
+}
 }
 * {
   margin: 0;
