@@ -2,9 +2,9 @@
 
 #preparation-div {
     margin-left: 6vw;
-    margin-top: 840px;
     width: 48vw;
     margin-bottom: 120px;
+    margin-top: 70px;
 }
 
 .preparation-title {
@@ -46,7 +46,6 @@ ol {
 
 @media only screen and (max-width: 900px) {
     #preparation-div {
-        margin-top: 860px;
         width: 56vw;
         margin-left: 10vw;
     }
@@ -59,7 +58,6 @@ ol {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 80px;
     }
     .preparation-title, .preparation-content {
         text-align: center;
@@ -68,7 +66,7 @@ ol {
 
 @media only screen and (max-width: 320px) {
     #preparation-div {
-        margin: 300px 10vw 50px 10vw;
+        margin: 70px 10vw 50px 10vw;
         width: 80vw;
     }
 }
