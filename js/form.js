@@ -5,7 +5,7 @@
 const atc_btn = document.querySelector('#addtocart')
 const main_form = document.querySelector('.os-form')
 
-
+let problem = document.querySelector('#osf-problem').value;
 
 //buttons
 const osf_ailBtns = document.querySelectorAll('.osf-ail')
@@ -81,12 +81,13 @@ osf_finalBtn.addEventListener('click', () => {
 // form event listeners
 osf_form_problem.addEventListener('submit', (e) => {
     e.preventDefault();
-    let problem = document.getElementById("osf-problem").value;
-    if (problem.length <= 2) {
+    let problemcustom = document.getElementById("osf-problem").value;
+    if (problemcustom.length <= 2) {
         document.getElementById('osf-invalid-problem').style.display = "block";
     } else {
         osf_goToStage(osf_basicInfo)
     }
+    problem = document.querySelector('#osf-problem').value
 
 })
 osf_form_basic.addEventListener('submit', (e) => {
@@ -153,7 +154,14 @@ function osf_goToStage(stage_name, percent) {
     } else if (osf_service.classList.contains('active-state')) {
         osf_service.style.display = "flex"
     }
+    if (osf_isActive(osf_final)) {
+        document.querySelector('.osf-gif').style.display = "none"
+        osf_final.style.gridColumn = "1/-1"
+        osf_final.style.justifySelf = "center"
+    } else {
+        document.querySelector('.osf-gif').style.display = "unset"
 
+    }
 
     // customProgressBar.style.minWidth = percent
 
@@ -178,8 +186,8 @@ function updating() {
     document.querySelector('#f-name').innerHTML = name
     document.querySelector('#f-age').innerHTML = age
     document.querySelector('#f-contact').innerHTML = contact
-        //days
 
+    //days
     var checkboxes = document.getElementsByName('days');
     checkboxes.forEach((checkbox) => {
         if (checkbox.checked) {
@@ -197,8 +205,10 @@ function updating() {
             document.getElementById("f-time").innerHTML = timings[i].value;
     }
     //problem
+    document.querySelector('#f-problem').innerHTML = problem;
 
 
+    //trainer
     var ele = document.getElementsByName('trainer');
     for (i = 0; i < ele.length; i++) {
         if (ele[i].checked)
