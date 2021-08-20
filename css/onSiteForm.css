@@ -12,7 +12,6 @@
     }
     
     #choose-ailment.active-state,
-    #osf-success.active-state,
     #choose-timing.active-state,
     #provide-contact.active-state,
     #choose-days.active-state,
@@ -25,6 +24,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    
+    .container-for-form {
+        display: none;
+    }
+    
+    .container-for-form.active {
+        display: unset;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 100;
     }
     
     .required-star {
@@ -55,7 +69,7 @@
         margin: 2em auto;
         background-color: white;
         -webkit-box-shadow: 0px 5px 33px 4px #e5f4ff;
-        box-shadow: 0px 5px 33px 4px #e5f4ff
+        box-shadow: 0px 5px 33px 4px #e5f4ff;
     }
     
     .osf-heading {
