@@ -62,9 +62,9 @@ for (let btn of osf_serviceBtns) {
 }
 
 //To be changed to close btn
-osf_payBtn.addEventListener('click', () => {
-    document.querySelector('.container-for-form').classList.remove('active')
-})
+// osf_payBtn.addEventListener('click', () => {
+//     document.querySelector('.container-for-form').classList.remove('active')
+// })
 
 
 
@@ -205,7 +205,8 @@ function updating() {
 
 
     //date
-    document.getElementById("f-date").innerHTML = currDate;
+    document.getElementById("f-date").innerHTML = currDate.toString().substring(0, 15);
+
 
     //time
     var timings = document.getElementsByName('timing');
