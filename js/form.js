@@ -6,6 +6,7 @@ const atc_btn = document.querySelector('#addtocart')
 const main_form = document.querySelector('.os-form')
 
 let problem = document.querySelector('#osf-problem').value;
+let currDate = ""
 
 //buttons
 const osf_ailBtns = document.querySelectorAll('.osf-ail')
@@ -15,6 +16,7 @@ const osf_healBtn = document.querySelector('.osf-heal')
 const osf_notSureBtn = document.querySelector('.osf-ns') //used
 const osf_backBtn = document.querySelector('.osf-back-button')
 const osf_finalBtn = document.querySelector('.final-btn')
+const osf_payBtn = document.querySelector('#payNow')
 
 //stages
 const osf_stages = document.querySelectorAll('.osf-content') //used
@@ -44,6 +46,7 @@ const buttonsdiv = document.querySelector('.buttttons') //used
 
 // btn event listeners
 atc_btn.addEventListener('click', () => { //makes form modal visible
+    document.querySelector('.container-for-form').classList.add('active')
     main_form.style.display = "grid"
 })
 
@@ -58,6 +61,10 @@ for (let btn of osf_serviceBtns) {
     })
 }
 
+//To be changed to close btn
+osf_payBtn.addEventListener('click', () => {
+    document.querySelector('.container-for-form').classList.remove('active')
+})
 
 
 
@@ -198,6 +205,8 @@ function updating() {
 
 
     //date
+    document.getElementById("f-date").innerHTML = currDate;
+
     //time
     var timings = document.getElementsByName('timing');
     for (i = 0; i < timings.length; i++) {
@@ -225,5 +234,8 @@ var calendar = new Calendar({
     theme: "basic",
     primaryColor: '#4CA9EE',
     headerColor: '#4CA9EE',
+    dateChanged: (CurrentDate, DateEvents) => {
+        currDate = CurrentDate
+    },
 
 })
