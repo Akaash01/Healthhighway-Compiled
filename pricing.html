@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
-    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="css/tavo-calendar.css" />
+
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
@@ -209,15 +210,17 @@
         <div class="container-for-form">
             <section id="onSiteForm" class="os-form">
 
-                <button class="osf-back-button">&lsaquo;</button>
+                <button class="osf-back-button"><img src="images/arrow.png" alt="">
+                </button>
 
                 <div class="gif-and-content-grid">
-                    <div class="osf-content" id="choose-service">
+                    <div class="osf-content active-state" id="choose-service">
                         <h3 class="osf-heading">Tell us about your Goals</h3>
                         <button class="osf-button osf-service" onclick="problem = 'Fitness'">Fitness</button>
                         <button class="osf-button osf-heal">Heal Ailments</button>
                         <button class="osf-button osf-service" onclick="problem = 'Mindfullness'">Mindfullness</button>
                         <button class="osf-button osf-service" onclick="problem = 'Advanced Yoga'">Advanced Yoga</button>
+
                     </div>
 
                     <div class="osf-content " id="choose-ailment">
@@ -315,7 +318,7 @@
                         <h3 class="osf-heading ">Your Fitness Routine</h3>
 
                         <form class="day-grid">
-                            <input type="checkbox" id="day1" name="days" value="Mon">
+                            <input type="checkbox" id="day1" name="days" value="Mon" required>
                             <label for="day1">Mon</label>
                             <input type="checkbox" id="day2" name="days" value="Tue">
                             <label for="day2">Tue</label>
@@ -335,8 +338,11 @@
                     </div>
                     <div class="osf-content " id="fitness-calendar">
                         <h3 class="osf-heading ">Choose a starting date</h3>
-                        <div id="color-calendar"></div>
-                        <button class="osf-button final-btn" style="margin-top: 1em;">Next</button>
+                        <div id="my-calendar"></div>
+
+                        <button class="osf-button final-btn" style="margin-top: 1em;" onclick="getDateDummy()">Next</button>
+
+
 
                     </div>
 
@@ -385,7 +391,7 @@
                                     <p>Weight: <span class="f-input" id="f-weight"></span>kgs, <span class="f-input" id="f-height"></span>cms</p>
                                 </li>
                             </ul>
-                            <button onclick="location.href='paymentSuccess.html'">Pay INR 1500</button>
+                            <button id="payNow" onclick="location.href='paymentSuccess.html'">Pay INR 1500</button>
                         </div>
                     </div>
 
@@ -680,6 +686,8 @@
     <script src="js/form.js"></script>
 
     <script type="text/javascript" src="js/login.js"></script>
+
+    <script src="js/tavo-calendar.js"></script>
 </body>
 
 </html>
