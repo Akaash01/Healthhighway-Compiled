@@ -45,6 +45,10 @@
         color: red
     }
     
+    .active {
+        animation: left-right-fade .8s forwards
+    }
+    
     .active-state {
         -webkit-animation: left-to-right .8s forwards;
         animation: left-to-right .8s forwards
@@ -63,13 +67,23 @@
         }
     }
     
+    @keyframes left-right-fade {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%)
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+    }
+    
     .os-form {
         padding: 2em 1em;
         width: 85%;
         margin: 2em auto;
-        background-color: white;
-        -webkit-box-shadow: 0px 5px 33px 4px #e5f4ff;
-        box-shadow: 0px 5px 33px 4px #e5f4ff;
     }
     
     .osf-heading {
@@ -101,13 +115,18 @@
     }
     
     .osf-back-button {
-        display: none;
+        /* display: none; */
         background-color: transparent;
         cursor: pointer;
         border: none;
         font-size: 2rem;
         color: grey;
-        margin-bottom: .5em
+        margin-bottom: .5em;
+        justify-self: flex-start;
+    }
+    
+    .osf-back-button img {
+        width: 20px;
     }
     
     .osf-back-button:hover {

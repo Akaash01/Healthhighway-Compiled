@@ -63,7 +63,7 @@ for (let btn of osf_serviceBtns) {
 
 //To be changed to close btn
 // osf_payBtn.addEventListener('click', () => {
-//     document.querySelector('.container-for-form').classList.remove('active')
+//    
 // })
 
 
@@ -77,7 +77,24 @@ osf_notSureBtn.addEventListener('click', () => {
 })
 
 osf_backBtn.addEventListener('click', () => {
-    //back btn code
+    if (osf_isActive(osf_final)) {
+        osf_goToStage(osf_calendar)
+    } else if (osf_isActive(osf_calendar)) {
+        osf_goToStage(osf_days);
+    } else if (osf_isActive(osf_days)) {
+        osf_goToStage(osf_timing)
+    } else if (osf_isActive(osf_timing)) {
+        osf_goToStage(osf_contact)
+    } else if (osf_isActive(osf_contact)) {
+        osf_goToStage(osf_basicInfo)
+    } else if (osf_isActive(osf_basicInfo)) {
+        osf_goToStage(osf_service)
+    } else if (osf_isActive(osf_problem)) {
+        osf_goToStage(osf_service)
+    } else if (osf_isActive(osf_service)) {
+        document.querySelector('.container-for-form').classList.remove('active')
+    }
+
 })
 osf_finalBtn.addEventListener('click', () => {
     updating()
@@ -161,14 +178,9 @@ function osf_goToStage(stage_name, percent) {
     } else if (osf_service.classList.contains('active-state')) {
         osf_service.style.display = "flex"
     }
-    if (osf_isActive(osf_final)) {
-        document.querySelector('.osf-gif').style.display = "none"
-        osf_final.style.gridColumn = "1/-1"
-        osf_final.style.justifySelf = "center"
-    } else {
-        document.querySelector('.osf-gif').style.display = "unset"
 
-    }
+
+
 
     // customProgressBar.style.minWidth = percent
 
@@ -227,16 +239,3 @@ function updating() {
 
 
 }
-
-
-//initialize calendar
-var calendar = new Calendar({
-    id: '#color-calendar',
-    theme: "basic",
-    primaryColor: '#4CA9EE',
-    headerColor: '#4CA9EE',
-    dateChanged: (CurrentDate, DateEvents) => {
-        currDate = CurrentDate
-    },
-
-})
