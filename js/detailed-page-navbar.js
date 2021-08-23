@@ -26,3 +26,13 @@ for (var i = 0; i < btns.length; i++) {
   }
 });
 }
+
+window.onresize = function(){
+  if(screen.width >= 480) {
+    about.style.display="block"; 
+    preparation.style.display="block"; 
+  } else {
+    about.style.display="none"; 
+    preparation.style.display="none"; 
+  }
+}
