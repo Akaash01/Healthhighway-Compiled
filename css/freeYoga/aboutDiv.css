@@ -69,6 +69,7 @@ ol {
 @media only screen and (max-width: 480px) {
     #about-div {
         display: none;
+        margin-bottom: 50px;
     }
 }
 
