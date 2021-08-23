@@ -349,6 +349,10 @@ nav {
   text-align: center;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 2300px) {
   #landing-main-div {
     background-size: 75% 70%;
@@ -481,9 +485,6 @@ nav {
     background-color: transparent;
     background-size: 58% 40%;
     background-position: 0 440px 0 0;
-  }
-  .know-more-div {
-    margin-top: -150px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -645,11 +646,6 @@ nav {
     font-size: 16px;
     margin-left: 3px;
   }
-  .instructor,
-  .student {
-    width: 150px;
-    height: 200px;
-  }
   .landing-main-center {
     top: 25%;
     left: 35%;
@@ -667,14 +663,8 @@ nav {
   #landing-main-div {
     background-size: 45% 28%;
     background-position: 0 230px 0 0;
-    height: 520px !important;
   }
-  .landing-main-center {
-    top: 34%;
-    left: 32%;
-    -webkit-transform: translate(-23%, -30%);
-    transform: translate(-23%, -30%);
-  }
+
 }
 @media only screen and (max-width: 422px) {
   .landing-main-center {
@@ -728,25 +718,16 @@ nav {
   }
 }
 @media only screen and (max-width: 380px) {
-  .instructor,
-  .student {
-    width: 120px;
-    height: 180px;
-  }
   .landing-main-center {
     left: 28%;
     -webkit-transform: translate(-23%, -28%);
     transform: translate(-23%, -28%);
-  }
-  .know-more-div {
-    margin-top: -280px;
   }
 }
 @media only screen and (max-width: 360px) {
   #landing-main-div {
     background-size: 45% 26%;
     background-position: 0 200px 0 0;
-    height: 480px;
   }
   .landing-main-text1 {
     font-size: 24px;
@@ -776,7 +757,6 @@ nav {
 @media only screen and (max-width: 330px) {
   #landing-main-div {
     background-image: none;
-    height: 480px !important;
   }
   .navbar-toggler i {
     color: #4ca9ee !important;
@@ -787,16 +767,11 @@ nav {
     -webkit-transform: translate(-23%, -24%);
     transform: translate(-23%, -24%);
   }
-  .instructor,
-  .student {
-    width: 100px;
-    height: 160px;
-  }
   .pattern {
     height: 400px;
   }
-  .know-more-div {
-    margin-top: -340px;
+  .instructor {
+    margin: 10px 0 50px 15vw !important;
   }
 }
 @media only screen and (max-width: 300px) {
@@ -812,29 +787,7 @@ nav {
     margin-right: 10px;
   }
 }
-@media only screen and (max-width: 280px) {
-  .landing-main-center {
-    top: 16%;
-    left: 14%;
-    -webkit-transform: translate(-16%, -14%);
-    transform: translate(-16%, -14%);
-  }
-  .instructor,
-  .student {
-    width: 80px;
-    height: 140px;
-  }
-  .landing-main-left,
-  .landing-main-right {
-    top: 240px;
-  }
-  .pattern {
-    height: 320px;
-  }
-  .know-more-div {
-    margin-top: -420px;
-  }
-}
+
 *,
 *::before,
 *::after {
@@ -2519,6 +2472,7 @@ button img {
     width: 100%;
   }
 }
+
 @media (max-width: 450px) {
   #testimonials-heading {
     font-size: 24px;
@@ -2645,3 +2599,42 @@ button img {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 480px) {
+  .landing-main-right {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .instructor {
+    width: 60vw;
+    height: 36vh;
+    margin: 10px 0 50px 15vw;
+  }
+  .landing-main-left {
+    top: 240px;
+  }
+   #landing-main-div {
+    height: auto !important;
+  }
+  .know-more-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .instructor {
+    width: 60vw;
+    height: 36vh;
+    margin: 50px 0 50px 15vw;
+  }
+}
