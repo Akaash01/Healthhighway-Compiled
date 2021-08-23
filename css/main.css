@@ -786,6 +786,21 @@ nav {
   .navbar-toggler {
     margin-right: 10px;
   }
+  .landing-main-center {
+    width: 300px;
+    left: 22%;
+    -webkit-transform: translate(-22%, -24%);
+    transform: translate(-22%, -24%);
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .landing-main-center {
+    width: 300px;
+    left: 7%;
+    -webkit-transform: translate(-10%, -24%) !important;
+    transform: translate(-10%, -24%);
+  }
 }
 
 *,

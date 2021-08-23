@@ -62,7 +62,13 @@ ol {
         margin: 70px 8vw 0 8vw;
     }
     .about-title, .about-content {
-        text-align: center;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #about-div {
+        display: none;
     }
 }
 
