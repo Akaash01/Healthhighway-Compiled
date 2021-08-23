@@ -121,7 +121,9 @@
   justify-content: start;
 }
 
-.points-common, .points-recommended, .points-not-recommended {
+.points-common,
+.points-recommended,
+.points-not-recommended {
   display: flex;
   flex-wrap: wrap;
 }
@@ -132,16 +134,97 @@
 
 #book-now {
   border-color: #4ca9ee;
-    color: #fff !important;
-    padding: 8px 35px !important;
-    border-radius: 20px !important;
-    transition: 0.3s ease;
-    background-color: #4ca9ee;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
+  color: #fff !important;
+  padding: 8px 35px !important;
+  border-radius: 20px !important;
+  transition: 0.3s ease;
+  background-color: #4ca9ee;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.enroll-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.personalisation-text {
+  color: #4ca9ee;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.enroll-btn {
+  background: #4ca9ee;
+  display: block;
+  -webkit-box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
+  box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
+  border-radius: 8px;
+  width: 214px;
+  height: 55px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  border-color: #4ca9ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-navbar {
+  display: none;
+}
+
+.navbar-option {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #716e6e;
+}
+
+.active-option {
+  color: #4ca9ee;
+}
+
+.active-option::after {
+  content: "\A";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4ca9ee;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+.page-navbar {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 0 5vw;
+}
+
+.page-navbar, .instructor-div {
+  display: none;
+}
+
+#overview-div {
+  margin-top: 60px;
+  display: none;
 }
 
 
@@ -150,7 +233,6 @@
     width: 500px;
   }
 }
-
 
 @media only screen and (max-width: 1400px) {
   .points {
@@ -172,7 +254,6 @@
     width: 420px;
     height: 280px;
   }
-
 }
 
 @media only screen and (max-width: 1270px) {
@@ -190,7 +271,7 @@
     text-align: center;
     padding: 120px 0 0 0;
   }
-  .landing-main-left{
+  .landing-main-left {
     width: 88vw;
     padding: 0 6vw;
     margin-right: 0;
@@ -209,10 +290,17 @@
     width: 32%;
     margin: 0 0.5%;
   }
-  .points-common, .points-recommended, .points-not-recommended {
+  .points-common,
+  .points-recommended,
+  .points-not-recommended {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .enroll-btn {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
   }
 }
 
@@ -238,7 +326,9 @@
     width: 64vw;
     height: 302px;
   }
-  .points-common, .points-recommended, .points-not-recommended {
+  .points-common,
+  .points-recommended,
+  .points-not-recommended {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -248,15 +338,15 @@
     margin-left: 0;
     text-align: start;
   }
-  .landing-main-left{
+  .landing-main-left {
     width: 84vw;
     margin: 0;
     padding: 0;
   }
   .landing-main-right {
     width: 84vw;
-    margin-left: 0 ;
-    margin-right: 0 ;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
   }
   .points-common {
@@ -285,6 +375,17 @@
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .enroll-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .personalisation-text {
+    margin-top: 14px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .points-div {
@@ -298,14 +399,117 @@
     width: 80vw;
     text-align: start;
   }
-  .landing-main-right, .landing-main-left {
+  .landing-main-right,
+  .landing-main-left {
     width: 80vw;
   }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 480px) {
+  .landing-main-left {
+    display: none;
+  }
+  .page-navbar,.instructor-div {
+    display: block;
+  }
+  .page-navbar {
+    display: flex;
+  }
+  .instructor-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(178, 222, 255, 0.31);
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 32px 10vw 0 10vw;
+  }
+  .trainer {
+    display: flex;
+    align-items: center;
+  }
+  #overview-div, .active-div {
+    display: block;
+  }
+  .points-common {
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .points {
+    width: 40vw;
+    padding: 0 5vw;
+    margin: 0;
+  }
+  .points-title {
+    padding: 0 10vw;  
+  }
+  .points-recommended, .points-not-recommended {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 10vw;
+    margin-top: 10px
+  }
+  .points-text {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+.points-common {
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.points-recommended, .points-not-recommended {
+  flex-direction: column;
+  align-items: start;
+}
+.points-text {
+  width: 80vw;
+}
 .points {
-  width: 70vw;
-  margin-left: 0vw;
+  width: 90vw;
+  margin-bottom: 5px;
+}
+.points-title {
+  width: 90vw;
+  margin-top: 25px;
 }
 }
+
+@media only screen and (max-width: 360px) {
+  .enroll-btn {
+    font-size: 14px;
+    width: 110px;
+    height: 36px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .enroll-btn {
+    font-size: 12px;
+  }
+  .page-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-option {
+    margin-bottom: 10px;
+  }
+.instructor-div {
+  padding: 15px 20px;
+ }
+}
+
+@media only screen and (max-width: 320px) {
+.instructor-div {
+  padding: 15px 5px;
+ }
+}
+

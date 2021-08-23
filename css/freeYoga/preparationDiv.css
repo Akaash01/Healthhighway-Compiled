@@ -5,6 +5,7 @@
     width: 48vw;
     margin-bottom: 120px;
     margin-top: 70px;
+    display: block !important;
 }
 
 .preparation-title {
@@ -60,7 +61,13 @@ ol {
         flex-direction: column;
     }
     .preparation-title, .preparation-content {
-        text-align: center;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #preparation-div {
+        display: none;
     }
 }
 
