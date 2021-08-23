@@ -291,11 +291,11 @@
                     <div class="osf-content " id="choose-timing">
                         <h3 class="osf-heading ">Choose a time slot</h3>
                         <form class="time-grid">
-                            <input type="radio" id="t1" name="timing" value="6am">
+                            <input type="radio" id="t1" name="timing" value="6am" required>
                             <label for="t1">6:00 AM</label>
                             <input type="radio" id="t2" name="timing" value="7am">
                             <label for="t2">7:00 AM</label>
-                            <input type="radio" id="t3" name="timing" value="8am" checked>
+                            <input type="radio" id="t3" name="timing" value="8am">
                             <label for="t3">8:00 AM</label>
                             <input type="radio" id="t4" name="timing" value="9am">
                             <label for="t4">9:00 AM</label>
@@ -339,8 +339,9 @@
                     <div class="osf-content " id="fitness-calendar">
                         <h3 class="osf-heading ">Choose a starting date</h3>
                         <div id="my-calendar"></div>
+                        <p>Selected date: <span id="f-sel-date"></span></p>
 
-                        <button class="osf-button final-btn" style="margin-top: 1em;" onclick="getDateDummy()">Next</button>
+                        <button class="osf-button final-btn" style="margin-top: 1em;">Next</button>
 
 
 
@@ -687,7 +688,6 @@
 
     <script type="text/javascript" src="js/login.js"></script>
 
-    <script src="js/tavo-calendar.js"></script>
 </body>
 
 </html>
