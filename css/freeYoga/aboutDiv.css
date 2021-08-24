@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
 #about-div {
-    float: right;
+    margin-left: auto;
     margin-right: 6vw;
-    margin-top: 120px;
+    margin-top: 70px;
     width: 40vw;
-    height: 640px;
 }
 
 .about-title {
@@ -60,16 +59,23 @@ ol {
         align-items: center;
         flex-direction: column;
         float:none;
-        margin: 100px 8vw 0 8vw;
+        margin: 70px 8vw 0 8vw;
     }
     .about-title, .about-content {
-        text-align: center;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #about-div {
+        display: none;
+        margin-bottom: 50px;
     }
 }
 
 @media only screen and (max-width: 320px) {
     #about-div {
-        margin: 300px 10vw 50px 10vw;
+        margin: 70px 10vw 50px 10vw;
         width: 80vw;
     }
 }
