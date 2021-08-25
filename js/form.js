@@ -2,7 +2,7 @@
 //the only difference is 'stage' and 'state'
 
 //initialization
-const atc_btn = document.querySelector('#addtocart')
+const atc_btns = document.querySelectorAll('.addtocart')
 const main_form = document.querySelector('.os-form')
 
 let problem = document.querySelector('#osf-problem').value;
@@ -47,10 +47,13 @@ const buttonsdiv = document.querySelector('.buttttons') //used
 
 
 // btn event listeners
-atc_btn.addEventListener('click', () => { //makes form modal visible
-    document.querySelector('.container-for-form').classList.add('active')
-    main_form.style.display = "grid"
+atc_btns.forEach((atc_btn) => {
+    atc_btn.addEventListener('click', () => { //makes form modal visible
+        document.querySelector('.container-for-form').classList.add('active')
+        main_form.style.display = "grid"
+    })
 })
+
 
 for (let btn of osf_ailBtns) {
     btn.addEventListener('click', () => {
