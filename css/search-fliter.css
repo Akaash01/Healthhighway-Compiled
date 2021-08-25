@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -39,6 +39,7 @@ a {
 .grp-session-container {
   position: relative;
   padding-top: 70px;
+  /* min-height: 40rem; */
 }
 
 .search-area {
@@ -379,7 +380,14 @@ option {
   padding-left: 15px;
   border-radius: 5px;
 }
-
+.yoga-session-heading h2 {
+  padding-left: 12px;
+  color: #3c4860;
+}
+.trending-heading h2 {
+  padding-left: 12px;
+  color: #3c4860;
+}
 .list-options {
   display: none;
   padding-top: 0.8rem;
@@ -412,6 +420,7 @@ option {
   .trending-heading,
   .yoga-session-heading {
     padding-left: 80px;
+    align-items: center;
   }
 }
 
@@ -481,7 +490,9 @@ option {
   }
   .trending-heading h2,
   .yoga-session-heading h2 {
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
   }
   .search-box input {
     width: 60%;
@@ -503,7 +514,12 @@ option {
   .grp-card {
     width: 250px;
   }
-
+  .trending-heading h2,
+  .yoga-session-heading h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
   .grp-card-details {
     width: 140px;
   }
@@ -610,6 +626,13 @@ option {
   .yoga-session-heading {
     align-items: center;
     justify-content: center;
+  }
+  .trending-heading img,
+  .yoga-session-heading img {
+    width: 23px;
+  }
+  .fitness-yoga-con {
+    margin-top: 20px;
   }
   .tags-container {
     width: 100%;
