@@ -2428,6 +2428,7 @@ button img {
   width: 40rem;
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
 }
 
 .event-slider-card:last-of-type {
@@ -2609,6 +2610,7 @@ button img {
 
 .testimonial-container {
   width: 100%;
+  overflow: hidden;
 }
 
 #testimonials .myTestimonialSwiper {
