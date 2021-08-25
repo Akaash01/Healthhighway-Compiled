@@ -2963,7 +2963,7 @@ button img {
     display: none;
   }
   .mobile {
-    display: block;
+    display: block !important;
     text-align: center;
     margin-bottom: 14px;
   }
