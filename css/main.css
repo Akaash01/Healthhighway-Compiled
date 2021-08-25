@@ -143,6 +143,10 @@ nav {
   font-size: 40px;
 }
 
+.mobile {
+  display: none !important;
+}
+
 #navbarNavDropdown {
   margin-right: 50px;
 }
@@ -201,7 +205,7 @@ nav {
 
 #landing-main-div {
   width: 100vw;
-  height: 760px;
+  height: auto;
   background-color: transparent;
   position: relative;
   background-image: url("../images/Vector 1.png");
@@ -440,7 +444,6 @@ nav {
   #landing-main-div {
     background-size: 75% 65%;
     background-position: 0 380px 0 0;
-    height: 680px;
   }
 }
 
@@ -485,7 +488,6 @@ nav {
   #landing-main-div {
     background-size: 65% 60%;
     background-position: 0 420px 0 0;
-    height: 650px;
   }
   .landing-main-text1 {
     font-size: 44px;
@@ -499,7 +501,6 @@ nav {
   #landing-main-div {
     background-size: 65% 60%;
     background-position: 0 400px 0 0;
-    height: 600px;
   }
   .landing-main-button {
     width: 140px;
@@ -546,9 +547,6 @@ nav {
     background-size: 58% 40%;
     background-position: 0 440px 0 0;
   }
-  .know-more-div {
-    margin-top: -150px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -556,6 +554,7 @@ nav {
     background-color: transparent;
     background-size: 57% 35%;
     background-position: 0 390px 0 0;
+    height: auto;
   }
   .landing-main-center {
     top: 35%;
@@ -570,6 +569,7 @@ nav {
   }
   .landing-main-left {
     left: 20px;
+    height: auto;
   }
   .landing-main-right {
     right: 20px;
@@ -631,7 +631,6 @@ nav {
     background-color: transparent;
     background-size: 45% 30%;
     background-position: 0 360px 0 0;
-    height: 580px;
   }
   .landing-main-left {
     top: 300px;
@@ -817,9 +816,6 @@ nav {
     -webkit-transform: translate(-23%, -28%);
     transform: translate(-23%, -28%);
   }
-  .know-more-div {
-    margin-top: -280px;
-  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -852,6 +848,28 @@ nav {
   .pattern {
     height: 420px;
   }
+  .know-more-div {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .instructor {
+    width: 60vw;
+    height: 36vh;
+    margin: 50px 0 0 15vw;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .instructor {
+    width: 50vw;
+    height: 30vh;
+  }
+  .landing-main-left {
+    height: 32vh;
+  }
 }
 
 @media only screen and (max-width: 330px) {
@@ -868,16 +886,8 @@ nav {
     -webkit-transform: translate(-23%, -24%);
     transform: translate(-23%, -24%);
   }
-  .instructor,
-  .student {
-    width: 100px;
-    height: 160px;
-  }
   .pattern {
     height: 400px;
-  }
-  .know-more-div {
-    margin-top: -340px;
   }
 }
 
@@ -892,30 +902,6 @@ nav {
   }
   .navbar-toggler {
     margin-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  .landing-main-center {
-    top: 16%;
-    left: 14%;
-    -webkit-transform: translate(-16%, -14%);
-    transform: translate(-16%, -14%);
-  }
-  .instructor,
-  .student {
-    width: 80px;
-    height: 140px;
-  }
-  .landing-main-left,
-  .landing-main-right {
-    top: 240px;
-  }
-  .pattern {
-    height: 320px;
-  }
-  .know-more-div {
-    margin-top: -420px;
   }
 }
 
@@ -2966,5 +2952,36 @@ button img {
   .call-back {
     -ms-grid-columns: 55% 45%;
     grid-template-columns: 55% 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .landing-main-right {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .instructor {
+    width: 64vw;
+    height: 36vh;
+    margin: 30px 0 50px 15vw;
+  }
+  .landing-main-left {
+    top: 240px;
+  }
+   #landing-main-div {
+    height: auto !important;
+  }
+  .know-more-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
