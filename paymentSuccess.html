@@ -7,11 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/payment-success.css">
     <title>Health Highway | Payment Successful</title>
+    <link rel="stylesheet" href="css/new_navbar.css" />
 </head>
 
 <body>
     <header>
-        <!-- navbar -->
+        <div class="nav-landing">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
+            position: fixed;
+            width: 100vw !important;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+          ">
+                <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="images/logo.svg" alt="Health Highway Logo" />
+                        <div class="logo-text">
+                            <span style="color: #4ca9ee" class="logo-span">Health</span>
+                            <span style="color: #29e7cd" class="logo-span"> Highway</span>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <button id="landing-joinus join-mobile" type="button" class="btn btn-light" onclick="showmodal('booksession')">
+                            Join Us
+                        </button>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #4ca9ee;
+                      cursor: pointer;
+                    " class="nav-link">Blogs</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('services-main-div')" style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #4ca9ee;
+                      cursor: pointer;
+                    " class="nav-link">Support</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('feedback-main-starting')" style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #4ca9ee;
+                      cursor: pointer;
+                    " class="nav-link">About Us</a>
+                            </li>
+                            <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
+                                Join Us
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="success">
