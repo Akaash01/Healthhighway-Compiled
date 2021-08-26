@@ -71,6 +71,13 @@ ol {
         display: none;
         margin-bottom: 50px;
     }
+    .about-content, li {
+        font-size: 12px;
+    }
+    .about-sub-title,.about-title {
+        font-size: 16px;
+        line-height: 10px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
