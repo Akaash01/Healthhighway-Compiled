@@ -2,14 +2,12 @@ var btns = document.getElementsByClassName("navbar-option");
 var overview = document.getElementById("overview-div");
 var about = document.getElementById("about-div");
 var preparation = document.getElementById("preparation-div");
-var currentActive;
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active-option");
-  currentActive = current;
   var id = this.id;
-  // console.log(id);
+  //console.log(id);
   current[0].className = current[0].className.replace(" active-option", "");
   this.className += " active-option";
   let element = id + "-div";
@@ -34,13 +32,7 @@ window.onresize = function(){
     about.style.display="block"; 
     preparation.style.display="block"; 
   } else {
-    if(currentActive === "about") {
-    preparation.style.display="none"; 
-    overview.style.display="none";
-    }
-    if(currentActive === "preparation") {
     about.style.display="none"; 
-    overview.style.display="none";
-    }
+    preparation.style.display="none"; 
   }
 }
