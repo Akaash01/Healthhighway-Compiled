@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment-success.css">
+    <title>Health Highway | Payment Successful</title>
+    <link rel="stylesheet" href="css/new_navbar.css" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-landing">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
+            position: fixed;
+            width: 100vw !important;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+          ">
+                <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="images/logo.svg" alt="Health Highway Logo" />
+                        <div class="logo-text">
+                            <span style="color: #4ca9ee" class="logo-span">Health</span>
+                            <span style="color: #29e7cd" class="logo-span"> Highway</span>
+                        </div>
+                    </a>
+                    <button id="landing-joinus" type="button" class="btn btn-light join-mobile" onclick="showmodal('booksession')">
+                        Join Us
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #4ca9ee;
+                      cursor: pointer;
+                    " class="nav-link">Blogs</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('services-main-div')" style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #4ca9ee;
+                      cursor: pointer;
+                    " class="nav-link">Support</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('feedback-main-starting')" style="
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #4ca9ee;
+                      cursor: pointer;
+                    " class="nav-link">About Us</a>
+                            </li>
+                            <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
+                                Join Us
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="success">
+            <div class="success-img"><img src="images/check.png" alt="success"></div>
+            <h1>Your Session is Booked Successfully</h1>
+            <a href="dashboard.html" class="get-started-btn">Get Started</a>
+            <a href="pricing.html" class="link">Book another session</a>
+        </section>
+        <section class="payment-card-container">
+            <div class="payment-card">
+                <img src="./images/ryan_T002gZcin.jpeg" alt="" />
+                <div class="pay-text-area">
+                    <div class="pay-title-container">
+                        <div class="pay-title">
+                            <h3>Yoga for Students</h3>
+                            <p>by Sandeep</p>
+                        </div>
+                        <div class="trusted-container">
+                            <h3>Trusted By <br />104 people</h3>
+                        </div>
+                    </div>
+                    <div class="payment-btn-time">
+                        <button>Pay INR 1000</button>
+                        <p>6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-card">
+                <img src="./images/ryan_T002gZcin.jpeg" alt="" />
+                <div class="pay-text-area">
+                    <div class="pay-title-container">
+                        <div class="pay-title">
+                            <h3>Yoga for Students and teachers</h3>
+                            <p>by Sandeep</p>
+                        </div>
+                        <div class="trusted-container">
+                            <h3>Trusted By <br />104 people</h3>
+                        </div>
+                    </div>
+                    <div class="payment-btn-time">
+                        <button>Pay INR 1000</button>
+                        <p>6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

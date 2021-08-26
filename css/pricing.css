@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
 }
 .price-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 125px;
+  margin-top:5rem;
 }
 .price-heading {
   text-align: center;
@@ -179,13 +183,47 @@ body {
 .addtocart img {
   padding: 0px 5px;
 }
+.cart-link {
+  height: 0px;
+  transition: all 0.6s ease;
+  overflow: hidden;
+}
+
+.session-and-button {
+  transition: all 5s ease;
+}
+.cart-link a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #29e7cd;
+  padding-top: 20px;
+}
+.cart-link button {
+  width: 199px;
+  height: 39.8px;
+}
 @media (max-width: 1115px) {
   .pricing-main {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .session-container {
-    margin-top: 3rem;
+    margin-top: 1rem;
+  }
+  .price-benifits {
+    margin-top: 2rem;
+  }
+  .cart-link-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    height: 80px;
+  }
+  .price-benifits button {
+    display: none;
   }
 }
 @media (max-width: 657px) {
@@ -230,42 +268,107 @@ body {
 }
 @media (max-width: 430px) {
   .session-item {
-    padding: 5px;
+    padding: 5px 20px;
+    width: 262.38px;
+    height: 71.66px;
+  }
+
+  .p-label {
+    padding-left: 20px;
+  }
+  .checkmark {
+    width: 15px;
+    height: 15px;
+  }
+  .checkmark img {
+    top: 3.5px;
+    left: 2px;
+    width: 11px;
   }
   .session-save {
     padding: 0px 10px;
+    width: 104px;
   }
   .session-save h3 {
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 11.5px;
   }
   .session-save h2 {
-    font-size: 14px;
-    width: 90px;
-    height: 20px;
-    padding: 0px 10px;
+    font-weight: 600;
+    font-size: 9.2px;
+    width: 58.95px;
+    height: 15.6px;
+  }
+  .session-price {
+    padding-left: 25px;
   }
   .session-price span {
     font-size: 24px;
+    font-size: 15px;
   }
   .session-price h3 {
-    font-size: 16pxpx;
+    font-size: 10.4027px;
+  }
+  .session-container {
+    margin-top: 10px;
+  }
+  .benifit-item h4 {
+    font-weight: 600;
+    font-size: 9.95359px;
+    line-height: 12px;
+  }
+  .pricing-main {
+    flex-direction: column-reverse;
+  }
+  .benifit-item img {
+    width: 15px;
+    height: 15px;
+  }
+  .benifit-items-container {
+    width: 70%;
   }
   .price-benifits {
     padding: 5px;
+  }
+  .price-benifits h3 {
+    font-weight: 600;
+    font-size: 12.442px;
+    line-height: 15px;
   }
   .pricing-main {
     margin-top: 1rem;
   }
   .price-heading h2 {
-    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
   }
-  .price-heading h3 {
-    font-size: 1rem;
+  .price-heading p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.1978px;
+    line-height: 15px;
+  }
+
+  .price-benifits {
+    width: 257px;
+    height: 296px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .benifit-items-container {
+    padding: 0px;
   }
 }
 @media (max-width: 318px) {
   .session-container {
     width: 80vw;
+  }
+  .session-item {
+    padding: 5px 20px;
+    width: 250px;
+    height: 71.66px;
   }
   .price-benifits {
     width: 80vw;

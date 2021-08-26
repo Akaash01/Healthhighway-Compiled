@@ -80,7 +80,7 @@
   line-height: 30px;
   color: #ffffff;
   border-color: #4ca9ee;
-  margin-top: 36px;
+  margin-top: 250px;
 }
 
 .fa-arrow-down {
@@ -89,15 +89,8 @@
 }
 
 .know-more-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin-top: -80px;
-}
-
-.know-more-div p {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;

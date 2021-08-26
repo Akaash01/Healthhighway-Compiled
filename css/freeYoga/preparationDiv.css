@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
 #preparation-div {
-    margin-left: 8vw;
-    margin-top: 840px;
+    margin-left: 6vw;
     width: 48vw;
     margin-bottom: 120px;
+    margin-top: 70px;
 }
 
 .preparation-title {
@@ -44,24 +44,10 @@ ol {
     margin-top: 12px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     #preparation-div {
-        margin-top: 860px;
-        width: 54vw;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    #preparation-div {
-        margin-top: 860px;
-        width: 62vw;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    #preparation-div {
-        width: 65vw;
-        margin-top: 880px;
+        width: 56vw;
+        margin-left: 10vw;
     }
 }
 
@@ -72,17 +58,22 @@ ol {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 80px;
     }
     .preparation-title, .preparation-content {
-        text-align: center;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #preparation-div {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 320px) {
     #preparation-div {
-        margin: 300px 20vw;
-        width: 60vw;
+        margin: 70px 10vw 50px 10vw;
+        width: 80vw;
     }
 }
 

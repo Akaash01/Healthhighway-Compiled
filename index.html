@@ -13,106 +13,71 @@
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/login.css" />
 
+
     <title>Health Highway | Your Yoga Buddy</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <!-- landing -->
-        <div id="landing-main-div">
+    <header>
+        <div class="nav-landing">
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
             position: fixed;
-            z-index: 100;
             width: 100vw !important;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1);
           ">
                 <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
-                    <a class="navbar-brand" href="/">
-                        <img src="images/logo.png" alt="Health Highway Logo" />
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="images/logo.svg" alt="Health Highway Logo" />
                         <div class="logo-text">
                             <span style="color: #4ca9ee" class="logo-span">Health</span>
                             <span style="color: #29e7cd" class="logo-span"> Highway</span>
                         </div>
                     </a>
-                    <button class="navbar-toggler" type="button" onclick="openNav()">
-              <!-- <span class="navbar-toggler-icon"></span> -->
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-right: 50px">
+                    <button id="landing-joinus" type="button" class="btn btn-light join-mobile" onclick="showmodal('booksession')">
+                        Join Us
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto">
                             <li style="margin-right: 40px" class="nav-item">
-                                <a onclick="scrolltofunc('unique-main-div')" style="
+                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" style="
                       font-family: 'Roboto', sans-serif;
                       font-size: 14px;
                       font-weight: 500;
                       color: #4ca9ee;
                       cursor: pointer;
-                    " class="nav-link" href="./blogs/blogs.html">Blogs</a
-                  >
-                </li>
-                <li style="margin-right: 40px" class="nav-item">
-                  <a
-                    onclick="scrolltofunc('services-main-div')"
-                    style="
+                    " class="nav-link">Blogs</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('services-main-div')" style="
                       font-family: 'Roboto', sans-serif;
                       font-size: 14px;
                       font-weight: 500;
                       color: #4ca9ee;
                       cursor: pointer;
-                    "
-                    class="nav-link"
-                    >Support</a
-                  >
-                </li>
-                <li style="margin-right: 40px" class="nav-item">
-                  <a
-                    onclick="scrolltofunc('feedback-main-starting')"
-                    style="
+                    " class="nav-link">Support</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('feedback-main-starting')" style="
                       font-family: 'Roboto', sans-serif;
                       font-size: 14px;
                       font-weight: 500;
                       color: #4ca9ee;
                       cursor: pointer;
-                    "
-                    class="nav-link"
-                    >About Us</a
-                  >
-                </li>
-                <button
-                  id="landing-joinus"
-                  type="button"
-                  class="btn btn-light"
-                  onclick="showmodal('booksession')"
-                >
-                  Join Us
-                </button>
-                <div id="open">
-                    <i class="fas fa-user fa-2x loginImage" id="loginImageLg"></i>
-                </div>
-              </ul>
-            </div>
-            <!-- sidebar overlay -->
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-              <button
-                id="sidebar-joinus"
-                type="button"
-                class="btn btn-light"
-                onclick="showmodal('booksession')"
-              >
-                Join Us
-              </button></br>
-              <i class="fas fa-user fa-2x loginImageSideView" id="loginImageSm"></i>
-              <a style="color: #fff; cursor: pointer">Blogs</a>
-                                <a style="color: #fff; cursor: pointer">Support</a>
-                                <a style="color: #fff; cursor: pointer">About Us</a>
+                    " class="nav-link">About Us</a>
+                            </li>
+                            <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
+                                Join Us
+                            </button>
+                        </ul>
                     </div>
                 </div>
             </nav>
+        </div>
+    </header>
+    <main>
+        <!-- landing -->
+        <div id="landing-main-div">
             <img src="images/pattern.png" class="pattern" />
             <div class="landing-main-left">
                 <img src="images/Instructor.png" class="instructor" />
@@ -120,7 +85,7 @@
             <div class="landing-main-center">
                 <p class="landing-main-text1">Live Yoga Classes</p>
                 <p class="landing-main-text2">From world yoga capital to your home</p>
-                <a class="landing-main-button" href="#get-started-section">Get Started</a>
+                <a class="landing-main-button desktop" href="#get-started-section">Get Started</a>
             </div>
             <div class="landing-main-right">
                 <img src="images/Student.png" class="student" />
@@ -131,8 +96,9 @@
 
         <!-- know more div (START) -->
         <div class="know-more-div">
-            <p>Know More</p>
-            <i class="fa fa-arrow-down"></i>
+            <a class="landing-main-button mobile" href="#get-started-section">Get Started</a>
+            <p style="text-align: center"><a href="#usp" class="know-more">Know More</a></p>
+            <p style="text-align: center"><a href="#usp" class="know-more"><i class="fa fa-arrow-down"></i></a></p>
         </div>
         <!-- know more div (END) -->
 
@@ -152,29 +118,29 @@
         <!-- USP Section (START) -->
         <section id="usp" class="usp-section">
             <div class="usp-one">
-                <img src="images/usp-one.png" alt="yoga for everyone" />
+                <img src="images/newUsp1.svg" alt="yoga for everyone" />
                 <div class="left-item">
                     <h3 class="usp-heading">Yoga for <span>Everyone</span></h3>
                     <p class="usp-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor rutrum, efficitur neque sit amet, pretium erat. Nullam et elit sit amet sapien faucibus mollis eu et diam.
+                        Why should there be any barrier when it comes to taking care of your health? Children, pregnant women, senior citizens we have Yoga routines for all!
                     </p>
                 </div>
             </div>
             <div class="usp-two">
-                <img src="images/usp-two.png" alt="yoga for everything" />
+                <img src="images/newUps2.svg" alt="yoga for everything" />
                 <div class="right-item">
                     <h3 class="usp-heading">Yoga for <span>Everything</span></h3>
                     <p class="usp-content">
-                        From obesity to increasing stamina we provide yoga for everything be it anything. Something along this line should be our explanation
+                        Discover Yoga routines tailored for your lifestyle and needs, be it a routine to boost your fitness, a remedy to manage diabetes or to learn a new fancy yoga pose. Here lies the answer to all your Yoga needs!
                     </p>
                 </div>
             </div>
             <div class="usp-three">
-                <img src="images/usp-three.png" alt="yoga for everytime" />
+                <img src="images/newUsp3.svg" alt="yoga for everytime" />
                 <div class="left-item">
                     <h3 class="usp-heading">Yoga for <span>Everytime</span></h3>
                     <p class="usp-content">
-                        No matter you are a early bird or night owl we are always there for you. We have personalized curated sessions based on your needs and your timeing with 1v1 interaction
+                        Not a morning person, no issues! No need to compromise on your health for the sake of your morning meeting. Choose from many session timings according to your comfort and schedule.
                     </p>
                 </div>
             </div>
@@ -184,116 +150,127 @@
         <!-- VIdeo Section -->
         <section id="video-component">
             <h2 id="video-title">
-                <span>“</span>We just don't say , we <span>deliver</span> it<span>”</span
-          >
-        </h2>
-        <div class="border"></div>
+                <span>“</span>We just don't say , we <span>deliver</span> it<span>”</span>
+            </h2>
+            <div class="border"></div>
 
-        <div id="video-container">
-          <video id="yogaVideo" src="video/Untitled.mp4" loop></video>
-          <div id="video-controls">
-            <button id="video-play">
-              <img src="images/play_circle.svg" alt="" />
-            </button>
-            <button id="video-pause" class="video-display">
-              <!-- <button id="video-pause" class="video-display video-button-visible"> -->
-              <img src="images/pause_circle.svg" alt="" />
-            </button>
-            <button id="video-mute">
-              <img src="images/speaker-on.svg" alt="" />
-            </button>
-            <button id="video-unmute" class="video-display">
-              <!-- <button id="video-unmute" class="video-display video-button-visible"> -->
-              <img src="images/speaker-off.svg" alt="" />
-            </button>
-          </div>
-        </div>
-      </section>
+            <div id="video-container">
+                <video id="yogaVideo" src="video/Untitled.mp4" loop></video>
+                <div id="video-controls">
+                    <button id="video-play">
+                        <img src="images/play_circle.svg" alt="" />
+                    </button>
+                    <button id="video-pause" class="video-display">
+                        <!-- <button id="video-pause" class="video-display video-button-visible"> -->
+                        <img src="images/pause_circle.svg" alt="" />
+                    </button>
+                    <button id="video-mute">
+                        <img src="images/speaker-on.svg" alt="" />
+                    </button>
+                    <button id="video-unmute" class="video-display">
+                        <!-- <button id="video-unmute" class="video-display video-button-visible"> -->
+                        <img src="images/speaker-off.svg" alt="" />
+                    </button>
+                </div>
+            </div>
+        </section>
 
-      <!-- VIdeo Section (END) -->
+        <!-- VIdeo Section (END) -->
 
-      <!-- Get Started -->
-      <section class="get-started" id="get-started-section">
-        <h2 class="get-started-heading">Take your <span>First Step</span></h2>
+
+
+
+        <!-- Get Started -->
+        <section class="get-started" id="get-started-section">
+            <h2 class="get-started-heading">Take your <span>First Step</span></h2>
             <div class="get-started-grid">
-                <div class="private-sessions">
+
+                <div class="private-sessions ">
                     <h4 class="gs-item">Private Sessions</h4>
                     <div class="item-border"></div>
-                    <img src="images/private sessions.png" alt="pvt session" />
-                    <div class="perks">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Maximum Interaction</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Choice of Instructor (Male/Female)</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Focused according to your Schedule</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Best Results</p>
+
+                    <div class="perks-img-grid">
+                        <div class="perks">
+                            <h4 class="img-replacement">"I walk a lonely road..."</h4>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Marked Attention</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Choice of Instructor</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Tailored to your lifestyle</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">For your pace and space</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Book whenever you want</p>
+                        </div>
+                        <div class="gs-img"><img src="images/pvt_ssn.png" width="100%" alt=""></div>
                     </div>
                     <a href="pricing.html" class="get-started-btn">Get Started</a>
                 </div>
-                <div class="group-sessions">
+
+                <!-- Group session -->
+                <div class="group-sessions ">
                     <h4 class="gs-item">Group Sessions</h4>
                     <div class="item-border"></div>
-                    <img src="images/group sessions.png" alt="grp session" />
-                    <div class="perks">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Maximum Interaction</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Choice of Instructor (Male/Female)</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Focused according to your Schedule</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  id="tick"
-                  d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
-                  fill="#ffffff"
-                />
-              </svg>
-                        <p class="perqs">Best Results</p>
+
+                    <div class="perks-img-grid">
+                        <div class="gs-img"><img src="images/grp_ssn.png" alt=""></div>
+                        <div class="perks">
+                            <h4 class="img-replacement">"Ek or Ek Bane Gyarah"</h4>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Make friends, 'Pose' together</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Choice of Instructor</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Timing as per class schedule</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Choice of group</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="tick"
+                                d="M10.9999 21.1996L6.7999 16.9996L5.3999 18.3996L10.9999 23.9996L22.9999 11.9996L21.5999 10.5996L10.9999 21.1996Z"
+                                fill="#ffffff" />
+                        </svg>
+                            <p class="perqs">Group activities and challenges</p>
+                        </div>
+
                     </div>
+
                     <a href="group_sessions-landing.html" class="get-started-btn">Get Started</a>
                 </div>
             </div>
@@ -301,96 +278,7 @@
         <!-- Get Started (END) -->
 
         <!-- Events -->
-        <div class="event-container">
-            <div class="event-text">
-                <div class="event-heading">
-                    <h1>
-                        Bringing the <span>power</span> of <span>yoga</span> near you.
-                    </h1>
-                </div>
-                <div class="event-elements">
-                    <div class="event-item">
-                        <img src="images/Icon User.png" alt="" />
-                        <p>
-                            xx users mentored (kind of like these many people have attended the sessions)
-                        </p>
-                    </div>
-                    <div class="event-item">
-                        <img src="images/Icon events.png" alt="" />
-                        <p>Succesful events conducted in a lot of places like ryan</p>
-                    </div>
-                    <div class="event-item">
-                        <img src="images/Update.png" alt="" />
-                        <p>Upcoming events (probably)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-container mySwiper event-slider">
-                <div class="swiper-wrapper event-slider-container">
-                    <div class="swiper-slide event-slider-card">
-                        <div class="event-img">
-                            <img src="images/workshop-pic.png" alt="" />
-                        </div>
-                        <h3 class="event-name">Yoga workshop</h3>
-                        <div class="event-location">
-                            <img src="images/location.svg" alt="" />
-                            <p>Ryan school</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide event-slider-card">
-                        <div class="event-img">
-                            <img src="images/workshop-pic.png" alt="" />
-                        </div>
-                        <h3 class="event-name">POGO workshop</h3>
-                        <div class="event-location">
-                            <img src="images/location.svg" alt="" />
-                            <p>Ryan school</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide event-slider-card">
-                        <div class="event-img">
-                            <img src="images/workshop-pic.png" alt="" />
-                        </div>
-                        <h3 class="event-name">CARTOOn workshop</h3>
-                        <div class="event-location">
-                            <img src="images/location.svg" alt="" />
-                            <p>Ryan school</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide event-slider-card">
-                        <div class="event-img">
-                            <img src="images/workshop-pic.png" alt="" />
-                        </div>
-                        <h3 class="event-name">CARTOOn workshop</h3>
-                        <div class="event-location">
-                            <img src="images/location.svg" alt="" />
-                            <p>Ryan school</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-nav">
-                    <button id="prev">
-              <img src="images/circle_chevron_left.svg" alt="" />
-            </button>
-                    <button id="next">
-              <img src="images/circle_chevron_right.svg" alt="" />
-            </button>
-                </div>
-            </div>
-        </div>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: "auto",
-                spaceBetween: 40,
-                navigation: {
-                    nextEl: "#next",
-                    prevEl: "#prev",
-                },
-            });
-        </script>
         <!-- Events (END) -->
 
 
@@ -404,12 +292,15 @@
                     <div class="swiper-container myTestimonialSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide testimonial">
-                                <div class="testimonial-ratings">
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_half.svg" alt="" />
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="">
+                                    <div class="testimonial-ratings">
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_half.svg" alt="" />
+                                    </div>
                                 </div>
                                 <p>
                                     Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
@@ -420,12 +311,15 @@
                                 </div>
                             </div>
                             <div class="swiper-slide testimonial">
-                                <div class="testimonial-ratings">
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_half.svg" alt="" />
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="">
+                                    <div class="testimonial-ratings">
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_half.svg" alt="" />
+                                    </div>
                                 </div>
                                 <p>
                                     Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
@@ -436,12 +330,15 @@
                                 </div>
                             </div>
                             <div class="swiper-slide testimonial">
-                                <div class="testimonial-ratings">
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_full.svg" alt="" />
-                                    <img src="./images/testimonial-star_half.svg" alt="" />
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="">
+                                    <div class="testimonial-ratings">
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_full.svg" alt="" />
+                                        <img src="./images/testimonial-star_half.svg" alt="" />
+                                    </div>
                                 </div>
                                 <p>
                                     Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
@@ -498,35 +395,41 @@
         <div class="login-modal-bg">
             <div class="login-modal">
                 <div class="loginBody" id="phoneDiv">
-                    <img src="images/logo.png" class="loginLogo">
+                    <img src="images/logo.svg" class="loginLogo">
                     <div class="loginLogoText">
                         <span style="color: #4ca9ee" class="logo-span">Health</span>
                         <span style="color: #29e7cd" class="logo-span"> Highway</span>
                     </div>
                     <p class="loginInput">+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p>
                     <button type="button" class="btn btn-light loginButton" id="loginContinue">
-                    Continue
+                        Continue
                     </button>
-                    <p class="loginCondition"><span style="margin-right: 5px;"><i class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                    <p class="loginCondition"><span style="margin-right: 5px;"><i
+                                class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
                     <button type="button" class="btn loginContinueButton" style="display: flex; align-content: flex-start;">
-                    <img src="images/google.png" class="google">Login Using Gmail</span>
+                        <img src="images/google.png" class="google">Login Using Gmail</span>
                     </button>
                 </div>
                 <div id="OTP">
                     <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
-                        <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed</p>
-                        <div class="otp-container">
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                        </div>
+                        <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
+                        </p>
+                        <form class="otp" name="one-time-code" id="otp-div">
+                            <fieldset>
+                                <div>
+                                    <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
+                                </div>
+                            </fieldset>
+                        </form>
                         <button type="button" class="btn btn-light loginButton" id="confirmLogin">
-                    Confirm
-                  </button>
+                            Confirm
+                        </button>
                         <p class="OTPPara" style="color: #29E7CD;">Get OTP on Call</p>
                         <p class="OTPPara">Didn’t Recieve OTP ? <span style="color: #4ca9ee">Resend</span></p>
                     </div>
@@ -541,6 +444,9 @@
     <script type="text/javascript" src="js/event.js"></script>
     <script type="text/javascript" src="js/landing.js"></script>
     <script src="js/video-component.js"></script>
+    <script src="js/get-started.js"></script>
+
+
     <script type="text/javascript" src="js/login.js"></script>
 </body>
 
