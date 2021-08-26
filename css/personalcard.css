@@ -12,6 +12,7 @@
   justify-content: center;
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
+  margin: 20px 0px;
 }
 .book-session-title {
   color: #4ca9ee;
