@@ -518,6 +518,14 @@
         .osf-form-problem {
             text-align: left;
         }
+        .osf-form-contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .osf-form-contact div {
+            padding: 0;
+            padding-right: .4em;
+        }
     }
     
     @media (min-width: 1024px) {

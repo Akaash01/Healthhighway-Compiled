@@ -155,31 +155,30 @@ osf_form_basic.addEventListener('submit', (e) => {
     e.preventDefault();
     let name = document.getElementById("osf-name").value;
     let age = document.getElementById("osf-age").value;
-    let weight = document.getElementById("osf-weight").value;
-    let height = document.getElementById("osf-height").value;
+
     if (name.length <= 2) {
         document.getElementById('osf-invalid-name').style.display = "block";
     }
     if (age.length == 0 || Number(age) <= 0 || Number(age) > 100 || isNaN(age)) {
         document.getElementById('osf-invalid-age').style.display = "block";
+    } else {
+        osf_goToStage(osf_contact)
     }
+
+
+})
+osf_form_contact.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let weight = document.getElementById("osf-weight").value;
+    let height = document.getElementById("osf-height").value;
     if (weight.length == 0 || Number(weight) <= 0 || isNaN(weight)) {
         document.getElementById('osf-invalid-weight').style.display = "block";
     }
     if (height.length == 0 || Number(height) <= 0 || isNaN(height)) {
         document.getElementById('osf-invalid-height').style.display = "block";
     } else {
-        osf_goToStage(osf_contact)
+        osf_goToStage(osf_timing)
     }
-
-})
-osf_form_contact.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let contact = document.getElementById("osf-contact").value;
-    let phoneno = /^[0-9]{10}$/;
-    if (!contact.match(phoneno)) {
-        document.getElementById('osf-invalid-contact').style.display = "block";
-    } else { osf_goToStage(osf_timing) }
 })
 osf_form_timing.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -234,14 +233,14 @@ function updating() {
     let age = document.querySelector('#osf-age').value
     let weight = document.querySelector('#osf-weight').value;
     let height = document.querySelector('#osf-height').value
-    let contact = document.querySelector('#osf-contact').value
+
 
     //spans
     document.querySelector('#f-height').innerHTML = height
     document.querySelector('#f-weight').innerHTML = weight
     document.querySelector('#f-name').innerHTML = name
     document.querySelector('#f-age').innerHTML = age
-    document.querySelector('#f-contact').innerHTML = contact
+
 
     //days
     var checkboxes = document.getElementsByName('days');
