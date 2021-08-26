@@ -443,9 +443,11 @@
     width: 40vw;
     padding: 0 5vw;
     margin: 0;
+    font-size: 12px;
   }
   .points-title {
     padding: 0 10vw;  
+    font-size: 14px;
   }
   .points-recommended, .points-not-recommended {
     display: flex;
@@ -456,6 +458,7 @@
   }
   .points-text {
     width: 40vw;
+    font-size: 12px;
   }
 }
 
