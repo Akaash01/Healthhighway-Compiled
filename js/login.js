@@ -1,5 +1,4 @@
-var loginImageSm = document.getElementById("loginImageSm");
-var loginImageLg = document.getElementById("loginImageLg");
+var login = document.getElementById("landing-joinus");
 var modalBg = document.querySelector(".login-modal-bg");
 var modalClose = document.querySelector(".close");
 var navbar = document.querySelector("nav");
@@ -34,11 +33,7 @@ modalOpenFunction = () => {
     navbar.style.zIndex = "0";
 };
 
-loginImageLg.addEventListener("click", function() {
-    modalOpenFunction();
-});
-
-loginImageSm.addEventListener("click", function() {
+login.addEventListener("click", function() {
     modalOpenFunction();
 });
 
