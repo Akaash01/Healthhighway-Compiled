@@ -768,6 +768,7 @@ nav {
     width: 81px;
     font-size: 14px;
     padding: 8px 10px !important;
+    border-radius: 8px !important;
   }
 }
 
