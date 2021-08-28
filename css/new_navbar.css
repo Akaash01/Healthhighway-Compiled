@@ -768,6 +768,11 @@ nav {
     width: 81px;
     font-size: 14px;
     padding: 8px 10px !important;
+    border-radius: 8px !important;
+    margin-right: 30px;
+  }
+  .loginIcon {
+    margin-right: 30px;
   }
 }
 
@@ -785,6 +790,9 @@ nav {
     font-weight: 500;
     font-size: 16px;
     margin-left: 3px;
+  }
+  #landing-joinus, .loginIcon {
+    margin-right: 10px;
   }
 }
 
@@ -816,21 +824,6 @@ nav {
     top: 13px;
     right: 27px;
   }
-  #landing-joinus {
-    margin-right: 28px;
-  }
-  .loginIcon {
-    margin-right: 28px;
-  }
-}
-
-@media only screen and (max-width: 355px) {
-  #landing-joinus {
-    margin-right: 5px;
-  }
-  .loginIcon {
-    margin-right: 5px;
-  }
 }
 
 @media only screen and (max-width: 330px) {
@@ -842,8 +835,8 @@ nav {
 @media only screen and (max-width: 314px) {
   #landing-joinus {
     font-size: 12px;
-    margin-right: 0px;
-    width: 74px;
+    width: 60px;
+    padding: 8px 5px !important;
   }
 }
 

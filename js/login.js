@@ -14,12 +14,14 @@ phoneDivActive = () => {
     OTP.style.display = "none";
     phoneNumber.innerHTML = "";
     phoneDiv.style.display = "flex";
+	loginModal.style.height = "auto"
 };
 
 OTPDivActive = () => {
     phoneDiv.style.display = "none";
     OTP.style.display = "block";
     phoneNumber.classList.add("phone");
+	loginModal.style.height = "340px"
 };
 
 modalCloseFunction = () => {
