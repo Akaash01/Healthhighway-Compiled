@@ -373,18 +373,12 @@ input[type="number"]:nth-child(n + 4) {
     width: 22px;
     height: 30px;
   }
-  .OTPActive {
-    height: 460px;
-  }
   .loginLogoText {
     font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .OTPActive {
-    height: auto;
-  }
   .login-modal {
     width: 260px;
   }
