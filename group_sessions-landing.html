@@ -126,7 +126,7 @@
                 <div class="trending-classes">
                     <a href="detailed_sessions.html">
                         <div class="grp-card">
-                             <div class="booking-status-tag red-tag">Session Over booked</div>
+                            <div class="booking-status-tag red-tag">Session Over booked</div>
                             <img src="./images/Imagegrp-session-image.png" alt="" />
                             <div class="grp-card-content">
                                 <div class="grp-card-details">
@@ -145,7 +145,7 @@
                     </a>
                     <a href="detailed_sessions.html">
                         <div class="grp-card">
-                             <div class="booking-status-tag yellow-tag">Session starting soon</div>
+                            <div class="booking-status-tag yellow-tag">Session starting soon</div>
                             <img src="./images/Imagegrp-session-image.png" alt="" />
                             <div class="grp-card-content">
                                 <div class="grp-card-details">
@@ -164,7 +164,7 @@
                     </a>
                     <a href="detailed_sessions.html">
                         <div class="grp-card">
-                             <div class="booking-status-tag red-tag">Session Over booked</div>
+                            <div class="booking-status-tag red-tag">Session Over booked</div>
                             <img src="./images/Imagegrp-session-image.png" alt="" />
                             <div class="grp-card-content">
                                 <div class="grp-card-details">
@@ -498,7 +498,7 @@
                     <span style="color: #29e7cd" class="logo-span"> Highway</span>
                 </div>
                 <p class="loginInput">+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
-                <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier" ></div>
+                <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
                 <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
                   Continue
                 </button>
@@ -514,12 +514,12 @@
                     <form class="otp" name="one-time-code" id="otp-div">
                         <fieldset>
                             <div>
-                                <input type="number" pattern="[0-9]*"  value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-2" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-3" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-4" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-5" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-6" required>
+                                <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
                             </div>
                         </fieldset>
                     </form>
@@ -531,45 +531,72 @@
             <span> <i class="fa fa-times fa-1x close"></i></span>
         </div>
     </div>
-    
+
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var firebaseConfig = {
-        apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-        authDomain: "healthhighway-45963.firebaseapp.com",
-        databaseURL: "https://healthhighway-45963.firebaseio.com",
-        projectId: "healthhighway-45963",
-        storageBucket: "healthhighway-45963.appspot.com",
-        messagingSenderId: "716392922291",
-        appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-        measurementId: "G-B3ZVBEZ2H2"
+            apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
+            authDomain: "healthhighway-45963.firebaseapp.com",
+            databaseURL: "https://healthhighway-45963.firebaseio.com",
+            projectId: "healthhighway-45963",
+            storageBucket: "healthhighway-45963.appspot.com",
+            messagingSenderId: "716392922291",
+            appId: "1:716392922291:web:ef7708be5a170c42a544c6",
+            measurementId: "G-B3ZVBEZ2H2"
         };
         firebase.initializeApp(firebaseConfig);
     </script>
     <script>
-        window.onload = function(){
+        window.onload = function() {
             render();
         }
-    
+
         async function render() {
             window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
             recaptchaVerifier.render();
             recaptchaVerifier.verify().then(token => {
                 console.log(token);
-                document.getElementById("loginContinue").style.pointerEvents="auto";
+                document.getElementById("loginContinue").style.pointerEvents = "auto";
             })
         }
-    </script>>
-        <!-- login div (END) -->
+    </script>
+    <!-- login div (END) -->
 
-        <footer></footer>
+    <footer>
+        <div class="footer-nav">
+            <nav>
+                <ul class="nav-links">
 
-        <script src="js/search.js"></script>
-        <script src="js/landing.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
+                    <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
+                    <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
+                    <li class="mob-links"><a href="index.html">Home</a></li>
+                    <li><a href="blogs/blogs.html">Blogs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
+            <nav class="terms-privacy">
+                <ul>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/search.js"></script>
+    <script src="js/landing.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 
 </html>

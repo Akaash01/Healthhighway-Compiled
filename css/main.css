@@ -2148,7 +2148,7 @@ button img {
     text-align: center;
     background-size: contain;
     background-repeat: repeat-x;
-    padding: 1em 5%;
+    padding: 1em 10%;
 }
 
 .get-started-heading {
@@ -2196,7 +2196,7 @@ button img {
     width: 50px;
     height: 0.2em;
     background-color: white;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .group-sessions {
@@ -2216,6 +2216,10 @@ button img {
     fill: grey;
 }
 
+.group-sessions .gs-item {
+    color: #4ca9ee;
+}
+
 .group-sessions img {
     margin-top: -10%;
     width: 70%;
@@ -2223,7 +2227,7 @@ button img {
 }
 
 .group-sessions .item-border {
-    background-color: grey;
+    background-color: #4ca9ee;
 }
 
 .group-sessions .img-replacement {
@@ -2369,6 +2373,154 @@ button img {
 
 
 /* ************************* */
+
+
+/* DOwnload the App CSS */
+
+.download-app {
+    padding: 2em 5%;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+#download-app-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#download-app-heading span {
+    color: #4ca9ee
+}
+
+.download-img {
+    padding: 3em 0;
+}
+
+.download-app p {
+    padding: 0 3em;
+    color: #757575;
+}
+
+#download-app-heading .highway-spn {
+    color: aqua;
+}
+
+.download-now-btn {
+    display: inline-block;
+    background-color: #4ca9ee;
+    color: white;
+    padding: 1em 2em;
+    margin: 1.5em 0;
+    border-radius: .5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media(min-width:768px) {
+    #download-app-heading {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .download-app p {
+        padding: 0 30%;
+    }
+}
+
+@media(min-width:1440px) {
+    #download-app-heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .download-app p {
+        padding: 0 40%;
+    }
+}
+
+
+/* DOwnload the App CSS (ENd) */
+
+
+/* FOOTER CSS */
+
+footer {
+    padding: 2em 5%;
+    font-family: 'Open Sans';
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    color: black;
+    font-weight: 400;
+}
+
+.terms-privacy ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.terms-privacy a {
+    color: grey;
+    font-size: .9rem;
+}
+
+.terms-privacy a:hover {
+    color: black;
+    font-size: .9rem;
+}
+
+.copyright {
+    font-size: .9rem;
+    padding: .5em 0;
+    padding-top: 1.5em;
+    text-align: center;
+    color: grey;
+}
+
+.desk-links {
+    display: none;
+}
+
+@media(min-width:768px) {
+    .desk-links {
+        display: unset;
+    }
+    .mob-links {
+        display: none;
+    }
+    .nav-links {
+        width: 50%;
+        justify-content: space-around;
+    }
+    .terms-privacy ul {
+        width: 30%;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:1024px) {
+    .nav-links {
+        width: 40%;
+    }
+    .terms-privacy ul {
+        width: 20%;
+    }
+}
+
+
+/* FOOTER CSS  (END) */
+
+
+/* Testiomonials CSS  */
 
 #testimonials {
     font-family: "Open Sans", sans-serif;
@@ -2646,6 +2798,9 @@ button img {
         margin: 1px;
     }
 }
+
+
+/* Testiomonials CSS (END) */
 
 .call-back {
     padding: 1em 5%;
