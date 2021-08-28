@@ -458,7 +458,11 @@
         <script>
             var swiper = new Swiper(".myTestimonialSwiper", {
                 spaceBetween: 20,
-                // loop:true,
+                loop:true,
+                autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                },
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
