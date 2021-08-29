@@ -77,44 +77,7 @@
             <a href="dashboard.html" class="get-started-btn">Get Started</a>
             <a href="pricing.html" class="link">Book another session</a>
         </section>
-        <section class="payment-card-container">
-            <div class="payment-card">
-                <img src="./images/ryan_T002gZcin.jpeg" alt="" />
-                <div class="pay-text-area">
-                    <div class="pay-title-container">
-                        <div class="pay-title">
-                            <h3>Yoga for Students</h3>
-                            <p>by Sandeep</p>
-                        </div>
-                        <div class="trusted-container">
-                            <h3>Trusted By <br />104 people</h3>
-                        </div>
-                    </div>
-                    <div class="payment-btn-time">
-                        <button>Pay INR 1000</button>
-                        <p>6:00 PM</p>
-                    </div>
-                </div>
-            </div>
-            <div class="payment-card">
-                <img src="./images/ryan_T002gZcin.jpeg" alt="" />
-                <div class="pay-text-area">
-                    <div class="pay-title-container">
-                        <div class="pay-title">
-                            <h3>Yoga for Students and teachers</h3>
-                            <p>by Sandeep</p>
-                        </div>
-                        <div class="trusted-container">
-                            <h3>Trusted By <br />104 people</h3>
-                        </div>
-                    </div>
-                    <div class="payment-btn-time">
-                        <button>Pay INR 1000</button>
-                        <p>6:00 PM</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <div class="login-modal-bg">
@@ -126,7 +89,7 @@
                     <span style="color: #29e7cd" class="logo-span"> Highway</span>
                 </div>
                 <p class="loginInput">+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
-                <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier" ></div>
+                <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
                 <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
                   Continue
                 </button>
@@ -142,12 +105,12 @@
                     <form class="otp" name="one-time-code" id="otp-div">
                         <fieldset>
                             <div>
-                                <input type="number" pattern="[0-9]*"  value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-2" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-3" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-4" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-5" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1"  value="" inputtype="numeric" id="otp-6" required>
+                                <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
                             </div>
                         </fieldset>
                     </form>
@@ -159,35 +122,35 @@
             <span> <i class="fa fa-times fa-1x close"></i></span>
         </div>
     </div>
-    
+
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var firebaseConfig = {
-        apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-        authDomain: "healthhighway-45963.firebaseapp.com",
-        databaseURL: "https://healthhighway-45963.firebaseio.com",
-        projectId: "healthhighway-45963",
-        storageBucket: "healthhighway-45963.appspot.com",
-        messagingSenderId: "716392922291",
-        appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-        measurementId: "G-B3ZVBEZ2H2"
+            apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
+            authDomain: "healthhighway-45963.firebaseapp.com",
+            databaseURL: "https://healthhighway-45963.firebaseio.com",
+            projectId: "healthhighway-45963",
+            storageBucket: "healthhighway-45963.appspot.com",
+            messagingSenderId: "716392922291",
+            appId: "1:716392922291:web:ef7708be5a170c42a544c6",
+            measurementId: "G-B3ZVBEZ2H2"
         };
         firebase.initializeApp(firebaseConfig);
     </script>
     <script>
-        window.onload = function(){
+        window.onload = function() {
             render();
         }
-    
+
         async function render() {
             window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
             recaptchaVerifier.render();
             recaptchaVerifier.verify().then(token => {
                 console.log(token);
-                document.getElementById("loginContinue").style.pointerEvents="auto";
+                document.getElementById("loginContinue").style.pointerEvents = "auto";
             })
         }
     </script>

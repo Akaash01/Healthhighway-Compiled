@@ -19,6 +19,7 @@ const osf_notSureBtn = document.querySelector('.osf-ns') //used
 const osf_backBtn = document.querySelector('.osf-back-button')
 const osf_finalBtn = document.querySelector('.final-btn')
 const osf_payBtn = document.querySelector('#payNow')
+const osf_closeBtn = document.querySelector('.osf-close-button')
 
 //stages
 const osf_stages = document.querySelectorAll('.osf-content') //used
@@ -44,9 +45,15 @@ const osf_form_days = document.querySelector('.day-grid') //used
 
 //other
 const buttonsdiv = document.querySelector('.buttttons') //used
+const customProgressBar = document.querySelector('.progress-bar') //used
 
 
 // btn event listeners
+osf_closeBtn.addEventListener('click', () => {
+    document.querySelector('.container-for-form').classList.remove('active');
+    osf_goToStage(osf_service, '10%')
+})
+
 atc_btns.forEach((atc_btn) => {
     atc_btn.addEventListener('click', () => { //makes form modal visible
         document.querySelector('.container-for-form').classList.add('active')
@@ -57,12 +64,12 @@ atc_btns.forEach((atc_btn) => {
 
 for (let btn of osf_ailBtns) {
     btn.addEventListener('click', () => {
-        osf_goToStage(osf_basicInfo)
+        osf_goToStage(osf_basicInfo, '40%')
     })
 }
 for (let btn of osf_serviceBtns) {
     btn.addEventListener('click', () => {
-        osf_goToStage(osf_basicInfo)
+        osf_goToStage(osf_basicInfo, '40%')
     })
 }
 
@@ -103,28 +110,30 @@ for (let btn of osf_serviceBtns) {
 ////
 
 osf_healBtn.addEventListener('click', () => {
-    osf_goToStage(osf_ailments)
+    osf_goToStage(osf_ailments, '20%')
 })
 
 osf_notSureBtn.addEventListener('click', () => {
-    osf_goToStage(osf_problem)
+    osf_goToStage(osf_problem, '30%')
 })
 
 osf_backBtn.addEventListener('click', () => {
     if (osf_isActive(osf_final)) {
-        osf_goToStage(osf_calendar)
+        osf_goToStage(osf_calendar, '80%')
     } else if (osf_isActive(osf_calendar)) {
-        osf_goToStage(osf_days);
+        osf_goToStage(osf_days, '70%');
     } else if (osf_isActive(osf_days)) {
-        osf_goToStage(osf_timing)
+        osf_goToStage(osf_timing, '60%')
     } else if (osf_isActive(osf_timing)) {
-        osf_goToStage(osf_contact)
+        osf_goToStage(osf_contact, '50%')
     } else if (osf_isActive(osf_contact)) {
-        osf_goToStage(osf_basicInfo)
+        osf_goToStage(osf_basicInfo, '40%')
     } else if (osf_isActive(osf_basicInfo)) {
-        osf_goToStage(osf_service)
+        osf_goToStage(osf_service, '10%')
     } else if (osf_isActive(osf_problem)) {
-        osf_goToStage(osf_service)
+        osf_goToStage(osf_service, '10%')
+    } else if (osf_isActive(osf_ailments)) {
+        osf_goToStage(osf_service, '10%')
     } else if (osf_isActive(osf_service)) {
         document.querySelector('.container-for-form').classList.remove('active')
     }
@@ -135,7 +144,7 @@ osf_finalBtn.addEventListener('click', () => {
     if (currDate === "" || currDate === "Invalid Date" || currDate === undefined) {
         document.getElementById('osf-invalid-date').style.display = "block"
     } else(
-        osf_goToStage(osf_final))
+        osf_goToStage(osf_final, '100%'))
 })
 
 
@@ -146,7 +155,7 @@ osf_form_problem.addEventListener('submit', (e) => {
     if (problemcustom.length <= 2) {
         document.getElementById('osf-invalid-problem').style.display = "block";
     } else {
-        osf_goToStage(osf_basicInfo)
+        osf_goToStage(osf_basicInfo, '40%')
     }
     problem = document.querySelector('#osf-problem').value
 
@@ -162,7 +171,7 @@ osf_form_basic.addEventListener('submit', (e) => {
     if (age.length == 0 || Number(age) <= 0 || Number(age) > 100 || isNaN(age)) {
         document.getElementById('osf-invalid-age').style.display = "block";
     } else {
-        osf_goToStage(osf_contact)
+        osf_goToStage(osf_contact, '50%')
     }
 
 
@@ -177,16 +186,16 @@ osf_form_contact.addEventListener('submit', (e) => {
     if (height.length == 0 || Number(height) <= 0 || isNaN(height)) {
         document.getElementById('osf-invalid-height').style.display = "block";
     } else {
-        osf_goToStage(osf_timing)
+        osf_goToStage(osf_timing, '60%')
     }
 })
 osf_form_timing.addEventListener('submit', (e) => {
     e.preventDefault();
-    osf_goToStage(osf_days)
+    osf_goToStage(osf_days, '70%')
 })
 osf_form_days.addEventListener('submit', (e) => {
     e.preventDefault();
-    osf_goToStage(osf_calendar)
+    osf_goToStage(osf_calendar, '80%')
 })
 
 
@@ -218,7 +227,7 @@ function osf_goToStage(stage_name, percent) {
 
 
 
-    // customProgressBar.style.minWidth = percent
+    customProgressBar.style.minWidth = percent
 
 }
 
