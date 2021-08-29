@@ -208,7 +208,7 @@ nav {
     height: auto;
     background-color: transparent;
     position: relative;
-    background-image: url("../images/Vector 1.png");
+    /* background-image: url("../images/Vector 1.png"); */
     background-repeat: no-repeat;
     background-size: 75% 65%;
 }
