@@ -30,6 +30,11 @@
         display: none;
     }
     
+    .close-next-btns {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .container-for-form.active {
         display: unset;
         position: fixed;
@@ -81,9 +86,9 @@
     }
     
     .os-form {
-        padding: .5em 1em;
         width: 85%;
         margin: 2em auto;
+        margin-top: .5em;
     }
     
     .osf-heading {
@@ -114,7 +119,8 @@
         flex-direction: column
     }
     
-    .osf-back-button {
+    .osf-back-button,
+    .osf-close-button {
         /* display: none; */
         background-color: transparent;
         cursor: pointer;
@@ -125,8 +131,16 @@
         justify-self: flex-start;
     }
     
+    .osf-close-button {
+        justify-self: flex-end;
+    }
+    
+    .osf-close-button img {
+        width: 15px;
+    }
+    
     .osf-back-button img {
-        width: 20px;
+        width: 15px;
     }
     
     .osf-back-button:hover {
@@ -156,12 +170,17 @@
     #osf-invalid-height,
     #osf-invalid-age,
     #osf-invalid-contact,
-    #osf-invalid-date,
     #osf-invalid-problem,
     #osf-invalid-weight {
         color: red;
         display: none;
         margin-top: -.5em;
+    }
+    
+    #osf-invalid-date {
+        margin-top: .5em;
+        color: red;
+        display: none;
     }
     
     .osf-gif img {
@@ -300,9 +319,13 @@
         width: 100%;
     }
     
+    .pref {
+        margin-bottom: .5em;
+    }
+    
     .time-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: .5em;
         text-align: center;
     }
@@ -322,136 +345,90 @@
         justify-self: center;
         width: 100%;
     }
+    
+    .progress-bar-container {
+        display: none;
+        height: 18px;
+        background-color: white;
+        border-radius: 1.5em;
+        margin-top: 1em;
+        border: 1px solid #B0B0B0;
+    }
+    
+    .progress-bar {
+        height: 100%;
+        background-color: #4CA9EE;
+        border-radius: 1.5em;
+        width: 10%;
+        transition: min-width .5s ease;
+        border: 1px solid #4CA9EE;
+    }
+    
+    @media(min-width:768px) {
+        .progress-bar-container {
+            display: unset;
+            width: 50%;
+        }
+    }
     /* final card */
-    
-    .personal-session-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        font-family: "Open Sans", sans-serif;
-    }
-    
-    .book-session-title {
-        color: #4ca9ee;
-        margin: 1rem 0rem;
-    }
-    
-    .personal-session-card {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        width: 400px;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 0 auto;
-    }
-    
-    .personal-cards-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     
     .personal-card-title {
         display: flex;
         align-items: center;
-        margin-top: 10px;
-        padding-left: 10px;
-    }
-    
-    .personal-card-title h1 {
-        color: #4ca9ee;
-        font-size: 1.5rem;
-    }
-    
-    .personal-card-title img {
-        width: 125px;
+        margin-bottom: 1em;
     }
     
     .personal-session-text {
+        text-align: left;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     
-    .personal-session-text ul {
+    .personal-session-card {
+        padding: .5em .5em;
+    }
+    
+    .personal-session-card ul {
+        list-style-type: none;
         width: 100%;
     }
     
-    .personal-session-text li {
-        list-style: none;
+    .personal-session-card ul li img {
+        width: 20px;
+        margin-right: 1em;
+    }
+    
+    .personal-session-card ul li {
         display: flex;
         align-items: center;
-        padding: 10px 0px;
+        margin: .5em 0;
     }
     
-    .personal-session-text li img {
-        width: 28px;
-        margin: 0px 10px;
+    .prsnl-heading {
+        color: #4CA9EE;
+        font-weight: 500;
+        text-align: left;
     }
     
-    .personal-session-text li p {
-        font-size: 16px;
+    .prsnl-img {
+        width: 100px;
     }
     
-    .personal-session-text li h2 {
-        font-size: 36px;
-        color: #4ca9ee;
-        margin: 0px 10px;
-        width: 28px;
-        text-align: center;
-        line-height: 28px;
+    #payNow {
+        margin: 0 auto;
+        margin-top: 1em;
     }
     
-    .personal-session-text button {
-        background: #4ca9ee;
-        padding: 8px 48px;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        margin: 0.8rem 0rem;
-        cursor: pointer;
-    }
-    
-    @media (max-width: 450px) {
-        .personal-session-card {
-            width: 290px;
-            margin: 8px 0px;
+    @media(min-width:768px) {
+        .prsnl-img {
+            display: none;
         }
-        .book-session-title h1 {
-            font-size: 1.3rem;
-        }
-        .personal-card-title h1 {
-            font-size: 1.2rem;
-        }
-        .personal-card-title img {
-            width: 100px;
-        }
-        .personal-session-text li img {
-            width: 24px;
-        }
-        .personal-session-text li h2 {
-            width: 24px;
-            font-size: 33px;
-        }
-        .personal-session-text li p {
-            font-size: 14.5px;
-        }
-        .personal-session-text li {
-            padding: 8px 0px;
+        #payNow {
+            margin: 0;
+            margin-top: 1em;
+            align-self: flex-start;
         }
     }
-    
-    @media (max-width: 300px) {
-        .personal-session-card {
-            width: 90vw;
-        }
-    }
-    /* final card (end)*/
     
     @media (min-width: 768px) {
         .osf-form-basicinfo {
@@ -531,7 +508,7 @@
     @media (min-width: 1024px) {
         .time-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             column-gap: 1em;
         }
         .time-grid .osf-button {

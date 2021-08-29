@@ -188,9 +188,13 @@
         <!-- Onsite Form -->
         <div class="container-for-form">
             <section id="onSiteForm" class="os-form">
+                <div class="close-next-btns">
+                    <button class="osf-back-button"><img src="images/arrow.png" alt="">
+                    </button>
+                    <button class="osf-close-button"><img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
 
-                <button class="osf-back-button"><img src="images/arrow.png" alt="">
-                </button>
 
                 <div class="gif-and-content-grid">
                     <div class="osf-content active-state" id="choose-service">
@@ -273,23 +277,23 @@
                         <h3 class="osf-heading ">Choose a time slot</h3>
                         <form class="time-grid">
                             <input type="radio" id="t1" name="timing" value="6:00 AM" required>
-                            <label for="t1">6:00 AM</label>
+                            <label for="t1">6 AM</label>
                             <input type="radio" id="t2" name="timing" value="7:00 AM">
-                            <label for="t2">7:00 AM</label>
+                            <label for="t2">7 AM</label>
                             <input type="radio" id="t3" name="timing" value="8:00 AM">
-                            <label for="t3">8:00 AM</label>
+                            <label for="t3">8 AM</label>
                             <input type="radio" id="t4" name="timing" value="9:00 AM">
-                            <label for="t4">9:00 AM</label>
+                            <label for="t4">9 AM</label>
                             <input type="radio" id="t5" name="timing" value="4:00 PM">
-                            <label for="t5">4:00 PM</label>
+                            <label for="t5">4 PM</label>
                             <input type="radio" id="t6" name="timing" value="5:00 PM">
-                            <label for="t6">5:00 PM</label>
+                            <label for="t6">5 PM</label>
                             <input type="radio" id="t7" name="timing" value="6:00 PM">
-                            <label for="t7">6:00 PM</label>
+                            <label for="t7">6 PM</label>
                             <input type="radio" id="t8" name="timing" value="7:00 PM">
-                            <label for="t8">7:00 PM</label>
+                            <label for="t8">7 PM</label>
                             <input type="radio" id="t9" name="timing" value="8:00 PM">
-                            <label for="t9">8:00 PM</label>
+                            <label for="t9">8 PM</label>
 
                             <button class="osf-button">Next</button>
                         </form>
@@ -331,8 +335,8 @@
 
                     <div class="osf-content personal-session-card" id="final-card">
                         <div class="personal-card-title">
-                            <h1>Personalized Yoga session</h1>
-                            <img src="./images/payment-1.png" alt="" />
+                            <h1 class="prsnl-heading">Personalized Yoga session</h1>
+                            <img class="prsnl-img" src="./images/payment-1.png" alt="" />
                         </div>
                         <div class="personal-session-text">
                             <ul>
@@ -341,7 +345,7 @@
                                     <p>Problem/Goal: <span class="f-input" id="f-problem"></span></p>
                                 </li>
                                 <li>
-                                    <h2>₹</h2>
+                                    <img src="./images/accept.png" alt="" />
                                     <p>Starting Date: <span class="f-input" id="f-date"></span></p>
                                 </li>
                                 <li>
@@ -373,11 +377,15 @@
                                     <p>Weight: <span class="f-input" id="f-weight"></span>kgs, <span class="f-input" id="f-height"></span>cms</p>
                                 </li>
                             </ul>
-                            <button id="payNow" onclick="location.href='paymentSuccess.html'">Pay INR 1500</button>
+                            <button id="payNow" onclick="location.href='paymentSuccess.html'" class="osf-button">Pay INR
+                                1500</button>
                         </div>
                     </div>
 
                     <div class="osf-gif"><img src="images/yoga-se-hi-hoga.gif" alt="yogasehihoga"></div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
                 </div>
 
             </section>
@@ -591,10 +599,10 @@
         <script>
             var swiper = new Swiper(".myTestimonialSwiper", {
                 spaceBetween: 20,
-                loop:true,
+                loop: true,
                 autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
+                    delay: 4000,
+                    disableOnInteraction: false,
                 },
                 navigation: {
                     nextEl: ".swiper-button-next",
@@ -633,17 +641,19 @@
                     <p class="loginInput">+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
                     <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
                     <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
-                      Continue
+                        Continue
                     </button>
-                    <p class="loginCondition"><span style="margin-right: 5px;"><i class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                    <p class="loginCondition"><span style="margin-right: 5px;"><i
+                                class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
                     <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
-                        <img src="/images/google.png" class="google" >Login Using Gmail</span>
+                        <img src="/images/google.png" class="google">Login Using Gmail</span>
                     </button>
                 </div>
                 <div id="OTP">
                     <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
-                        <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed</p>
+                        <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
+                        </p>
                         <form class="otp" name="one-time-code" id="otp-div">
                             <fieldset>
                                 <div>
