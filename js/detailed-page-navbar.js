@@ -2,7 +2,7 @@ var btns = document.getElementsByClassName("navbar-option");
 var overview = document.getElementById("overview-div");
 var about = document.getElementById("about-mobile-div");
 var benefits = document.getElementById("benefits-mobile-div");
-var element = overview-div;
+var element = "overview-div";
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
