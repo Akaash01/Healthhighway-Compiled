@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/new_navbar.css">
     <link rel="stylesheet" href="css/freeYoga/landingDiv.css">
-    <link rel="stylesheet" href="css/freeYoga/aboutDiv.css">
-    <link rel="stylesheet" href="css/freeYoga/preparationDiv.css">
+    <link rel="stylesheet" href="css/freeYoga/details.css">
+    <link rel="stylesheet" href="css/freeYoga/call.css">
     <link rel="stylesheet" href="css/login.css" />   
+    
     <title>Health Highway | Your Yoga Buddy</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -63,14 +64,13 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
+                    <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
                         Join Us
-                    </button> -->
-                    <button class="loginIcon">
-                        <img src="images/user.png" alt="user"/>
                     </button>
+                    <!-- <button class="loginIcon">
+                        <img src="images/user.png" alt="user"/>
+                    </button> -->
                 </div>
-
             </nav>
         </div>
     </header>
@@ -165,10 +165,10 @@
         <div class="page-navbar">
             <p class="navbar-option active-option" id="overview">Overview</p>
             <p class="navbar-option" id="about">About</p>
-            <p class="navbar-option" id="preparation">Benefits</p>
+            <p class="navbar-option" id="benefits">Benefits</p>
         </div>
 
-        <div id="overview-div" style="margin-bottom: 50px">
+        <div id="overview-div">
             <div class="points-top">
                 <div class="points-common">
                     <div class="points">
@@ -223,8 +223,41 @@
             </div>
         </div>
 
+        <div class="details-div">
         <!-- about -->
         <div id="about-div">
+                <p class="about-title">About the Session </p>
+                <p class="about-content">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting overall
+                    well being.</p>
+                <div class="about-sub-div">
+                    <p class="about-sub-title">Main Practices</p>
+                    <ol type="1">
+                        <li>Malasana Lateral Stretch + Twist</li>
+                        <li>Sivananda Surya Namaskar x 3 Rounds</li>
+                        <li>Uttana Pristhasana + Twist</li>
+                        <li>Prasarita Padottanasana C</li>
+                        <li>Ardha Shalabhasana</li>
+                        <li>Supta Virasana</li>
+                        <li>Gomukasana Fold Forward + Twist</li>
+                        <li>Kandharasana</li>
+                        <li>Nadi Shodhan Pranayama</li>
+                        <li>AUM Chanting</li>
+                    </ol>
+                    <p class="about-sub-title">Benefits</p>
+                    <ol type="1">
+                        <li>Malasana Lateral Stretch + Twist</li>
+                        <li>Sivananda Surya Namaskar x 3 Rounds</li>
+                        <li>AUM Chanting</li>
+                        <li>Supta Virasana</li>
+                        <li>Gomukasana Fold Forward + Twist</li>
+                        <li>Kandharasana</li>
+                        <li>Nadi Shodhan Pranayama</li>
+                        <li>AUM Chanting</li>
+                    </ol>
+                </div>
+        </div>
+        
+        <div id="about-mobile-div">
             <p class="about-title">About the Session </p>
             <p class="about-content">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting overall
                 well being.</p>
@@ -242,38 +275,39 @@
                     <li>Nadi Shodhan Pranayama</li>
                     <li>AUM Chanting</li>
                 </ol>
-                <p class="about-sub-title">Benefits</p>
-                <ol type="1">
-                    <li>Malasana Lateral Stretch + Twist</li>
-                    <li>Sivananda Surya Namaskar x 3 Rounds</li>
-                    <li>AUM Chanting</li>
-                </ol>
             </div>
         </div>
+        <div id="benefits-mobile-div">
+            <p class="about-sub-title">Benefits</p>
+                    <ol type="1">
+                        <li>Malasana Lateral Stretch + Twist</li>
+                        <li>Sivananda Surya Namaskar x 3 Rounds</li>
+                        <li>AUM Chanting</li>
+                        <li>Supta Virasana</li>
+                        <li>Gomukasana Fold Forward + Twist</li>
+                        <li>Kandharasana</li>
+                        <li>Nadi Shodhan Pranayama</li>
+                        <li>AUM Chanting</li>
+                    </ol>
+        </div>
+        <img src="images/detailImg.png" />
         <!-- about (END) -->
-
-        <!-- preparation -->
-        <div id="preparation-div">
-            <p class="preparation-title">How to prepare for session ?</p>
-            <p class="preparation-content">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting overall
-                well being.</p>
-            <div class="preparation-sub-div">
-                <p class="preparation-sub-title">Main Practices</p>
-                <ol type="1">
-                    <li>Malasana Lateral Stretch + Twist</li>
-                    <li>Sivananda Surya Namaskar x 3 Rounds</li>
-                    <li>Uttana Pristhasana + Twist</li>
-                    <li>Prasarita Padottanasana C</li>
-                    <li>Ardha Shalabhasana</li>
-                    <li>Supta Virasana</li>
-                    <li>Gomukasana Fold Forward + Twist</li>
-                    <li>Kandharasana</li>
-                    <li>Nadi Shodhan Pranayama</li>
-                    <li>AUM Chanting</li>
-                </ol>
-            </div>
         </div>
-        <!-- preparation (END)-->
+
+               <!-- Call-Us Section  -->
+               <section class="call-back">
+                <div class="cb-text">
+                    <h2 class="call-back-head">Still Confused?</h2>
+                    <p class="call-back-text">
+                        Let us find the best yoga solution for you
+                    </p>
+                </div>
+                <div class="cb-form">
+                    <input id="phone-num" type="text" placeholder="+91  Phone number" />
+                    <button class="call-back-btn" type="submit">Schedule Callback</button>
+                </div>
+            </section>
+            <!-- Call-Us Section (END) -->
 
                   <!-- login div -->
                   <div class="login-modal-bg">
@@ -362,7 +396,9 @@
                 </script>
                 <!-- login div (END) -->
 
+    <footer>
 
+    </footer>
     </main>
     <script type="text/javascript" src="js/landing.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
