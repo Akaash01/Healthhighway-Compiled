@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
 .title {
   font-family: Open Sans;
   font-style: normal;
@@ -227,6 +228,9 @@
   display: none;
 }
 
+#about-mobile-div, #benefits-mobile-div {
+  display: none;
+}
 
 @media only screen and (max-width: 1582px) {
   .slides img {
@@ -459,6 +463,12 @@
   .points-text {
     width: 40vw;
     font-size: 12px;
+  }
+  #about-div {
+    display: none;
+  }
+  #about-mobile-div, #benefits-mobile-div {
+    display: none;
   }
 }
 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/landing-animation.css">
 
 
     <title>Health Highway | Your Yoga Buddy</title>
@@ -79,18 +80,19 @@
     <main>
         <!-- landing -->
         <div id="landing-main-div">
-            <img src="images/pattern.png" class="pattern" />
-            <div class="landing-main-left">
-                <img src="images/Instructor.png" class="instructor" />
-            </div>
             <div class="landing-main-center">
                 <p class="landing-main-text1">Live Yoga Classes</p>
                 <p class="landing-main-text2">From world yoga capital to your home</p>
                 <a class="landing-main-button desktop" href="#get-started-section">Get Started</a>
             </div>
-            <div class="landing-main-right">
-                <img src="images/Student.png" class="student" />
-            </div>
+            <div class="animation-container">
+                <div class="animation_left"></div>
+                <div class="animation_middle">
+                  <div class="middle-line"></div>
+                </div>
+                <div class="animation_right"></div>
+              </div>
+              <script src="./landing-animation.js"></script>
             <div class="landing-container"></div>
         </div>
         <!-- landing (END)-->
@@ -528,7 +530,7 @@
     <script type="text/javascript" src="js/landing.js"></script>
     <script src="js/video-component.js"></script>
     <script src="js/get-started.js"></script>
-
+    <script src="js/landing-animation.js"> </script>
 
     <script type="text/javascript" src="js/login.js"></script>
 </body>
