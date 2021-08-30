@@ -257,6 +257,44 @@ input[type="number"]:nth-child(n + 4) {
   font-size: 0.94rem;
 }
 
+#OTPSend,
+#loginSuccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#OTPSend img,
+#loginSuccess img {
+  margin: 50px 0 20px 0;
+}
+
+#OTPSend p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  width: 237px;
+  margin-bottom: 24px;
+}
+
+#loginSuccess p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #4ca9ee;
+  margin-bottom: 10px;
+  width: 346px;
+}
+
 @media only screen and (max-width: 540px) {
   .login-modal {
     width: 360px;
@@ -285,7 +323,7 @@ input[type="number"]:nth-child(n + 4) {
   }
   .loginInputBar::placeholder {
     font-size: 0.7rem;
-  }  
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -312,6 +350,10 @@ input[type="number"]:nth-child(n + 4) {
   }
   .loginInputBar {
     width: 180px;
+  }
+  #loginSuccess p {
+    font-size: 20px;
+    width: 300px;
   }
 }
 
@@ -386,6 +428,13 @@ input[type="number"]:nth-child(n + 4) {
   .loginLogoText {
     font-size: 1.2rem;
   }
+  #OTPSend p {
+    width: 210px;
+  }
+  #loginSuccess p {
+    font-size: 20px;
+    width: 240px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -412,7 +461,10 @@ input[type="number"]:nth-child(n + 4) {
   }
   .loginInputBar::placeholder {
     font-size: 0.54rem;
-  }  
+  }
+  #OTPSend p {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
