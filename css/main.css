@@ -326,7 +326,6 @@ nav {
     height: 414px;
 }
 
-
 .landing-main-center {
     display: flex;
     justify-content: center;
@@ -388,7 +387,6 @@ nav {
     color: #4ca9ee;
     text-align: center;
 }
-
 
 @media only screen and (max-width: 1600px) {
     .instructor,
@@ -2215,9 +2213,6 @@ button img {
     #download-app-heading {
         font-size: 1.8rem;
         font-weight: 600;
-    }
-    .download-app p {
-        padding: 0 40%;
     }
 }
 
