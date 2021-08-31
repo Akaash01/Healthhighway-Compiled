@@ -23,6 +23,12 @@
   justify-content: space-evenly;
 }
 
+.points-text span {
+  font-size: 16px !important;
+  line-height: 22px;
+  font-weight:100;
+}
+
 .slides img {
   width: 602px;
   height: 332px;
@@ -92,7 +98,7 @@
 .points-text {
   font-family: Open Sans;
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 16px;
   line-height: 27px;
   color: #5a6885;
@@ -365,6 +371,7 @@
     width: 60vw;
     margin-left: 0;
     text-align: start;
+    margin-bottom: 8px;
   }
   .landing-main-left {
     width: 84vw;
@@ -473,6 +480,21 @@
     margin: 0;
     font-size: 12px;
   }
+  .points div {
+    width: 60px;
+    display: flex;
+    justify-content: end;
+  }
+  .points div:nth-child(1) {
+    margin-right: 0;
+}
+  .points p {
+    width: 60px;
+  }
+  .points-text span {
+    font-size: 12px !important;
+    line-height: 12px;
+  }
   .points-title {
     padding: 0 10vw;  
     font-size: 14px;
@@ -485,7 +507,6 @@
     margin-top: 10px
   }
   .points-text {
-    width: 40vw;
     font-size: 12px;
   }
   #about-div {
@@ -515,6 +536,9 @@
 .points {
   width: 90vw;
   margin-bottom: 5px;
+}
+.points p {
+  width: 60vw;
 }
 .points-title {
   width: 90vw;

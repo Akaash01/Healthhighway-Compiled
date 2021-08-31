@@ -93,8 +93,7 @@
                 <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
                     Continue
                 </button>
-                <p class="loginCondition"><span style="margin-right: 5px;"><i
-                            class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
                 <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
                     <img src="/images/google.png" class="google">Login Using Gmail</span>
                 </button>
@@ -104,7 +103,7 @@
                 <p>An OTP has been sent to your provide mobile no.</p>  
             </div> -->
             <div id="OTP">
-                <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                <p class="OTPTitle"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                 <div class="loginBody">
                     <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
                     </p>
@@ -129,9 +128,10 @@
                 <img src="images/loginSuccess.png"  />
                 <p>Congrats! You are verified</p>
             </div> -->
-            <span> <i class="fa fa-times fa-1x close"></i></span>
+            <span> <i class="close"></i></span>
         </div>
     </div>
+    
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
