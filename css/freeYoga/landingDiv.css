@@ -129,6 +129,13 @@
   flex-wrap: wrap;
 }
 
+.points div {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .points div:nth-child(1) {
   margin-right: 20px;
 }
@@ -225,7 +232,7 @@
 
 #overview-div {
   margin-top: 60px;
-  display: none;
+  display: none !important;
 }
 
 #about-mobile-div, #benefits-mobile-div {
@@ -483,6 +490,9 @@
   }
   #about-div {
     display: none;
+  }
+  #overview-div {
+    display: block !important;
   }
   #about-mobile-div, #benefits-mobile-div {
     display: none;
