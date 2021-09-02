@@ -87,6 +87,11 @@ nav {
   display: flex;
 }
 
+.navbar-brand {
+  margin-left: 70px;
+  flex-direction: row;
+}
+
 .navbar-brand img {
   width: 80px;
   height: 53.33px;
