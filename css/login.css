@@ -118,7 +118,7 @@
   border-radius: 15px !important;
   transition: 0.3s ease;
   background-color: #4ca9ee !important;
-  width: 214px;
+  width: 290px;
   height: 42px;
   font-family: Montserrat;
   font-style: normal;
@@ -448,14 +448,6 @@ input[type="number"]:nth-child(n + 4) {
   .login-modal {
     width: 300px;
   }
-  .loginInput {
-    width: 242px;
-  }
-  .loginInputBar {
-    width: 180px;
-  }
-  .loginButton,
-  .loginContinueButton,
   .OTPPara,
   #OTP,
   .OTPText,
@@ -503,7 +495,7 @@ input[type="number"]:nth-child(n + 4) {
   .OTPText,
   .enterText,
   .OTPPara {
-    width: 200px;
+    width: 210px;
   }
   .loginCondition {
     width: 200px;
@@ -529,8 +521,6 @@ input[type="number"]:nth-child(n + 4) {
   .loginInputBar {
     width: 130px;
   }
-  .loginButton,
-  .loginContinueButton,
   .OTPPara,
   #OTP,
   .OTPText,
