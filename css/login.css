@@ -94,6 +94,9 @@
   box-sizing: border-box;
   font-size: 1.4rem;
   margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 300px;
 }
 
@@ -112,17 +115,20 @@
   margin-top: 32px;
   border-color: #4ca9ee;
   color: #fff !important;
-  padding: 8px 35px !important;
-  border-radius: 20px !important;
+  border-radius: 15px !important;
   transition: 0.3s ease;
   background-color: #4ca9ee !important;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 22px;
-  width: 300px;
-  font-size: 1.4rem;
+  width: 214px;
   height: 42px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginCondition {
@@ -192,7 +198,7 @@
 }
 
 .OTPText {
-  margin-left: 15px;
+  margin-left: 10px;
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
   letter-spacing: 0px;
@@ -206,6 +212,11 @@
   position: absolute;
   margin-left: 32px;
   margin-top: 31px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .enterText {
@@ -545,4 +556,13 @@ input[type="number"]:nth-child(n + 4) {
     margin-top: 32px;
     margin-left: 10px;
   }
+}
+
+.down-arrow {
+  border: solid #4ca9ee;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
