@@ -559,19 +559,19 @@ nav {
     font-size: 36px;
     line-height: 44px;
     margin-top: 36px;
-}
-.landing-main-text2 {
+  }
+  .landing-main-text2 {
     font-size: 22px;
     line-height: 26px;
     margin-top: 5px;
-}
-.landing-main-button {
+  }
+  .landing-main-button {
     margin-top: 50px;
     width: 144px;
-height: 44px;
-font-size: 18px;
-line-height: 22px;
-}
+    height: 44px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 @media only screen and (max-width: 464px) {
@@ -634,7 +634,8 @@ line-height: 22px;
     align-items: center;
     margin-top: 0;
   }
-  .landing-main-text1, .landing-main-text2 {
+  .landing-main-text1,
+  .landing-main-text2 {
     margin-left: 8vw;
     margin-right: 8vw;
   }
@@ -2741,4 +2742,3 @@ footer {
     flex-direction: column;
   }
 }
-
