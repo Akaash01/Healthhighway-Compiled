@@ -19,3 +19,4 @@ $(window).scroll(function() {
         nav.style.backgroundColor = "white";
     }
 });
+

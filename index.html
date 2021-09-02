@@ -6,15 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/landing-animation.css">
-
-
     <title>Health Highway | Your Yoga Buddy</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -38,31 +36,16 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto">
                             <li style="margin-right: 40px" class="nav-item">
-                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" style="
-                      font-family: 'Roboto', sans-serif;
-                      font-size: 14px;
-                      font-weight: 500;
-                      color: #4ca9ee;
-                      cursor: pointer;
-                    " class="nav-link">Blogs</a>
+                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" 
+                    class="nav-link">Blogs</a>
                             </li>
                             <li style="margin-right: 40px" class="nav-item">
-                                <a onclick="scrolltofunc('services-main-div')" style="
-                      font-family: 'Roboto', sans-serif;
-                      font-size: 14px;
-                      font-weight: 500;
-                      color: #4ca9ee;
-                      cursor: pointer;
-                    " class="nav-link">Support</a>
+                                <a onclick="scrolltofunc('services-main-div')" 
+                    class="nav-link">Support</a>
                             </li>
                             <li style="margin-right: 40px" class="nav-item">
-                                <a onclick="scrolltofunc('feedback-main-starting')" style="
-                      font-family: 'Roboto', sans-serif;
-                      font-size: 14px;
-                      font-weight: 500;
-                      color: #4ca9ee;
-                      cursor: pointer;
-                    " class="nav-link">About Us</a>
+                                <a onclick="scrolltofunc('feedback-main-starting')" style="font-weight: 600 !important"
+                    class="nav-link">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -421,13 +404,12 @@
                         <span style="color: #4ca9ee" class="logo-span">Health</span>
                         <span style="color: #29e7cd" class="logo-span"> Highway</span>
                     </div>
-                    <p class="loginInput">+91 <i class="fa fa-caret-down"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
+                    <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
                     <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
                     <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
                         Continue
                     </button>
-                    <p class="loginCondition"><span style="margin-right: 5px;"><i
-                                class="fas fa-star-of-life"></i></span>By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                    <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
                     <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
                         <img src="/images/google.png" class="google">Login Using Gmail</span>
                     </button>
@@ -437,7 +419,7 @@
                     <p>An OTP has been sent to your provide mobile no.</p>  
                 </div> -->
                 <div id="OTP">
-                    <p class="OTPTitle"><i class="fas fa-angle-left fa-2x" id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                    <p class="OTPTitle"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
                         <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
                         </p>
@@ -462,7 +444,7 @@
                     <img src="images/loginSuccess.png"  />
                     <p>Congrats! You are verified</p>
                 </div> -->
-                <span> <i class="fa fa-times fa-1x close"></i></span>
+                <span> <i class="close"></i></span>
             </div>
         </div>
 
