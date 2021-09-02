@@ -44,7 +44,7 @@ const osf_form_days = document.querySelector('.day-grid') //used
 
 
 //other
-const buttonsdiv = document.querySelector('.buttttons') //used
+
 const customProgressBar = document.querySelector('.progress-bar') //used
 
 
@@ -229,7 +229,35 @@ function osf_goToStage(stage_name, percent) {
 
     customProgressBar.style.minWidth = percent
 
+
+    const totalSteps = osf_stages.length;
+    document.querySelector('#total-steps').innerHTML = totalSteps.toString();
+
+    if (osf_isActive(osf_service)) {
+        document.querySelector('#step').innerHTML = '1';
+    } else if (osf_isActive(osf_ailments)) {
+        document.querySelector('#step').innerHTML = '2';
+    } else if (osf_isActive(osf_problem)) {
+        document.querySelector('#step').innerHTML = '3';
+    } else if (osf_isActive(osf_basicInfo)) {
+        document.querySelector('#step').innerHTML = '4';
+    } else if (osf_isActive(osf_contact)) {
+        document.querySelector('#step').innerHTML = '5';
+    } else if (osf_isActive(osf_timing)) {
+        document.querySelector('#step').innerHTML = '6';
+    } else if (osf_isActive(osf_days)) {
+        document.querySelector('#step').innerHTML = '7';
+    } else if (osf_isActive(osf_calendar)) {
+        document.querySelector('#step').innerHTML = '8';
+    } else if (osf_isActive(osf_final)) {
+        document.querySelector('#step').innerHTML = '9';
+    }
 }
+
+
+
+
+
 
 
 
@@ -285,8 +313,7 @@ function updating() {
 
 }
 
-
-
+//Step-counter code
 
 
 
