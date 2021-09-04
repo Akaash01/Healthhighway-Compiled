@@ -8,13 +8,16 @@
 .animation-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  width: 100vw;
+  padding: 0 40px;
 }
 .animation_right {
   position: relative;
 }
 .animation_left,
 .animation_right {
-  height: 300px;
+  height: 280px;
 }
 #client,
 #instructor {
@@ -32,11 +35,11 @@
   position: absolute;
 }
 .animation_middle {
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0 20px 50px;
-  width: calc(100vw - 735.09px);
+  /* padding: 0 20px 50px; */
 }
 /* #29e7cd */
 /* #4ca9ee */
@@ -440,7 +443,21 @@
     transform: rotateZ(76deg) translate(-3px, 0px);
   }
 }
-
+@media (max-width: 1310px) {
+  .animation_left,
+  .animation_right {
+    height: 232px;
+  }
+}
+@media (max-width: 1200px) {
+  .animation-container {
+    padding: 0 20px;
+  }
+  .animation_left,
+  .animation_right {
+    height: 200px;
+  }
+}
 @media (max-width: 1000px) {
   .animation_left,
   .animation_right {
@@ -450,15 +467,62 @@
   #instructor {
     margin-top: 20px;
   }
-  .animation_middle {
-    width: calc(100vw - 505.82px);
-    padding: 0 20px 30px;
+  .animation-container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 962px) {
+  .animation_left,
+  .animation_right {
+    height: 174px;
+  }
+}
+@media (max-width: 900px) {
+  .animation_left,
+  .animation_right {
+    height: 171px;
+  }
+}
+@media (max-width: 800px) {
+  .animation_left,
+  .animation_right {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 250px;
+  }
+  .animation-container {
+    margin-top: 50px;
+  }
+  #dev {
+    animation: dev 1s 2.5s forwards ease-in-out;
+  }
+  #instructor {
+    opacity: 0;
+    animation: instructor 4s 4s forwards ease-in-out;
+  }
+  @keyframes instructor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  #client {
+    animation: client 1s 7.5s forwards ease-in-out;
+    margin-left: 20px;
+    transform: translateX(30px);
   }
 }
 @media (max-width: 700px) {
   .animation_left,
   .animation_right {
-    height: 150px;
+    height: 200px;
   }
   #client,
   #instructor {
@@ -475,13 +539,10 @@
     width: 100vw;
     position: relative;
   }
-  .animation_left,
-  .animation_right {
-    height: 120px;
-  }
   #dev {
     margin-right: 20px;
   }
+
   .animation_middle {
     position: absolute;
     left: 50%;
@@ -490,12 +551,37 @@
     width: 70vw;
     padding: 0 5px;
   }
-}
-@media (max-width: 370px) {
   .animation_left,
   .animation_right {
-    height: 100px;
+    height: 180px;
   }
+}
+@media (max-width: 520px) and (min-height: 700px) {
+  #landing-main-div{
+    padding-top: 150px;
+  }
+  .animation_left,
+  .animation_right {
+    height: 220px;
+  }
+  .animation-container {
+    margin-top: 40px;
+  }
+  .landing-main-center{
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 420px) and (min-height: 700px){
+  #landing-main-div{
+    padding-top: 120px;
+  }
+}
+@media (max-width: 400px) {
+  .animation-container {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 370px) {
   #client,
   #instructor {
     margin-top: 5px;
@@ -509,10 +595,6 @@
     justify-content: space-between;
     width: 100vw;
     position: relative;
-  }
-  .animation_left,
-  .animation_right {
-    height: 80px;
   }
   #client,
   #instructor {
