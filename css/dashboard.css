@@ -469,13 +469,16 @@
     font-size: 26px;
 }
 
+
+/* 
 .events-graph .day-blank {
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
     grid-row: 8/9
-}
+} */
 
-.events-graph .timings {
+
+/* .events-graph .timings {
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
     grid-row: 8/9;
@@ -484,9 +487,10 @@
     place-items: center;
     font-weight: 600;
     font-size: 1.125rem
-}
+} */
 
-.bar-blue {
+
+/* .bar-blue {
     background-color: #4CA9EE;
     border-radius: .5em;
     -ms-grid-column: 5;
@@ -512,7 +516,7 @@
     width: 80%;
     -ms-grid-column-align: center;
     justify-self: center
-}
+} */
 
 .reminder::after {
     content: "";
