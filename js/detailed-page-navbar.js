@@ -43,7 +43,7 @@ window.addEventListener('resize', function () {
   }
 });
 
-window.addEventListener('resize', function () {
+window.addEventListener('load', function () {
   if (screen.width <= 480) {
     displayDiv(element);
   }

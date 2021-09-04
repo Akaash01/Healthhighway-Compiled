@@ -505,12 +505,11 @@
   .points-text {
     font-size: 12px;
   }
-  #about-div {
-    display: none;
+  #overview-div {
+    display: block;
   }
-  #about-mobile-div,
-  #benefits-mobile-div {
-    display: none;
+  #about-div {
+    display: none !important;
   }
   .personalisation-text {
     width: auto;
