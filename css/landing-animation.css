@@ -557,7 +557,7 @@
   }
 }
 @media (max-width: 520px) and (min-height: 700px) {
-  #landing-main-div{
+  #landing-main-div {
     padding-top: 150px;
   }
   .animation_left,
@@ -567,15 +567,16 @@
   .animation-container {
     margin-top: 40px;
   }
-  .landing-main-center{
+  .landing-main-center {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 420px) and (min-height: 700px){
-  #landing-main-div{
+@media (max-width: 420px) and (min-height: 700px) {
+  #landing-main-div {
     padding-top: 120px;
   }
 }
+
 @media (max-width: 400px) {
   .animation-container {
     margin-top: 20px;
@@ -588,6 +589,15 @@
   }
   #dev {
     margin-right: 10px;
+  }
+}
+@media (max-width: 340px) and (min-height: 540px) {
+  .animation_left,
+  .animation_right {
+    height: 140px;
+  }
+  .animation-container {
+    margin-top: 10px;
   }
 }
 @media (max-width: 300px) {
