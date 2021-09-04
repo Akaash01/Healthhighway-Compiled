@@ -39,12 +39,13 @@ window.addEventListener('resize', function () {
     benefits.style.display = "none";
   } else {
     displayDiv(element);
-    console.log("hi");
+    console.log("resize");
   }
 });
 
 window.addEventListener('load', function () {
   if (screen.width <= 480) {
     displayDiv(element);
+    console.log("load");
   }
 } );
