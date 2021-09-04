@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/landing-animation.css">
+    <link rel="stylesheet" href="css/landing-animation.css" />
     <title>Health Highway | Your Yoga Buddy</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="nav-landing">
-            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
+      <div class="nav-landing">
+        <nav
+          class="navbar navbar-expand-lg navbar-light"
+          id="navbar-landing"
+          style="
             position: fixed;
             width: 100vw !important;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-          ">
-                <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="images/logo.svg" alt="Health Highway Logo" />
-                        <div class="logo-text">
-                            <span style="color: #4ca9ee" class="logo-span">Health</span>
-                            <span style="color: #29e7cd" class="logo-span"> Highway</span>
-                        </div>
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                            <li style="margin-right: 40px" class="nav-item">
-                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a>
-                            </li>
-                            <li style="margin-right: 40px" class="nav-item">
-                                <a onclick="scrolltofunc('services-main-div')" class="nav-link">Support</a>
-                            </li>
-                            <li style="margin-right: 40px" class="nav-item">
-                                <a onclick="scrolltofunc('feedback-main-starting')" style="font-weight: 600 !important" class="nav-link">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
-                        Join Us
-                    </button>
-                    <!-- <button class="loginIcon">
+          "
+        >
+          <div
+            id="navbar-container"
+            class="container-fluid navbar-container-unscrolled"
+          >
+            <a class="navbar-brand" href="./index.html">
+              <img src="images/logo.svg" alt="Health Highway Logo" />
+              <div class="logo-text">
+                <span style="color: #4ca9ee" class="logo-span">Health</span>
+                <span style="color: #29e7cd" class="logo-span"> Highway</span>
+              </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li style="margin-right: 40px" class="nav-item">
+                  <a
+                    href="./blogs/blogs.html"
+                    onclick="scrolltofunc('unique-main-div')"
+                    class="nav-link"
+                    >Blogs</a
+                  >
+                </li>
+                <li style="margin-right: 40px" class="nav-item">
+                  <a
+                    onclick="scrolltofunc('services-main-div')"
+                    class="nav-link"
+                    >Support</a
+                  >
+                </li>
+                <li style="margin-right: 40px" class="nav-item">
+                  <a
+                    onclick="scrolltofunc('feedback-main-starting')"
+                    style="font-weight: 600 !important"
+                    class="nav-link"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <button
+              id="landing-joinus"
+              type="button"
+              class="btn btn-light"
+              onclick="showmodal('booksession')"
+            >
+              Join Us
+            </button>
+            <!-- <button class="loginIcon">
                         <img src="images/user.png" alt="user"/>
                     </button> -->
-                </div>
-
-            </nav>
-        </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
         <!-- landing -->
@@ -89,292 +127,387 @@
                 <img src="images/landing-animation.gif" />
             </div>
         </div>
-        <!-- landing (END)-->
+      </div>
+      <!-- landing (END)-->
 
-        <!-- know more div (START) -->
-        <div class="know-more-div">
-            <a class="landing-main-button mobile" href="#get-started-section">Get Started</a>
-            <p style="text-align: center"><a href="#usp" class="know-more">Know More</a></p>
-            <p style="text-align: center"><a href="#usp" class="know-more"><i class="fa fa-arrow-down"></i></a></p>
-        </div>
-        <!-- know more div (END) -->
+      <!-- know more div (START) -->
+      <div class="know-more-div">
+        <a class="landing-main-button mobile" href="#get-started-section"
+          >Get Started</a
+        >
+        <p style="text-align: center">
+          <a href="#usp" class="know-more">Know More</a>
+        </p>
+        <p style="text-align: center">
+          <a href="#usp" class="know-more"><i class="fa fa-arrow-down"></i></a>
+        </p>
+      </div>
+      <!-- know more div (END) -->
 
-        <!-- About-Us Section (START) -->
-        <section id="about-us" class="about-us-section">
-            <h2 class="about-us-heading">
-                <span>“</span>It’s not just Health Highway , it’s Health The Highway
-                <span>”</span>
-            </h2>
-            <div class="border"></div>
-            <p class="about-us-content">
-                <span>HealthyLifestyle</span> is what Health Highway believes in! We aim to provide you holistic wellness through yoga therapy for health issues or otherwise what fits YOU, YOUR time and YOUR lifestyle!
+      <!-- About-Us Section (START) -->
+      <section id="about-us" class="about-us-section">
+        <h2 class="about-us-heading">
+          <span>“</span>It’s not just Health Highway , it’s Health The Highway
+          <span>”</span>
+        </h2>
+        <div class="border"></div>
+        <p class="about-us-content">
+          <span>HealthyLifestyle</span> is what Health Highway believes in! We
+          aim to provide you holistic wellness through yoga therapy for health
+          issues or otherwise what fits YOU, YOUR time and YOUR lifestyle!
+        </p>
+      </section>
+      <!-- About-Us Section (END) -->
+
+      <!-- USP Section (START) -->
+      <section id="usp" class="usp-section">
+        <div class="usp-one">
+          <img src="images/newUsp1.svg" alt="yoga for everyone" />
+          <div class="left-item">
+            <h3 class="usp-heading">Yoga for <span>Everyone</span></h3>
+            <p class="usp-content">
+              Why should there be any barrier when it comes to taking care of
+              your health? Children, pregnant women, senior citizens we have
+              Yoga routines for all!
             </p>
-        </section>
-        <!-- About-Us Section (END) -->
+          </div>
+        </div>
+        <div class="usp-two">
+          <img src="images/newUps2.svg" alt="yoga for everything" />
+          <div class="right-item">
+            <h3 class="usp-heading">Yoga for <span>Everything</span></h3>
+            <p class="usp-content">
+              Discover Yoga routines tailored for your lifestyle and needs, be
+              it a routine to boost your fitness, a remedy to manage diabetes or
+              to learn a new fancy yoga pose. Here lies the answer to all your
+              Yoga needs!
+            </p>
+          </div>
+        </div>
+        <div class="usp-three">
+          <img src="images/newUsp3.svg" alt="yoga for everytime" />
+          <div class="left-item">
+            <h3 class="usp-heading">Yoga for <span>Everytime</span></h3>
+            <p class="usp-content">
+              Not a morning person, no issues! No need to compromise on your
+              health for the sake of your morning meeting. Choose from many
+              session timings according to your comfort and schedule.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- USP Section (END) -->
 
-        <!-- USP Section (START) -->
-        <section id="usp" class="usp-section">
-            <div class="usp-one">
-                <img src="images/newUsp1.svg" alt="yoga for everyone" />
-                <div class="left-item">
-                    <h3 class="usp-heading">Yoga for <span>Everyone</span></h3>
-                    <p class="usp-content">
-                        Why should there be any barrier when it comes to taking care of your health? Children, pregnant women, senior citizens we have Yoga routines for all!
-                    </p>
-                </div>
+      <!-- VIdeo Section -->
+      <section id="video-component">
+        <h2 id="video-title">
+          <span>“</span>We just don't say , we <span>deliver</span> it<span
+            >”</span
+          >
+        </h2>
+        <div class="border"></div>
+
+        <div id="video-container">
+          <video id="yogaVideo" src="video/Untitled.mp4" loop></video>
+          <div id="video-controls">
+            <button id="video-play">
+              <img src="images/play_circle.svg" alt="" />
+            </button>
+            <button id="video-pause" class="video-display">
+              <!-- <button id="video-pause" class="video-display video-button-visible"> -->
+              <img src="images/pause_circle.svg" alt="" />
+            </button>
+            <button id="video-mute">
+              <img src="images/speaker-on.svg" alt="" />
+            </button>
+            <button id="video-unmute" class="video-display">
+              <!-- <button id="video-unmute" class="video-display video-button-visible"> -->
+              <img src="images/speaker-off.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIdeo Section (END) -->
+
+      <!-- Get Started -->
+      <section class="get-started" id="get-started-section">
+        <h2 class="gs-heading">
+          Take your <span class="blue-text">First Step</span>
+        </h2>
+        <div class="gs-container">
+          <div class="private-session">
+            <h3 class="gs-item-head">Private Sessions</h3>
+            <p class="tag-line">"I walk a lonely road..."</p>
+            <div class="perks-container">
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-white-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Marked Attention</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-white-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Choice of Instructor</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-white-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Tailored to your lifestyle</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-white-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">For your pace and space</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-white-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Book whenever you want</p>
+              </div>
             </div>
-            <div class="usp-two">
-                <img src="images/newUps2.svg" alt="yoga for everything" />
-                <div class="right-item">
-                    <h3 class="usp-heading">Yoga for <span>Everything</span></h3>
-                    <p class="usp-content">
-                        Discover Yoga routines tailored for your lifestyle and needs, be it a routine to boost your fitness, a remedy to manage diabetes or to learn a new fancy yoga pose. Here lies the answer to all your Yoga needs!
-                    </p>
-                </div>
+            <div class="after-hover-pvt">
+              <img class="pvt-img" src="images/Private.svg" alt="" />
             </div>
-            <div class="usp-three">
-                <img src="images/newUsp3.svg" alt="yoga for everytime" />
-                <div class="left-item">
-                    <h3 class="usp-heading">Yoga for <span>Everytime</span></h3>
-                    <p class="usp-content">
-                        Not a morning person, no issues! No need to compromise on your health for the sake of your morning meeting. Choose from many session timings according to your comfort and schedule.
-                    </p>
-                </div>
+            <a href="pricing.html" class="get-started-btn">Get Started</a>
+          </div>
+
+          <div class="group-session">
+            <div class="after-hover-grp">
+              <img class="grp-img" src="images/grp_ssn.svg" alt="" />
             </div>
-        </section>
-        <!-- USP Section (END) -->
-
-        <!-- VIdeo Section -->
-        <section id="video-component">
-            <h2 id="video-title">
-                <span>“</span>We just don't say , we <span>deliver</span> it<span>”</span>
-            </h2>
-            <div class="border"></div>
-
-            <div id="video-container">
-                <video id="yogaVideo" src="video/Untitled.mp4" loop></video>
-                <div id="video-controls">
-                    <button id="video-play">
-                        <img src="images/play_circle.svg" alt="" />
-                    </button>
-                    <button id="video-pause" class="video-display">
-                        <!-- <button id="video-pause" class="video-display video-button-visible"> -->
-                        <img src="images/pause_circle.svg" alt="" />
-                    </button>
-                    <button id="video-mute">
-                        <img src="images/speaker-on.svg" alt="" />
-                    </button>
-                    <button id="video-unmute" class="video-display">
-                        <!-- <button id="video-unmute" class="video-display video-button-visible"> -->
-                        <img src="images/speaker-off.svg" alt="" />
-                    </button>
-                </div>
+            <h3 class="gs-item-head">Group Sessions</h3>
+            <p class="tag-line">"Ek aur Ek bane Gyarah"</p>
+            <div class="perks-container">
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-grey-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Make friends and ‘Pose’ together</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-grey-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Choice of Instructor</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-grey-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Timings as per class schedule</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-grey-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Choice of Group</p>
+              </div>
+              <div class="perk">
+                <img
+                  class="perk-tick"
+                  src="images/grp-ssn-grey-tick.svg"
+                  alt="tick"
+                />
+                <p class="perk-text">Group activities and challenges</p>
+              </div>
             </div>
-        </section>
+            <a href="group_sessions-landing.html" class="get-started-btn"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Get Started (END) -->
 
-        <!-- VIdeo Section (END) -->
+      <!-- Download app -->
 
+      <section class="download-app">
+        <h2 id="download-app-heading">
+          Download <span>Health</span>
+          <span class="highway-spn">Highway</span> App
+        </h2>
+        <div class="download-img">
+          <img src="images/dwnld-app.png" alt="" />
+        </div>
+        <p>For enhanced experience on your mobile phone</p>
+        <a href="#" class="download-now-btn">Download Now</a>
+      </section>
 
+      <!-- Download app (END)-->
 
+      <!-- Events -->
 
-        <!-- Get Started -->
-        <section class="get-started" id="get-started-section">
-            <h2 class="gs-heading">Take your <span class="blue-text">First Step</span></h2>
-            <div class="gs-container">
-                <div class="private-session ">
-                    <h3 class="gs-item-head">Private Sessions</h3>
-                    <p class="tag-line">"I walk a lonely road..."</p>
-                    <div class="perks-container">
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-white-tick.svg" alt="tick">
-                            <p class="perk-text">Marked Attention</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-white-tick.svg" alt="tick">
-                            <p class="perk-text">Choice of Instructor</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-white-tick.svg" alt="tick">
-                            <p class="perk-text">Tailored to your lifestyle</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-white-tick.svg" alt="tick">
-                            <p class="perk-text">For your pace and space</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-white-tick.svg" alt="tick">
-                            <p class="perk-text">Book whenever you want</p>
-                        </div>
+      <!-- Events (END) -->
 
+      <!-- Testimonials -->
+
+      <section id="testimonials">
+        <div id="testimonial-main">
+          <h2 id="testimonials-heading">
+            Our Customers <span>Love Us !</span>
+          </h2>
+
+          <div class="testimonial-container">
+            <div class="swiper-container myTestimonialSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial_img_rating">
+                    <img
+                      class="testimonial_user_img"
+                      src="./images/testimonials-mobile.jpg"
+                      alt=""
+                    />
+                    <div class="testimonial-ratings">
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_half.svg" alt="" />
                     </div>
-                    <div class="after-hover-pvt">
-                        <img class="pvt-img" src="images/Private.svg" alt="">
-                    </div>
-                    <a href="pricing.html" class="get-started-btn">Get Started</a>
+                  </div>
+                  <p>
+                    Excellent teachers with knowledge in a wide variety of
+                    Asanas and techniques. I am highly motivated by and inspired
+                    by the quality of teaching despite the online medium.
+                  </p>
+                  <div class="testimonial-user-profile">
+                    <h4>Anamika|</h4>
+                    <p>Rishikesh</p>
+                  </div>
                 </div>
-
-
-                <div class="group-session">
-                    <div class="after-hover-grp">
-                        <img class="grp-img" src="images/grp_ssn.svg" alt="">
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial_img_rating">
+                    <img
+                      class="testimonial_user_img"
+                      src="./images/testimonials-mobile.jpg"
+                      alt=""
+                    />
+                    <div class="testimonial-ratings">
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_half.svg" alt="" />
                     </div>
-                    <h3 class="gs-item-head">Group Sessions</h3>
-                    <p class="tag-line">"Ek aur Ek bane Gyarah"</p>
-                    <div class="perks-container">
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-grey-tick.svg" alt="tick">
-                            <p class="perk-text">Make friends and ‘Pose’ together</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-grey-tick.svg" alt="tick">
-                            <p class="perk-text">Choice of Instructor</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-grey-tick.svg" alt="tick">
-                            <p class="perk-text">Timings as per class schedule </p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-grey-tick.svg" alt="tick">
-                            <p class="perk-text">Choice of Group</p>
-                        </div>
-                        <div class="perk"><img class="perk-tick" src="images/grp-ssn-grey-tick.svg" alt="tick">
-                            <p class="perk-text">Group activities and challenges </p>
-                        </div>
-                    </div>
-                    <a href="group_sessions-landing.html" class="get-started-btn">Get Started</a>
+                  </div>
+                  <p>
+                    Excellent teachers with knowledge in a wide variety of
+                    Asanas and techniques. I am highly motivated by and inspired
+                    by the quality of teaching despite the online medium.
+                  </p>
+                  <div class="testimonial-user-profile">
+                    <h4>Anamika|</h4>
+                    <p>Rishikesh</p>
+                  </div>
                 </div>
-
-            </div>
-        </section>
-        <!-- Get Started (END) -->
-
-        <!-- Download app -->
-
-        <section class="download-app">
-            <h2 id="download-app-heading">Download <span>Health</span> <span class="highway-spn">Highway</span> App</h2>
-            <div class="download-img">
-                <img src="images/dwnld-app.png" alt="">
-
-            </div>
-            <p>For enhanced experience on your mobile phone</p>
-            <a href="#" class="download-now-btn">Download Now</a>
-        </section>
-
-        <!-- Download app (END)-->
-
-        <!-- Events -->
-
-        <!-- Events (END) -->
-
-
-        <!-- Testimonials -->
-
-        <section id="testimonials">
-            <div id="testimonial-main">
-                <h2 id="testimonials-heading">Our Customers <span>Love Us !</span></h2>
-
-                <div class="testimonial-container">
-                    <div class="swiper-container myTestimonialSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial_img_rating">
-                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="">
-                                    <div class="testimonial-ratings">
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_half.svg" alt="" />
-                                    </div>
-                                </div>
-                                <p>
-                                    Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
-                                </p>
-                                <div class="testimonial-user-profile">
-                                    <h4>Anamika|</h4>
-                                    <p>Rishikesh</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial_img_rating">
-                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="">
-                                    <div class="testimonial-ratings">
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_half.svg" alt="" />
-                                    </div>
-                                </div>
-                                <p>
-                                    Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
-                                </p>
-                                <div class="testimonial-user-profile">
-                                    <h4>Anamika|</h4>
-                                    <p>Rishikesh</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial_img_rating">
-                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="">
-                                    <div class="testimonial-ratings">
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_half.svg" alt="" />
-                                    </div>
-                                </div>
-                                <p>
-                                    Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
-                                </p>
-                                <div class="testimonial-user-profile">
-                                    <h4>Anamika|</h4>
-                                    <p>Rishikesh</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial_img_rating">
+                    <img
+                      class="testimonial_user_img"
+                      src="./images/testimonials-mobile.jpg"
+                      alt=""
+                    />
+                    <div class="testimonial-ratings">
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_full.svg" alt="" />
+                      <img src="./images/testimonial-star_half.svg" alt="" />
                     </div>
-                    <div class="testimonial-controls">
-                        <img src="./images/testimonial-arrow.svg" class="swiper-button-prev" alt="" />
-                        <img src="./images/testimonial-arrow.svg" class="swiper-button-next" alt="" />
-                    </div>
+                  </div>
+                  <p>
+                    Excellent teachers with knowledge in a wide variety of
+                    Asanas and techniques. I am highly motivated by and inspired
+                    by the quality of teaching despite the online medium.
+                  </p>
+                  <div class="testimonial-user-profile">
+                    <h4>Anamika|</h4>
+                    <p>Rishikesh</p>
+                  </div>
                 </div>
+              </div>
             </div>
-            <img src="./images/testimonials-images.png" alt="" />
-        </section>
-
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".myTestimonialSwiper", {
-                spaceBetween: 20,
-                loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
-
-        <!-- Testimonials(end) -->
-
-        <!-- Call-Us Section  -->
-        <section class="call-back">
-            <div class="cb-text">
-                <h2 class="call-back-head">Still Confused?</h2>
-                <p class="call-back-text">
-                    Let us find the best yoga solution for you
-                </p>
+            <div class="testimonial-controls">
+              <img
+                src="./images/testimonial-arrow.svg"
+                class="swiper-button-prev"
+                alt=""
+              />
+              <img
+                src="./images/testimonial-arrow.svg"
+                class="swiper-button-next"
+                alt=""
+              />
             </div>
-            <div class="cb-form">
-                <input id="phone-num" type="text" placeholder="+91  Phone number" />
-                <button class="call-back-btn" type="submit">Schedule Callback</button>
-            </div>
-        </section>
-        <!-- Call-Us Section (END) -->
+          </div>
+        </div>
+        <img src="./images/testimonials-images.png" alt="" />
+      </section>
 
-        <!-- login div -->
-        <div class="login-modal-bg">
-            <div class="login-modal">
-                <div class="loginBody" id="phoneDiv">
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".myTestimonialSwiper", {
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <!-- Testimonials(end) -->
+
+      <!-- Call-Us Section  -->
+      <section class="call-back">
+        <div class="cb-text">
+          <h2 class="call-back-head">Still Confused?</h2>
+          <p class="call-back-text">
+            Let us find the best yoga solution for you
+          </p>
+        </div>
+        <div class="cb-form">
+          <input id="phone-num" type="text" placeholder="+91  Phone number" />
+          <button class="call-back-btn" type="submit">Schedule Callback</button>
+        </div>
+      </section>
+      <!-- Call-Us Section (END) -->
+
+      <!-- login div -->
+      <div class="login-modal-bg">
+        <div class="login-modal">
+           <div class="loginBody" id="phoneDiv">
                     <img src="/images/logo.svg" class="loginLogo">
                     <div class="loginLogoText">
                         <span style="color: #4ca9ee" class="logo-span">Health</span>
@@ -390,10 +523,6 @@
                         <img src="/images/google.png" class="google">Login Using Gmail</span>
                     </button>
                 </div>
-                <!-- <div id="OTPSend">
-                    <img src="images/otpSend.png"  />
-                    <p>An OTP has been sent to your provide mobile no.</p>  
-                </div> -->
                 <div id="OTP">
                     <p class="OTPTitle"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
@@ -415,83 +544,101 @@
                             Confirm
                         </button>
                     </div>
-                </div>
-                <!-- <div id = "loginSuccess">
-                    <img src="images/loginSuccess.png"  />
-                    <p>Congrats! You are verified</p>
-                </div> -->
+                </div> 
                 <span> <i class="close"></i></span>
-            </div>
         </div>
+      </div>
 
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            var firebaseConfig = {
-                apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-                authDomain: "healthhighway-45963.firebaseapp.com",
-                databaseURL: "https://healthhighway-45963.firebaseio.com",
-                projectId: "healthhighway-45963",
-                storageBucket: "healthhighway-45963.appspot.com",
-                messagingSenderId: "716392922291",
-                appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-                measurementId: "G-B3ZVBEZ2H2"
-            };
-            firebase.initializeApp(firebaseConfig);
-        </script>
-        <script>
-            window.onload = function() {
-                render();
-            }
+      <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript">
+        var firebaseConfig = {
+          apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
+          authDomain: "healthhighway-45963.firebaseapp.com",
+          databaseURL: "https://healthhighway-45963.firebaseio.com",
+          projectId: "healthhighway-45963",
+          storageBucket: "healthhighway-45963.appspot.com",
+          messagingSenderId: "716392922291",
+          appId: "1:716392922291:web:ef7708be5a170c42a544c6",
+          measurementId: "G-B3ZVBEZ2H2",
+        };
+        firebase.initializeApp(firebaseConfig);
+      </script>
+      <script>
+        window.onload = function () {
+          render();
+        };
 
-            async function render() {
-                window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
-                recaptchaVerifier.render();
-                recaptchaVerifier.verify().then(token => {
-                    console.log(token);
-                    document.getElementById("loginContinue").style.pointerEvents = "auto";
-                })
-            }
-        </script>
-        <!-- login div (END) -->
+        async function render() {
+          window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+            "recaptcha-verifier"
+          );
+          recaptchaVerifier.render();
+          recaptchaVerifier.verify().then((token) => {
+            console.log(token);
+            document.getElementById("loginContinue").style.pointerEvents =
+              "auto";
+          });
+        }
+      </script>
+      <!-- login div (END) -->
+
+      <!-- <div class="info-modal-bg info-bg-active">
+        <div class="info-modal">
+          <div id="info-div">
+            <img
+              src="https://github.com/vxdhu/Healthhighway-Compiled/blob/main/images/otpSend.png?raw=true"
+            />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <span> <i class="closeSend"></i></span>
+        </div>
+      </div> -->
 
     </main>
     <footer>
-        <div class="footer-nav">
-            <nav>
-                <ul class="nav-links">
-
-                    <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
-                    <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
-                    <li class="mob-links"><a href="index.html">Home</a></li>
-                    <li><a href="blogs/blogs.html">Blogs</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
-            <nav class="terms-privacy">
-                <ul>
-                    <li>
-                        <a href="#">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="footer-nav">
+        <nav>
+          <ul class="nav-links">
+            <li class="desk-links">
+              <a href="pricing.html">Private Sessions</a>
+            </li>
+            <li class="desk-links">
+              <a href="group_sessions-landing.html">Group Sessions</a>
+            </li>
+            <li class="mob-links"><a href="index.html">Home</a></li>
+            <li><a href="blogs/blogs.html">Blogs</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">
+          <span> &copy; </span> 2021 Health Highway. All Rights Reserved.
+        </p>
+        <nav class="terms-privacy">
+          <ul>
+            <li>
+              <a href="#">Terms</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
 
     <script type="text/javascript" src="js/event.js"></script>
     <script type="text/javascript" src="js/landing.js"></script>
     <script src="js/video-component.js"></script>
     <script src="js/get-started.js"></script>
-    <script src="js/landing-animation.js">
-    </script>
+    <script src="js/landing-animation.js"></script>
 
     <script type="text/javascript" src="js/login.js"></script>
-</body>
-
+  </body>
 </html>

@@ -40,6 +40,31 @@
   height: auto;
 }
 
+.closeSend {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 28px;
+  right: 28px;
+  cursor: pointer;
+}
+
+.closeSend:before,
+.closeSend:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 25px;
+  width: 3px;
+  background-color: #b2b2b2;
+}
+.closeSend:before {
+  transform: rotate(45deg);
+}
+.closeSend:after {
+  transform: rotate(-45deg);
+}
+
 .close {
   position: absolute;
   width: 25px;
@@ -345,8 +370,101 @@ input[type="number"]:nth-child(n + 4) {
   width: 14px;
 }
 
+.info-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.4s;
+  backdrop-filter: blur(5px);
+  z-index: 200;
+}
+
+.info-modal {
+  background-color: #fff;
+  width: 422px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  border-radius: 15px;
+  height: auto;
+}
+
+#info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#info-div img {
+  margin-top: 60px;
+}
+
+#info-div p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  width: 18vw;
+  margin-top: 15px;
+}
+
+.info-bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1440px) {
+  #info-div p {
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #info-div p {
+    width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #info-div p {
+    width: 32vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #info-div p {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #info-div p {
+    width: 45vw;
+  }
+}
+
 @media only screen and (max-width: 540px) {
   .login-modal {
+    width: 360px;
+  }
+  .info-modal {
     width: 360px;
   }
   .loginInput {
@@ -373,6 +491,9 @@ input[type="number"]:nth-child(n + 4) {
   }
   .loginInputBar::placeholder {
     font-size: 0.7rem;
+  }
+  #info-div p {
+    width: 54vw;
   }
 }
 
@@ -405,10 +526,16 @@ input[type="number"]:nth-child(n + 4) {
     font-size: 20px;
     width: 300px;
   }
+  #info-div p {
+    width: 64vw;
+  }
 }
 
 @media only screen and (max-width: 420px) {
   .login-modal {
+    width: 320px;
+  }
+  .info-modal {
     width: 320px;
   }
   .loginInput {
@@ -443,10 +570,16 @@ input[type="number"]:nth-child(n + 4) {
   .loginInputBar {
     font-size: 1.2rem;
   }
+  #info-div p {
+    width: 72vw;
+  }
 }
 
 @media only screen and (max-width: 360px) {
   .login-modal {
+    width: 300px;
+  }
+  .info-modal {
     width: 300px;
   }
   .OTPPara,
@@ -483,6 +616,9 @@ input[type="number"]:nth-child(n + 4) {
   .login-modal {
     width: 260px;
   }
+  .info-modal {
+    width: 260px;
+  }
   .loginInput {
     width: 200px;
   }
@@ -514,6 +650,9 @@ input[type="number"]:nth-child(n + 4) {
 
 @media only screen and (max-width: 300px) {
   .login-modal {
+    width: 250px;
+  }
+  .info-modal {
     width: 250px;
   }
   .loginInput {

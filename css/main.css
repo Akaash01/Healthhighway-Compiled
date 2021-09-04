@@ -205,11 +205,12 @@ nav {
 
 #landing-main-div {
   width: 100vw;
-  height: 92vh;
+  height: auto;
   background-color: transparent;
   position: relative;
   display: flex;
   align-items: center;
+  margin: 280px 0 80px 0;
 }
 
 .landing-container {

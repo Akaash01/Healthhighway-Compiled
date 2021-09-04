@@ -1,6 +1,7 @@
 var login = document.getElementById("landing-joinus");
 var modalBg = document.querySelector(".login-modal-bg");
 var modalClose = document.querySelector(".close");
+var modalCloseSend = document.querySelector(".closeSend");
 var navbar = document.querySelector("nav");
 var OTP = document.getElementById("OTP");
 var phoneNumber = document.getElementById("phoneNumber");
@@ -8,6 +9,7 @@ var loginContinue = document.getElementById("loginContinue");
 var phoneDiv = document.getElementById("phoneDiv");
 var loginModal = document.querySelector(".login-modal");
 var modalBack = document.getElementById("modalBack");
+var infoBg = document.querySelector(".info-modal-bg");
 
 phoneDivActive = () => {
     phoneDiv.style.display = "block";
@@ -30,6 +32,11 @@ modalCloseFunction = () => {
     document.getElementById("otp-div").reset();
 };
 
+modalInfoCloseFunction = () => {
+    infoBg.classList.remove("info-bg-active");
+	console.log(classList)
+};
+
 modalOpenFunction = () => {
     modalBg.classList.add("bg-active");
     navbar.style.zIndex = "0";
@@ -41,6 +48,10 @@ login.addEventListener("click", function() {
 
 modalClose.addEventListener("click", function() {
     modalCloseFunction();
+});
+
+modalCloseSend.addEventListener("click", function() {
+    modalInfoCloseFunction();
 });
 
 loginContinue.onclick = function() {
