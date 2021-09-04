@@ -204,10 +204,12 @@ nav {
 }
 
 #landing-main-div {
-    width: 100vw;
-    height: auto;
-    background-color: transparent;
-    position: relative;
+  width: 100vw;
+  height: 92vh;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .landing-container {
@@ -327,50 +329,54 @@ nav {
 }
 
 .landing-main-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 0 0 20px;
+  /* margin-top: 150px; */
+}
+.landing-main-center1 {
+  display: none;
 }
 
 .landing-main-text1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 68px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
 }
 
 .landing-main-text2 {
-    font-family: Dancing Script;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    margin-top: 12px;
-    color: #757575;
+  font-family: Dancing Script;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 12px;
+  color: #757575;
+  display: inline;
 }
 
 .landing-main-button {
-    background: #4ca9ee;
-    display: flex;
-    -webkit-box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
-    box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
-    border-radius: 8px;
-    width: 214px;
-    height: 55px;
-    border-color: #4ca9ee;
-    margin-top: 54px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
+  background: #4ca9ee;
+  display: flex;
+  -webkit-box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
+  box-shadow: 0px 2px 10px rgba(76, 169, 238, 0.3);
+  border-radius: 8px;
+  width: 214px;
+  height: 55px;
+  border-color: #4ca9ee;
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa-arrow-down {
@@ -428,12 +434,12 @@ nav {
 }
 
 @media only screen and (max-width: 1100px) {
-    .landing-main-button {
-        width: 140px;
-        height: 50px;
-        padding: 10px 0 0 0;
-        font-size: 16px;
-    }
+  .landing-main-button {
+    width: 140px;
+    height: 50px;
+    /* padding: 10px 0 0 0; */
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -452,34 +458,75 @@ nav {
         height: 500px;
     }
 }
-
+@media only screen and (max-width: 1100px) {
+  .landing-main-center {
+    padding: 0 0 0 20px;
+  }
+}
 @media only screen and (max-width: 900px) {
-    #landing-main-div {
-        height: auto;
-    }
-    .instructor,
-    .student {
-        width: 300px;
-        height: 350px;
-    }
-    .landing-main-left {
-        left: 20px;
-        height: auto;
-    }
-    .landing-main-right {
-        right: 20px;
-    }
+  .instructor,
+  .student {
+    width: 300px;
+    height: 350px;
+  }
+  .landing-main-left {
+    left: 20px;
+    height: auto;
+  }
+  .landing-main-right {
+    right: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #landing-main-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landing-main-center1 {
+    display: flex;
+  }
+  .landing-main-center2 {
+    display: none;
+  }
+  .animation-container {
+    position: relative;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-    .landing-main-text1 {
-        font-size: 40px;
-    }
-    .landing-main-text2 {
-        font-size: 24px;
-    }
+@media (min-height: 1300px) {
+  #landing-main-div {
+    height: 40vh;
+  }
 }
-
+@media only screen and (max-width: 900px) {
+  .landing-main-text1 {
+    font-size: 33px;
+  }
+  .landing-main-text2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 800px) {
+  #landing-main-div {
+    height: calc(100vh - 60px);
+    justify-content: flex-start;
+    padding-top: 125px;
+  }
+  .landing-main-text1 {
+    font-size: 44px;
+  }
+  .landing-main-text2 {
+    font-size: 28px;
+  }
+  .landing-main-center {
+    padding: 0;
+  }
+}
+@media (min-height: 1024px) {
+  #landing-main-div {
+    height: 62vh;
+  }
+}
 @media only screen and (max-width: 745px) {
     .instructor,
     .student {
@@ -2789,49 +2836,66 @@ footer {
 
 /* CAll back CSS (END) */
 
-@media only screen and (max-width: 480px) {
-    .landing-main-right {
-        display: none;
-    }
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block !important;
-        text-align: center;
-        margin-bottom: 14px;
-    }
-    .instructor {
-        width: 64vw;
-        height: 36vh;
-        margin: 30px 0 50px 15vw;
-    }
-    .landing-main-left {
-        top: 240px;
-    }
-    .know-more-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 500px) {
+  .landing-main-right {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .instructor {
+    width: 64vw;
+    height: 36vh;
+    margin: 30px 0 50px 15vw;
+  }
+  .landing-main-left {
+    top: 240px;
+  }
+  .know-more-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .mobile-animation {
     display: none;
 }
-
+/* 
 @media only screen and (max-width: 480px) {
-    .mobile-animation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .animation-container {
-        display: none !important;
-    }
-    .mobile-animation img {
-        width: 90vw;
-    }
+  .mobile-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .animation_left,
+  .animation_right {
+    display: none !important;
+  }
+  .mobile-animation img {
+    width: 90vw;
+  }
+} */
+@media only screen and (max-width: 500px) {
+  #landing-main-div {
+    height: calc(100vh - 180px);
+    padding-top: 80px;
+  }
+  .landing-main-button{
+    padding: 10px 0 0 0;
+  }
+  .landing-main-center{
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .landing-main-text2{
+    margin:20px 0 0 0;
+  }
 }
