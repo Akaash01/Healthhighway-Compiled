@@ -839,7 +839,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 314px) {
+@media only screen and (max-width: 320px) {
   #landing-joinus {
     font-size: 12px;
     width: 60px;
