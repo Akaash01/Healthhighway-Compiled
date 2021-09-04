@@ -282,21 +282,6 @@ nav {
     margin-left: 5px;
 }
 
-#landing-joinus {
-    border-color: #4ca9ee;
-    color: #fff !important;
-    padding: 8px 35px !important;
-    border-radius: 20px !important;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-    background-color: #4ca9ee;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-}
-
 .nav-colored {
     background-color: white !important;
 }
@@ -512,6 +497,7 @@ nav {
     height: calc(100vh - 60px);
     justify-content: flex-start;
     padding-top: 125px;
+    margin: 5px 0 0px 0;
   }
   .landing-main-text1 {
     font-size: 44px;

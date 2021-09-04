@@ -481,7 +481,7 @@
     font-size: 12px;
   }
   .points div {
-    width: 60px;
+    width: 40px;
     display: flex;
     justify-content: end;
   }
@@ -524,6 +524,18 @@
     width: auto;
     margin-right: 15px;
   }
+  .points div img, .points-title img{
+    width: 18px;
+    height: 18px;
+  }
+
+  .points div:nth-child(1) {
+    margin-right: 0px;
+}
+
+  .points div p{
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -544,16 +556,16 @@
     width: 90vw;
     margin-bottom: 5px;
   }
-  .points p {
-    width: 60vw;
-  }
   .points-title {
     width: 90vw;
     margin-top: 25px;
     padding-right: 0;
   }
-  .points div:nth-child(1) {
-    margin-right: 0px;
+  .points div {
+    width: 32px;
+  }
+  .rupees {
+    line-height: 0;
   }
 }
 
