@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/new_navbar.css">
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/search-fliter.css">
+    
+    <link rel="stylesheet" href="css/grp-session.css">
 
     <title>Health Highway | Search for Group Sessions</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -60,281 +61,224 @@
         </div>
     </header>
     <main>
-        <!-- Search-Filter (Start) -->
-        <div class="grp-session-container">
-            <!-- <section class="search-area">
-                <div class="input-area">
-                    <div class="search-box">
-                        <img src="./images/lens.svg" alt="" />
-                        <input type="text" onclick="focusedSearch()" placeholder="Search for a class" onkeyup="filterFunction()" />
-                        <span>Cancel</span>
-                    </div>
-                    <div class="suggestion-con">
-                        <div class="search-suggestions">
-                            <button data-filter="Sandeep">
-                  <span> Yoga for Obesity</span> by Sandeep Kumar
-                </button>
-                            <button data-filter="vimal">
-                  <span> Yoga for Obesity</span> by Vimal
-                </button>
-                            <button data-filter="siva"><span> abcd</span> by Siva</button>
-                            <button data-filter="Sai">
-                  <span> Yoga for Obesity</span> by sai
-                </button>
-                        </div>
-                        <div class="trending-container">
-                            <div class="trending-icon">
-                                <img src="./images/trending2.svg" alt="" />
-                                <p>Trending</p>
-                            </div>
-                            <button>wieghtloss</button>
-                            <button>Joins & Back</button>
-                            <button>Stress</button>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <div class="tags-container">
-                <button id="fitness" class="tag">Fitness</button>
-                <button id="Yoga for kids" class="tag">Hypertension</button>
-                <button id="Diabetes" class="tag">Diabetes</button>
-                <button id="Obesity" class="tag">Obesity</button>
-                <button id="Trending" class="tag">Trending</button>
-
+        <!-- new-grp-session-->
+                <div class="grp-container">
+      <div class="filter-section">
+        <div class="filter filter-time">
+          <div class="filter-top">
+            <div class="label-and-select">
+              <h4>Timing</h4>
+              <div class="select-btn">
+                <p>Select</p>
+                <img src="./images/Vector.svg" alt="" />
+              </div>
             </div>
-            <div class="trending-classes-container">
-                <div class="trending-heading">
-                    <img src="./images/yoga.svg" alt="" />
-                    <h2>Ongoing Group Sessions</h2>
-                </div>
-                <div class="trending-classes">
-                    <a href="detailed_sessions.html">
-                        <div class="grp-card">
-                            <div class="booking-status-tag red-tag">Session Over booked</div>
-                            <img src="./images/Imagegrp-session-image.png" alt="" />
-                            <div class="grp-card-content">
-                                <div class="grp-card-details">
-                                    <div class="grp-card-title">
-                                        <h3>Fitness Yoga</h3>
-                                        <p>6 AM</p>
-                                    </div>
-                                    <h4>by Yogacharya Sandeep</h4>
-                                </div>
-                                <div class="grp-card-trust">
-                                    <img src="./images/man-vector.svg" alt="" />
-                                    <h4>Trusted by 300+ people</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="detailed_sessions.html">
-                        <div class="grp-card">
-                            <div class="booking-status-tag yellow-tag">Session starting soon</div>
-                            <img src="./images/Imagegrp-session-image.png" alt="" />
-                            <div class="grp-card-content">
-                                <div class="grp-card-details">
-                                    <div class="grp-card-title">
-                                        <h3>Fitness Yoga</h3>
-                                        <p>6 AM</p>
-                                    </div>
-                                    <h4>by Yogacharya Sandeep</h4>
-                                </div>
-                                <div class="grp-card-trust">
-                                    <img src="./images/man-vector.svg" alt="" />
-                                    <h4>Trusted by 300+ people</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="detailed_sessions.html">
-                        <div class="grp-card">
-                            <div class="booking-status-tag red-tag">Session Over booked</div>
-                            <img src="./images/Imagegrp-session-image.png" alt="" />
-                            <div class="grp-card-content">
-                                <div class="grp-card-details">
-                                    <div class="grp-card-title">
-                                        <h3>Fitness Yoga</h3>
-                                        <p>6 AM</p>
-                                    </div>
-                                    <h4>by Yogacharya Sandeep</h4>
-                                </div>
-                                <div class="grp-card-trust">
-                                    <img src="./images/man-vector.svg" alt="" />
-                                    <h4>Trusted by 300+ people</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="fitness-yoga-con">
-                <div class="yoga-session-heading">
-                    <img src="./images/yoga.svg" alt="" />
-                    <h2>Upcoming Group Sessions</h2>
-                </div>
-                <div class="yoga-classes">
-                    <a href="detailed_sessions.html">
-                        <div class="grp-card">
-                            <img src="./images/Imagegrp-session-image.png" alt="" />
-                            <div class="grp-card-content">
-                                <div class="grp-card-details">
-                                    <div class="grp-card-title">
-                                        <h3>Fitness Yoga</h3>
-                                        <p>6 AM</p>
-                                    </div>
-                                    <h4>by Yogacharya Sandeep</h4>
-                                </div>
-                                <div class="grp-card-trust">
-                                    <img src="./images/man-vector.svg" alt="" />
-                                    <h4>Trusted by 300+ people</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="detailed_sessions.html">
-                        <div class="grp-card">
-                            <img src="./images/Imagegrp-session-image.png" alt="" />
-                            <div class="grp-card-content">
-                                <div class="grp-card-details">
-                                    <div class="grp-card-title">
-                                        <h3>Fitness Yoga</h3>
-                                        <p>6 AM</p>
-                                    </div>
-                                    <h4>by Yogacharya Sandeep</h4>
-                                </div>
-                                <div class="grp-card-trust">
-                                    <img src="./images/man-vector.svg" alt="" />
-                                    <h4>Trusted by 300+ people</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="detailed_sessions.html">
-                        <div class="grp-card">
-                            <img src="./images/Imagegrp-session-image.png" alt="" />
-                            <div class="grp-card-content">
-                                <div class="grp-card-details">
-                                    <div class="grp-card-title">
-                                        <h3>Fitness Yoga</h3>
-                                        <p>6 AM</p>
-                                    </div>
-                                    <h4>by Yogacharya Sandeep</h4>
-                                </div>
-                                <div class="grp-card-trust">
-                                    <img src="./images/man-vector.svg" alt="" />
-                                    <h4>Trusted by 300+ people</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="session-filter">
-                <div class="time-filter">
-                    <div class="top-filter">
-                        <div class="label-button">
-                            <h2>Time</h2>
-                            <a class="dropdown-btn">Select <img src="./images/down-arrow.svg" alt=""
-                /></a>
-                        </div>
-                        <span>Cancel</span>
-                    </div>
-                    <ul class="list-options">
-                        <li>Early Morning 6:00 AM</li>
-                        <li>Late Morning 9:00 AM</li>
-                        <li>Late Morning 9:00 AM</li>
-                    </ul>
-                </div>
-                <div class="time-filter">
-                    <div class="top-filter">
-                        <div class="label-button">
-                            <h2>Level</h2>
-                            <a class="dropdown-btn">Select <img src="./images/down-arrow.svg" alt=""
-                /></a>
-                        </div>
-                        <span>Cancel</span>
-                    </div>
-                    <ul class="list-options">
-                        <li>Beginner</li>
-                        <li>Intermediate</li>
-                        <li>Advance</li>
-                    </ul>
-                </div>
-                <div class="time-filter">
-                    <div class="top-filter">
-                        <div class="label-button">
-                            <h2>Time</h2>
-                            <a class="dropdown-btn">Select <img src="./images/down-arrow.svg" alt=""
-                /></a>
-                        </div>
-                        <span>Cancel</span>
-                    </div>
-                    <ul class="list-options">
-                        <li>Early Morning 6:00 AM</li>
-                        <li>Late Morning 9:00 AM</li>
-                        <li>Late Morning 9:00 AM</li>
-                    </ul>
-                </div>
-            </div>
-            <section class="filtered-result">
-                <a href="detailed_sessions.html">
-                    <div data-category="vimal" class="grp-card">
-                        <img src="./images/Imagegrp-session-image.png" alt="" />
-                        <div class="grp-card-content">
-                            <div class="grp-card-details">
-                                <div class="grp-card-title">
-                                    <h3>Fitness Yoga</h3>
-                                    <p>6 AM</p>
-                                </div>
-                                <h4>by Vimal Sandeep</h4>
-                            </div>
-                            <div class="grp-card-trust">
-                                <img src="./images/man-vector.svg" alt="" />
-                                <h4>Trusted by 300+ people</h4>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="detailed_sessions.html">
-                    <div data-category="vimal" class="grp-card">
-                        <img src="./images/Imagegrp-session-image.png" alt="" />
-                        <div class="grp-card-content">
-                            <div class="grp-card-details">
-                                <div class="grp-card-title">
-                                    <h3>Fitness Yoga</h3>
-                                    <p>6 AM</p>
-                                </div>
-                                <h4>by Vimal Sandeep</h4>
-                            </div>
-                            <div class="grp-card-trust">
-                                <img src="./images/man-vector.svg" alt="" />
-                                <h4>Trusted by 300+ people</h4>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="detailed_sessions.html">
-                    <div data-category="siva" class="grp-card">
-                        <img src="./images/Imagegrp-session-image.png" alt="" />
-                        <div class="grp-card-content">
-                            <div class="grp-card-details">
-                                <div class="grp-card-title">
-                                    <h3>Fitness Yoga</h3>
-                                    <p>6 AM</p>
-                                </div>
-                                <h4>by Siva Sandeep</h4>
-                            </div>
-                            <div class="grp-card-trust">
-                                <img src="./images/man-vector.svg" alt="" />
-                                <h4>Trusted by 300+ people</h4>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </section>
+            <span class="active-cancel">Cancel</span>
+          </div>
+          <div class="filter-options">
+            <ul>
+              <li>Early Morning 6:00 AM</li>
+              <li>Late Morning 9:00 AM</li>
+              <li>Late Morning 9:00 AM</li>
+            </ul>
+          </div>
         </div>
-        <!-- Search-Filter (End) -->
+        <div class="filter filter-obj">
+          <div class="filter-top">
+            <div class="label-and-select">
+              <h4>Objective</h4>
+              <div class="select-btn">
+                <p>Select</p>
+                <img src="./images/Vector.svg" alt="" />
+              </div>
+            </div>
+            <span class="active-cancel">Cancel</span>
+          </div>
+          <div class="filter-options">
+            <ul>
+              <li>Fitness</li>
+              <li>Mindfullness</li>
+              <li>Late Morning 9:00 AM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ongoing-section first-section">
+        <div class="title-area">
+          <div class="title-img">
+            <img src="./images/yoga.svg" alt="" />
+            <h2>Ongoing section</h2>
+          </div>
+          <div class="see-btns">
+            <p class="seemore see-active">See more</p>
+            <p class="seeless">See less</p>
+          </div>
+        </div>
+
+        <div class="grp-card-container">
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ongoing-section">
+        <div class="title-area">
+          <div class="title-img">
+            <img src="./images/yoga.svg" alt="" />
+            <h2>Upcoming section</h2>
+          </div>
+          <div class="see-btns">
+            <p class="seemore see-active">See more</p>
+            <p class="seeless">See less</p>
+          </div>
+        </div>
+
+        <div class="grp-card-container">
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-grp-card">
+            <img src="./images/image2.png" alt="" />
+            <div class="grp-card-txt">
+              <div class="card-title">
+                <h3>Fitness Yoga</h3>
+                <p>by Yogachariya Sandeep</p>
+              </div>
+              <div class="session-time">
+                <p>6 AM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- new-grp-session (End) -->
 
         <!-- USP Section (START) -->
         <section id="usp" class="usp-section">
@@ -589,9 +533,8 @@
         </div>
     </footer>
 
-
-
-
+      
+   <script src="js/grp-session.js"></script>
     <script src="js/search.js"></script>
     <script src="js/landing.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
