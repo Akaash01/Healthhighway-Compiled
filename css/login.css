@@ -411,6 +411,8 @@ input[type="number"]:nth-child(n + 4) {
 
 #info-div img {
   margin-top: 60px;
+  max-width: 360px;
+  max-height: 300px;
 }
 
 #info-div p {
@@ -529,6 +531,10 @@ input[type="number"]:nth-child(n + 4) {
   #info-div p {
     width: 64vw;
   }
+  #info-div img {
+    max-width: 280px;
+    max-height: 250px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -572,7 +578,7 @@ input[type="number"]:nth-child(n + 4) {
   }
   #info-div p {
     width: 72vw;
-  }
+  }  
 }
 
 @media only screen and (max-width: 360px) {
@@ -609,6 +615,10 @@ input[type="number"]:nth-child(n + 4) {
   #loginSuccess p {
     font-size: 20px;
     width: 240px;
+  }
+  #info-div img {
+    max-width: 240px;
+    max-height: 200px;
   }
 }
 
@@ -685,6 +695,10 @@ input[type="number"]:nth-child(n + 4) {
   .OTPTitle {
     margin-top: 32px;
     margin-left: 10px;
+  }
+  #info-div img {
+    max-width: 200px;
+    max-height: 180px;
   }
 }
 
