@@ -2739,6 +2739,9 @@ footer {
 
 /* Testiomonials CSS (END) */
 
+
+/* CAll BACK CSS (Start) */
+
 .call-back {
     padding: 1em 5%;
     background-color: #4ca9ee;
@@ -2783,10 +2786,34 @@ footer {
     border-radius: 0.5em;
 }
 
+@media(min-width:414px) {
+    .call-back {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+    .call-back-head {
+        text-align: left;
+        font-size: 18px;
+    }
+    .call-back-text {
+        text-align: left;
+        font-size: 12px;
+    }
+    .cb-form {
+        display: flex;
+    }
+    .call-back-btn {
+        font-size: 12px;
+        padding: 1em .5em;
+        height: max-content;
+        align-self: center;
+    }
+}
+
 @media (min-width: 768px) {
     .call-back {
         padding: 2em 10%;
-        display: -ms-grid;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -2808,6 +2835,8 @@ footer {
         transition: 0.2s ease-in;
         margin: 1em 0;
         margin-left: 1.5em;
+        font-size: 1rem;
+        padding: 0.6em 1.4em;
     }
     .call-back-btn:hover {
         background-color: white;
@@ -2853,6 +2882,9 @@ footer {
         margin-left: 1.5em;
     }
 }
+
+
+/* CAll BACK CSS (END) */
 
 @media (min-width: 1440px) {
     .call-back {
