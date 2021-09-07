@@ -210,7 +210,7 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 280px 0 80px 0;
+    margin: 200px 0 120px 0;
 }
 
 .landing-container {
@@ -250,11 +250,6 @@ nav {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.navbar-brand img {
-    width: 80px;
-    height: 53.33px;
 }
 
 .fa-navicon:before,
@@ -373,6 +368,10 @@ nav {
     line-height: 22px;
     color: #4ca9ee;
     text-align: center;
+}
+
+.logo {
+    margin-left: 70px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -495,7 +494,7 @@ nav {
         height: calc(100vh - 60px);
         justify-content: flex-start;
         padding-top: 125px;
-        margin: 5px 0 0px 0;
+        margin: 0;
     }
     .landing-main-text1 {
         font-size: 44px;

@@ -476,7 +476,7 @@
   }
   .points {
     width: 40vw;
-    padding: 0 5vw;
+    padding: 0 0 0 5vw;
     margin: 0;
     font-size: 12px;
   }
@@ -549,7 +549,7 @@
     align-items: start;
   }
   .points-text {
-    width: 80vw;
+    width: 60vw !important;
   }
   .points {
     width: 90vw;

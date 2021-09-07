@@ -100,17 +100,9 @@
 }
 
 .loginLogo {
-  margin-top: 42px;
+  margin-top: 50px;
   width: 120px;
   height: 80px;
-}
-
-.loginLogoText {
-  font-size: 2rem;
-  margin-top: 14px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
 }
 
 .loginInput {
@@ -432,6 +424,10 @@ input[type="number"]:nth-child(n + 4) {
   opacity: 1;
 }
 
+.textLogo {
+  margin-top: 5px;
+}
+
 @media only screen and (max-width: 1440px) {
   #info-div p {
     width: 20vw;
@@ -501,7 +497,7 @@ input[type="number"]:nth-child(n + 4) {
 
 @media only screen and (max-width: 480px) {
   .loginLogo {
-    margin-top: 28px;
+    margin-top: 40px;
     width: 100px;
     height: 50px;
   }
@@ -511,9 +507,6 @@ input[type="number"]:nth-child(n + 4) {
   }
   #loginContinue {
     margin-top: 15px;
-  }
-  .loginLogoText {
-    font-size: 1.6rem;
   }
   .loginButton {
     font-size: 1.2rem;
@@ -534,6 +527,9 @@ input[type="number"]:nth-child(n + 4) {
   #info-div img {
     max-width: 280px;
     max-height: 250px;
+  }
+  .textLogo {
+    height: 28px;
   }
 }
 
@@ -570,15 +566,15 @@ input[type="number"]:nth-child(n + 4) {
     width: 80px;
     height: 40px;
   }
-  .loginLogoText {
-    font-size: 1.4rem;
-  }
   .loginInputBar {
     font-size: 1.2rem;
   }
   #info-div p {
     width: 72vw;
-  }  
+  } 
+  .textLogo {
+    height: 22px;
+} 
 }
 
 @media only screen and (max-width: 360px) {
