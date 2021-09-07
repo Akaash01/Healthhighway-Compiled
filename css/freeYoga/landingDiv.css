@@ -33,7 +33,6 @@
   line-height: 20px;
 }
 
-
 .slides img {
   width: 602px;
   height: 332px;
@@ -109,7 +108,8 @@
   color: #5a6885;
 }
 
-.points-recommended .points-text, .points-not-recommended .points-text {
+.points-recommended .points-text,
+.points-not-recommended .points-text {
   font-weight: normal;
 }
 
@@ -147,9 +147,6 @@
 
 .points div {
   width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .points div:nth-child(1) {
@@ -365,12 +362,6 @@
 }
 
 @media only screen and (max-width: 740px) {
-  .points-common .points .points-text {
-    width: 120px;
-  }
-}
-
-@media only screen and (max-width: 720px) {
   .detailed-landing-main-right {
     padding: 40px 15vw 0 15vw;
   }
@@ -384,14 +375,19 @@
   .points {
     width: 48%;
     margin: 0 1%;
+    display: flex;
+    justify-content: start;
   }
 }
 
 @media only screen and (max-width: 680px) {
   .points-recommended .points-text,
   .points-not-recommended .points-text {
-    width: 150px;
+    width: 180px;
     margin-bottom: 10px;
+  }
+  .points-common .points {
+    width: 45%;
   }
 }
 
@@ -410,10 +406,6 @@
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-  }
-  .points-recommended .points-text,
-  .points-not-recommended .points-text {
-    width: 140px;
   }
 }
 
@@ -475,21 +467,21 @@
     align-items: center;
   }
   .points-common {
-    padding: 0 5vw;
+    padding: 0 10vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .points {
+  .points-common .points {
     width: 40vw;
-    padding: 0 0 0 5vw;
+    padding: 0 5vw 10px 0;
     margin: 0;
     font-size: 12px;
+    align-items: center;
   }
   .points div {
-    width: 40px;
-    display: flex;
-    justify-content: end;
+    width: 32px;
   }
   .points-text span {
     font-size: 12px !important;
@@ -502,11 +494,18 @@
   }
   .points-recommended,
   .points-not-recommended {
+    padding: 0 10vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding: 0 10vw;
+    flex-wrap: wrap;
     margin-top: 10px;
+    justify-content: start;
+  }
+  .points-recommended .points,
+  .points-not-recommended .points {
+    padding: 0;
+    max-width: 50%;
+    display: flex;
   }
   .points-text {
     font-size: 12px;
@@ -529,33 +528,44 @@
     width: auto;
     margin-right: 15px;
   }
-  .points div img, .points-title img{
+  .points div img,
+  .points-title img {
     width: 18px;
     height: 18px;
+    margin-right: 12px;
   }
 
   .points div:nth-child(1) {
-    margin-right: 14px;
-}
+    margin-right: 0;
+  }
 
-  .points div p{
+  .points div p {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .points-common {
-    padding: 0 5vw;
+    padding: 0 10vw;
     display: flex;
     flex-direction: column;
+    width: 80vw;
+  }
+  .points-common .points {
+    width: 80vw;
   }
   .points-recommended,
   .points-not-recommended {
     flex-direction: column;
     align-items: start;
+    width: 100%;
+  }
+  .points-recommended .points,
+  .points-not-recommended .points {
+    max-width: 80vw;
   }
   .points-text {
-    width: 60vw !important;
+    width: 80vw;
   }
   .points {
     width: 90vw;
