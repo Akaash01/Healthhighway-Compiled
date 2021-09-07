@@ -1,4 +1,6 @@
     @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
     #choose-ailment,
     #choose-timing,
     #choose-days,
@@ -97,6 +99,7 @@
     }
     
     .os-form {
+        font-family: "Montserrat", sans-serif;
         width: 85%;
         margin: 2em auto;
         margin-top: .5em;
@@ -160,6 +163,7 @@
     
     .osf-button,
     .osf-success-button {
+        font-family: "Montserrat", sans-serif;
         background-color: transparent;
         border: none;
         padding: 1em 2em;
@@ -169,7 +173,8 @@
         color: white;
         font-size: 1rem;
         background-color: #4CA9EE;
-        cursor: pointer
+        cursor: pointer;
+        font-weight: 500;
     }
     
     .osf-button:hover,
@@ -541,11 +546,10 @@
             padding-right: .4em;
         }
         .osf-button {
-            max-width: -webkit-max-content !important;
-            max-width: -moz-max-content !important;
-            max-width: max-content !important;
-            padding: 1em 3em;
+            padding: 1em;
             font-size: .75rem;
+            max-width: 50% !important;
+            font-weight: 600;
         }
         .osf-heading {
             font-size: 1.5rem;
