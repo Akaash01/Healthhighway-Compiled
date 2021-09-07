@@ -2728,6 +2728,11 @@ button img {
         padding: 1em .5em;
         height: max-content;
         align-self: center;
+        margin: 1em 0;
+        margin-left: 1em;
+    }
+    #phone-num {
+        margin: 1em 0;
     }
 }
 
