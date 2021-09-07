@@ -33,6 +33,7 @@
   line-height: 20px;
 }
 
+
 .slides img {
   width: 602px;
   height: 332px;
@@ -102,10 +103,14 @@
 .points-text {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #5a6885;
+}
+
+.points-recommended .points-text, .points-not-recommended .points-text {
+  font-weight: normal;
 }
 
 .points {
@@ -123,6 +128,7 @@
   margin-top: 24px;
   width: auto;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .points-div {
