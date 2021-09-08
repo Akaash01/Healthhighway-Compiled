@@ -764,19 +764,8 @@ nav {
 }
 
 @media only screen and (max-width: 464px) {
-    .navbar-brand {
+    .logo {
         margin-left: 10px;
-    }
-    .navbar-brand img {
-        width: 70px;
-        height: 46.67px;
-    }
-    .navbar-brand span {
-        color: #4ca9ee;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        margin-left: 3px;
     }
     #landing-joinus,
     .loginIcon {
