@@ -1799,6 +1799,24 @@ nav {
         width: 70%;
         justify-self: flex-end;
     }
+    .usp-one-svg {
+        justify-self: flex-end;
+    }
+    .usp-one-svg svg {
+        width: 100%;
+    }
+    .usp-two-svg {
+        justify-self: flex-start;
+    }
+    .usp-two-svg svg {
+        width: 100%;
+    }
+    .usp-three-svg {
+        justify-self: flex-end;
+    }
+    .usp-three-svg svg {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
