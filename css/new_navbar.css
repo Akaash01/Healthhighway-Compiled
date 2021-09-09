@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600;700&family=Work+Sans:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 nav {
     display: block;
     line-height: 1.15;
     background: transparent;
+}
+
+.logo {
+    margin-left: 70px;
 }
 
 .container-fluid {
@@ -41,12 +44,6 @@ nav {
     font-size: 17px !important;
 }
 
-.navbar-brand span {
-    color: #4ca9ee;
-    font-family: Open Sans !important;
-    font-size: 23px;
-    margin-left: 5px;
-}
 
 .nav-colored {
     background-color: white !important;
@@ -87,7 +84,7 @@ nav {
     line-height: 22px;
     font-family: Montserrat !important;
     font-style: normal;
-    font-weight: 500 !important;
+    font-weight: 400;
     font-size: 16px !important;
     color: #3c4860;
 }
