@@ -549,9 +549,6 @@ nav {
         line-height: 30px;
         margin-top: 5px;
     }
-    .landing-main-button {
-        margin-top: 50px;
-    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -587,7 +584,6 @@ nav {
         margin-top: 5px;
     }
     .landing-main-button {
-        margin-top: 50px;
         width: 144px;
         height: 44px;
         font-size: 18px;
@@ -2940,7 +2936,8 @@ footer {
     .mobile {
         display: block !important;
         text-align: center;
-        margin-bottom: 14px;
+        margin-top: 8px;
+        margin-bottom: 45px;
     }
     .instructor {
         width: 64vw;
