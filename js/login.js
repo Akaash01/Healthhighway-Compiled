@@ -54,11 +54,11 @@ modalCloseSend.addEventListener("click", function() {
     modalInfoCloseFunction();
 });
 
-loginContinue.onclick = function() {
-    let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
+loginContinue.addEventListener("click", function() {
+	let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
     phoneNumber.innerHTML = inputText;
     OTPDivActive();
-};
+})
 
 modalBack.onclick = function() {
     phoneDivActive();
