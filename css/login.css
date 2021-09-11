@@ -223,7 +223,8 @@
   font-weight: bold;
 }
 
-.OTPTitle {
+.OTPTitle,
+.nameTitle {
   display: flex;
   align-items: center;
   margin-bottom: 80px;
@@ -428,6 +429,63 @@ input[type="number"]:nth-child(n + 4) {
   margin-top: 5px;
 }
 
+.down-arrow {
+  border: solid #4ca9ee;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#name {
+  display: none;
+}
+
+.nameImg {
+  margin: 80px 0 32px 0;
+}
+
+.nameText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #29e7cd;
+  width: 311px;
+  margin-bottom: 32px;
+}
+
+.nameInput {
+  width: 262px;
+  height: 38px;
+  background: #ebf0f4;
+  border-radius: 4.58333px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+.nameInput::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #535556;
+}
+
+.nameTitle {
+  left: 0;
+}
+
+#continueName {
+  margin-bottom: 20px;
+  width: 241px;
+}
+
 @media only screen and (max-width: 1440px) {
   #info-div p {
     width: 20vw;
@@ -487,11 +545,17 @@ input[type="number"]:nth-child(n + 4) {
   .OTPTitle {
     margin-left: 1px;
   }
+  .nameTitle {
+    margin-left: 48px;
+  }
   .loginInputBar::placeholder {
     font-size: 0.7rem;
   }
   #info-div p {
     width: 54vw;
+  }
+  .nameText {
+    width: 280px;
   }
 }
 
@@ -553,7 +617,9 @@ input[type="number"]:nth-child(n + 4) {
   #OTP,
   .OTPText,
   .enterText,
-  .OTPPara {
+  .OTPPara,
+  .nameInput,
+  .nameText {
     width: 240px;
   }
   .loginCondition {
@@ -571,10 +637,13 @@ input[type="number"]:nth-child(n + 4) {
   }
   #info-div p {
     width: 72vw;
-  } 
+  }
   .textLogo {
     height: 22px;
-} 
+  }
+  #continueName {
+    width: 230px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -590,6 +659,10 @@ input[type="number"]:nth-child(n + 4) {
   .enterText,
   .OTPPara {
     width: 260px;
+  }
+  .nameInput,
+  .nameText {
+    width: 230px;  
   }
   .loginCondition {
     width: 260px;
@@ -612,6 +685,23 @@ input[type="number"]:nth-child(n + 4) {
     font-size: 20px;
     width: 240px;
   }
+  .nameImg {
+    width: 100px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .nameText {
+    margin-bottom: 20px;
+  }
+  #continueName {
+    margin: 20px 0 0 0;
+  }
+  #continueName {
+    width: 200px;
+  }
+  .nameTitle {
+    margin-left: 32px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -633,7 +723,9 @@ input[type="number"]:nth-child(n + 4) {
   #OTP,
   .OTPText,
   .enterText,
-  .OTPPara {
+  .OTPPara,
+  .nameInput,
+  .nameText {
     width: 210px;
   }
   .loginCondition {
@@ -671,7 +763,9 @@ input[type="number"]:nth-child(n + 4) {
   #OTP,
   .OTPText,
   .enterText,
-  .OTPPara {
+  .OTPPara,
+  .nameInput,
+  .nameText {
     width: 220px;
   }
   .loginCondition {
@@ -692,14 +786,4 @@ input[type="number"]:nth-child(n + 4) {
     margin-top: 32px;
     margin-left: 10px;
   }
-
-}
-
-.down-arrow {
-  border: solid #4ca9ee;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 4px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }

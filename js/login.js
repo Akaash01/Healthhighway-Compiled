@@ -1,19 +1,22 @@
 var login = document.getElementById("landing-joinus");
 var modalBg = document.querySelector(".login-modal-bg");
 var modalClose = document.querySelector(".close");
-var modalCloseSend = document.querySelector(".closeSend");
 var navbar = document.querySelector("nav");
 var OTP = document.getElementById("OTP");
 var phoneNumber = document.getElementById("phoneNumber");
 var loginContinue = document.getElementById("loginContinue");
 var phoneDiv = document.getElementById("phoneDiv");
 var loginModal = document.querySelector(".login-modal");
-var modalBack = document.getElementById("modalBack");
+var modalBackOTP = document.getElementById("backOTP");
+var modalBackName = document.getElementById("backName");
 var infoBg = document.querySelector(".info-modal-bg");
+var nameDiv = document.getElementById("name");
+var confirmLogin = document.getElementById("confirmLogin");
 
 phoneDivActive = () => {
     phoneDiv.style.display = "block";
     OTP.style.display = "none";
+	nameDiv.style.display = "none";
     phoneNumber.innerHTML = "";
     phoneDiv.style.display = "flex";
 	loginModal.style.height = "auto"
@@ -24,7 +27,15 @@ OTPDivActive = () => {
     OTP.style.display = "block";
     phoneNumber.classList.add("phone");
 	loginModal.style.height = "340px"
+	nameDiv.style.display = "none";
 };
+
+nameDivActive = () => {
+	phoneDiv.style.display = "none";	
+	OTP.style.display = "none";
+	nameDiv.style.display = "block";
+	loginModal.style.height = "auto"
+}
 
 modalCloseFunction = () => {
     modalBg.classList.remove("bg-active");
@@ -50,9 +61,9 @@ modalClose.addEventListener("click", function() {
     modalCloseFunction();
 });
 
-modalCloseSend.addEventListener("click", function() {
-    modalInfoCloseFunction();
-});
+// modalCloseSend.addEventListener("click", function() {
+//     modalInfoCloseFunction();
+// });
 
 loginContinue.addEventListener("click", function() {
 	let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
@@ -60,9 +71,17 @@ loginContinue.addEventListener("click", function() {
     OTPDivActive();
 })
 
-modalBack.onclick = function() {
+confirmLogin.addEventListener("click", function() {
+	nameDivActive();
+})
+
+modalBackOTP.onclick = function() {
     phoneDivActive();
 };
+
+modalBackName.onclick = function() {
+	OTPDivActive();	
+}
 
 // code for otp input
 let in1 = document.getElementById('otp-1'),
