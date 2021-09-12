@@ -36,9 +36,12 @@
 }
 .animation_middle {
   margin-top: 10px;
+  align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transform: translateX(-25px);
+  width: calc(100% + 50px);
   /* padding: 0 20px 50px; */
 }
 /* #29e7cd */
@@ -456,6 +459,10 @@
   .animation_left,
   .animation_right {
     height: 200px;
+  }
+  .animation_middle{
+    transform: translateX(0);
+    width: 100%;
   }
 }
 @media (max-width: 1000px) {
