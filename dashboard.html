@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/login.css" />
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -33,424 +34,544 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto">
                             <li style="margin-right: 40px" class="nav-item">
-                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a
-                      >
-                    </li>
-                    <li style="margin-right: 40px" class="nav-item">
-                      <a
-                        onclick="scrolltofunc('services-main-div')"
-                        class="nav-link"
-                        >Support</a
-                      >
-                    </li>
-                    <li style="margin-right: 40px" class="nav-item">
-                      <a
-                        onclick="scrolltofunc('feedback-main-starting')"
-                        style="font-weight: 600 !important"
-                        class="nav-link"
-                        >Logout</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <button
-                  id="landing-joinus"
-                  type="button"
-                  class="btn btn-light"
-                  onclick="showmodal('booksession')"
-                >
-                  Join Us
-                </button>
-                <!-- <button class="loginIcon">
+                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('services-main-div')" class="nav-link">Support</a>
+                            </li>
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a onclick="scrolltofunc('feedback-main-starting')" style="font-weight: 600 !important" class="nav-link">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="landing-joinus" type="button" class="btn btn-light" onclick="showmodal('booksession')">
+                        Join Us
+                    </button>
+                    <!-- <button class="loginIcon">
                             <img src="images/user.png" alt="user"/>
                         </button> -->
-              </div>
+                </div>
             </nav>
-          </div>
+        </div>
     </header>
     <main>
+
         <section class="mobile-version">
             <div class=" download-app">
-                <h2 id="download-app-heading">Download <span>Health</span> <span class="highway-spn">Highway</span> App</h2>
+                <h2 id="download-app-heading">Download <span>Health</span> <span class="highway-spn">Highway</span> App
+                </h2>
                 <div class="download-img">
                     <img src="images/dwnld-app.png" alt="">
 
                 </div>
                 <p>For enhanced experience</p>
                 <a href="#" class="download-now-btn">Download Now</a>
+            </div>
+        </section>
+        <section class="dashboard">
+            <!-- Tiles  -->
+            <div class="title-filter">
+                <h1>Dashboard</h1>
+                <button class="edit-profile">Edit Profile <span><img src="images/pen.svg" alt=""></span></button>
+            </div>
+            <div class="tiles">
+                <div class="message-tile">
+                    <div class="name-icon">
+                        <img class="user-icon" src="images/user.jpg" alt="">
+                        <h2>The Weeknd</h2>
+
                     </div>
-                    </section>
-                    <section class="dashboard">
-                        <!-- Tiles  -->
-                        <div class="title-filter">
-                            <h1>Dashboard</h1>
-                            <a href="#" class="edit-profile">Edit Profile <span><img src="images/pen.svg" alt=""></span></a>
-                        </div>
-                        <div class="tiles">
-                            <div class="message-tile">
-                                <div class="name-icon">
-                                    <img class="user-icon" src="images/user.jpg" alt="">
-                                    <h2>The Weeknd</h2>
-
-                                </div>
-                                <div class="user-details">
-                                    <p class="age">Age : <span class="user-age">18 Yrs</span></p>
-                                    <p class="contact">Contact : <span class="user-contact">9899303075</span></p>
-                                    <p class="mail">Mail : <span class="user-mail">twrvidhu18@gamil.com</span></p>
-                                </div>
-
-                            </div>
-                            <div class="stats-tiles">
-                                <div class="time">
-                                    <div class="icon"><img src="images/dumb.png" alt=""></div>
-                                    <div class="stat">
-                                        <h4>67.5 Kg</h4>
-                                        <p>Weight</p>
-                                    </div>
-                                </div>
-                                <div class="attended">
-                                    <div class="icon"><img src="images/tape.png" alt=""></div>
-                                    <div class="stat">
-                                        <h4>150</h4>
-                                        <p>Sessions Attended</p>
-                                    </div>
-                                </div>
-                                <div class="level">
-                                    <div class="icon"><img src="images/bmi.png" alt=""></div>
-                                    <div class="stat">
-                                        <h4>24.9</h4>
-                                        <p>BMI</p>
-                                    </div>
-                                </div>
-                                <div class="missed">
-                                    <div class="icon"><img src="images/cam.png" alt=""></div>
-                                    <div class="stat">
-                                        <h4>5</h4>
-                                        <p>Sessions Attended</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Tiles(End)  -->
-
-                        <!-- Calendar -->
-                        <div class="month">
-                            <h1>August 2021</h1>
-                            <div class="arrows">
-                                <button><img src="images/left-arrow.svg" alt="" /></button>
-                                <button><img src="images/right-arrow.svg" alt="" /></button>
-                            </div>
-                        </div>
-                        <div class="days">
-                            <div class="tablet">
-                                <h1>August 2021</h1>
-                                <div class="arrows">
-                                    <button><img src="images/left-arrow.svg" alt="" /></button>
-                                    <button><img src="images/right-arrow.svg" alt="" /></button>
-                                </div>
-                            </div>
-                            <div class="dayname">Sun</div>
-                            <div class="dayname">Mon</div>
-                            <div class="dayname">Tue</div>
-                            <div class="dayname">Wed</div>
-                            <div class="dayname">Thu</div>
-                            <div class="dayname">Fri</div>
-                            <div class="dayname">Sat</div>
-
-                            <div class="day">1</div>
-                            <div class="day reminder">
-                                2
-                                <span class="rem-span">
-              <div class="set-reminder">
-                <div class="clock-dur">
-                  <div class="clock"></div>
-                  <div class="duration">45 MIN</div>
-                </div>
-                <div class="rem-content">
-                  <p class="session-type">Personalized Session</p>
-                  <h4>Hatha Yoga</h4>
-                  <p class="session-timing">6:00 AM</p>
-                  <button>Set Reminder</button>
-                </div>
-              </div>
-            </span>
-                            </div>
-                            <div class="day">3</div>
-                            <div class="day">4</div>
-                            <div class="day">5</div>
-                            <div class="day">6</div>
-                            <div class="day">7</div>
-                            <div class="day">8</div>
-                            <div class="day">9</div>
-                            <div class="day">10</div>
-                            <div class="day">11</div>
-                            <div class="day">12</div>
-                            <div class="day">13</div>
-                            <div class="day">14</div>
-                            <div class="day">15</div>
-                            <div class="day">16</div>
-                            <div class="day">17</div>
-                            <div class="day">18</div>
-                            <div class="day">19</div>
-                            <div class="day">20</div>
-                            <div class="day">21</div>
-                            <div class="day">22</div>
-                            <div class="day">23</div>
-                            <div class="day">24</div>
-                            <div class="day">25</div>
-                            <div class="day">26</div>
-                            <div class="day">27</div>
-                            <div class="day">28</div>
-                            <div class="day">29</div>
-                            <div class="day">30</div>
-                            <div class="day">31</div>
-
-                            <div class="event"></div>
-
-                            <!-- set-reminder -->
-
-                            <!-- set-reminder -->
-                        </div>
-                        <!-- Calendar(END) -->
-
-                        <!-- Upcoming-Events -->
-
-
-                        <div class="upcoming download-app">
-                            <h2 id="download-app-heading">Download <span>Health</span> <span class="highway-spn">Highway</span> App</h2>
-                            <div class="download-img">
-                                <img src="images/dwnld-app.png" alt="">
-
-                            </div>
-                            <p>For enhanced experience</p>
-                            <a href="#" class="download-now-btn">Download Now</a>
-                        </div>
+                    <div class="user-details">
+                        <p class="age">Age : <span class="user-age">18 Yrs</span></p>
+                        <p class="contact">Contact : <span class="user-contact">9899303075</span></p>
+                        <p class="mail">Mail : <span class="user-mail">twrvidhu18@gamil.com</span></p>
+                    </div>
 
                 </div>
-                <!-- Upcoming-Events(END) -->
-                <!-- Graph -->
-                <div class="events-graph sessions-swiper">
-                    <h1>Your Sessions</h1>
-                    <div class="card-container">
-
-                        <div class="card">
-                            <img class="card-img" src="images/Imagegrp-session-image.png" alt="ssn-image">
-                            <h3 class="card-head">Fitness Yoga</h3>
-                            <p class="card-text">by Yogacharya Sandeep</p>
+                <div class="stats-tiles">
+                    <div class="time">
+                        <div class="icon"><img src="images/dumb.png" alt=""></div>
+                        <div class="stat">
+                            <h4>67.5 Kg</h4>
+                            <p>Weight</p>
                         </div>
-                        <div class="card">
-                            <img class="card-img" src="images/Imagegrp-session-image.png" alt="ssn-image">
-                            <h3 class="card-head">Fitness Yoga</h3>
-                            <p class="card-text">by Yogacharya Sandeep</p>
+                    </div>
+                    <div class="attended">
+                        <div class="icon"><img src="images/tape.png" alt=""></div>
+                        <div class="stat">
+                            <h4>150</h4>
+                            <p>Sessions Attended</p>
                         </div>
-                        <div class="card">
-                            <img class="card-img" src="images/Imagegrp-session-image.png" alt="ssn-image">
-                            <h3 class="card-head">Fitness Yoga</h3>
-                            <p class="card-text">by Yogacharya Sandeep</p>
+                    </div>
+                    <div class="level">
+                        <div class="icon"><img src="images/bmi.png" alt=""></div>
+                        <div class="stat">
+                            <h4>24.9</h4>
+                            <p>BMI</p>
+                        </div>
+                    </div>
+                    <div class="missed">
+                        <div class="icon"><img src="images/cam.png" alt=""></div>
+                        <div class="stat">
+                            <h4>5</h4>
+                            <p>Sessions Attended</p>
                         </div>
                     </div>
                 </div>
-                <!-- Graph{END} -->
-                </section>
+            </div>
+            <!-- Tiles(End)  -->
 
-                <!-- login div -->
-                <div class="login-modal-bg">
-                    <div class="login-modal">
-                        <div class="loginBody" id="phoneDiv">
-                            <img src="/images/logo.svg" class="loginLogo">
-                            <div class="loginLogoText">
-                                <span style="color: #4ca9ee" class="logo-span">Health</span>
-                                <span style="color: #29e7cd" class="logo-span"> Highway</span>
+            <!-- Calendar -->
+            <div class="month">
+                <h1>August 2021</h1>
+                <div class="arrows">
+                    <button><img src="images/left-arrow.svg" alt="" /></button>
+                    <button><img src="images/right-arrow.svg" alt="" /></button>
+                </div>
+            </div>
+            <div class="days">
+                <div class="tablet">
+                    <h1>August 2021</h1>
+                    <div class="arrows">
+                        <button><img src="images/left-arrow.svg" alt="" /></button>
+                        <button><img src="images/right-arrow.svg" alt="" /></button>
+                    </div>
+                </div>
+                <div class="dayname">Sun</div>
+                <div class="dayname">Mon</div>
+                <div class="dayname">Tue</div>
+                <div class="dayname">Wed</div>
+                <div class="dayname">Thu</div>
+                <div class="dayname">Fri</div>
+                <div class="dayname">Sat</div>
+
+                <div class="day">1</div>
+                <div class="day reminder">
+                    2
+                    <span class="rem-span">
+                        <div class="set-reminder">
+                            <div class="clock-dur">
+                                <div class="clock"></div>
+                                <div class="duration">45 MIN</div>
                             </div>
-                            <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
-                            <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
-                            <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
+                            <div class="rem-content">
+                                <p class="session-type">Personalized Session</p>
+                                <h4>Hatha Yoga</h4>
+                                <p class="session-timing">6:00 AM</p>
+                                <button>Set Reminder</button>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+
+                <div class="event"></div>
+
+                <!-- set-reminder -->
+
+                <!-- set-reminder -->
+            </div>
+            <!-- Calendar(END) -->
+
+            <!-- Upcoming-Events -->
+
+
+            <div class="upcoming download-app">
+                <h2 id="download-app-heading">Download <span>Health</span> <span class="highway-spn">Highway</span> App
+                </h2>
+                <div class="download-img">
+                    <img src="images/dwnld-app.png" alt="">
+
+                </div>
+                <p>For enhanced experience</p>
+                <a href="#" class="download-now-btn">Download Now</a>
+            </div>
+
+            </div>
+            <!-- Upcoming-Events(END) -->
+            <!-- Graph -->
+            <div class="events-graph sessions-swiper">
+                <h1>Your Sessions</h1>
+                <div class="card-container">
+
+                    <div class="card">
+                        <img class="card-img" src="images/Imagegrp-session-image.png" alt="ssn-image">
+                        <h3 class="card-head">Fitness Yoga</h3>
+                        <p class="card-text">by Yogacharya Sandeep</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="images/Imagegrp-session-image.png" alt="ssn-image">
+                        <h3 class="card-head">Fitness Yoga</h3>
+                        <p class="card-text">by Yogacharya Sandeep</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="images/Imagegrp-session-image.png" alt="ssn-image">
+                        <h3 class="card-head">Fitness Yoga</h3>
+                        <p class="card-text">by Yogacharya Sandeep</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Graph{END} -->
+        </section>
+        <!-- FORM -->
+        <div class="container-for-form">
+            <section id="onSiteForm" class="os-form">
+                <div class="close-next-btns">
+                    <button class="osf-back-button"><img src="images/arrow.png" alt="">
+                    </button>
+                    <div class="step-counter">
+                        <p class="step-count">Step <span id="step">1</span> of <span id="total-steps">9</span></p>
+                    </div>
+                    <button class="osf-close-button"><img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+
+
+
+                <div class="gif-and-content-grid">
+                    <div class="osf-content active-state" id="choose-service">
+                        <h3 class="osf-heading">Tell us about your Goals</h3>
+                        <button class="osf-button osf-service" onclick="problem = 'Fitness'">Fitness</button>
+                        <button class="osf-button osf-heal">Heal Ailments</button>
+                        <button class="osf-button osf-service" onclick="problem = 'Mindfullness'">Mindfullness</button>
+                        <button class="osf-button osf-service" onclick="problem = 'Advanced Yoga'">Advanced
+                            Yoga</button>
+
+                    </div>
+
+                    <div class="osf-content " id="choose-ailment">
+                        <h3 class="osf-heading">Select a particular ailment</h3>
+                        <div class="buttttons">
+                            <button class="osf-button osf-ail" onclick="problem = 'Diabetes'">Diabetes</button>
+                            <button class="osf-button osf-ail" onclick="problem = 'Hypertension'">Hypertension</button>
+                            <button class="osf-button osf-ail" onclick="problem = 'Eye Problems'">Eye Problems</button>
+                            <button class="osf-button osf-ail" onclick="problem = 'Bone & Joint Pain'">Bone & Joint
+                                Pain</button>
+                            <button class="osf-button osf-ail" onclick="problem = 'Thyroidism'">Thyroidism</button>
+                            <button class="osf-button osf-ail" onclick="problem = 'Breathing Issues'">Breathing
+                                Issues</button>
+                            <button class="osf-button osf-ns">Not Sure</button>
+                        </div>
+                    </div>
+
+                    <div class="osf-content " id="not-sure">
+                        <h3 class="osf-heading ">Please type your problem/Goal</h3>
+                        <form action="#" class="osf-form-problem">
+                            <input type="text" placeholder="Your problem..." required id="osf-problem">
+                            <p id="osf-invalid-problem">Please provide your problem.</p>
+                            <button class="osf-button">Next</button>
+                        </form>
+                    </div>
+
+                    <div class="osf-content " id="basic-info">
+                        <h3 class="osf-heading ">Basic Information</h3>
+                        <form action="#" class="osf-form-basicinfo">
+                            <div class="name-div">
+                                <label for="name_input">Your Name</label>
+                                <input type="text" placeholder="Name..." id="osf-name" required>
+                                <p id="osf-invalid-name">Please enter name.</p>
+                            </div>
+                            <div class="age-div">
+                                <label for="age_input">Your Age</label>
+                                <input type="text" placeholder="Age..." id="osf-age" required inputmode="numeric">
+                                <p id="osf-invalid-age">Please enter age.</p>
+                            </div>
+
+                            <button class="osf-button">Next</button>
+                        </form>
+                    </div>
+
+                    <div class="osf-content " id="weight-height">
+                        <h3 class="osf-heading ">Basic Information</h3>
+                        <form action="#" class="osf-form-contact">
+                            <div class="weight-div">
+                                <label for="age_input">Weight (in Kgs)</label>
+                                <input type="text" placeholder="Weight..." id="osf-weight" required inputmode="numeric">
+                                <p id="osf-invalid-weight">Please enter weight.</p>
+                            </div>
+                            <div class="height-div">
+                                <label for="age_input">Height (in cms)</label>
+                                <input type="text" placeholder="Height..." id="osf-height" required inputmode="numeric">
+                                <p id="osf-invalid-height">Please enter height.</p>
+                            </div>
+
+                            <button class="osf-button">Next</button>
+                        </form>
+                    </div>
+
+                    <div class="osf-content " id="choose-profession">
+                        <h3 class="osf-heading ">Select Your Profession</h3>
+
+                        <div class="buttttons">
+                            <button class="osf-button osf-proff">Student</button>
+                            <button class="osf-button osf-proff">Homemaker</button>
+                            <button class="osf-button osf-proff">Service</button>
+                            <button class="osf-button osf-proff">Self Employed</button>
+                            <button class="osf-button osf-proff">Other</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="osf-content " id="choose-lang">
+                        <h3 class="osf-heading ">Language Preference</h3>
+
+                        <div class="buttttons">
+                            <button class="osf-button osf-lang">Hindi</button>
+                            <button class="osf-button osf-lang">Inglis</button>
+                            <button class="osf-button osf-lang">Math</button>
+                            <button class="osf-button osf-lang">Science</button>
+                            <button class="osf-button osf-lang">Social</button>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="osf-gif"><img src="images/yoga-se-hi-hoga.gif" alt="yogasehihoga"></div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+
+            </section>
+        </div>
+        <!-- Onsite Form -->
+        <!-- FORM(END) -->
+
+        <!-- login div -->
+        <div class="login-modal-bg">
+            <div class="login-modal">
+                <div class="loginBody" id="phoneDiv">
+                    <img src="/images/logo.svg" class="loginLogo">
+                    <div class="loginLogoText">
+                        <span style="color: #4ca9ee" class="logo-span">Health</span>
+                        <span style="color: #29e7cd" class="logo-span"> Highway</span>
+                    </div>
+                    <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
+                    <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
+                    <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
                         Continue
                     </button>
-                            <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
-                            <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
+                    <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                    <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
                         <img src="/images/google.png" class="google">Login Using Gmail</span>
                     </button>
-                        </div>
-                        <!-- <div id="OTPSend">
+                </div>
+                <!-- <div id="OTPSend">
                     <img src="images/otpSend.png"  />
                     <p>An OTP has been sent to your provide mobile no.</p>  
                 </div> -->
-                        <div id="OTP">
-                            <p class="OTPTitle"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-                            <div class="loginBody">
-                                <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
-                                </p>
-                                <form class="otp" name="one-time-code" id="otp-div">
-                                    <fieldset>
-                                        <div>
-                                            <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
-                                            <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
-                                            <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
-                                            <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
-                                            <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
-                                            <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                                <button type="button" class="btn btn-light loginButton" id="confirmLogin">
+                <div id="OTP">
+                    <p class="OTPTitle"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span>
+                    </p>
+                    <div class="loginBody">
+                        <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
+                        </p>
+                        <form class="otp" name="one-time-code" id="otp-div">
+                            <fieldset>
+                                <div>
+                                    <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
+                                    <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn btn-light loginButton" id="confirmLogin">
                             Confirm
                         </button>
-                            </div>
-                        </div>
-                        <!-- <div id = "loginSuccess">
+                    </div>
+                </div>
+                <!-- <div id = "loginSuccess">
                     <img src="images/loginSuccess.png"  />
                     <p>Congrats! You are verified</p>
                 </div> -->
-                        <span> <i class="close"></i></span>
-                    </div>
-                </div>
+                <span> <i class="close"></i></span>
+            </div>
+        </div>
 
-                <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-                <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-                <script type="text/javascript">
-                    var firebaseConfig = {
-                        apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-                        authDomain: "healthhighway-45963.firebaseapp.com",
-                        databaseURL: "https://healthhighway-45963.firebaseio.com",
-                        projectId: "healthhighway-45963",
-                        storageBucket: "healthhighway-45963.appspot.com",
-                        messagingSenderId: "716392922291",
-                        appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-                        measurementId: "G-B3ZVBEZ2H2"
-                    };
-                    firebase.initializeApp(firebaseConfig);
-                </script>
-                <script>
-                    window.onload = function() {
-                        render();
-                    }
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var firebaseConfig = {
+                apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
+                authDomain: "healthhighway-45963.firebaseapp.com",
+                databaseURL: "https://healthhighway-45963.firebaseio.com",
+                projectId: "healthhighway-45963",
+                storageBucket: "healthhighway-45963.appspot.com",
+                messagingSenderId: "716392922291",
+                appId: "1:716392922291:web:ef7708be5a170c42a544c6",
+                measurementId: "G-B3ZVBEZ2H2"
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script>
+            window.onload = function() {
+                render();
+            }
 
-                    async function render() {
-                        window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
-                        recaptchaVerifier.render();
-                        recaptchaVerifier.verify().then(token => {
-                            console.log(token);
-                            document.getElementById("loginContinue").style.pointerEvents = "auto";
-                        })
-                    }
-                </script>
-                <!-- login div (END) -->
-                </main>
-                <footer></footer>
-                <script>
-                    var loginDashboard = document.getElementById("loginDashboard");
-                    var modalBg = document.querySelector(".login-modal-bg");
-                    var modalClose = document.querySelector(".close");
+            async function render() {
+                window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
+                recaptchaVerifier.render();
+                recaptchaVerifier.verify().then(token => {
+                    console.log(token);
+                    document.getElementById("loginContinue").style.pointerEvents = "auto";
+                })
+            }
+        </script>
+        <!-- login div (END) -->
+    </main>
+    <footer></footer>
+    <script>
+        var loginDashboard = document.getElementById("loginDashboard");
+        var modalBg = document.querySelector(".login-modal-bg");
+        var modalClose = document.querySelector(".close");
 
-                    var modalBg = document.querySelector(".login-modal-bg");
-                    var modalClose = document.querySelector(".close");
-                    var navbar = document.querySelector("nav");
-                    var OTP = document.getElementById("OTP");
-                    var phoneNumber = document.getElementById("phoneNumber");
-                    var loginContinue = document.getElementById("loginContinue");
-                    var phoneDiv = document.getElementById("phoneDiv");
-                    var loginModal = document.querySelector(".login-modal");
-                    var modalBack = document.getElementById("modalBack");
+        var modalBg = document.querySelector(".login-modal-bg");
+        var modalClose = document.querySelector(".close");
+        var navbar = document.querySelector("nav");
+        var OTP = document.getElementById("OTP");
+        var phoneNumber = document.getElementById("phoneNumber");
+        var loginContinue = document.getElementById("loginContinue");
+        var phoneDiv = document.getElementById("phoneDiv");
+        var loginModal = document.querySelector(".login-modal");
+        var modalBack = document.getElementById("modalBack");
 
-                    phoneDivActive = () => {
-                        phoneDiv.style.display = "block";
-                        loginModal.classList.add("phoneDivActive");
-                        OTP.style.display = "none";
-                        loginModal.classList.remove("OTPActive");
-                        phoneNumber.innerHTML = "";
-                        phoneDiv.style.display = "flex";
-                    };
+        phoneDivActive = () => {
+            phoneDiv.style.display = "block";
+            loginModal.classList.add("phoneDivActive");
+            OTP.style.display = "none";
+            loginModal.classList.remove("OTPActive");
+            phoneNumber.innerHTML = "";
+            phoneDiv.style.display = "flex";
+        };
 
-                    OTPDivActive = () => {
-                        phoneDiv.style.display = "none";
-                        loginModal.classList.remove("phoneDivActive");
-                        OTP.style.display = "block";
-                        loginModal.classList.add("OTPActive");
-                        phoneNumber.classList.add("phone");
-                    };
+        OTPDivActive = () => {
+            phoneDiv.style.display = "none";
+            loginModal.classList.remove("phoneDivActive");
+            OTP.style.display = "block";
+            loginModal.classList.add("OTPActive");
+            phoneNumber.classList.add("phone");
+        };
 
-                    modalCloseFunction = () => {
-                        modalBg.classList.remove("bg-active");
-                        phoneDivActive();
-                    };
+        modalCloseFunction = () => {
+            modalBg.classList.remove("bg-active");
+            phoneDivActive();
+        };
 
-                    modalOpenFunction = () => {
-                        modalBg.classList.add("bg-active");
-                        navbar.style.zIndex = "0";
-                    };
+        modalOpenFunction = () => {
+            modalBg.classList.add("bg-active");
+            navbar.style.zIndex = "0";
+        };
 
-                    loginDashboard.addEventListener("click", function() {
-                        modalOpenFunction();
-                    });
+        loginDashboard.addEventListener("click", function() {
+            modalOpenFunction();
+        });
 
-                    loginDashboard.addEventListener("click", function() {
-                        modalOpenFunction();
-                    });
+        loginDashboard.addEventListener("click", function() {
+            modalOpenFunction();
+        });
 
-                    modalClose.addEventListener("click", function() {
-                        modalCloseFunction();
-                    });
+        modalClose.addEventListener("click", function() {
+            modalCloseFunction();
+        });
 
-                    loginContinue.onclick = function() {
-                        let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
-                        phoneNumber.innerHTML = inputText;
-                        OTPDivActive();
-                    };
+        loginContinue.onclick = function() {
+            let inputText = parseInt(document.querySelector("#inputPhoneNo").value);
+            phoneNumber.innerHTML = inputText;
+            OTPDivActive();
+        };
 
-                    modalBack.onclick = function() {
-                        phoneDivActive();
-                    };
+        modalBack.onclick = function() {
+            phoneDivActive();
+        };
 
-                    // code for otp input
-                    $(function() {
-                        "use strict";
+        // code for otp input
+        $(function() {
+            "use strict";
 
-                        var body = $("body");
+            var body = $("body");
 
-                        function goToNextInput(e) {
-                            var key = e.which,
-                                t = $(e.target),
-                                sib = t.next("input");
+            function goToNextInput(e) {
+                var key = e.which,
+                    t = $(e.target),
+                    sib = t.next("input");
 
-                            if (key != 9 && (key < 48 || key > 57)) {
-                                e.preventDefault();
-                                return false;
-                            }
+                if (key != 9 && (key < 48 || key > 57)) {
+                    e.preventDefault();
+                    return false;
+                }
 
-                            if (key === 9) {
-                                return true;
-                            }
+                if (key === 9) {
+                    return true;
+                }
 
-                            if (!sib || !sib.length) {
-                                sib = body.find("input").eq(0);
-                            }
-                            sib.select().focus();
-                        }
+                if (!sib || !sib.length) {
+                    sib = body.find("input").eq(0);
+                }
+                sib.select().focus();
+            }
 
-                        function onKeyDown(e) {
-                            var key = e.which;
+            function onKeyDown(e) {
+                var key = e.which;
 
-                            if (key === 9 || (key >= 48 && key <= 57)) {
-                                return true;
-                            }
+                if (key === 9 || (key >= 48 && key <= 57)) {
+                    return true;
+                }
 
-                            e.preventDefault();
-                            return false;
-                        }
+                e.preventDefault();
+                return false;
+            }
 
-                        function onFocus(e) {
-                            $(e.target).select();
-                        }
+            function onFocus(e) {
+                $(e.target).select();
+            }
 
-                        body.on("keyup", "input", goToNextInput);
-                        body.on("keydown", "input", onKeyDown);
-                        body.on("click", "input", onFocus);
-                    });
-                </script>
-                <script type="text/javascript" src="js/landing.js"></script>
+            body.on("keyup", "input", goToNextInput);
+            body.on("keydown", "input", onKeyDown);
+            body.on("click", "input", onFocus);
+        });
+    </script>
+    <script type="text/javascript" src="js/landing.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 
 </html>
