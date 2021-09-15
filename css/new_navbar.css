@@ -709,24 +709,6 @@ nav {
     z-index: 0;
 }
 
-.sidenav {
-    z-index: 1;
-}
-
-.sidenav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 60%;
-}
-
-@media (min-height: 900px) {
-    .sidenav-container {
-        height: 40%;
-    }
-}
-
 @media only screen and (max-width: 991px) {
     .navbar-collapse {
         display: none;
@@ -794,7 +776,7 @@ nav {
         align-items: center;
         margin-top: 0;
     }
-    .sidenav .closebtn {
+    .closebtn {
         top: 13px;
         right: 27px;
     }

@@ -78,71 +78,6 @@ body::-webkit-scrollbar-thumb {
     transition: 0.9s ease;
 }
 
-.sidenav,
-nav {
-    z-index: 20 !important;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #4ca9ee;
-    overflow-x: hidden;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 60%;
-}
-
-.sidenav a {
-    padding: 8px;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-left: 0px;
-}
-
-#sidebar-joinus {
-    background-color: #fff;
-    color: #4ca9ee;
-    padding: 7px 30px;
-    border-radius: 30px;
-}
-
-#sidebar-joinus:hover {
-    color: #4ca9ee;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 27px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: white;
-    font-size: 40px;
-}
-
 .mobile {
     display: none !important;
 }
@@ -157,21 +92,6 @@ nav {
     }
     .navbar-nav li {
         margin-right: 20px !important;
-    }
-}
-
-@media (min-height: 900px) {
-    .sidenav-container {
-        height: 40%;
-    }
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
     }
 }
 
@@ -295,12 +215,6 @@ nav {
     display: flex;
 }
 
-.instructor,
-.student {
-    width: 400px;
-    height: 414px;
-}
-
 .landing-main-center {
     display: flex;
     justify-content: center;
@@ -375,33 +289,6 @@ nav {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 1600px) {
-    .instructor,
-    .student {
-        width: 360px;
-        height: 400px;
-    }
-    .landing-main-left {
-        left: 80px;
-    }
-    .landing-main-right {
-        right: 80px;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .instructor,
-    .student {
-        width: 350px;
-        height: 400px;
-    }
-    .landing-main-left {
-        left: 60px;
-    }
-    .landing-main-right {
-        right: 60px;
-    }
-}
 
 @media only screen and (max-width: 1200px) {
     .landing-main-text1 {
@@ -418,38 +305,6 @@ nav {
         height: 50px;
         /* padding: 10px 0 0 0; */
         font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .instructor,
-    .student {
-        width: 320px;
-        height: 350px;
-    }
-    .landing-main-left {
-        left: 30px;
-    }
-    .landing-main-right {
-        right: 30px;
-    }
-    .pattern {
-        height: 500px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .instructor,
-    .student {
-        width: 300px;
-        height: 350px;
-    }
-    .landing-main-left {
-        left: 20px;
-        height: auto;
-    }
-    .landing-main-right {
-        right: 20px;
     }
 }
 
@@ -505,37 +360,6 @@ nav {
 @media (min-height: 1024px) {
     #landing-main-div {
         height: 62vh;
-    }
-}
-
-@media only screen and (max-width: 745px) {
-    .instructor,
-    .student {
-        width: 280px;
-        height: 300px;
-    }
-    .landing-main-left {
-        top: 280px;
-    }
-    .landing-main-right {
-        top: 280px;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .landing-main-left {
-        top: 300px;
-    }
-    .landing-main-right {
-        top: 300px;
-    }
-    .instructor,
-    .student {
-        width: 200px;
-        height: 260px;
-    }
-    .pattern {
-        height: 450px;
     }
 }
 
@@ -606,11 +430,6 @@ nav {
         font-size: 16px;
         margin-left: 3px;
     }
-    .instructor,
-    .student {
-        width: 150px;
-        height: 200px;
-    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -679,39 +498,9 @@ nav {
     }
 }
 
-@media only screen and (max-width: 380px) {
-    .instructor,
-    .student {
-        width: 120px;
-        height: 180px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-    .instructor {
-        width: 60vw;
-        height: 36vh;
-        margin: 50px 0 0 15vw;
-        padding-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .instructor {
-        width: 50vw;
-        height: 30vh;
-    }
-    .landing-main-left {
-        height: 32vh;
-    }
-}
-
 @media only screen and (max-width: 330px) {
     .navbar-toggler i {
         color: #4ca9ee !important;
-    }
-    .pattern {
-        height: 400px;
     }
 }
 
@@ -1493,7 +1282,7 @@ nav {
         font-size: 15px;
         padding: 10px 20px;
     }
-    .sidenav .closebtn {
+    .closebtn {
         top: 13px;
         right: 27px;
     }
@@ -1574,7 +1363,7 @@ nav {
     #main-form {
         margin: 0px 0 50px 25px;
     }
-    .sidenav .closebtn {
+    .closebtn {
         right: 16px;
     }
 }
@@ -2927,9 +2716,6 @@ footer {
 /* FOOTER CSS  (END) */
 
 @media only screen and (max-width: 500px) {
-    .landing-main-right {
-        display: none;
-    }
     .desktop {
         display: none;
     }
@@ -2938,14 +2724,6 @@ footer {
         text-align: center;
         margin-top: 8px;
         margin-bottom: 45px;
-    }
-    .instructor {
-        width: 64vw;
-        height: 36vh;
-        margin: 30px 0 50px 15vw;
-    }
-    .landing-main-left {
-        top: 240px;
     }
     .know-more-div {
         display: flex;
