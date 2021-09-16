@@ -2313,7 +2313,6 @@ button img {
   height: 546px;
   margin: 0 25px;
   position: relative;
-  z-index: 1000;
 }
 .test-img {
   width: 513px;
@@ -2484,6 +2483,12 @@ button img {
     width: 600px;
   }
 }
+@media (max-width: 650px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+  }
+}
 @media (max-width: 600px) {
   #testimonial-main {
     width: 500px;
@@ -2503,6 +2508,10 @@ button img {
   }
   .testimonial_img_rating {
     margin-bottom: 10px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 35px;
   }
 }
 
@@ -2531,10 +2540,7 @@ button img {
   .testimonial-user-profile {
     font-size: 14px;
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 35px;
-  }
+
   .testimonial_user_img {
     width: 50px;
     height: 50px;
