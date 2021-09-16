@@ -2483,6 +2483,12 @@ button img {
     width: 600px;
   }
 }
+@media (max-width: 650px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+  }
+}
 @media (max-width: 600px) {
   #testimonial-main {
     width: 500px;
