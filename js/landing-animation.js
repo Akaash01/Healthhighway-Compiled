@@ -1,6 +1,6 @@
-const animationLeftContainer = document.querySelector(".animation_left");
-const animationRightContainer = document.querySelector(".animation_right");
-animationLeftContainer.innerHTML = `<svg
+const animationLandingLeftContainer = document.querySelector(".animation_left");
+const animationLandingRightContainer = document.querySelector(".animation_right");
+animationLandingLeftContainer.innerHTML = `<svg
 id="instructor"
 width="1144"
 height="839"
@@ -454,7 +454,7 @@ xmlns="http://www.w3.org/2000/svg"
   </g>
 </g>
 </svg>`;
-animationRightContainer.innerHTML = `<svg
+animationLandingRightContainer.innerHTML = `<svg
 id="client"
 width="1172"
 height="867"

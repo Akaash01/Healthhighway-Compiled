@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/login.css" />
@@ -92,7 +91,7 @@
                         </div>
                         <div class="animation_right"></div>
                     </div>
-                    <script src="./landing-animation.js"></script>
+                    <script src="./js/landing-animation.js"></script>
                     <div class="landing-container"></div>
                     <div class="mobile-animation">
                         <img src="images/landing-animation.gif" />
@@ -279,106 +278,170 @@
 
         <!-- Events (END) -->
 
-        <!-- Testimonials -->
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div id="testimonial-main">
+        <h2 id="testimonials-heading">Our Customers <span>Love Us !</span></h2>
 
-        <section id="testimonials">
-            <div id="testimonial-main">
-                <h2 id="testimonials-heading">
-                    Our Customers <span>Love Us !</span>
-                </h2>
-
-                <div class="testimonial-container">
-                    <div class="swiper-container myTestimonialSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial_img_rating">
-                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="" />
-                                    <div class="testimonial-ratings">
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_half.svg" alt="" />
-                                    </div>
-                                </div>
-                                <p>
-                                    Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
-                                </p>
-                                <div class="testimonial-user-profile">
-                                    <h4>Anamika|</h4>
-                                    <p>Rishikesh</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial_img_rating">
-                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="" />
-                                    <div class="testimonial-ratings">
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_half.svg" alt="" />
-                                    </div>
-                                </div>
-                                <p>
-                                    Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
-                                </p>
-                                <div class="testimonial-user-profile">
-                                    <h4>Anamika|</h4>
-                                    <p>Rishikesh</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial_img_rating">
-                                    <img class="testimonial_user_img" src="./images/testimonials-mobile.jpg" alt="" />
-                                    <div class="testimonial-ratings">
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_full.svg" alt="" />
-                                        <img src="./images/testimonial-star_half.svg" alt="" />
-                                    </div>
-                                </div>
-                                <p>
-                                    Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
-                                </p>
-                                <div class="testimonial-user-profile">
-                                    <h4>Anamika|</h4>
-                                    <p>Rishikesh</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-controls">
-                        <img src="./images/testimonial-arrow.svg" class="swiper-button-prev" alt="" />
-                        <img src="./images/testimonial-arrow.svg" class="swiper-button-next" alt="" />
-                    </div>
+        <div class="testimonial-container">
+          <div class="swiper-container myTestimonialSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial swiper-slide-active">
+                <div class="testimonial_img_rating">
+                  <img
+                    class="testimonial_user_img"
+                    src="./images/testimonials-mobile.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial-ratings">
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_half.svg" alt="" />
+                  </div>
                 </div>
+                <p>
+                  1.Excellent teachers with knowledge in a wide variety of
+                  Asanas and techniques. I am highly motivated by and inspired
+                  by the quality of teaching despite the online medium.
+                </p>
+                <div class="testimonial-user-profile">
+                  <h4>Anamika|</h4>
+                  <p>Rishikesh</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial">
+                <div class="testimonial_img_rating">
+                  <img
+                    class="testimonial_user_img"
+                    src="./images/testimonials-mobile.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial-ratings">
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_half.svg" alt="" />
+                  </div>
+                </div>
+                <p>
+                  2.Excellent teachers with knowledge in a wide variety of
+                  Asanas and techniques. I am highly motivated by and inspired
+                  by the quality of teaching despite the online medium.
+                </p>
+                <div class="testimonial-user-profile">
+                  <h4>Anamika|</h4>
+                  <p>Rishikesh</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial">
+                <div class="testimonial_img_rating">
+                  <img
+                    class="testimonial_user_img"
+                    src="./images/testimonials-mobile.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial-ratings">
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_half.svg" alt="" />
+                  </div>
+                </div>
+                <p>
+                  3.Excellent teachers with knowledge in a wide variety of
+                  Asanas and techniques. I am highly motivated by and inspired
+                  by the quality of teaching despite the online medium.
+                </p>
+                <div class="testimonial-user-profile">
+                  <h4>Anamika|</h4>
+                  <p>Rishikesh</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial">
+                <div class="testimonial_img_rating">
+                  <img
+                    class="testimonial_user_img"
+                    src="./images/testimonials-mobile.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial-ratings">
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_half.svg" alt="" />
+                  </div>
+                </div>
+                <p>
+                  4.Excellent teachers with knowledge in a wide variety of
+                  Asanas and techniques. I am highly motivated by and inspired
+                  by the quality of teaching despite the online medium.
+                </p>
+                <div class="testimonial-user-profile">
+                  <h4>Anamika|</h4>
+                  <p>Rishikesh</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial">
+                <div class="testimonial_img_rating">
+                  <img
+                    class="testimonial_user_img"
+                    src="./images/testimonials-mobile.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial-ratings">
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_full.svg" alt="" />
+                    <img src="./images/testimonial-star_half.svg" alt="" />
+                  </div>
+                </div>
+                <p>
+                  5.Excellent teachers with knowledge in a wide variety of
+                  Asanas and techniques. I am highly motivated by and inspired
+                  by the quality of teaching despite the online medium.
+                </p>
+                <div class="testimonial-user-profile">
+                  <h4>Anamika|</h4>
+                  <p>Rishikesh</p>
+                </div>
+              </div>
             </div>
-            <img src="./images/testimonials-images.png" alt="" />
-        </section>
-
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".myTestimonialSwiper", {
-                spaceBetween: 20,
-                loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
-
-        <!-- Testimonials(end) -->
-
+          </div>
+          <div class="testimonial-controls">
+            <img
+              src="./images/testimonial-arrow.svg"
+              class="swiper-button-prev"
+              alt=""
+            />
+            <img
+              src="./images/testimonial-arrow.svg"
+              class="swiper-button-next"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="img-container" style="background-image: url('./images/testimonial-bg.svg');">
+        <img src="./images/testimonial-1.png" class="img-1 img-active" alt="" />
+        <img
+          src="./images/kenrick-mills-rfePWka7VPU-unsplash.jpg"
+          class="img-2"
+          alt=""
+        />
+        <img src="./images/testimonial-3.png" class="img-3" alt="" />
+        <img src="./images/testimonial-4.png" class="img-4" alt="" />
+        <img src="./images/testimonial-5.png" class="img-5" alt="" />
+      </div>
+      <!-- <img src="./img/testimonials-images.png" class="test-img"alt=""> -->
+    </section>
+    <script src="./js/testimonials.js"></script>
+    <!-- Testimonials(end) -->
         <!-- Call-Us Section  -->
         <section class="call-back">
             <div class="cb-text">
@@ -533,7 +596,6 @@
         <script type="text/javascript" src="js/landing.js"></script>
         <script src="js/video-component.js"></script>
         <script src="js/get-started.js"></script>
-        <script src="js/landing-animation.js"></script>
 
         <script type="text/javascript" src="js/login.js"></script>
 </body>
