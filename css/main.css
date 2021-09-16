@@ -1661,7 +1661,7 @@ nav {
 
 #video-title {
   font-family: "Open sans", sans-serif;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 700;
   text-align: center;
   position: relative;
@@ -1674,7 +1674,7 @@ nav {
 
 #video-container {
   width: 800px;
-  margin: 100px auto;
+  margin: 40px auto;
   position: relative;
 }
 
