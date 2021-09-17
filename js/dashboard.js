@@ -15,6 +15,7 @@ const osf_notSureBtn = document.querySelector('.osf-ns') //used
 
 const osf_backBtn = document.querySelector('.osf-back-button')
 const osf_closeBtn = document.querySelector('.osf-close-button')
+const osf_lastBtn = document.querySelector('.final-card-btn')
 
 //stages
 const osf_stages = document.querySelectorAll('.osf-content') //used
@@ -26,6 +27,7 @@ const osf_basicInfo = document.querySelector('#basic-info') //used
 const osf_weight_height = document.querySelector('#weight-height') //used
 const osf_proff = document.querySelector('#choose-profession') //used
 const osf_lang = document.querySelector('#choose-lang') //used
+const osf_final = document.querySelector('#final') //used
 
 
 
@@ -76,8 +78,8 @@ for (let btn of osf_proffBtns) {
 }
 for (let btn of osf_langBtns) {
     btn.addEventListener('click', () => {
-        document.querySelector('.container-for-form').classList.remove('active');
-        osf_goToStage(osf_service, '15%')
+
+        osf_goToStage(osf_final, '100%')
     })
 }
 
@@ -89,6 +91,10 @@ osf_healBtn.addEventListener('click', () => {
 
 osf_notSureBtn.addEventListener('click', () => {
     osf_goToStage(osf_problem, '40%')
+})
+
+osf_lastBtn.addEventListener('click', () => {
+    document.querySelector('.container-for-form').classList.remove('active')
 })
 
 osf_backBtn.addEventListener('click', () => {
@@ -106,6 +112,8 @@ osf_backBtn.addEventListener('click', () => {
         osf_goToStage(osf_service, '15%')
     } else if (osf_isActive(osf_service)) {
         document.querySelector('.container-for-form').classList.remove('active')
+    } else if (osf_isActive(osf_final)) {
+        osf_goToStage(osf_lang, '100%')
     }
 
 })
@@ -181,7 +189,11 @@ function osf_goToStage(stage_name, percent) {
     } else if (osf_service.classList.contains('active-state')) {
         osf_service.style.display = "flex"
     }
-
+    if (osf_isActive(osf_final)) {
+        document.querySelector('.progress-bar-container').style.display = "none";
+    } else {
+        document.querySelector('.progress-bar-container').style.display = "initial";
+    }
 
 
 
