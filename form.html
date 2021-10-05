@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+    </style>
+    <title>Form</title>
+</head>
+
+<body>
+    <section class="form-container">
+        <form id="mainform" action="#">
+            <label for="goal" class="main-label">Goal</label>
+            <select name="goals" id="goal">
+                <option value="">select</option>
+                <option value="Problem 1">Problem1</option>
+                <option value="Problem 1">Problem1</option>
+                <option value="Problem 1">Problem1</option>
+                <option value="Problem 1">Problem1</option>
+                <option value="Problem 1">Problem1</option>
+            </select>
+
+            <label class="main-label">Basic Information</label>
+            <div class="b-info">
+                <div class="name-div">
+                    <label for="name" class="sub-label">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="age-div">
+                    <label for="age" class="sub-label">Age</label>
+                    <input type="text" id="age">
+                </div>
+                <div class="weight-div">
+                    <label for="weight" class="sub-label">Weight (in kg)</label>
+                    <input type="text" id="weight">
+                </div>
+                <div class="height-div">
+                    <label for="height" class="sub-label">Height (in cm)</label>
+                    <input type="text" id="height">
+                </div>
+                <div class="pref-div">
+                    <label class="sub-label">Trainer Preference</label>
+                    <input type="radio" id="radio1" name="trainer" value="Male" checked>
+                    <label class="sub-label" for="radio1">Male</label>
+                    <input type="radio" id="radio2" name="trainer" value="Female">
+                    <label class="sub-label" for="radio2">Female</label>
+                </div>
+            </div>
+            <label class="main-label">Schedule Session</label>
+            <div class="ssn-div">
+                <div class="time-div">
+                    <label class="sub-label">Time Slot</label>
+                    <div class="timing-slots">6 AM <img src="https://ik.imagekit.io/healthhighway2020/Clock__01AQB7Yn.png?updatedAt=1633421331660" width="20px" height="20px" alt="png"></div>
+                </div>
+
+                <div class="day-div">
+                    <label class="sub-label">Routine</label>
+                    <div class="day-slots">Monday <img src="https://ik.imagekit.io/healthhighway2020/Date_4_MCtZ27r.png?updatedAt=1633421363761" width="20px" height="20px" alt="png"></div>
+                </div>
+                <div class="time-grid" style="display: grid;">
+                    <input type="radio" id="t1" name="timing" value="6:00 AM" checked>
+                    <label for="t1">6 AM</label>
+                    <input type="radio" id="t2" name="timing" value="7:00 AM">
+                    <label for="t2">7 AM</label>
+                    <input type="radio" id="t3" name="timing" value="8:00 AM">
+                    <label for="t3">8 AM</label>
+                    <input type="radio" id="t4" name="timing" value="9:00 AM">
+                    <label for="t4">9 AM</label>
+                    <input type="radio" id="t5" name="timing" value="4:00 PM">
+                    <label for="t5">4 PM</label>
+                    <input type="radio" id="t6" name="timing" value="5:00 PM">
+                    <label for="t6">5 PM</label>
+                    <input type="radio" id="t7" name="timing" value="6:00 PM">
+                    <label for="t7">6 PM</label>
+                    <input type="radio" id="t8" name="timing" value="7:00 PM">
+                    <label for="t8">7 PM</label>
+                    <input type="radio" id="t9" name="timing" value="8:00 PM">
+                    <label for="t9">8 PM</label>
+                </div>
+                <div class="day-grid" style='display: grid;'>
+                    <input type="checkbox" id="day1" name="days" value="Mon" checked>
+                    <label for="day1">Mon</label>
+                    <input type="checkbox" id="day2" name="days" value="Tue" checked>
+                    <label for="day2">Tue</label>
+                    <input type="checkbox" id="day3" name="days" value="Wed">
+                    <label for="day3">Wed</label>
+                    <input type="checkbox" id="day4" name="days" value="Thu">
+                    <label for="day4">Thu</label>
+                    <input type="checkbox" id="day5" name="days" value="Fri">
+                    <label for="day5">Fri</label>
+                    <input type="checkbox" id="day6" name="days" value="Sat">
+                    <label for="day6">Sat</label>
+                    <input type="checkbox" id="day7" name="days" value="Sun">
+                    <label for="day7">Sun</label>
+                </div>
+                <div class="date-div">
+                    <label class="sub-label" for="date">Starting date</label>
+                    <input type="date" id="date">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
