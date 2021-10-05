@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-container {
+  padding: 3em 8%;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #263238;
+  font-size: 1.5rem;
+}
+
+.main-label {
+  grid-column: 1/-1;
+  margin-bottom: .8em;
+  margin-top: 1em;
+}
+
+.sub-label {
+  font-size: 1rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+
+#goal {
+  padding: .5em 0;
+  padding-right: 2em;
+  padding-left: .5em;
+  background-color: #EDF7FF;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  grid-column: 1/2;
+}
+
+.b-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+
+.name-div {
+  grid-column: 1/2;
+}
+
+.age-div {
+  grid-column: 2/3;
+}
+
+.pref-div {
+  grid-column: 1/-1;
+}
+
+input[type=text] {
+  padding: .5em 0.1em;
+  background-color: #EDF7FF;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.ssn-div {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: .8em;
+  column-gap: 1em;
+}
+
+.timing-slots,
+.day-slots {
+  position: relative;
+  background-color: #EDF7FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4em;
+  grid-column: 1/2;
+  border-radius: 5px;
+}
+
+.day-slots {
+  grid-column: 2/3;
+}
+
+.date-div {
+  grid-column: 1/-1;
+}
+
+#date {
+  background-color: #EDF7FF;
+  border: none;
+  font-size: 1rem;
+  padding: .4em;
+  width: max-content;
+  border-radius: 5px;
+}
+
+.time-grid,
+.day-grid {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #EDF7FF;
+  padding: .5em;
+  column-gap: 2%;
+  row-gap: .5em;
+  border-radius: 5px;
+}
+
+input[type=radio] {
+  display: none;
+  margin: 10px;
+}
+
+input[type=radio] + label {
+  display: inline-block;
+  padding: .5em 1em;
+  background-color: white;
+  border-radius: .2em;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #4CA9EE;
+  color: white;
+  border-color: #4CA9EE;
+  font-weight: 500;
+}
+
+input[type=checkbox] {
+  display: none;
+  margin: 10px;
+}
+
+input[type=checkbox] + label {
+  display: inline-block;
+  padding: .5em 1em;
+  background-color: white;
+  border-radius: .4em;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+input[type=checkbox]:checked + label {
+  background-color: #4CA9EE;
+  color: white;
+}
