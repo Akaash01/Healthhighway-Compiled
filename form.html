@@ -24,45 +24,51 @@
                 <option value="Problem 1">Problem1</option>
                 <option value="Problem 1">Problem1</option>
             </select>
+            <div class="basic-img">
+                <label class="main-label">Basic Information</label>
+                <div class="b-info">
+                    <div class="name-div">
+                        <label for="name" class="sub-label">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="age-div">
+                        <label for="age" class="sub-label">Age</label>
+                        <input type="text" id="age" required>
+                    </div>
+                    <div class="weight-div">
+                        <label for="weight" class="sub-label">Weight (in kg)</label>
+                        <input type="text" id="weight" required>
+                    </div>
+                    <div class="height-div">
+                        <label for="height" class="sub-label">Height (in cm)</label>
+                        <input type="text" id="height" required>
+                    </div>
+                    <div class="pref-div">
+                        <label class="sub-label">Trainer Preference</label>
+                        <input type="radio" id="radio1" name="trainer" value="Male" checked>
+                        <label class="sub-label" for="radio1">Male</label>
+                        <input type="radio" id="radio2" name="trainer" value="Female">
+                        <label class="sub-label" for="radio2">Female</label>
+                    </div>
+                </div>
+                <div class="img">
+                    <img id="yoga" src="https://ik.imagekit.io/healthhighway2020/yoga-se-hi-hoga_IW6O0AqhuU.gif?updatedAt=1631893349027" alt="gif">
+                </div>
 
-            <label class="main-label">Basic Information</label>
-            <div class="b-info">
-                <div class="name-div">
-                    <label for="name" class="sub-label">Name</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="age-div">
-                    <label for="age" class="sub-label">Age</label>
-                    <input type="text" id="age">
-                </div>
-                <div class="weight-div">
-                    <label for="weight" class="sub-label">Weight (in kg)</label>
-                    <input type="text" id="weight">
-                </div>
-                <div class="height-div">
-                    <label for="height" class="sub-label">Height (in cm)</label>
-                    <input type="text" id="height">
-                </div>
-                <div class="pref-div">
-                    <label class="sub-label">Trainer Preference</label>
-                    <input type="radio" id="radio1" name="trainer" value="Male" checked>
-                    <label class="sub-label" for="radio1">Male</label>
-                    <input type="radio" id="radio2" name="trainer" value="Female">
-                    <label class="sub-label" for="radio2">Female</label>
-                </div>
+
             </div>
             <label class="main-label">Schedule Session</label>
             <div class="ssn-div">
                 <div class="time-div">
                     <label class="sub-label">Time Slot</label>
-                    <div class="timing-slots">6 AM <img src="https://ik.imagekit.io/healthhighway2020/Clock__01AQB7Yn.png?updatedAt=1633421331660" width="20px" height="20px" alt="png"></div>
+                    <div class="timing-slots"><span id="slected-time">6 AM</span> <img src="https://ik.imagekit.io/healthhighway2020/Clock__01AQB7Yn.png?updatedAt=1633421331660" width="20px" height="20px" alt="png"></div>
                 </div>
 
                 <div class="day-div">
                     <label class="sub-label">Routine</label>
-                    <div class="day-slots">Monday <img src="https://ik.imagekit.io/healthhighway2020/Date_4_MCtZ27r.png?updatedAt=1633421363761" width="20px" height="20px" alt="png"></div>
+                    <div class="day-slots"><span id="selcted-days">Monday</span> <img src="https://ik.imagekit.io/healthhighway2020/Date_4_MCtZ27r.png?updatedAt=1633421363761" width="20px" height="20px" alt="png"></div>
                 </div>
-                <div class="time-grid" style="display: grid;">
+                <div class="time-grid" style="display: none;">
                     <input type="radio" id="t1" name="timing" value="6:00 AM" checked>
                     <label for="t1">6 AM</label>
                     <input type="radio" id="t2" name="timing" value="7:00 AM">
@@ -82,7 +88,7 @@
                     <input type="radio" id="t9" name="timing" value="8:00 PM">
                     <label for="t9">8 PM</label>
                 </div>
-                <div class="day-grid" style='display: grid;'>
+                <div class="day-grid" style='display:none;'>
                     <input type="checkbox" id="day1" name="days" value="Mon" checked>
                     <label for="day1">Mon</label>
                     <input type="checkbox" id="day2" name="days" value="Tue" checked>
@@ -100,11 +106,20 @@
                 </div>
                 <div class="date-div">
                     <label class="sub-label" for="date">Starting date</label>
-                    <input type="date" id="date" placeholder="dd/mm/yyyy">
+                    <input type="date" id="date">
                 </div>
             </div>
+
+            <div class="btns">
+                <button class="btn sel" type="submit">Next</button>
+                <button class="btn" type="button">Back</button>
+            </div>
+
         </form>
     </section>
+
+
+    <script src="js/newform.js"></script>
 </body>
 
 </html>
