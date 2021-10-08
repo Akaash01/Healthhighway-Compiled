@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/navbar_vidhu.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
     </style>
@@ -13,111 +15,130 @@
 </head>
 
 <body>
-    <section class="form-container">
-        <form id="mainform" action="#">
-            <label for="goal" class="main-label">Goal</label>
-            <div class="select-editable">
-                <select onchange="this.nextElementSibling.value=this.value" id="goal">
-                  <option value="Select">Select</option>
-                  <option value="Hypertension">Hypertension</option>
-                  <option value="Diabetes">Diabetes</option>
-                  <option value="Insomnia">sleeplessness</option>
-                </select>
-                <input type="text" name="format" value="" id="other" />
+
+    <header>
+        <div class="navbar">
+            <div class="brandwrap">
+                <a href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/hhlogo_NgczTtvsb45.png?updatedAt=1633711473818" alt="logo"></a>
             </div>
-            <div class="basic-img">
-                <label class="main-label">Basic Information</label>
-                <div class="b-info">
-                    <div class="name-div">
-                        <label for="name" class="sub-label">Name</label>
-                        <input type="text" id="name" required>
+            <nav>
+                <ul class="nav-links">
+                    <li class="desk-link-nav"><a href="#">Blogs</a></li>
+                    <li class="desk-link-nav"><a href="#">Support</a></li>
+                    <li class="desk-link-nav"><a href="#">Login</a></li>
+                    <li><a href="#" class="joinbtn">JoinUs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="mainform" action="#">
+                <label for="goal" class="main-label">Goal</label>
+                <div class="select-editable">
+                    <select onchange="this.nextElementSibling.value=this.value" id="goal">
+                      <option value="Select">Select</option>
+                      <option value="Hypertension">Hypertension</option>
+                      <option value="Diabetes">Diabetes</option>
+                      <option value="Insomnia">sleeplessness</option>
+                    </select>
+                    <input type="text" name="format" value="" id="other" />
+                </div>
+                <div class="basic-img">
+                    <label class="main-label">Basic Information</label>
+                    <div class="b-info">
+                        <div class="name-div">
+                            <label for="name" class="sub-label">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="age-div">
+                            <label for="age" class="sub-label">Age</label>
+                            <input type="text" id="age" required>
+                        </div>
+                        <div class="weight-div">
+                            <label for="weight" class="sub-label">Weight (in kg)</label>
+                            <input type="text" id="weight" required>
+                        </div>
+                        <!-- <div class="height-div">
+                            <label for="height" class="sub-label">Height (in cm)</label>
+                            <input type="text" id="height" required>
+                        </div> -->
+                        <div class="pref-div">
+                            <label class="sub-label">Trainer Preference</label>
+                            <input type="radio" id="radio1" name="trainer" value="Male" checked>
+                            <label class="sub-label" for="radio1">Male</label>
+                            <input type="radio" id="radio2" name="trainer" value="Female">
+                            <label class="sub-label" for="radio2">Female</label>
+                        </div>
                     </div>
-                    <div class="age-div">
-                        <label for="age" class="sub-label">Age</label>
-                        <input type="text" id="age" required>
+                    <div class="img">
+                        <img id="yoga" src="https://ik.imagekit.io/healthhighway2020/yoga-se-hi-hoga_IW6O0AqhuU.gif?updatedAt=1631893349027" alt="gif">
                     </div>
-                    <div class="weight-div">
-                        <label for="weight" class="sub-label">Weight (in kg)</label>
-                        <input type="text" id="weight" required>
+
+
+                </div>
+                <label class="main-label">Schedule Session</label>
+                <div class="ssn-div">
+                    <div class="time-div">
+                        <label class="sub-label">Time Slot</label>
+                        <div class="timing-slots"><span id="selected-time">Choose</span> <img src="https://ik.imagekit.io/healthhighway2020/Clock__01AQB7Yn.png?updatedAt=1633421331660" width="20px" height="20px" alt="png"></div>
                     </div>
-                    <!-- <div class="height-div">
-                        <label for="height" class="sub-label">Height (in cm)</label>
-                        <input type="text" id="height" required>
-                    </div> -->
-                    <div class="pref-div">
-                        <label class="sub-label">Trainer Preference</label>
-                        <input type="radio" id="radio1" name="trainer" value="Male" checked>
-                        <label class="sub-label" for="radio1">Male</label>
-                        <input type="radio" id="radio2" name="trainer" value="Female">
-                        <label class="sub-label" for="radio2">Female</label>
+
+                    <div class="day-div">
+                        <label class="sub-label">Routine</label>
+                        <div class="day-slots"><span id="selected-days">Choose</span> <img src="https://ik.imagekit.io/healthhighway2020/Date_4_MCtZ27r.png?updatedAt=1633421363761" width="20px" height="20px" alt="png"></div>
+                    </div>
+                    <div class="time-grid" style="display: none;">
+                        <input type="radio" id="t1" name="timing" value="6:00 AM">
+                        <label for="t1">6 AM</label>
+                        <input type="radio" id="t2" name="timing" value="7:00 AM">
+                        <label for="t2">7 AM</label>
+                        <input type="radio" id="t3" name="timing" value="8:00 AM">
+                        <label for="t3">8 AM</label>
+                        <input type="radio" id="t4" name="timing" value="9:00 AM">
+                        <label for="t4">9 AM</label>
+                        <input type="radio" id="t5" name="timing" value="4:00 PM">
+                        <label for="t5">4 PM</label>
+                        <input type="radio" id="t6" name="timing" value="5:00 PM">
+                        <label for="t6">5 PM</label>
+                        <input type="radio" id="t7" name="timing" value="6:00 PM">
+                        <label for="t7">6 PM</label>
+                        <input type="radio" id="t8" name="timing" value="7:00 PM">
+                        <label for="t8">7 PM</label>
+                        <input type="radio" id="t9" name="timing" value="8:00 PM">
+                        <label for="t9">8 PM</label>
+                    </div>
+                    <div class="day-grid" style='display:none;'>
+                        <input type="checkbox" id="day1" name="days" value="Mon">
+                        <label for="day1">Mon</label>
+                        <input type="checkbox" id="day2" name="days" value="Tue">
+                        <label for="day2">Tue</label>
+                        <input type="checkbox" id="day3" name="days" value="Wed">
+                        <label for="day3">Wed</label>
+                        <input type="checkbox" id="day4" name="days" value="Thu">
+                        <label for="day4">Thu</label>
+                        <input type="checkbox" id="day5" name="days" value="Fri">
+                        <label for="day5">Fri</label>
+                        <input type="checkbox" id="day6" name="days" value="Sat">
+                        <label for="day6">Sat</label>
+                        <input type="checkbox" id="day7" name="days" value="Sun">
+                        <label for="day7">Sun</label>
+                    </div>
+                    <div class="date-div">
+                        <label class="sub-label" for="date">Starting date</label>
+                        <input type="date" id="date">
                     </div>
                 </div>
-                <div class="img">
-                    <img id="yoga" src="https://ik.imagekit.io/healthhighway2020/yoga-se-hi-hoga_IW6O0AqhuU.gif?updatedAt=1631893349027" alt="gif">
+
+                <div class="btns">
+                    <button class="btn sel" type="submit">Checkout</button>
+
                 </div>
 
+            </form>
+        </section>
+    </main>
 
-            </div>
-            <label class="main-label">Schedule Session</label>
-            <div class="ssn-div">
-                <div class="time-div">
-                    <label class="sub-label">Time Slot</label>
-                    <div class="timing-slots"><span id="slected-time">Choose</span> <img src="https://ik.imagekit.io/healthhighway2020/Clock__01AQB7Yn.png?updatedAt=1633421331660" width="20px" height="20px" alt="png"></div>
-                </div>
-
-                <div class="day-div">
-                    <label class="sub-label">Routine</label>
-                    <div class="day-slots"><span id="selcted-days">Choose</span> <img src="https://ik.imagekit.io/healthhighway2020/Date_4_MCtZ27r.png?updatedAt=1633421363761" width="20px" height="20px" alt="png"></div>
-                </div>
-                <div class="time-grid" style="display: none;">
-                    <input type="radio" id="t1" name="timing" value="6:00 AM">
-                    <label for="t1">6 AM</label>
-                    <input type="radio" id="t2" name="timing" value="7:00 AM">
-                    <label for="t2">7 AM</label>
-                    <input type="radio" id="t3" name="timing" value="8:00 AM">
-                    <label for="t3">8 AM</label>
-                    <input type="radio" id="t4" name="timing" value="9:00 AM">
-                    <label for="t4">9 AM</label>
-                    <input type="radio" id="t5" name="timing" value="4:00 PM">
-                    <label for="t5">4 PM</label>
-                    <input type="radio" id="t6" name="timing" value="5:00 PM">
-                    <label for="t6">5 PM</label>
-                    <input type="radio" id="t7" name="timing" value="6:00 PM">
-                    <label for="t7">6 PM</label>
-                    <input type="radio" id="t8" name="timing" value="7:00 PM">
-                    <label for="t8">7 PM</label>
-                    <input type="radio" id="t9" name="timing" value="8:00 PM">
-                    <label for="t9">8 PM</label>
-                </div>
-                <div class="day-grid" style='display:none;'>
-                    <input type="checkbox" id="day1" name="days" value="Mon">
-                    <label for="day1">Mon</label>
-                    <input type="checkbox" id="day2" name="days" value="Tue">
-                    <label for="day2">Tue</label>
-                    <input type="checkbox" id="day3" name="days" value="Wed">
-                    <label for="day3">Wed</label>
-                    <input type="checkbox" id="day4" name="days" value="Thu">
-                    <label for="day4">Thu</label>
-                    <input type="checkbox" id="day5" name="days" value="Fri">
-                    <label for="day5">Fri</label>
-                    <input type="checkbox" id="day6" name="days" value="Sat">
-                    <label for="day6">Sat</label>
-                    <input type="checkbox" id="day7" name="days" value="Sun">
-                    <label for="day7">Sun</label>
-                </div>
-                <div class="date-div">
-                    <label class="sub-label" for="date">Starting date</label>
-                    <input type="date" id="date">
-                </div>
-            </div>
-
-            <div class="btns">
-                <button class="btn sel" type="submit">Checkout</button>
-
-            </div>
-
-        </form>
-    </section>
 
 
     <script src="js/newform.js"></script>
