@@ -5,7 +5,7 @@ header {
 }
 
 .navbar {
-    padding: 1em 8%;
+    padding: 1em 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header {
     list-style-type: none;
     a {
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 400;
         padding: .5em 1em;
         font-size: 1rem;
         color: #3C4860;
@@ -38,10 +38,11 @@ header {
         color: white;
         border-radius: 1em;
         font-weight: 600;
+        padding: .6em 2.2em;
     }
 }
 
-.desk-link-nav:nth-of-type(3) {
+#loginbtn {
     font-weight: 600;
 }
 
@@ -70,7 +71,7 @@ header {
 
 @media (min-width:1440px) {
     .nav-links a {
-        font-size: 22px;
-        margin: 0 .5em;
+        font-size: 16px;
+        margin: 0 1em;
     }
 }

@@ -5,17 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <link rel="stylesheet" href="css/tavo-calendar.css" />
+
 
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/new_navbar.css" />
     <link rel="stylesheet" href="css/fix_budget.css" />
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/onSiteForm.css" />
+
 
     <title>Health Highway | Pricing</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,30 +24,19 @@
 <body>
     <header>
         <div class="nav-landing">
-          <nav
-            class="navbar navbar-expand-lg navbar-light"
-            id="navbar-landing"
-            style="
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
               position: fixed;
               width: 100vw !important;
               transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-            "
-          >
-            <div
-              id="navbar-container"
-              class="container-fluid navbar-container-unscrolled"
-            >
-            <a href="./index.html">
-              <img src="images/logoDesktop.svg" alt="Health Highway Logo" class="logo"/>
-            </a>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                  <li style="margin-right: 40px" class="nav-item">
-                    <a
-                      href="./blogs/blogs.html"
-                      onclick="scrolltofunc('unique-main-div')"
-                      class="nav-link"
-                      >Blogs</a
+            ">
+                <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
+                    <a href="./index.html">
+                        <img src="images/logoDesktop.svg" alt="Health Highway Logo" class="logo" />
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li style="margin-right: 40px" class="nav-item">
+                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a
                     >
                   </li>
                   <li style="margin-right: 40px" class="nav-item">
@@ -119,9 +108,9 @@
                         <img src="https://ik.imagekit.io/healthhighway2020/newcart_WPvgTDb5L.svg" alt="" />
                     </button>
                     <div class="desktop-link">
-                      <a href="#"> <h4 >Have fixed budget ?</h4></a> 
+                      <a href="#"> <h4 >Have fixed budget ?</h4></a>
                     </div>
-                    
+
                 </div>
                 <div class="session-and-button">
                     <div class="session-container">
@@ -190,222 +179,13 @@
                         <a href="#">Fixed budget ?</a>
                     </div>
                 </div>
-            </div>
+        </div>
         </div>
 
         <!-- Pricing Section (End) -->
         <!-- Pricing Section (End) -->
 
-        <!-- Onsite Form -->
-        <div class="container-for-form">
-            <section id="onSiteForm" class="os-form">
-                <div class="close-next-btns">
-                    <button class="osf-back-button"><img src="images/arrow.png" alt="">
-                    </button>
-                    <div class="step-counter">
-                        <p class="step-count">Step <span id="step">1</span> of <span id="total-steps">9</span></p>
-                    </div>
-                    <button class="osf-close-button"><img src="images/close_btn.png" alt="">
-                    </button>
-                </div>
 
-
-
-                <div class="gif-and-content-grid">
-                    <div class="osf-content active-state" id="choose-service">
-                        <h3 class="osf-heading">Tell us about your Goals</h3>
-                        <button class="osf-button osf-service" onclick="problem = 'Fitness'">Fitness</button>
-                        <button class="osf-button osf-heal">Heal Ailments</button>
-                        <button class="osf-button osf-service" onclick="problem = 'Mindfullness'">Mindfullness</button>
-                        <button class="osf-button osf-service" onclick="problem = 'Advanced Yoga'">Advanced
-                            Yoga</button>
-
-                    </div>
-
-                    <div class="osf-content " id="choose-ailment">
-                        <h3 class="osf-heading">Select a particular ailment</h3>
-                        <div class="buttttons">
-                            <button class="osf-button osf-ail" onclick="problem = 'Diabetes'">Diabetes</button>
-                            <button class="osf-button osf-ail" onclick="problem = 'Hypertension'">Hypertension</button>
-                            <button class="osf-button osf-ail" onclick="problem = 'Eye Problems'">Eye Problems</button>
-                            <button class="osf-button osf-ail" onclick="problem = 'Bone & Joint Pain'">Bone & Joint
-                                Pain</button>
-                            <button class="osf-button osf-ail" onclick="problem = 'Thyroidism'">Thyroidism</button>
-                            <button class="osf-button osf-ail" onclick="problem = 'Breathing Issues'">Breathing
-                                Issues</button>
-                            <button class="osf-button osf-ns">Not Sure</button>
-                        </div>
-                    </div>
-
-                    <div class="osf-content " id="not-sure">
-                        <h3 class="osf-heading ">Please type your problem/Goal</h3>
-                        <form action="#" class="osf-form-problem">
-                            <input type="text" placeholder="Your problem..." required id="osf-problem">
-                            <p id="osf-invalid-problem">Please provide your problem.</p>
-                            <button class="osf-button">Next</button>
-                        </form>
-                    </div>
-
-                    <div class="osf-content " id="basic-info">
-                        <h3 class="osf-heading ">Basic Information</h3>
-                        <form action="#" class="osf-form-basicinfo">
-                            <div class="name-div">
-                                <label for="name_input">Your Name</label>
-                                <input type="text" placeholder="Name..." id="osf-name" required>
-                                <p id="osf-invalid-name">Please enter name.</p>
-                            </div>
-                            <div class="age-div">
-                                <label for="age_input">Your Age</label>
-                                <input type="text" placeholder="Age..." id="osf-age" required inputmode="numeric">
-                                <p id="osf-invalid-age">Please enter age.</p>
-                            </div>
-
-                            <button class="osf-button">Next</button>
-                        </form>
-                    </div>
-
-                    <div class="osf-content " id="provide-contact">
-                        <h3 class="osf-heading ">Basic Information</h3>
-                        <form action="#" class="osf-form-contact">
-                            <div class="weight-div">
-                                <label for="age_input">Weight (in Kgs)</label>
-                                <input type="text" placeholder="Weight..." id="osf-weight" required inputmode="numeric">
-                                <p id="osf-invalid-weight">Please enter weight.</p>
-                            </div>
-                            <div class="height-div">
-                                <label for="age_input">Height (in cms)</label>
-                                <input type="text" placeholder="Height..." id="osf-height" required inputmode="numeric">
-                                <p id="osf-invalid-height">Please enter height.</p>
-                            </div>
-                            <p class="pref">Preferred Trainer</p>
-                            <div class="pref-div">
-                                <input type="radio" id="radio1" name="trainer" value="Male" checked>
-                                <label for="radio1">Male</label>
-                                <input type="radio" id="radio2" name="trainer" value="Female">
-                                <label for="radio2">Female</label>
-                            </div>
-                            <button class="osf-button">Next</button>
-                        </form>
-                    </div>
-
-                    <div class="osf-content " id="choose-timing">
-                        <h3 class="osf-heading ">Choose a time slot</h3>
-                        <form class="time-grid">
-                            <input type="radio" id="t1" name="timing" value="6:00 AM" required>
-                            <label for="t1">6 AM</label>
-                            <input type="radio" id="t2" name="timing" value="7:00 AM">
-                            <label for="t2">7 AM</label>
-                            <input type="radio" id="t3" name="timing" value="8:00 AM">
-                            <label for="t3">8 AM</label>
-                            <input type="radio" id="t4" name="timing" value="9:00 AM">
-                            <label for="t4">9 AM</label>
-                            <input type="radio" id="t5" name="timing" value="4:00 PM">
-                            <label for="t5">4 PM</label>
-                            <input type="radio" id="t6" name="timing" value="5:00 PM">
-                            <label for="t6">5 PM</label>
-                            <input type="radio" id="t7" name="timing" value="6:00 PM">
-                            <label for="t7">6 PM</label>
-                            <input type="radio" id="t8" name="timing" value="7:00 PM">
-                            <label for="t8">7 PM</label>
-                            <input type="radio" id="t9" name="timing" value="8:00 PM">
-                            <label for="t9">8 PM</label>
-
-                            <button class="osf-button">Next</button>
-                        </form>
-                    </div>
-
-                    <div class="osf-content " id="choose-days">
-                        <h3 class="osf-heading ">Your Fitness Routine</h3>
-
-                        <form class="day-grid">
-                            <input type="checkbox" id="day1" name="days" value="Mon">
-                            <label for="day1">Mon</label>
-                            <input type="checkbox" id="day2" name="days" value="Tue">
-                            <label for="day2">Tue</label>
-                            <input type="checkbox" id="day3" name="days" value="Wed">
-                            <label for="day3">Wed</label>
-                            <input type="checkbox" id="day4" name="days" value="Thu">
-                            <label for="day4">Thu</label>
-                            <input type="checkbox" id="day5" name="days" value="Fri">
-                            <label for="day5">Fri</label>
-                            <input type="checkbox" id="day6" name="days" value="Sat">
-                            <label for="day6">Sat</label>
-                            <input type="checkbox" id="day7" name="days" value="Sun">
-                            <label for="day7">Sun</label>
-
-                            <button class="osf-button">Next</button>
-                        </form>
-                    </div>
-                    <div class="osf-content " id="fitness-calendar">
-                        <h3 class="osf-heading ">Choose a starting date</h3>
-                        <div id="my-calendar"></div>
-                        <p id="osf-invalid-date">Please select a date</p>
-
-                        <button class="osf-button final-btn" style="margin-top: 1em;" onclick="getDateDummy();">Next</button>
-
-
-
-                    </div>
-
-
-                    <div class="osf-content personal-session-card" id="final-card">
-                        <div class="personal-card-title">
-                            <h1 class="prsnl-heading">Personalized Yoga session</h1>
-                            <img class="prsnl-img" src="./images/payment-1.png" alt="" />
-                        </div>
-                        <div class="personal-session-text">
-                            <ul>
-                                <li>
-                                    <img src="./images/accept.png" alt="" />
-                                    <p>Problem/Goal: <span class="f-input" id="f-problem"></span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/accept.png" alt="" />
-                                    <p>Starting Date: <span class="f-input" id="f-date"></span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/alarm-clock.png" alt="" />
-                                    <p>Time: <span class="f-input" id="f-time"></span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/Duration.png" alt="" />
-                                    <p>Duration: 50 mins/Session</p>
-                                </li>
-                                <li>
-                                    <img src="./images/calendar_1.png" alt="" />
-                                    <p>Preferred days : <span class="f-input" id="f-days"></span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/bio.png" alt="" />
-                                    <p>Gender pref. <span class="f-input" id="f-pref"></span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/bio.png" alt="" />
-                                    <p>Name: <span class="f-input" id="f-name"></span>, <span id="f-age"></span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/count.png" alt="" />
-                                    <p><span class="f-input" id="f-sessions">16 Sessions</span></p>
-                                </li>
-                                <li>
-                                    <img src="./images/customer.png" alt="" />
-                                    <p>Weight: <span class="f-input" id="f-weight"></span>kgs, <span class="f-input" id="f-height"></span>cms</p>
-                                </li>
-                            </ul>
-                            <button id="payNow" onclick="location.href='paymentSuccess.html'" class="osf-button">Pay INR
-                                1500</button>
-                        </div>
-                    </div>
-
-                    <div class="osf-gif"><img src="images/yoga-se-hi-hoga.gif" alt="yogasehihoga"></div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar"></div>
-                </div>
-
-            </section>
-        </div>
-        <!-- Onsite Form -->
 
 
 
@@ -473,215 +253,172 @@
       <section id="testimonials">
         <div id="testimonial-main">
           <h2 id="testimonials-heading">Our Customers <span>Love Us !</span></h2>
-  
-          <div class="testimonial-container">
-            <div class="swiper-container myTestimonialSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide testimonial swiper-slide-active">
-                  <div class="testimonial_img_rating">
-                    <img
-                      class="testimonial_user_img"
-                      src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                      alt=""
-                    />
-                    <div class="testimonial-ratings">
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+
+            <div class="testimonial-container">
+                <div class="swiper-container myTestimonialSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial swiper-slide-active">
+                            <div class="testimonial_img_rating">
+                                <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                <div class="testimonial-ratings">
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                </div>
+                            </div>
+                            <p>
+                                1.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                            </p>
+                            <div class="testimonial-user-profile">
+                                <h4>Anamika|</h4>
+                                <p>Rishikesh</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="testimonial_img_rating">
+                                <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                <div class="testimonial-ratings">
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                </div>
+                            </div>
+                            <p>
+                                2.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                            </p>
+                            <div class="testimonial-user-profile">
+                                <h4>Anamika|</h4>
+                                <p>Rishikesh</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="testimonial_img_rating">
+                                <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                <div class="testimonial-ratings">
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                </div>
+                            </div>
+                            <p>
+                                3.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                            </p>
+                            <div class="testimonial-user-profile">
+                                <h4>Anamika|</h4>
+                                <p>Rishikesh</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="testimonial_img_rating">
+                                <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                <div class="testimonial-ratings">
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                </div>
+                            </div>
+                            <p>
+                                4.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                            </p>
+                            <div class="testimonial-user-profile">
+                                <h4>Anamika|</h4>
+                                <p>Rishikesh</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="testimonial_img_rating">
+                                <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                <div class="testimonial-ratings">
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                </div>
+                            </div>
+                            <p>
+                                5.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                            </p>
+                            <div class="testimonial-user-profile">
+                                <h4>Anamika|</h4>
+                                <p>Rishikesh</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <p>
-                    1.Excellent teachers with knowledge in a wide variety of
-                    Asanas and techniques. I am highly motivated by and inspired
-                    by the quality of teaching despite the online medium.
-                  </p>
-                  <div class="testimonial-user-profile">
-                    <h4>Anamika|</h4>
-                    <p>Rishikesh</p>
-                  </div>
                 </div>
-                <div class="swiper-slide testimonial">
-                  <div class="testimonial_img_rating">
-                    <img
-                      class="testimonial_user_img"
-                      src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                      alt=""
-                    />
-                    <div class="testimonial-ratings">
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                    </div>
-                  </div>
-                  <p>
-                    2.Excellent teachers with knowledge in a wide variety of
-                    Asanas and techniques. I am highly motivated by and inspired
-                    by the quality of teaching despite the online medium.
-                  </p>
-                  <div class="testimonial-user-profile">
-                    <h4>Anamika|</h4>
-                    <p>Rishikesh</p>
-                  </div>
+                <div class="testimonial-controls">
+                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145" class="swiper-button-prev" alt="" />
+                    <img src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145" class="swiper-button-next" alt="" />
                 </div>
-                <div class="swiper-slide testimonial">
-                  <div class="testimonial_img_rating">
-                    <img
-                      class="testimonial_user_img"
-                      src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                      alt=""
-                    />
-                    <div class="testimonial-ratings">
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                    </div>
-                  </div>
-                  <p>
-                    3.Excellent teachers with knowledge in a wide variety of
-                    Asanas and techniques. I am highly motivated by and inspired
-                    by the quality of teaching despite the online medium.
-                  </p>
-                  <div class="testimonial-user-profile">
-                    <h4>Anamika|</h4>
-                    <p>Rishikesh</p>
-                  </div>
-                </div>
-                <div class="swiper-slide testimonial">
-                  <div class="testimonial_img_rating">
-                    <img
-                      class="testimonial_user_img"
-                      src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                      alt=""
-                    />
-                    <div class="testimonial-ratings">
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                    </div>
-                  </div>
-                  <p>
-                    4.Excellent teachers with knowledge in a wide variety of
-                    Asanas and techniques. I am highly motivated by and inspired
-                    by the quality of teaching despite the online medium.
-                  </p>
-                  <div class="testimonial-user-profile">
-                    <h4>Anamika|</h4>
-                    <p>Rishikesh</p>
-                  </div>
-                </div>
-                <div class="swiper-slide testimonial">
-                  <div class="testimonial_img_rating">
-                    <img
-                      class="testimonial_user_img"
-                      src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                      alt=""
-                    />
-                    <div class="testimonial-ratings">
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                      <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                    </div>
-                  </div>
-                  <p>
-                    5.Excellent teachers with knowledge in a wide variety of
-                    Asanas and techniques. I am highly motivated by and inspired
-                    by the quality of teaching despite the online medium.
-                  </p>
-                  <div class="testimonial-user-profile">
-                    <h4>Anamika|</h4>
-                    <p>Rishikesh</p>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="testimonial-controls">
-              <img
-                src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145"
-                class="swiper-button-prev"
-                alt=""
-              />
-              <img
-                src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145"
-                class="swiper-button-next"
-                alt=""
-              />
             </div>
-          </div>
-        </div>
-        <div class="img-container" style="background-image: url('https://ik.imagekit.io/healthhighway2020/testimonial-bg_Hkzar1Epf.svg?updatedAt=1631779791941');">
-          <img src="https://ik.imagekit.io/healthhighway2020/testimonial-1_-PkzZ6ssa.png?updatedAt=1631779521304" class="img-1 img-active" alt="" />
-          <img
-            src="https://ik.imagekit.io/healthhighway2020/kenrick-mills-rfePWka7VPU-unsplash_9wjpWi3TR.jpg?updatedAt=1631779524631"
-            class="img-2"
-            alt=""
-          />
-          <img src="https://ik.imagekit.io/healthhighway2020/testimonial-3_P0LoCvrx6Y7.png?updatedAt=1631779522735" class="img-3" alt="" />
-          <img src="https://ik.imagekit.io/healthhighway2020/testimonial-4_GMwwaoVUy.png?updatedAt=1631779523635" class="img-4" alt="" />
-          <img src="https://ik.imagekit.io/healthhighway2020/testimonial-5_wcjnvohMQ.png?updatedAt=1631779520620" class="img-5" alt="" />
-        </div>
-        <!-- <img src="./img/testimonials-images.png" class="test-img"alt=""> -->
-      </section>
-      <script src="./js/testimonials.js"></script>
-      <!-- Testimonials(end) -->
-  
-         <!-- Fixed-Budget Section -->
+            <div class="img-container" style="background-image: url('https://ik.imagekit.io/healthhighway2020/testimonial-bg_Hkzar1Epf.svg?updatedAt=1631779791941');">
+                <img src="https://ik.imagekit.io/healthhighway2020/testimonial-1_-PkzZ6ssa.png?updatedAt=1631779521304" class="img-1 img-active" alt="" />
+                <img src="https://ik.imagekit.io/healthhighway2020/kenrick-mills-rfePWka7VPU-unsplash_9wjpWi3TR.jpg?updatedAt=1631779524631" class="img-2" alt="" />
+                <img src="https://ik.imagekit.io/healthhighway2020/testimonial-3_P0LoCvrx6Y7.png?updatedAt=1631779522735" class="img-3" alt="" />
+                <img src="https://ik.imagekit.io/healthhighway2020/testimonial-4_GMwwaoVUy.png?updatedAt=1631779523635" class="img-4" alt="" />
+                <img src="https://ik.imagekit.io/healthhighway2020/testimonial-5_wcjnvohMQ.png?updatedAt=1631779520620" class="img-5" alt="" />
+            </div>
+            <!-- <img src="./img/testimonials-images.png" class="test-img"alt=""> -->
+        </section>
+        <script src="./js/testimonials.js"></script>
+        <!-- Testimonials(end) -->
+
+        <!-- Fixed-Budget Section -->
         <div class="fixed-budget-con">
-      <div class="fixed-budget">
-        <h3>Have a fixed budget for fitness ?</h3>
-        <p>
-          Dont worry we got you covered. We bring you a variety of group
-          sessions that suits your need.
-        </p>
-      </div>
-      <div class="fix-grp-card-container">
-        <div class="new-grp-card">
-          <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png" alt="" />
-          <div class="grp-card-txt">
-            <div class="card-title">
-              <h3>Fitness Yoga</h3>
-              <p>by Yogachariya Sandeep</p>
+            <div class="fixed-budget">
+                <h3>Have a fixed budget for fitness ?</h3>
+                <p>
+                    Dont worry we got you covered. We bring you a variety of group sessions that suits your need.
+                </p>
             </div>
-            <div class="session-time">
-              <p>6 AM</p>
+            <div class="fix-grp-card-container">
+                <div class="new-grp-card">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png" alt="" />
+                    <div class="grp-card-txt">
+                        <div class="card-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogachariya Sandeep</p>
+                        </div>
+                        <div class="session-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-grp-card">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png" alt="" />
+                    <div class="grp-card-txt">
+                        <div class="card-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogachariya Sandeep</p>
+                        </div>
+                        <div class="session-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-grp-card">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png" alt="" />
+                    <div class="grp-card-txt">
+                        <div class="card-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogachariya Sandeep</p>
+                        </div>
+                        <div class="session-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="new-grp-card">
-          <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png" alt="" />
-          <div class="grp-card-txt">
-            <div class="card-title">
-              <h3>Fitness Yoga</h3>
-              <p>by Yogachariya Sandeep</p>
-            </div>
-            <div class="session-time">
-              <p>6 AM</p>
-            </div>
-          </div>
-        </div>
-        <div class="new-grp-card">
-          <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png" alt="" />
-          <div class="grp-card-txt">
-            <div class="card-title">
-              <h3>Fitness Yoga</h3>
-              <p>by Yogachariya Sandeep</p>
-            </div>
-            <div class="session-time">
-              <p>6 AM</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
         <!-- Fixed-Budget Section (End) -->
 
         <!-- Call-Us Section  -->
@@ -716,7 +453,7 @@
                     </button>
                 </div>
                 <div id="OTP">
-                    <p class="OTPTitle" id = "backOTP"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                    <p class="OTPTitle" id="backOTP"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
                         <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
                         </p>
@@ -738,13 +475,12 @@
                     </div>
                 </div>
                 <div id="name">
-                    <p class="nameTitle" id = "backName" ><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                    <p class="nameTitle" id="backName"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
                     <div class="loginBody">
                         <img class="nameImg" src="https://ik.imagekit.io/healthhighway2020/nameDiv_cHk_VP7U6-.svg?updatedAt=1631378890462">
-                        <p class="nameText">Its always good to know each other before 
-                            we get started :)
+                        <p class="nameText">Its always good to know each other before we get started :)
                         </p>
-                        <input class = "nameInput" placeholder = "Please Enter Your Fullname ">
+                        <input class="nameInput" placeholder="Please Enter Your Fullname ">
                         <button type="button" class="btn btn-light loginButton" id="continueName">
                             Continue
                         </button>
@@ -787,40 +523,40 @@
         </script>
         <!-- login div (END) -->
 
-    </main>
-    <footer>
-        <div class="footer-nav">
-            <nav>
-                <ul class="nav-links">
+        </main>
+        <footer>
+            <div class="footer-nav">
+                <nav>
+                    <ul class="nav-links">
 
-                    <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
-                    <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
-                    <li class="mob-links"><a href="index.html">Home</a></li>
-                    <li><a href="blogs/blogs.html">Blogs</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
-            <nav class="terms-privacy">
-                <ul>
-                    <li>
-                        <a href="#">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+                        <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
+                        <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
+                        <li class="mob-links"><a href="index.html">Home</a></li>
+                        <li><a href="blogs/blogs.html">Blogs</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
+                <nav class="terms-privacy">
+                    <ul>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 
 
-    <script src="js/video-component.js"></script>
-    <script src="js/pricing.js"></script>
-    <script src="js/landing.js"></script>
-    <script src="js/form.js"></script>
+        <script src="js/video-component.js"></script>
+        <script src="js/pricing.js"></script>
+        <script src="js/landing.js"></script>
 
-    <script type="text/javascript" src="js/login.js"></script>
+
+        <script type="text/javascript" src="js/login.js"></script>
 
 </body>
 
