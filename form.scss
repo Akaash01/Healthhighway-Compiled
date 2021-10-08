@@ -28,6 +28,23 @@ label {
     margin-bottom: .3em;
 }
 
+.select-editable {
+    position: relative;
+}
+
+#other {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    left: 0;
+    width: 80%;
+    font-size: 1rem;
+    padding: .5em 0.5em;
+    &:focus {
+        outline: none;
+    }
+}
+
 #goal {
     padding: .5em 0;
     padding-right: 2em;
@@ -35,8 +52,13 @@ label {
     background-color: #EDF7FF;
     border-radius: 5px;
     border: none;
+    height: 50px;
     font-size: 1rem;
     grid-column: 1/2;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
 }
 
 .b-info {
@@ -214,6 +236,12 @@ input[type=checkbox]:checked+label {
     .day-grid {
         grid-column: 2/3;
     }
+    #goal {
+        width: 200px;
+    }
+    #other {
+        width: 150px;
+    }
 }
 
 @media(min-width:1024px) {
@@ -249,7 +277,8 @@ input[type=checkbox]:checked+label {
     #date,
     div,
     #goal,
-    .btn {
+    .btn,
+    #other {
         font-size: 22px;
     }
     input[type=checkbox]+label {

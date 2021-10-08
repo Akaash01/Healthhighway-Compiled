@@ -16,14 +16,15 @@
     <section class="form-container">
         <form id="mainform" action="#">
             <label for="goal" class="main-label">Goal</label>
-            <select name="goals" id="goal">
-                <option value="">select</option>
-                <option value="Problem 1">Problem1</option>
-                <option value="Problem 1">Problem1</option>
-                <option value="Problem 1">Problem1</option>
-                <option value="Problem 1">Problem1</option>
-                <option value="Problem 1">Problem1</option>
-            </select>
+            <div class="select-editable">
+                <select onchange="this.nextElementSibling.value=this.value" id="goal">
+                  <option value="Select">Select</option>
+                  <option value="Hypertension">Hypertension</option>
+                  <option value="Diabetes">Diabetes</option>
+                  <option value="Insomnia">sleeplessness</option>
+                </select>
+                <input type="text" name="format" value="" id="other" />
+            </div>
             <div class="basic-img">
                 <label class="main-label">Basic Information</label>
                 <div class="b-info">
