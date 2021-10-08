@@ -32,19 +32,6 @@ label {
     position: relative;
 }
 
-#other {
-    position: absolute;
-    top: 0;
-    height: 30px;
-    left: 0;
-    width: 150px;
-    font-size: 1rem;
-    padding: .5em 0.5em;
-    &:focus {
-        outline: none;
-    }
-}
-
 #goal {
     padding: .5em 0;
     padding-right: 2em;
@@ -56,6 +43,31 @@ label {
     font-size: 1rem;
     grid-column: 1/2;
     width: 180px;
+    &:focus {
+        outline: none;
+    }
+}
+
+#goal {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    background: url(https://ik.imagekit.io/healthhighway2020/Vector_Iz4hoF8TCay.png?updatedAt=1633706724978);
+    background-color: #EDF7FF;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+
+#other {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    left: 0;
+    width: 130px;
+    font-size: 1rem;
+    padding: .5em 0.5em;
     &:focus {
         outline: none;
     }
@@ -238,6 +250,7 @@ input[type=checkbox]:checked+label {
     }
     #goal {
         width: 200px;
+        background-position: center right 10px;
     }
     #other {
         width: 150px;
@@ -261,6 +274,9 @@ input[type=checkbox]:checked+label {
         margin-bottom: -50px;
         margin-left: 100px;
     }
+    #date {
+        font-size: 15px;
+    }
 }
 
 @media(min-width:1440px) {
@@ -274,7 +290,6 @@ input[type=checkbox]:checked+label {
         column-gap: 2em;
     }
     input,
-    #date,
     div,
     #goal,
     .btn,
@@ -293,7 +308,14 @@ input[type=checkbox]:checked+label {
         margin-bottom: -100px;
         margin-left: 100px;
     }
-    span {
+    #selected-days,
+    #selected-time {
         font-size: 20px;
+    }
+    #other {
+        padding: .4em .5em;
+    }
+    #date {
+        font-size: 19px;
     }
 }
