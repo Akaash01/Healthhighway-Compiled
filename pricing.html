@@ -465,38 +465,7 @@
             </div>
         </div>
 
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            var firebaseConfig = {
-                apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-                authDomain: "healthhighway-45963.firebaseapp.com",
-                databaseURL: "https://healthhighway-45963.firebaseio.com",
-                projectId: "healthhighway-45963",
-                storageBucket: "healthhighway-45963.appspot.com",
-                messagingSenderId: "716392922291",
-                appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-                measurementId: "G-B3ZVBEZ2H2"
-            };
-            firebase.initializeApp(firebaseConfig);
-        </script>
-        <script>
-            window.onload = function() {
-                render();
-            }
-
-            async function render() {
-                window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
-                recaptchaVerifier.render();
-                recaptchaVerifier.verify().then(token => {
-                    console.log(token);
-                    document.getElementById("loginContinue").style.pointerEvents = "auto";
-                })
-            }
-        </script>
-        <!-- login div (END) -->
+        <!-- login div(END) -->
 
     </main>
     <footer>
