@@ -9,68 +9,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-
+    <link rel="stylesheet" href="css/navbar_vidhu.css" />
     <link rel="stylesheet" href="css/pricing.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/new_navbar.css" />
+    <link rel="stylesheet" href="css/uspandaboutus.css" />
+    <link rel="stylesheet" href="css/videocomponent.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
     <link rel="stylesheet" href="css/fix_budget.css" />
+    <link rel="stylesheet" href="css/callback.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/login.css" />
 
 
+
     <title>Health Highway | Pricing</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <header>
-        <div class="nav-landing">
-            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
-              position: fixed;
-              width: 100vw !important;
-              transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-            ">
-                <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
-                    <a href="./index.html">
-                        <img src="images/logoDesktop.svg" alt="Health Highway Logo" class="logo" />
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                            <li style="margin-right: 40px" class="nav-item">
-                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a
-                    >
-                  </li>
-                  <li style="margin-right: 40px" class="nav-item">
-                    <a
-                      onclick="scrolltofunc('services-main-div')"
-                      class="nav-link"
-                      >Support</a
-                    >
-                  </li>
-                  <li style="margin-right: 40px" class="nav-item">
-                    <a
-                      onclick="scrolltofunc('feedback-main-starting')"
-                      style="font-weight: 600 !important"
-                      class="nav-link"
-                      >Login</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <button
-                id="landing-joinus"
-                type="button"
-                class="btn btn-light"
-                onclick="showmodal('booksession')"
-              >
-                Join Us
-              </button>
-              <!-- <button class="loginIcon">
-                          <img src="images/user.png" alt="user"/>
-                      </button> -->
+    <header class="header-for-navbar">
+        <div class="navbar-top">
+            <div class="brandwrap-top">
+                <a href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
             </div>
-          </nav>
+            <nav>
+                <ul class="nav-links-top">
+                    <li class="desk-link-nav"><a href="#">Blogs</a></li>
+                    <li class="desk-link-nav"><a href="#">Support</a></li>
+                    <li class="desk-link-nav"><a href="#" id="loginbtn">Login</a></li>
+                    <li><a href="#" class="joinbtn" id="landing-joinus">JoinUs</a></li>
+                    <li> <button class="loginIcon">
+                        <img src="images/user.png" alt="user"/>
+                    </button> </li>
+                </ul>
+            </nav>
         </div>
-      </header>
+    </header>
     <main>
         <!-- Pricing Section (Start) -->
         <div class="price-container">
@@ -108,7 +81,9 @@
                         <img src="https://ik.imagekit.io/healthhighway2020/newcart_WPvgTDb5L.svg" alt="" />
                     </button>
                     <div class="desktop-link">
-                      <a href="#"> <h4 >Have fixed budget ?</h4></a>
+                        <a href="#">
+                            <h4>Have fixed budget ?</h4>
+                        </a>
                     </div>
 
                 </div>
@@ -179,7 +154,7 @@
                         <a href="#">Fixed budget ?</a>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
 
         <!-- Pricing Section (End) -->
@@ -523,40 +498,40 @@
         </script>
         <!-- login div (END) -->
 
-        </main>
-        <footer>
-            <div class="footer-nav">
-                <nav>
-                    <ul class="nav-links">
+    </main>
+    <footer>
+        <div class="footer-nav">
+            <nav>
+                <ul class="nav-links">
 
-                        <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
-                        <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
-                        <li class="mob-links"><a href="index.html">Home</a></li>
-                        <li><a href="blogs/blogs.html">Blogs</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-                <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
-                <nav class="terms-privacy">
-                    <ul>
-                        <li>
-                            <a href="#">Terms</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
-
-
-        <script src="js/video-component.js"></script>
-        <script src="js/pricing.js"></script>
-        <script src="js/landing.js"></script>
+                    <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
+                    <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
+                    <li class="mob-links"><a href="index.html">Home</a></li>
+                    <li><a href="blogs/blogs.html">Blogs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
+            <nav class="terms-privacy">
+                <ul>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 
 
-        <script type="text/javascript" src="js/login.js"></script>
+    <script src="js/video-component.js"></script>
+    <script src="js/pricing.js"></script>
+    <script src="js/landing.js"></script>
+
+
+    <script type="text/javascript" src="js/login.js"></script>
 
 </body>
 

@@ -268,11 +268,11 @@ input[type=checkbox]:checked + label {
     grid-column: 2/3;
   }
   #goal {
-    width: 200px;
+    width: 160px;
     background-position: center right 10px;
   }
   #other {
-    width: 150px;
+    width: 110px;
   }
 }
 
@@ -295,6 +295,12 @@ input[type=checkbox]:checked + label {
   }
   #date {
     font-size: 15px;
+  }
+  #goal {
+    width: 285px;
+  }
+  #other {
+    width: 235px;
   }
 }
 
@@ -336,5 +342,11 @@ input[type=checkbox]:checked + label {
   }
   #date {
     font-size: 19px;
+  }
+  #goal {
+    width: 340px;
+  }
+  #other {
+    width: 290px;
   }
 }
