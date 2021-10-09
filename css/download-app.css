@@ -1,0 +1,60 @@
+/* DOwnload the App CSS */
+
+.download-app {
+    padding: 2em 5%;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+#download-app-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#download-app-heading span {
+    color: #4ca9ee;
+}
+
+.download-img {
+    padding: 3em 0;
+}
+
+.download-app p {
+    padding: 0 3em;
+    color: #757575;
+}
+
+#download-app-heading .highway-spn {
+    color: aqua;
+}
+
+.download-now-btn {
+    display: inline-block;
+    background-color: #4ca9ee;
+    color: white;
+    padding: 1em 2em;
+    margin: 1.5em 0;
+    border-radius: 0.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #download-app-heading {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .download-app p {
+        padding: 0 30%;
+    }
+}
+
+@media (min-width: 1440px) {
+    #download-app-heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
+
+
+/* DOwnload the App CSS (ENd) */
