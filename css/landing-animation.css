@@ -598,6 +598,19 @@
     margin-top: 20px;
   }
 }
+
+@media only screen and (max-height: 700px) {
+#landing-main-div {
+    height: calc(100vh - 216px);
+}
+}
+
+@media only screen and (max-height: 600px) {
+  #landing-main-div {
+      height: calc(100vh - 140px);
+  }
+}
+
 @media (max-width: 370px) {
   #client,
   #instructor {
