@@ -38,7 +38,7 @@ header {
         color: white;
         border-radius: 1em;
         font-weight: 600;
-        padding: .6em 2.2em;
+        padding: .5em 1em;
     }
 }
 
@@ -50,8 +50,9 @@ header {
     .desk-link-nav {
         display: unset;
     }
-    .joinbtn {
+    .nav-links .joinbtn {
         margin-left: 1em;
+        padding: .6em 2.2em;
     }
     .brandwrap img {
         width: 80%;
