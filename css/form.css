@@ -58,7 +58,6 @@ label {
   background-color: #EDF7FF;
   border-radius: 5px;
   border: none;
-  height: 50px;
   font-size: 1rem;
   grid-column: 1/2;
   width: 180px;
@@ -81,7 +80,6 @@ label {
 #other {
   position: absolute;
   top: 0;
-  height: 30px;
   left: 0;
   width: 130px;
   font-size: 1rem;
@@ -110,13 +108,18 @@ label {
   grid-column: 1/-1;
 }
 
-input[type=text] {
-  padding: .5em 0.1em;
+.form-container input[type=text] {
+  padding: .5em 0em;
+  padding-left: .5em;
   background-color: #EDF7FF;
   border-radius: 5px;
   border: none;
   margin-bottom: 1em;
   width: 100%;
+}
+
+.form-container input[type=text]:focus {
+  outline: none;
 }
 
 .ssn-div {
@@ -268,11 +271,11 @@ input[type=checkbox]:checked + label {
     grid-column: 2/3;
   }
   #goal {
-    width: 160px;
+    width: 24%;
     background-position: center right 10px;
   }
   #other {
-    width: 110px;
+    width: 16%;
   }
 }
 
@@ -297,10 +300,10 @@ input[type=checkbox]:checked + label {
     font-size: 15px;
   }
   #goal {
-    width: 285px;
+    width: 24.5%;
   }
   #other {
-    width: 235px;
+    width: 20%;
   }
 }
 
@@ -344,9 +347,9 @@ input[type=checkbox]:checked + label {
     font-size: 19px;
   }
   #goal {
-    width: 340px;
+    width: 24%;
   }
   #other {
-    width: 290px;
+    width: 19%;
   }
 }

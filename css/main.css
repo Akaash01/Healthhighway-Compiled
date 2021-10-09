@@ -307,7 +307,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-
 @media only screen and (max-width: 310px) {
     .landing-main-text1 {
         font-size: 1.6rem;
@@ -656,20 +655,6 @@ body::-webkit-scrollbar-thumb {
 
 
 /* ************************* */
-
-* {
-    padding: 0px;
-    margin: 0px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    font-display: swap;
-}
 
 @media only screen and (max-width: 500px) {
     .desktop {
