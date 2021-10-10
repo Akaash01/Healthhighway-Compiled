@@ -12,33 +12,6 @@
     object-fit: cover
 }
 
-.icon {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: .5em;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.notif-icon {
-    width: 20px;
-    display: none
-}
-
-.notif-user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.notif-user div {
-    padding: 0 .5em
-}
-
 .mobile-version {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,99 +168,14 @@
     padding-left: 1.5em
 }
 
-.month {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    padding-left: 20%
-}
-
-.arrows button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: .5em 1.4em
-}
-
-.days {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[7];
-    grid-template-columns: repeat(7, 1fr);
-    -ms-grid-rows: (1fr)[6];
-    grid-template-rows: repeat(6, 1fr);
-    padding: 2em 0;
-    padding-left: 20%
-}
-
-.dayname {
-    font-size: .75rem;
-    text-align: center
-}
-
-.day {
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    color: #3C4860;
-    font-weight: 600;
-    border-radius: .5em;
-    -webkit-transition: .1s ease-out;
-    transition: .1s ease-out;
-    position: relative
-}
-
-.day:hover {
-    background-color: #4CA9EE;
-    -webkit-box-shadow: 2px 5px 8px rgba(76, 169, 238, 0.25);
-    box-shadow: 2px 5px 8px rgba(76, 169, 238, 0.25);
-    color: white
-}
-
-.rem-span {
-    display: none
-}
-
 .upcoming {
     padding: 1em 0;
     padding-top: 0;
     padding-left: 20%
 }
 
-.session {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    padding: 1em;
-    width: 80%;
-    margin: 2em 0;
-    background-color: #FFFFFF;
-    border-radius: 1em;
-    -webkit-box-shadow: 11px 15px 14px 1px rgba(76, 169, 238, 0.14);
-    box-shadow: 11px 15px 14px 1px rgba(76, 169, 238, 0.14)
-}
 
-.session h4 {
-    font-size: 1.125rem
-}
-
-.session p {
-    font-size: .875rem
-}
+/* Updated to the overflow sessions section */
 
 .events-graph {
     background-color: #F7F9FD;
@@ -298,6 +186,10 @@
     border-radius: 1em;
     padding: 1em 2em;
     justify-content: space-between;
+}
+
+.events-graph h1 {
+    font-weight: 600;
 }
 
 .card-container {
@@ -331,140 +223,6 @@
     padding-top: 1em;
     padding-left: 1em;
     color: #4CA9EE;
-}
-
-.events-graph .day-name {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    font-weight: 600;
-    font-size: 1.125rem
-}
-
-.events-graph h1 {
-    font-weight: 600;
-    font-size: 26px;
-}
-
-.reminder::after {
-    content: "";
-    position: absolute;
-    bottom: 10%;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #4CA9EE
-}
-
-.set-reminder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: hidden;
-    opacity: 0
-}
-
-.reminder:hover::after,
-.reminder:focus::after {
-    background-color: white
-}
-
-.reminder:hover .set-reminder,
-.reminder:focus .set-reminder {
-    visibility: visible;
-    opacity: 1;
-    z-index: 1
-}
-
-.reminder:hover .rem-span,
-.reminder:focus .rem-span {
-    display: unset
-}
-
-.set-reminder {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    padding: 1em 2em;
-    background: linear-gradient(109.19deg, #F6FBFF 15.44%, #fff 99.59%);
-    -webkit-box-shadow: 2px 5px 8px rgba(76, 169, 238, 0.25);
-    box-shadow: 2px 5px 8px rgba(76, 169, 238, 0.25);
-    border-radius: 1em;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content
-}
-
-.set-reminder button {
-    background-color: #4CA9EE;
-    border: none;
-    border-radius: .5em;
-    padding: .5em 1em;
-    color: white;
-    font-weight: 600;
-    font-size: .88rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    justify-self: flex-end;
-    cursor: pointer
-}
-
-.set-reminder button:hover {
-    background-color: #5eb0ee
-}
-
-.set-reminder .session-type {
-    color: grey;
-    font-size: .75rem;
-    font-weight: 600
-}
-
-.set-reminder h4 {
-    font-size: 1.125rem;
-    color: #3C4860
-}
-
-.set-reminder .session-timing {
-    font-size: .87rem;
-    font-weight: 700;
-    color: #5A6885;
-    padding-bottom: .5em
-}
-
-.set-reminder .duration {
-    font-weight: 600;
-    font-size: 1.005rem;
-    text-align: center;
-    color: #5A6885
-}
-
-.set-reminder .clock-dur {
-    margin-right: 1em
-}
-
-.clock {
-    width: 70px;
-    height: 70px;
-    background-color: cyan;
-    border-radius: 50%;
-    margin-bottom: .5em
-}
-
-.rem-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
 }
 
 @media (min-width: 768px) {
@@ -592,10 +350,11 @@
 }
 
 .download-app {
-    padding: 1.5em 5%;
+    padding: 2em 5%;
     text-align: center;
     font-family: Montserrat;
-    grid-row: 3/4;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 #download-app-heading {
@@ -640,11 +399,12 @@
         font-weight: 500;
     }
     .download-app {
-        margin-left: 20%;
         padding-left: 0;
         padding-right: 0;
         background-color: #F7F9FD;
         border-radius: 1em;
+        grid-column: 1/3;
+        grid-row: 5/6;
     }
 }
 
@@ -653,6 +413,12 @@
         font-size: 1.4rem;
         font-weight: 600;
         text-align: center;
+    }
+    .download-app {
+        margin-left: 20%;
+        grid-column: 2/3;
+        grid-row: 2/4;
+        height: 50%;
     }
 }
 
