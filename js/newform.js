@@ -8,3 +8,8 @@ routine_div.addEventListener('click', () => {
     document.querySelector(".day-grid").style.display = "grid";
     document.querySelector(".time-grid").style.display = "none";
 })
+
+window.addEventListener('dblclick', () => {
+    document.querySelector(".time-grid").style.display = "none";
+    document.querySelector(".day-grid").style.display = "none";
+})
