@@ -1,48 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-
-#navbar-landing {
-    top: 0 !important;
-}
-
-main {
-    margin-top: 6em;
-}
-
-.navbar-brand span {
-    text-decoration: none;
-}
-
-.dash-navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 1em 5%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.dash-navbar .dash-brandwrap img {
-    width: 100%
-}
-
-.name-icon {
-    display: flex;
-    align-items: center;
-}
-
-.name-icon h2 {
-    padding-left: .5em;
-    color: #4CA9EE;
 }
 
 .user-icon {
@@ -114,7 +73,7 @@ main {
     grid-template-columns: 60% 40%;
     font-family: "Open Sans", sans-serif;
     color: #3C4860;
-    padding: 1em 5%;
+    padding: 1em 7%;
     margin-top: 2em
 }
 
@@ -181,15 +140,6 @@ main {
     grid-row: 2/3
 }
 
-.stats-tiles {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr
-}
-
 .message-tile {
     padding: 1.5em 10%;
     background-color: #F7F9FD;
@@ -200,116 +150,30 @@ main {
     padding: 1em 0
 }
 
-.dash-progress {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.stats-tiles {
+    padding: 1.5em 8%;
+    background-color: #F7F9FD;
+    border-radius: 1em;
+    margin-left: 2em;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: .5em
-}
-
-.dash-progress p {
-    padding: 0
-}
-
-.stat h4 {
-    font-size: 1.12rem
-}
-
-.stat p {
-    font-size: .75rem
-}
-
-.time {
-    background-color: #EBF7FF
-}
-
-.time .icon {
-    background-color: #CAEDFF
-}
-
-.time h4 {
-    color: #4CA9EE
-}
-
-.missed {
-    background-color: #EBF7FF
-}
-
-.missed .icon {
-    background-color: #CAEDFF
-}
-
-.missed h4 {
-    color: #4CA9EE;
-}
-
-.attended {
-    background-color: #DCFFFA
-}
-
-.attended .icon {
-    background-color: #B5FFF4
-}
-
-.attended h4 {
-    color: #20E2C8
-}
-
-.level {
-    background-color: #DCFFFA
-}
-
-.level .icon {
-    background-color: #B5FFF4
-}
-
-.level h4 {
-    color: #20E2C8
+    flex-direction: column;
+    justify-content: center;
 }
 
 .user-details {
     font-family: Montserrat;
-    padding-top: 1.5em;
+    padding-top: .8em;
 }
 
-.user-details p {
+.user-details p,
+.stats-tiles p {
     padding: .25em 0;
     font-size: 1.1rem;
     font-weight: 800;
 }
 
-.user-age,
-.user-contact,
-.user-mail {
+.user-stats {
     font-weight: 300;
-}
-
-.time,
-.missed,
-.attended,
-.level {
-    padding: 1.5em 5%;
-    padding-left: 8%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 1em;
-    height: 40%;
-    width: 80%;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    justify-self: flex-end
-}
-
-.circle h1 {
-    font-size: 2.4rem;
-    color: #08AF19
 }
 
 .dash-progressbar {
@@ -484,55 +348,6 @@ main {
     font-weight: 600;
     font-size: 26px;
 }
-
-
-/* 
-.events-graph .day-blank {
-    -ms-grid-row: 8;
-    -ms-grid-row-span: 1;
-    grid-row: 8/9
-} */
-
-
-/* .events-graph .timings {
-    -ms-grid-row: 8;
-    -ms-grid-row-span: 1;
-    grid-row: 8/9;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    font-weight: 600;
-    font-size: 1.125rem
-} */
-
-
-/* .bar-blue {
-    background-color: #4CA9EE;
-    border-radius: .5em;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-    grid-column: 5/span 2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    width: 80%;
-    -ms-grid-column-align: center;
-    justify-self: center
-}
-
-.bar-cyan {
-    background-color: cyan;
-    border-radius: .5em;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/span 2;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
-    grid-row: 6/7;
-    width: 80%;
-    -ms-grid-column-align: center;
-    justify-self: center
-} */
 
 .reminder::after {
     content: "";
@@ -777,9 +592,10 @@ main {
 }
 
 .download-app {
-    padding: 2em 5%;
+    padding: 1.5em 5%;
     text-align: center;
     font-family: Montserrat;
+    grid-row: 3/4;
 }
 
 #download-app-heading {
@@ -810,7 +626,8 @@ main {
     background-color: #4ca9ee;
     color: white;
     padding: 1em 2em;
-    margin: 1.5em 0;
+    margin: 1em 0;
+    margin-bottom: 0;
     border-radius: .5em;
     font-weight: 500;
     cursor: pointer;
