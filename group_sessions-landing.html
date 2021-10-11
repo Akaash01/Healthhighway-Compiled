@@ -5,286 +5,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/new_navbar.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="css/navbar_vidhu.css">
+    <link rel="stylesheet" href="css/grpssn.css">
+
+
+    <link rel="stylesheet" href="css/uspandaboutus.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/callback.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/login.css" />
-    
-    <link rel="stylesheet" href="css/grp-session.css">
+
+
+
 
     <title>Health Highway | Search for Group Sessions</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <header>
-    <div class="nav-landing">
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
-        position: fixed;
-        width: 100vw !important;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-      ">
-            <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
-                <a href="./index.html">
-                    <img src="images/logoDesktop.svg" alt="Health Highway Logo" class="logo" />
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li style="margin-right: 40px" class="nav-item">
-                            <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a
-              >
-            </li>
-            <li style="margin-right: 40px" class="nav-item">
-              <a
-                onclick="scrolltofunc('services-main-div')"
-                class="nav-link"
-                >Support</a
-              >
-            </li>
-            <li style="margin-right: 40px" class="nav-item">
-              <a
-                onclick="scrolltofunc('feedback-main-starting')"
-                style="font-weight: bold"
-                class="nav-link"
-                >Login</a
-              >
-            </li>
-          </ul>
-        </div>
-        <button
-          id="landing-joinus"
-          type="button"
-          class="btn btn-light"
-          onclick="showmodal('booksession')"
-        >
-          Join Us
-        </button>
-        <!-- <button class="loginIcon">
+    <header class="header-for-navbar">
+        <div class="navbar-top">
+            <div class="brandwrap-top">
+                <a href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links-top">
+                    <li class="desk-link-nav"><a href="#">Blogs</a></li>
+                    <li class="desk-link-nav"><a href="#">Support</a></li>
+                    <li class="desk-link-nav"><a href="#" id="loginbtn">Login</a></li>
+                    <li><a href="#" class="joinbtn" id="landing-joinus">JoinUs</a></li>
+                    <li> <button class="loginIcon">
                     <img src="images/user.png" alt="user"/>
-                </button> -->
-      </div>
-    </nav>
-  </div>
-</header>
+                </button> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <!-- new-grp-session-->
-                <div class="grp-container">
-      <div class="filter-section">
-        <div class="filter filter-time">
-          <div class="filter-top">
-            <div class="label-and-select">
-              <h4>Timing</h4>
-              <div class="select-btn">
-                <p>Select</p>
-                <img src="https://ik.imagekit.io/healthhighway2020/Vector_BPoCCO6LOy.svg?updatedAt=1631714378981" alt="" />
-              </div>
-            </div>
-            <span class="active-cancel">Cancel</span>
-          </div>
-          <div class="filter-options">
-            <ul>
-              <li>Early Morning 6:00 AM</li>
-              <li>Late Morning 9:00 AM</li>
-              <li>Late Morning 9:00 AM</li>
-            </ul>
-          </div>
-        </div>
-        <div class="filter filter-obj">
-          <div class="filter-top">
-            <div class="label-and-select">
-              <h4>Objective</h4>
-              <div class="select-btn">
-                <p>Select</p>
-                <img src="https://ik.imagekit.io/healthhighway2020/Vector_BPoCCO6LOy.svg?updatedAt=1631714378981" alt="" />
-              </div>
-            </div>
-            <span class="active-cancel">Cancel</span>
-          </div>
-          <div class="filter-options">
-            <ul>
-              <li>Fitness</li>
-              <li>Mindfullness</li>
-              <li>Late Morning 9:00 AM</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="ongoing-section first-section">
-        <div class="title-area">
-          <div class="title-img">
-            <img src="https://ik.imagekit.io/healthhighway2020/yoga_mxwGruxrx.svg?updatedAt=1631714378168" alt="" />
-            <h2>Ongoing section</h2>
-          </div>
-          <div class="see-btns">
-            <p class="seemore see-active">See more</p>
-            <p class="seeless">See less</p>
-          </div>
-        </div>
+        <!-- <div class="grp-container">
+            <div class="filter-section">
+                <div class="filter filter-time">
+                    <div class="filter-top">
+                        <div class="label-and-select">
+                            <h4>Timing</h4>
+                            <div class="select-btn">
+                                <p>Select</p>
+                                <img src="https://ik.imagekit.io/healthhighway2020/Vector_BPoCCO6LOy.svg?updatedAt=1631714378981" alt="" />
+                            </div>
+                        </div>
+                        <span class="active-cancel">Cancel</span>
+                    </div>
+                    <div class="filter-options">
+                        <ul>
+                            <li>Early Morning 6:00 AM</li>
+                            <li>Late Morning 9:00 AM</li>
+                            <li>Late Morning 9:00 AM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter filter-obj">
+                    <div class="filter-top">
+                        <div class="label-and-select">
+                            <h4>Objective</h4>
+                            <div class="select-btn">
+                                <p>Select</p>
+                                <img src="https://ik.imagekit.io/healthhighway2020/Vector_BPoCCO6LOy.svg?updatedAt=1631714378981" alt="" />
+                            </div>
+                        </div>
+                        <span class="active-cancel">Cancel</span>
+                    </div>
+                    <div class="filter-options">
+                        <ul>
+                            <li>Fitness</li>
+                            <li>Mindfullness</li>
+                            <li>Late Morning 9:00 AM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        <!-- dropdowns (END) -->
 
-        <div class="grp-card-container">
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ongoing-section">
-        <div class="title-area">
-          <div class="title-img">
-            <img src="https://ik.imagekit.io/healthhighway2020/yoga_mxwGruxrx.svg?updatedAt=1631714378168" alt="" />
-            <h2>Upcoming section</h2>
-          </div>
-          <div class="see-btns">
-            <p class="seemore see-active">See more</p>
-            <p class="seeless">See less</p>
-          </div>
-        </div>
+        <section class="search-section">
+            <input id="search-bar" type="search" placeholder="Search for a session">
+        </section>
 
-        <div class="grp-card-container">
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
+
+        <!-- Cards (Start) -->
+        <section class="sessions-section">
+            <div class="headingandnavigation">
+                <div class="img-heading">
+                    <img src="https://ik.imagekit.io/healthhighway2020/yoga_mxwGruxrx.svg?updatedAt=1631714378168" alt="ssn-logo" />
+                    <h2 class="sessions-heading">
+                        Ongoing Sessions
+                    </h2>
+                </div>
+                <!-- <div class="see-btns">
+                    <p class="seemore see-active">See more</p>
+                    <p class="seeless">See less</p>
+                </div> -->
             </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
+
+            <div class="ssn-card-container">
+                <div class="new-ssn-card starting-soon">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+                    <div class="ssn-card-txt">
+                        <div class="ssn-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogacharya Sandeep</p>
+                        </div>
+                        <div class="ssn-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add class starting-soon or overbooked for labels -->
+                <div class="new-ssn-card overbooked">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+                    <div class="ssn-card-txt">
+                        <div class="ssn-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogacharya Sandeep</p>
+                        </div>
+                        <div class="ssn-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-ssn-card starting-soon">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+                    <div class="ssn-card-txt">
+                        <div class="ssn-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogacharya Sandeep</p>
+                        </div>
+                        <div class="ssn-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
+
+        </section>
+
+
+        <section class="sessions-section">
+            <div class="headingandnavigation">
+                <div class="img-heading">
+                    <img src="https://ik.imagekit.io/healthhighway2020/yoga_mxwGruxrx.svg?updatedAt=1631714378168" alt="ssn-logo" />
+                    <h2 class="sessions-heading">
+                        Upcoming Sessions
+                    </h2>
+                </div>
+                <!-- <div class="see-btns">
+                    <p class="seemore see-active">See more</p>
+                    <p class="seeless">See less</p>
+                </div> -->
             </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
+
+            <div class="ssn-card-container">
+                <div class="new-ssn-card starting-soon">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+                    <div class="ssn-card-txt">
+                        <div class="ssn-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogacharya Sandeep</p>
+                        </div>
+                        <div class="ssn-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add class starting-soon or overbooked for labels -->
+                <div class="new-ssn-card overbooked">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+                    <div class="ssn-card-txt">
+                        <div class="ssn-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogacharya Sandeep</p>
+                        </div>
+                        <div class="ssn-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-ssn-card starting-soon">
+                    <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+                    <div class="ssn-card-txt">
+                        <div class="ssn-title">
+                            <h3>Fitness Yoga</h3>
+                            <p>by Yogacharya Sandeep</p>
+                        </div>
+                        <div class="ssn-time">
+                            <p>6 AM</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-          <div class="new-grp-card">
-            <img src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="" />
-            <div class="grp-card-txt">
-              <div class="card-title">
-                <h3>Fitness Yoga</h3>
-                <p>by Yogachariya Sandeep</p>
-              </div>
-              <div class="session-time">
-                <p>6 AM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        <!-- new-grp-session (End) -->
+
+        </section>
+        <!-- Cards (END) -->
+
+
+
 
         <!-- USP Section (START) -->
         <section id="usp" class="usp-section">
@@ -320,171 +251,129 @@
             </div>
         </section>
         <!-- USP Section (END) -->
-        <script src="./js/usp-animation3.js" ></script>
+        <script src="./js/usp-animation3.js"></script>
         <!-- Testimonials Start -->
         <section id="testimonials">
-          <div id="testimonial-main">
-            <h2 id="testimonials-heading">Our Customers <span>Love Us !</span></h2>
-    
-            <div class="testimonial-container">
-              <div class="swiper-container myTestimonialSwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide testimonial swiper-slide-active">
-                    <div class="testimonial_img_rating">
-                      <img
-                        class="testimonial_user_img"
-                        src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                        alt=""
-                      />
-                      <div class="testimonial-ratings">
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                      </div>
+            <div id="testimonial-main">
+                <h2 id="testimonials-heading">Our Customers <span>Love Us !</span></h2>
+
+                <div class="testimonial-container">
+                    <div class="swiper-container myTestimonialSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonial swiper-slide-active">
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                    <div class="testimonial-ratings">
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                    </div>
+                                </div>
+                                <p>
+                                    1.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                                </p>
+                                <div class="testimonial-user-profile">
+                                    <h4>Anamika|</h4>
+                                    <p>Rishikesh</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial">
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                    <div class="testimonial-ratings">
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                    </div>
+                                </div>
+                                <p>
+                                    2.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                                </p>
+                                <div class="testimonial-user-profile">
+                                    <h4>Anamika|</h4>
+                                    <p>Rishikesh</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial">
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                    <div class="testimonial-ratings">
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                    </div>
+                                </div>
+                                <p>
+                                    3.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                                </p>
+                                <div class="testimonial-user-profile">
+                                    <h4>Anamika|</h4>
+                                    <p>Rishikesh</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial">
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                    <div class="testimonial-ratings">
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                    </div>
+                                </div>
+                                <p>
+                                    4.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                                </p>
+                                <div class="testimonial-user-profile">
+                                    <h4>Anamika|</h4>
+                                    <p>Rishikesh</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial">
+                                <div class="testimonial_img_rating">
+                                    <img class="testimonial_user_img" src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961" alt="" />
+                                    <div class="testimonial-ratings">
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
+                                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
+                                    </div>
+                                </div>
+                                <p>
+                                    5.Excellent teachers with knowledge in a wide variety of Asanas and techniques. I am highly motivated by and inspired by the quality of teaching despite the online medium.
+                                </p>
+                                <div class="testimonial-user-profile">
+                                    <h4>Anamika|</h4>
+                                    <p>Rishikesh</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                      1.Excellent teachers with knowledge in a wide variety of
-                      Asanas and techniques. I am highly motivated by and inspired
-                      by the quality of teaching despite the online medium.
-                    </p>
-                    <div class="testimonial-user-profile">
-                      <h4>Anamika|</h4>
-                      <p>Rishikesh</p>
+                    <div class="testimonial-controls">
+                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145" class="swiper-button-prev" alt="" />
+                        <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145" class="swiper-button-next" alt="" />
                     </div>
-                  </div>
-                  <div class="swiper-slide testimonial">
-                    <div class="testimonial_img_rating">
-                      <img
-                        class="testimonial_user_img"
-                        src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                        alt=""
-                      />
-                      <div class="testimonial-ratings">
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                      </div>
-                    </div>
-                    <p>
-                      2.Excellent teachers with knowledge in a wide variety of
-                      Asanas and techniques. I am highly motivated by and inspired
-                      by the quality of teaching despite the online medium.
-                    </p>
-                    <div class="testimonial-user-profile">
-                      <h4>Anamika|</h4>
-                      <p>Rishikesh</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide testimonial">
-                    <div class="testimonial_img_rating">
-                      <img
-                        class="testimonial_user_img"
-                        src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                        alt=""
-                      />
-                      <div class="testimonial-ratings">
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                      </div>
-                    </div>
-                    <p>
-                      3.Excellent teachers with knowledge in a wide variety of
-                      Asanas and techniques. I am highly motivated by and inspired
-                      by the quality of teaching despite the online medium.
-                    </p>
-                    <div class="testimonial-user-profile">
-                      <h4>Anamika|</h4>
-                      <p>Rishikesh</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide testimonial">
-                    <div class="testimonial_img_rating">
-                      <img
-                        class="testimonial_user_img"
-                        src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                        alt=""
-                      />
-                      <div class="testimonial-ratings">
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                      </div>
-                    </div>
-                    <p>
-                      4.Excellent teachers with knowledge in a wide variety of
-                      Asanas and techniques. I am highly motivated by and inspired
-                      by the quality of teaching despite the online medium.
-                    </p>
-                    <div class="testimonial-user-profile">
-                      <h4>Anamika|</h4>
-                      <p>Rishikesh</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide testimonial">
-                    <div class="testimonial_img_rating">
-                      <img
-                        class="testimonial_user_img"
-                        src="https://ik.imagekit.io/healthhighway2020/testimonials-mobile_cG7ZTE3Jx.jpg?updatedAt=1631779114961"
-                        alt=""
-                      />
-                      <div class="testimonial-ratings">
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_full_VjR_XlUTd.svg?updatedAt=1631779195090" alt="" />
-                        <img src="https://ik.imagekit.io/healthhighway2020/testimonial-star_half_1R8ZH7JwW8j.svg?updatedAt=1631779195738" alt="" />
-                      </div>
-                    </div>
-                    <p>
-                      5.Excellent teachers with knowledge in a wide variety of
-                      Asanas and techniques. I am highly motivated by and inspired
-                      by the quality of teaching despite the online medium.
-                    </p>
-                    <div class="testimonial-user-profile">
-                      <h4>Anamika|</h4>
-                      <p>Rishikesh</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="testimonial-controls">
-                <img
-                  src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145"
-                  class="swiper-button-prev"
-                  alt=""
-                />
-                <img
-                  src="https://ik.imagekit.io/healthhighway2020/testimonial-arrow_hS0JHdisjbu.svg?updatedAt=1631779372145"
-                  class="swiper-button-next"
-                  alt=""
-                />
-              </div>
             </div>
-          </div>
-          <div class="img-container" style="background-image: url('https://ik.imagekit.io/healthhighway2020/testimonial-bg_Hkzar1Epf.svg?updatedAt=1631779791941');">
-            <img src="https://ik.imagekit.io/healthhighway2020/testimonial-1_-PkzZ6ssa.png?updatedAt=1631779521304" class="img-1 img-active" alt="" />
-            <img
-              src="https://ik.imagekit.io/healthhighway2020/kenrick-mills-rfePWka7VPU-unsplash_9wjpWi3TR.jpg?updatedAt=1631779524631"
-              class="img-2"
-              alt=""
-            />
-            <img src="https://ik.imagekit.io/healthhighway2020/testimonial-3_P0LoCvrx6Y7.png?updatedAt=1631779522735" class="img-3" alt="" />
-            <img src="https://ik.imagekit.io/healthhighway2020/testimonial-4_GMwwaoVUy.png?updatedAt=1631779523635" class="img-4" alt="" />
-            <img src="https://ik.imagekit.io/healthhighway2020/testimonial-5_wcjnvohMQ.png?updatedAt=1631779520620" class="img-5" alt="" />
-          </div>
+            <div class="img-container" style="background-image: url('https://ik.imagekit.io/healthhighway2020/testimonial-bg_Hkzar1Epf.svg?updatedAt=1631779791941');">
+                <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-1_-PkzZ6ssa.png?updatedAt=1631779521304" class="img-1 img-active" alt="" />
+                <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/kenrick-mills-rfePWka7VPU-unsplash_9wjpWi3TR.jpg?updatedAt=1631779524631" class="img-2" alt="" />
+                <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-3_P0LoCvrx6Y7.png?updatedAt=1631779522735" class="img-3" alt="" />
+                <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-4_GMwwaoVUy.png?updatedAt=1631779523635" class="img-4" alt="" />
+                <img loading="lazy" src="https://ik.imagekit.io/healthhighway2020/testimonial-5_wcjnvohMQ.png?updatedAt=1631779520620" class="img-5" alt="" />
+            </div>
         </section>
         <script src="./js/testimonials.js"></script>
         <!-- Testimonials(end) -->
-    
+
         <!-- Call-Us Section  -->
         <section class="call-back">
             <div class="cb-text">
@@ -507,91 +396,57 @@
 
     <!-- login div -->
     <div class="login-modal-bg">
-      <div class="login-modal">
-          <div class="loginBody" id="phoneDiv">
-              <img src="https://ik.imagekit.io/healthhighway2020/logo_DcXvHIoG7.svg?updatedAt=1631177447330" class="loginLogo">
-              <img src="https://ik.imagekit.io/healthhighway2020/logoText_Is7BIsFYx.svg?updatedAt=1631177452465" class="textLogo">
-              <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
-              <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
-              <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
+        <div class="login-modal">
+            <div class="loginBody" id="phoneDiv">
+                <img src="https://ik.imagekit.io/healthhighway2020/logo_DcXvHIoG7.svg?updatedAt=1631177447330" class="loginLogo">
+                <img src="https://ik.imagekit.io/healthhighway2020/logoText_Is7BIsFYx.svg?updatedAt=1631177452465" class="textLogo">
+                <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
+                <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
+                <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
                   Continue
               </button>
-              <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
-              <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
+                <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
+                <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
                   <img src="https://ik.imagekit.io/healthhighway2020/google_80EpslXEKg.png?updatedAt=1631177403407" class="google">Login Using Gmail</span>
               </button>
-          </div>
-          <div id="OTP">
-              <p class="OTPTitle" id = "backOTP"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-              <div class="loginBody">
-                  <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
-                  </p>
-                  <form class="otp" name="one-time-code" id="otp-div">
-                      <fieldset>
-                          <div>
-                              <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
-                              <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
-                              <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
-                              <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
-                              <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
-                              <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
-                          </div>
-                      </fieldset>
-                  </form>
-                  <button type="button" class="btn btn-light loginButton" id="confirmLogin">
+            </div>
+            <div id="OTP">
+                <p class="OTPTitle" id="backOTP"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                <div class="loginBody">
+                    <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
+                    </p>
+                    <form class="otp" name="one-time-code" id="otp-div">
+                        <fieldset>
+                            <div>
+                                <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
+                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <button type="button" class="btn btn-light loginButton" id="confirmLogin">
                       Confirm
                   </button>
-              </div>
-          </div>
-          <div id="name">
-              <p class="nameTitle" id = "backName" ><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-              <div class="loginBody">
-                  <img class="nameImg" src="https://ik.imagekit.io/healthhighway2020/nameDiv_cHk_VP7U6-.svg?updatedAt=1631378890462">
-                  <p class="nameText">Its always good to know each other before 
-                      we get started :)
-                  </p>
-                  <input class = "nameInput" placeholder = "Please Enter Your Fullname ">
-                  <button type="button" class="btn btn-light loginButton" id="continueName">
+                </div>
+            </div>
+            <div id="name">
+                <p class="nameTitle" id="backName"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
+                <div class="loginBody">
+                    <img class="nameImg" src="https://ik.imagekit.io/healthhighway2020/nameDiv_cHk_VP7U6-.svg?updatedAt=1631378890462">
+                    <p class="nameText">Its always good to know each other before we get started :)
+                    </p>
+                    <input class="nameInput" placeholder="Please Enter Your Fullname ">
+                    <button type="button" class="btn btn-light loginButton" id="continueName">
                       Continue
                   </button>
-              </div>
-          </div>
-          <span> <i class="close"></i></span>
-      </div>
-  </div>
-
-    
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        var firebaseConfig = {
-            apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-            authDomain: "healthhighway-45963.firebaseapp.com",
-            databaseURL: "https://healthhighway-45963.firebaseio.com",
-            projectId: "healthhighway-45963",
-            storageBucket: "healthhighway-45963.appspot.com",
-            messagingSenderId: "716392922291",
-            appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-            measurementId: "G-B3ZVBEZ2H2"
-        };
-        firebase.initializeApp(firebaseConfig);
-    </script>
-    <script>
-        window.onload = function() {
-            render();
-        }
-
-        async function render() {
-            window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
-            recaptchaVerifier.render();
-            recaptchaVerifier.verify().then(token => {
-                console.log(token);
-                document.getElementById("loginContinue").style.pointerEvents = "auto";
-            })
-        }
-    </script>
+                </div>
+            </div>
+            <span> <i class="close"></i></span>
+        </div>
+    </div>
     <!-- login div (END) -->
 
     <footer>
@@ -620,9 +475,9 @@
         </div>
     </footer>
 
-      
+
     <script src="js/grp-session.js"></script>
-    <script src="js/landing.js"></script>
+
     <script type="text/javascript" src="js/login.js"></script>
 </body>
 
