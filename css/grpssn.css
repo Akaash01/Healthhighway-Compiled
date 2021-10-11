@@ -18,6 +18,7 @@
   border: none;
   background-color: #EDF7FF;
   font-size: 1rem;
+  color: #6B6B6B;
 }
 
 #search-bar::placeholder {
