@@ -200,6 +200,7 @@
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -214,15 +215,29 @@
     object-fit: cover;
 }
 
+.card-text-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 1em;
+}
+
 .card-text {
-    padding-left: 1em;
-    padding-bottom: 1em;
+    color: #6B6B6B;
+    padding: .2em 0;
 }
 
 .card-head {
-    padding-top: 1em;
-    padding-left: 1em;
     color: #4CA9EE;
+}
+
+.card-time {
+    padding: .2em .5em;
+    border-radius: .25em;
+    background-color: #29E7CD;
+    min-width: max-content;
+    color: white;
+    font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -420,6 +435,29 @@
         grid-row: 2/4;
         height: 50%;
     }
+}
+
+
+/* LABELS */
+
+.privateclass::after,
+.groupclass::after {
+    content: 'Overbooked';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .25em 1em;
+    width: max-content;
+    background-color: red;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: .8rem;
+}
+
+.privateclass::after {
+    content: 'Starting soon';
+    background-color: #29E7CD;
 }
 
 
