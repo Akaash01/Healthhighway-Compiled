@@ -10,7 +10,11 @@
 }
 
 #search-bar {
+    background: url(https://ik.imagekit.io/healthhighway2020/magnifying-glass__2__fZJMfV3qnLx.png?updatedAt=1634026084044);
+    background-position: center left 8px;
+    background-repeat: no-repeat;
     padding: .6em 1em;
+    padding-left: 2.8em;
     width: 88%;
     display: block;
     margin: 0 auto;
@@ -23,6 +27,7 @@
 
 #search-bar::placeholder {
     color: #4ca9ee;
+    font-family: "Montserrat";
 }
 
 #search-bar:focus {
