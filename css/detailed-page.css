@@ -1,0 +1,172 @@
+.navigation-mobile {
+    padding: 1em 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.session-title {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: -.8em;
+}
+
+.back-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.session-intro {
+    padding: 2em 7%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.session_img {
+    width: 359px;
+    height: 231px;
+    max-width: 100%;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.trainer-div {
+    display: flex;
+    justify-content: space-between;
+    padding: .8em 1em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 10px rgba(178, 222, 255, 0.31);
+}
+
+.trainer_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: .8em;
+    object-fit: cover;
+}
+
+.trainer_details {
+    display: flex;
+    align-items: center;
+}
+
+.trainer-text {
+    margin-left: 1em;
+    color: #716E6E;
+    font-size: 14px;
+}
+
+.trainer-text p {
+    padding: .1em 0;
+}
+
+.trainer_name {
+    color: #4CA9EE;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.like-btn {
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 0 1em;
+}
+
+.like-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+.session-details {
+    padding: 0 7%;
+    padding-bottom: 2em;
+    font-family: "Open Sans", sans-serif
+}
+
+.details-navigation-mobile {}
+
+.details-navigation-mobile ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.details-navigation-mobile a {
+    text-decoration: none;
+    color: #716E6E;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details-navigation-mobile a:focus,
+.details-navigation-mobile a:active {
+    color: #4CA9EE;
+}
+
+.session-overview {
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.details-text {
+    font-size: 12px;
+    color: #716E6E;
+    font-weight: 400;
+}
+
+.ovw {
+    display: flex;
+    align-items: center;
+}
+
+.overview-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: .4em;
+}
+
+.overview-text {
+    font-family: "Open Sans", sans-serif;
+    padding: 1em 0;
+}
+
+.details-heading {
+    color: #333741;
+    font-weight: 700;
+    font-size: 16px;
+    margin: .5em 0;
+}
+
+.about-text {
+    padding: 1em 0;
+}
+
+.sub-details {
+    padding: 1em 0;
+    padding-bottom: 0;
+    padding-left: 6%;
+}
+
+.numbered-list {
+    display: flex;
+    padding-left: 4.5%;
+    flex-direction: column;
+    list-style-type: decimal;
+    font-size: 12px;
+    color: #716E6E;
+}
+
+.details-sub-heading {
+    font-size: 14px;
+    color: #333741;
+    margin: .5em 0;
+}
+
+.benefits-text {
+    padding: 1em 0;
+}

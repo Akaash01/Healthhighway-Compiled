@@ -5,408 +5,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/main.css" /> 
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/new_navbar.css">
-    <link rel="stylesheet" href="css/freeYoga/landingDiv.css">
-    <link rel="stylesheet" href="css/freeYoga/details.css">
-    <link rel="stylesheet" href="css/login.css" />             
-    <title>Health Highway | Your Yoga Buddy</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="css/navbar_vidhu.css">
+    <link rel="stylesheet" href="css/detailed-page.css">
+
+    <title>Session Name</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav-landing">
-            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-landing" style="
-            position: fixed;
-            width: 100vw !important;
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-          ">
-                <div id="navbar-container" class="container-fluid navbar-container-unscrolled">
-                    <a href="./index.html">
-                        <img src="images/logoDesktop.svg" alt="Health Highway Logo" class="logo" />
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                            <li style="margin-right: 40px" class="nav-item">
-                                <a href="./blogs/blogs.html" onclick="scrolltofunc('unique-main-div')" class="nav-link">Blogs</a
-                  >
-                </li>
-                <li style="margin-right: 40px" class="nav-item">
-                  <a
-                    onclick="scrolltofunc('services-main-div')"
-                    class="nav-link"
-                    >Support</a
-                  >
-                </li>
-                <li style="margin-right: 40px" class="nav-item">
-                  <a
-                    onclick="scrolltofunc('feedback-main-starting')"
-                    style="font-weight: bold"
-                    class="nav-link"
-                    >Login</a
-                  >
-                </li>
-              </ul>
+    <header class="header-for-navbar">
+        <div class="navbar-top">
+            <div class="brandwrap-top">
+                <a href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
             </div>
-            <button
-              id="landing-joinus"
-              type="button"
-              class="btn btn-light"
-              onclick="showmodal('booksession')"
-            >
-              Join Us
-            </button>
-            <!-- <button class="loginIcon">
-                        <img src="images/user.png" alt="user"/>
-                    </button> -->
-          </div>
-        </nav>
-      </div>
+            <nav>
+                <ul class="nav-links-top">
+                    <li class="desk-link-nav"><a href="#">Blogs</a></li>
+                    <li class="desk-link-nav"><a href="#">Support</a></li>
+                    <li class="desk-link-nav"><a href="#" id="loginbtn">Login</a></li>
+                    <li><a href="#" class="joinbtn" id="landing-joinus">JoinUs</a></li>
+                    <li> <button class="loginIcon">
+                    <img src="images/user.png" alt="user"/>
+                </button> </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <!-- landing -->
-        <div id="detailed-landing-main-div">
-            <div class="detailed-landing-main-left">
-                <p class="title-para"><span class="title">Fitness Yoga </span><span class="sub-title"></span>by Norah Fatehi</span></p>
-                <div class="points-div">
-                    <div class="points-top">
-                        <div class="points-common">
-                            <div class="points">
-                                <div>
-                                    <p class="rupees">₹</p>
-                                </div>
-                                <p class="points-text">60000 INR <span>Per Month</span></p>
-                            </div>
-                            <div class="points">
-                                <div><img src='https://ik.imagekit.io/healthhighway2020/calendar_jxNzGw2Az.png?updatedAt=1631176565344'></div>
-                                <p class="points-text">Every Mon, Tue, wed, Thu, Fri, Sat, Sun</p>
-                            </div>
-                            <div class="points">
-                                <div><img src='https://ik.imagekit.io/healthhighway2020/Clock_xeeniKOVM.png?updatedAt=1631176565986'></div>
-                                <p class="points-text">6:00 AM - 6:45 AM</p>
-                            </div>
-                            <div class="points">
-                                <div><img src='https://ik.imagekit.io/healthhighway2020/Duration_2NsvmpC4Q.png?updatedAt=1631176567628g'></div>
-                                <p class="points-text">45 Minutes</p>
-                            </div>
-                            <div class="points">
-                                <div><img src='https://ik.imagekit.io/healthhighway2020/Graph_ZXibYJa_qo.png?updatedAt=1631176569375'></div>
-                                <p class="points-text">Intermediate Level</p>
-                            </div>
-                            <div class="points">
-                                <div><img src='https://ik.imagekit.io/healthhighway2020/people_V2ojcg40d.png?updatedAt=1631176570179'></div>
-                                <p class="points-text">7 People </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="points-bottom">
-                        <p class="points-title"><img style="margin-right: 20px;" src='https://ik.imagekit.io/healthhighway2020/right_QHrGnETD2Z.png?updatedAt=1631176767340'>Suitable/ Beneficial for these people</p>  
-                        <div class="points-recommended">
-                            <p class="points-text points">Athletes & Working People</p>
-                            <p class="points-text points">Athletes, Working People and Preganent Ladies</p>
-                            <p class="points-text points">Athletes</p> 
-                        </div>
-                        <p class="points-title"><img style="margin-right: 20px;" src='https://ik.imagekit.io/healthhighway2020/wrong_Zo0joRg3p.png?updatedAt=1631176783578'>Not advisable for these People</p> 
-                        <div class="points-not-recommended">
-                            <p class="points-text points">Preganent Ladies </p>
-                            <p class="points-text points">Preganent Ladies </p>
-                            <p class="points-text points">Preganent Ladies </p>
-                            <p class="points-text points">Preganent Ladies </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="detailed-landing-main-right">
-                <div class="slides">
-                    <img src="https://ik.imagekit.io/healthhighway2020/fitnessYoga_WHvgjEGEr.png?updatedAt=1631176569468">
-                </div>
-                <div class="enroll-div">
-                    <a class="enroll-btn">Session Overbooked</a>
-                    <a class="personalisation-text">Want Personalisation ?</a>
-                </div>
-            </div>
-        </div>
-        <!-- landing (END)-->
+        <section class="navigation-mobile">
+            <button class="back-btn"> <img src="images/back-arrow.png" alt="back-nav"></button>
+            <h3 class="session-title">Session Name</h3>
+            <div class="empty"></div>
+        </section>
+        <section class="session-intro">
 
-        <div class="instructor-div">
-            <div class="trainer">
-                <img src="https://ik.imagekit.io/healthhighway2020/yogaInstructor_uWDKHYoFgP.png?updatedAt=1631177138126" alt="trainer" style="margin-right: 20px;"/>
-                <div class="trainer-details">
-                    <p style="text-align: start;font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 14px; line-height: 22px; color: #716E6E;">Trainer</p>
-                    <p style="text-align: start;font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 22px; color: #4CA9EE;">Atonio Gueterrej</p>
+            <img class="session_img" src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+
+
+            <div class="trainer-div">
+                <div class="trainer_details">
+                    <img class="trainer_icon" src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="trainer-ico">
+                    <div class="trainer-text">
+                        <p>Trainer</p>
+                        <p class="trainer_name">Honey Singh</p>
+                    </div>
+
+                </div>
+                <button class="like-btn"> <img src="https://ik.imagekit.io/healthhighway2020/thumbsup_eLssLMzbL9u.svg?updatedAt=1634054577230" alt="like"></button>
+            </div>
+        </section>
+        <section class="session-details">
+
+            <!-- Navigation -->
+            <div class="details-navigation-mobile">
+                <ul>
+                    <li>
+                        <a href="#ssnoverview">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#ssnabout">About</a>
+                    </li>
+                    <li>
+                        <a href="#ssnbenefits">Benefits</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Overview Table -->
+            <div class="session-overview" id="ssnoverview">
+                <div class="ovw ssn-timing">
+                    <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/Clock_k-uMwYg-2.svg?updatedAt=1634060422976" alt="ico">
+                    <p class="details-text">6:00 AM - 6:45 AM</p>
+                </div>
+                <div class="ovw ssn-duration">
+                    <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/Duration_lCO2Q3FRA.svg?updatedAt=1634060020700" alt="ico">
+                    <p class="details-text">45 Minutes</p>
+                </div>
+                <div class="ovw ssn-level">
+                    <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/Graph_SxkyD-yR7.svg?updatedAt=1634060019123" alt="ico">
+                    <p class="details-text">Intermediate Level</p>
+                </div>
+                <div class="ovw ssn-bookings">
+                    <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/batch_vASvqOqiA.svg?updatedAt=1634060022536" alt="ico">
+                    <p class="details-text">7 People</p>
+                </div>
+                <div class="ovw ssn-for">
+                    <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/ssnfor_wRiUj4sTeyE.svg?updatedAt=1634060019579" alt="ico">
+                    <p class="details-text">Atheletes & Working People</p>
+                </div>
+                <div class="ovw ssn-notfor">
+                    <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/notfor_XAJDD4fxKUh.svg?updatedAt=1634060021541" alt="ico">
+                    <p class="details-text">Preganent Ladies</p>
                 </div>
             </div>
-            <img src="https://ik.imagekit.io/healthhighway2020/like_R2iDFTbQIz.png?updatedAt=1631177153042" alt="like" style="width: 28px; height: 25px"/>
-        </div>
 
-        <div class="page-navbar">
-            <p class="navbar-option active-option" id="overview">Overview</p>
-            <p class="navbar-option" id="about">About</p>
-            <p class="navbar-option" id="benefits">Benefits</p>
-        </div>
 
-        <div id="overview-div">
-            <div class="points-top">
-                <div class="points-common">
-                    <div class="points">
-                        <div>
-                            <p class="rupees">₹</p>
-                        </div>
-                        <p class="points-text">6000 INR <span>Per Month</span></p>
-                    </div>
-                    <div class="points">
-                        <div><img src='https://ik.imagekit.io/healthhighway2020/calendar_jxNzGw2Az.png?updatedAt=1631176565344'></div>
-                        <p class="points-text">Every Mon, Tue, wed, Thu, Fri, Sat, Sun</p>
-                    </div>
-                    <div class="points">
-                        <div><img src='https://ik.imagekit.io/healthhighway2020/Clock_xeeniKOVM.png?updatedAt=1631176565986'></div>
-                        <p class="points-text">6:00 AM - 6:45 AM</p>
-                    </div>
-                    <div class="points">
-                        <div><img src='https://ik.imagekit.io/healthhighway2020/Duration_2NsvmpC4Q.png?updatedAt=1631176567628'></div>
-                        <p class="points-text">45 Minutes</p>
-                    </div>
-                    <div class="points">
-                        <div><img src='https://ik.imagekit.io/healthhighway2020/Graph_ZXibYJa_qo.png?updatedAt=1631176569375'></div>
-                        <p class="points-text">Intermediate Level</p>
-                    </div>
-                    <div class="points">
-                        <div><img src='https://ik.imagekit.io/healthhighway2020/people_V2ojcg40d.png?updatedAt=1631176570179'></div>
-                        <p class="points-text">7 People </p>
-                    </div>
-                </div>
-                
+            <!-- Text details -->
+            <div class="overview-text">
+                <h4 class="details-heading">Overview</h4>
+                <p class="details-text">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting
+                    overall well being.</p>
             </div>
-            <div class="points-bottom">
-                <p class="points-title"><img style="margin-right: 20px;" src='images/right.png'>Suitable/ Beneficial for these people</p>  
-                <div class="points-recommended">
-                    <p class="points-text points">Athletes & Working People</p>
-                    <p class="points-text points">Athletes, Working People and Preganent Ladies</p>
-                    <p class="points-text points">Athletes</p> 
-                </div>
-                <p class="points-title"><img style="margin-right: 20px;" src='images/wrong.png'>Not advisable for these People</p> 
-                <div class="points-not-recommended">
-                    <p class="points-text">Preganent Ladies </p>
-                    <p class="points-text">Preganent Ladies </p>
-                    <p class="points-text">Preganent Ladies </p>
-                    <p class="points-text">Preganent Ladies </p>
+
+            <div class="about-text" id="ssnabout">
+                <h4 class="details-heading">About the Session</h4>
+                <p class="details-text">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting
+                    overall well being.</p>
+
+                <div class="sub-details">
+                    <h5 class="details-sub-heading">Main Practices</h5>
+                    <ul class="numbered-list">
+                        <li>
+                            <p class="details-text">Malasana Lateral Stretch + Twist</p>
+                        </li>
+                        <li>
+                            <p class="details-text"> Sivananda Surya Namaskar x 3 Rounds</p>
+                        </li>
+                        <li>
+                            <p class="details-text"> Uttana Pristhasana + Twist</p>
+                        </li>
+                        <li>
+                            <p class="details-text"> Prasarita Padottanasana</p>
+                        </li>
+                        <li>
+                            <p class="details-text"> Ardha Shalabhasana</p>
+                        </li>
+                        <li>
+                            <p class="details-text"> Supta Virasana</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div style="margin: 32px 8vw 0 8vw;">
-                <p class="about-title">Overview</p>
-                <p class="about-content">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting overall
-                    well being.</p>
+
+            <div class="benefits-text" id="ssnbenefits">
+                <h4 class="details-heading">Benefits</h4>
+                <ul class="numbered-list">
+                    <li>
+                        <p class="details-text">Malasana Lateral Stretch + Twist</p>
+                    </li>
+                    <li>
+                        <p class="details-text"> Sivananda Surya Namaskar x 3 Rounds</p>
+                    </li>
+                    <li>
+                        <p class="details-text"> Uttana Pristhasana + Twist</p>
+                    </li>
+                    <li>
+                        <p class="details-text"> Prasarita Padottanasana</p>
+                    </li>
+                    <li>
+                        <p class="details-text"> Ardha Shalabhasana</p>
+                    </li>
+                    <li>
+                        <p class="details-text"> Supta Virasana</p>
+                    </li>
+                </ul>
             </div>
-        </div>
-
-        <div class="details-div">
-        <!-- about -->
-        <div id="about-div">
-                <p class="about-title">About the Session </p>
-                <p class="about-content">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting overall
-                    well being.</p>
-                <div class="about-sub-div">
-                    <p class="about-sub-title">Main Practices</p>
-                    <ol type="1">
-                        <li>Malasana Lateral Stretch + Twist</li>
-                        <li>Sivananda Surya Namaskar x 3 Rounds</li>
-                        <li>Uttana Pristhasana + Twist</li>
-                        <li>Prasarita Padottanasana C</li>
-                        <li>Ardha Shalabhasana</li>
-                        <li>Supta Virasana</li>
-                        <li>Gomukasana Fold Forward + Twist</li>
-                        <li>Kandharasana</li>
-                        <li>Nadi Shodhan Pranayama</li>
-                        <li>AUM Chanting</li>
-                    </ol>
-                    <p class="about-sub-title">Benefits</p>
-                    <ol type="1">
-                        <li>Malasana Lateral Stretch + Twist</li>
-                        <li>Sivananda Surya Namaskar x 3 Rounds</li>
-                        <li>AUM Chanting</li>
-                        <li>Supta Virasana</li>
-                        <li>Gomukasana Fold Forward + Twist</li>
-                        <li>Kandharasana</li>
-                        <li>Nadi Shodhan Pranayama</li>
-                        <li>AUM Chanting</li>
-                    </ol>
-                </div>
-        </div>
-        
-        <div id="about-mobile-div">
-            <p class="about-title">About the Session </p>
-            <p class="about-content">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting overall
-                well being.</p>
-            <div class="about-sub-div">
-                <p class="about-sub-title">Main Practices</p>
-                <ol type="1">
-                    <li>Malasana Lateral Stretch + Twist</li>
-                    <li>Sivananda Surya Namaskar x 3 Rounds</li>
-                    <li>Uttana Pristhasana + Twist</li>
-                    <li>Prasarita Padottanasana C</li>
-                    <li>Ardha Shalabhasana</li>
-                    <li>Supta Virasana</li>
-                    <li>Gomukasana Fold Forward + Twist</li>
-                    <li>Kandharasana</li>
-                    <li>Nadi Shodhan Pranayama</li>
-                    <li>AUM Chanting</li>
-                </ol>
-            </div>
-        </div>
-        <div id="benefits-mobile-div">
-            <p class="about-sub-title">Benefits</p>
-                    <ol type="1">
-                        <li>Malasana Lateral Stretch + Twist</li>
-                        <li>Sivananda Surya Namaskar x 3 Rounds</li>
-                        <li>AUM Chanting</li>
-                        <li>Supta Virasana</li>
-                        <li>Gomukasana Fold Forward + Twist</li>
-                        <li>Kandharasana</li>
-                        <li>Nadi Shodhan Pranayama</li>
-                        <li>AUM Chanting</li>
-                    </ol>
-        </div>
-        <img src="https://ik.imagekit.io/healthhighway2020/detailImg_jvB4SZXxNy.png?updatedAt=1631176566871" />
-        <!-- about (END) -->
-        </div>
-
-               <!-- Call-Us Section  -->
-               <section class="call-back">
-                <div class="cb-text">
-                    <h2 class="call-back-head">Still Confused?</h2>
-                    <p class="call-back-text">
-                        Let us find the best yoga solution for you
-                    </p>
-                </div>
-                <div class="cb-form">
-                    <input id="phone-num" type="text" placeholder="+91  Phone number" />
-                    <button class="call-back-btn" type="submit">Schedule Callback</button>
-                </div>
-            </section>
-            <!-- Call-Us Section (END) -->
-
-            <div class="login-modal-bg">
-                <div class="login-modal">
-                    <div class="loginBody" id="phoneDiv">
-                        <img src="https://ik.imagekit.io/healthhighway2020/logo_DcXvHIoG7.svg?updatedAt=1631177447330" class="loginLogo">
-                        <img src="https://ik.imagekit.io/healthhighway2020/logoText_Is7BIsFYx.svg?updatedAt=1631177452465" class="textLogo">
-                        <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
-                        <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
-                        <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
-                            Continue
-                        </button>
-                        <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
-                        <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
-                            <img src="https://ik.imagekit.io/healthhighway2020/google_80EpslXEKg.png?updatedAt=1631177403407" class="google">Login Using Gmail</span>
-                        </button>
-                    </div>
-                    <div id="OTP">
-                        <p class="OTPTitle" id = "backOTP"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-                        <div class="loginBody">
-                            <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
-                            </p>
-                            <form class="otp" name="one-time-code" id="otp-div">
-                                <fieldset>
-                                    <div>
-                                        <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
-                                        <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
-                                        <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
-                                        <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
-                                        <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
-                                        <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
-                                    </div>
-                                </fieldset>
-                            </form>
-                            <button type="button" class="btn btn-light loginButton" id="confirmLogin">
-                                Confirm
-                            </button>
-                        </div>
-                    </div>
-                    <div id="name">
-                        <p class="nameTitle" id = "backName" ><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-                        <div class="loginBody">
-                            <img class="nameImg" src="https://ik.imagekit.io/healthhighway2020/nameDiv_cHk_VP7U6-.svg?updatedAt=1631378890462">
-                            <p class="nameText">Its always good to know each other before 
-                                we get started :)
-                            </p>
-                            <input class = "nameInput" placeholder = "Please Enter Your Fullname ">
-                            <button type="button" class="btn btn-light loginButton" id="continueName">
-                                Continue
-                            </button>
-                        </div>
-                    </div>
-                    <span> <i class="close"></i></span>
-                </div>
-            </div>
-    
-                
-                <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-                <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-                <script type="text/javascript">
-                    var firebaseConfig = {
-                    apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-                    authDomain: "healthhighway-45963.firebaseapp.com",
-                    databaseURL: "https://healthhighway-45963.firebaseio.com",
-                    projectId: "healthhighway-45963",
-                    storageBucket: "healthhighway-45963.appspot.com",
-                    messagingSenderId: "716392922291",
-                    appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-                    measurementId: "G-B3ZVBEZ2H2"
-                    };
-                    firebase.initializeApp(firebaseConfig);
-                </script>
-                <script>
-                    window.onload = function(){
-                        render();
-                    }
-                
-                    async function render() {
-                        window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-verifier');
-                        recaptchaVerifier.render();
-                        recaptchaVerifier.verify().then(token => {
-                            console.log(token);
-                            document.getElementById("loginContinue").style.pointerEvents="auto";
-                        })
-                    }
-                </script>
-                <!-- login div (END) -->
-
-                <footer>
-                    <div class="footer-nav">
-                        <nav>
-                            <ul class="nav-links">
-            
-                                <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
-                                <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
-                                <li class="mob-links"><a href="index.html">Home</a></li>
-                                <li><a href="blogs/blogs.html">Blogs</a></li>
-                                <li><a href="#">About</a></li>
-                            </ul>
-                        </nav>
-                        <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
-                        <nav class="terms-privacy">
-                            <ul>
-                                <li>
-                                    <a href="#">Terms</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </footer>
-            
+        </section>
     </main>
-    <script type="text/javascript" src="js/landing.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
-    <script type="text/javascript" src="js/detailed-page-navbar.js"></script>
+    <footer></footer>
 </body>
 
 </html>
-
