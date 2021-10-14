@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="css/navbar_vidhu.css">
     <link rel="stylesheet" href="css/detailed-page.css">
+    <link rel="stylesheet" href="css/callback.css">
+
+    <link rel="stylesheet" href="css/footer.css">
 
     <title>Session Name</title>
 </head>
@@ -36,32 +39,40 @@
         </div>
     </header>
     <main>
-        <section class="navigation-mobile">
-            <button class="back-btn"> <img src="images/back-arrow.png" alt="back-nav"></button>
-            <h3 class="session-title">Session Name</h3>
-            <div class="empty"></div>
-        </section>
-        <section class="session-intro">
-
-            <img class="session_img" src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+        <div class="grid-container">
+            <section class="navigation-mobile">
+                <a href="group_sessions-landing.html" class="back-btn"> <img src="images/back-arrow.png" alt="back-nav"></a>
+                <h3 class="session-title">Session Name</h3>
+                <div class="empty"></div>
+            </section>
 
 
-            <div class="trainer-div">
-                <div class="trainer_details">
-                    <img class="trainer_icon" src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="trainer-ico">
-                    <div class="trainer-text">
-                        <p>Trainer</p>
-                        <p class="trainer_name">Honey Singh</p>
+            <section class="session-intro">
+
+                <img class="session_img" src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="ssn-img" />
+
+
+                <div class="trainer-div">
+                    <div class="trainer_details">
+                        <img class="trainer_icon" src="https://ik.imagekit.io/healthhighway2020/image2_e0GAGi6S_.png?updatedAt=1631714377933" alt="trainer-ico">
+                        <div class="trainer-text">
+                            <p>Trainer</p>
+                            <p class="trainer_name">Honey Singh</p>
+                        </div>
+
                     </div>
-
+                    <button class="like-btn"> <img src="https://ik.imagekit.io/healthhighway2020/thumbsup_eLssLMzbL9u.svg?updatedAt=1634054577230" alt="like"></button>
                 </div>
-                <button class="like-btn"> <img src="https://ik.imagekit.io/healthhighway2020/thumbsup_eLssLMzbL9u.svg?updatedAt=1634054577230" alt="like"></button>
-            </div>
-        </section>
-        <section class="session-details">
+
+                <div class="action-btns desktop">
+                    <a href="#" class="enroll-btn">Enroll for free</a>
+                    <a href="#" class="prsnl-btn">Want personalization?</a>
+                </div>
+            </section>
+
 
             <!-- Navigation -->
-            <div class="details-navigation-mobile">
+            <section class="details-navigation-mobile">
                 <ul>
                     <li>
                         <a href="#ssnoverview">Overview</a>
@@ -73,10 +84,11 @@
                         <a href="#ssnbenefits">Benefits</a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
             <!-- Overview Table -->
-            <div class="session-overview" id="ssnoverview">
+            <section class="session-overview " id="ssnoverview">
+                <h3 class="session-title desktop">Session Name <span class="title-trainer">by Honey Singh</span></h3>
                 <div class="ovw ssn-timing">
                     <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/Clock_k-uMwYg-2.svg?updatedAt=1634060422976" alt="ico">
                     <p class="details-text">6:00 AM - 6:45 AM</p>
@@ -101,17 +113,18 @@
                     <img class="overview-icon" src="https://ik.imagekit.io/healthhighway2020/notfor_XAJDD4fxKUh.svg?updatedAt=1634060021541" alt="ico">
                     <p class="details-text">Preganent Ladies</p>
                 </div>
-            </div>
+
+            </section>
 
 
             <!-- Text details -->
-            <div class="overview-text">
+            <section class="overview-text ">
                 <h4 class="details-heading">Overview</h4>
                 <p class="details-text">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting
                     overall well being.</p>
-            </div>
+            </section>
 
-            <div class="about-text" id="ssnabout">
+            <section class="about-text" id="ssnabout">
                 <h4 class="details-heading">About the Session</h4>
                 <p class="details-text">Join Anil and Gaurav for this Hatha Yoga for Beginners session, which addresses all the 6 movements of the spine, with a clear focus on breath and alignment. This class increases your flexibility,balance and endurance, while promoting
                     overall well being.</p>
@@ -139,9 +152,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <div class="benefits-text" id="ssnbenefits">
+            <section class="benefits-text" id="ssnbenefits">
                 <h4 class="details-heading">Benefits</h4>
                 <ul class="numbered-list">
                     <li>
@@ -163,10 +176,61 @@
                         <p class="details-text"> Supta Virasana</p>
                     </li>
                 </ul>
+            </section>
+
+            <section class="yoga-illustration desktop">
+                <img src="https://ik.imagekit.io/healthhighway2020/Yogagril_YnKna1S0Geb.svg?updatedAt=1634139682562" alt="yoga-ill">
+            </section>
+
+        </div>
+
+
+        <!-- Call-Us Section  -->
+        <section class="call-back desktop">
+            <div class="cb-text">
+                <h2 class="call-back-head">Still Confused?</h2>
+                <p class="call-back-text">
+                    Let us find the best yoga solution for you
+                </p>
+            </div>
+            <div class="cb-form">
+                <input id="phone-num" type="text" placeholder="+91  Phone number" />
+                <button class="call-back-btn" type="submit">Schedule Callback</button>
             </div>
         </section>
+        <!-- Call-Us Section (END) -->
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-nav desktop">
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="pricing.html">Private Sessions</a>
+                    </li>
+                    <li>
+                        <a href="group_sessions-landing.html">Group Sessions</a>
+                    </li>
+                    <li class="desk-links"><a href="index.html">Home</a></li>
+                    <li class="desk-links"><a href="blogs/blogs.html">Blogs</a></li>
+                    <li class="desk-links"><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">
+                <span> &copy; </span> 2021 Health Highway. All Rights Reserved.
+            </p>
+            <nav class="terms-privacy">
+                <ul>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 
 </html>

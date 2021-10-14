@@ -16,6 +16,7 @@ footer {
 .nav-links a {
     color: black;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .terms-privacy ul {
@@ -29,6 +30,7 @@ footer {
 .terms-privacy a {
     color: grey;
     font-size: 0.9rem;
+    text-decoration: none;
 }
 
 .terms-privacy a:hover {
@@ -56,7 +58,7 @@ footer {
         display: none;
     }
     .nav-links {
-        width: 50%;
+        width: 65%;
         justify-content: space-around;
     }
     .terms-privacy ul {
@@ -67,7 +69,7 @@ footer {
 
 @media (min-width: 1024px) {
     .nav-links {
-        width: 40%;
+        width: 50%;
     }
     .terms-privacy ul {
         width: 20%;
