@@ -1,5 +1,5 @@
 main {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navigation-mobile {
@@ -23,8 +23,8 @@ main {
 }
 
 .session-intro {
-    padding: 2em 0;
-    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 .session_img {
@@ -127,7 +127,7 @@ main {
 }
 
 .overview-text {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 1em 0;
 }
 
@@ -191,7 +191,64 @@ main {
     font-weight: 700;
 }
 
+
+/* UPdates */
+
+.session-overview .details-text {
+    font-weight: 700;
+}
+
+.session-title {
+    display: block;
+    grid-column: 1/3;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #333741;
+    padding-bottom: .2em;
+    margin: 0;
+    margin-top: -20px;
+}
+
+.title-trainer {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pay-now-btn {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #4CA9EE;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.ssn-for,
+.ssn-notfor {
+    grid-column: 1/3;
+}
+
+.suitable-for-text,
+.not-suitable-for-text {
+    grid-column: 1/3;
+    font-size: 12px;
+    color: #716E6E;
+    font-weight: 500;
+}
+
 @media(min-width:768px) {
+    .pay-now-btn {
+        display: none;
+    }
     .navigation-mobile {
         display: none;
     }
@@ -228,12 +285,8 @@ main {
         height: max-content;
         padding: 0;
     }
-    .about-text {
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
     .benefits-text {
-        grid-row: 4/5;
+        grid-row: 3/4;
         grid-column: 1/2;
     }
     .details-heading {
@@ -258,7 +311,7 @@ main {
         text-align: left;
         font-size: 1.8rem;
         font-weight: 700;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: #333741;
         padding-bottom: .2em;
         margin: 0;
@@ -270,11 +323,18 @@ main {
     }
     .yoga-illustration {
         grid-column: 2/3;
-        grid-row: 2/5;
+        grid-row: 2/4;
     }
     .yoga-illustration img {
         width: 100%;
         height: 100%;
+    }
+    .numbered-list {
+        padding-left: 4%;
+    }
+    .suitable-for-text,
+    .not-suitable-for-text {
+        font-size: 16px;
     }
 }
 
@@ -323,6 +383,12 @@ main {
     .session-overview {
         row-gap: 1.5em;
     }
+    .numbered-list {
+        padding-left: 3%;
+    }
+    .yoga-illustration {
+        margin-top: 50px;
+    }
 }
 
 @media(min-width:1440px) {
@@ -341,5 +407,10 @@ main {
         width: 30px;
         height: 30px;
         margin-right: 1em;
+    }
+    .yoga-illustration {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }
