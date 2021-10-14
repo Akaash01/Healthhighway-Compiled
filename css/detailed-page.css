@@ -173,6 +173,7 @@ main {
 
 .grid-container {
     padding: 1em 6%;
+    padding-bottom: 5em;
 }
 
 .enroll-btn,
@@ -412,5 +413,15 @@ main {
         width: 70%;
         margin: 0 auto;
         margin-top: 50px;
+    }
+}
+
+
+/* Footer and callback fix */
+
+@media(max-width:767px) {
+    footer,
+    .call-back {
+        display: none !important;
     }
 }
