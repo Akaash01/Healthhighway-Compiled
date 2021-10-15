@@ -92,6 +92,10 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+#enternum::placeholder {
+    font-weight: 500;
+}
+
 #enternum:focus,
 #enterotp:focus {
     outline: none;
@@ -102,7 +106,7 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     padding: .5em 0;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     background-color: #4CA9EE;
     border: none;
@@ -218,7 +222,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     letter-spacing: 15px;
     margin-top: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
 }
 
 .noticetwo {
