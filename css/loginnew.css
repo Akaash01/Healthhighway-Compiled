@@ -1,0 +1,132 @@
+.login-signup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 10%;
+    flex-direction: column;
+}
+
+#close-login {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#close-login img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo-img-login {
+    width: 138px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logotext-img-login {
+    width: 200px;
+    height: 33px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.entermobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div {
+    display: flex;
+    border-bottom: 2px solid #B2B2B2;
+    width: 70%;
+    margin: 2em auto;
+    justify-content: space-around;
+}
+
+#preinput {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #333741;
+    padding: .25em 0;
+}
+
+#preinput img {
+    width: 12px;
+    height: 7px;
+    margin-bottom: -5px;
+    margin-left: .2em;
+}
+
+#enternum {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #333741;
+    max-width: 62%;
+    padding: .25em .25em;
+}
+
+#enternum:focus {
+    outline: none;
+}
+
+.continue-btn {
+    width: 70%;
+    margin: 0 auto;
+    padding: .5em 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #4CA9EE;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.tnc-text {
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    width: 70%;
+    margin: 2.5em auto;
+}
+
+.cyan-col {
+    color: #29E7CD;
+}
+
+.logingoogle {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #4CA9EE;
+    background-color: white;
+    width: 70%;
+    justify-content: center;
+    padding: 1.5em 0;
+    border-radius: 15px;
+    box-shadow: 5.14976px 8.58293px 11.1578px rgba(76, 169, 238, 0.15);
+}
+
+.logingoogle img {
+    margin-right: 1em;
+}
