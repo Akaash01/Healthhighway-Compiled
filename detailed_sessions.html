@@ -198,21 +198,56 @@
         <!-- Call-Us Section (END) -->
 
 
-        <section class="login-signup">
-
-            <button id="close-login"><img src="https://ik.imagekit.io/healthhighway2020/close_R-Syn9cdy.png?updatedAt=1634289312558" alt="close-btn-ico"></button>
+        <section class="login-signup" style="display: none;">
 
 
-            <div class="entermobile">
+
+
+            <div class="entermobile logdiv">
+                <button class="close-btn-login"><img src="https://ik.imagekit.io/healthhighway2020/close_R-Syn9cdy.png?updatedAt=1634289312558" alt="close-btn-ico"></button>
+
+
                 <img class="logo-img-login" src="https://ik.imagekit.io/healthhighway2020/hhlogoH_5JuGbkrkE.svg?updatedAt=1634284862307" alt="hhlogo">
                 <img class="logotext-img-login" src="https://ik.imagekit.io/healthhighway2020/image_18_M-eJqCI8wtA.png?updatedAt=1634288357617" alt="hhlogo">
                 <div class="input-div">
                     <span id="preinput">+91 <img src="https://ik.imagekit.io/healthhighway2020/Vector_Iz4hoF8TCay.png?updatedAt=1633706724978" alt="arrowdown"></span> <input type="number" inputmode="numeric" placeholder="Enter Contact" id="enternum">
                 </div>
-                <button class="continue-btn">Send OTP</button>
+                <button class="continue-btn" id="send-otp">Send OTP</button>
                 <p class="tnc-text">By Continuing you agree to the <br> <span class="cyan-col">Terms of Services </span> and <span class="cyan-col"> Privacy policy</span>.</p>
                 <a href="#" class="logingoogle"><img src="https://ik.imagekit.io/healthhighway2020/google_1_ZnhwBfVQbW-.svg?updatedAt=1634288559825" alt="google-logo"> Login with Google</a>
             </div>
+            <div class="otpsent logdiv" style="display: none;">
+
+                <button class="close-btn-login"><img  src="https://ik.imagekit.io/healthhighway2020/close_R-Syn9cdy.png?updatedAt=1634289312558" alt="close-btn-ico"></button>
+
+                <img class="otp-ill" src="https://ik.imagekit.io/healthhighway2020/image_19_qCEpYwbfe.png?updatedAt=1634296526737" alt="ladyill">
+
+                <p class="otptext">An OTP has been sent to your provided mobile no.</p>
+            </div>
+            <div class="enterotp logdiv" style="display: none;">
+
+                <button class="close-btn-login"><img  src="https://ik.imagekit.io/healthhighway2020/close_R-Syn9cdy.png?updatedAt=1634289312558" alt="close-btn-ico"></button>
+                <button class="back-btn-login"><img src="https://ik.imagekit.io/healthhighway2020/left-arrow-angle_P2JshCPzOK5.png?updatedAt=1634298181326" alt="close-btn-ico">Back</button>
+
+                <p class="otpnotice">Please enter the code we just sent to <span class="blue-col" id="ph-no">9568235684</span> to proceed</p>
+
+                <input type="number" inputmode="numeric" id="enterotp">
+                <button class="continue-btn" id="confirm-otp">Confirm</button>
+
+                <p class="noticetwo">Get OTP on Call</p>
+                <p class="noticethree">Didn’t Recieve OTP ? <span class="blue-col">Resend</span></p>
+
+            </div>
+            <div class="verified logdiv" style="display: none;">
+
+                <button class="close-btn-login"><img  src="https://ik.imagekit.io/healthhighway2020/close_R-Syn9cdy.png?updatedAt=1634289312558" alt="close-btn-ico"></button>
+
+                <img class="otp-ill-two" src="https://ik.imagekit.io/healthhighway2020/verified_t_VyqSRXJ.png?updatedAt=1634315737070" alt="ladyill">
+
+                <p class="verifiedtext">Congrats! You are verified</p>
+
+            </div>
+
         </section>
     </main>
     <footer>
