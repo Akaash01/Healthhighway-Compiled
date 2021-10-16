@@ -35,7 +35,8 @@
     <header class="header-for-navbar">
         <div class="navbar-top">
             <div class="brandwrap-top">
-                <a href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
+                <a class="desktop-brandwrap" href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
+                <a class="mobile-brandwrap" href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/hhlogoH_5JuGbkrkE.svg?updatedAt=1634284862307" alt="logo"></a>
             </div>
             <nav>
                 <ul class="nav-links-top">
@@ -52,45 +53,49 @@
     </header>
     <main>
         <!-- landing -->
-        <div id="landing-main-div">
-            <div class="landing-main-center landing-main-center1">
-                <p class="landing-main-text1">Live Yoga Classes</p>
-                <div class="landing-line-text">
-                    <p class="landing-main-text2">From world yoga capital to your home</p>
+        <section class="landcontainerv">
 
-                </div>
-                <a class="landing-main-button desktop" href="#get-started-section">Get Started</a>
-            </div>
-            <div class="animation-container">
-                <div class="animation_left"></div>
-                <div class="landing-main-center landing-main-center2">
+            <div id="landing-main-div">
+                <div class="landing-main-center landing-main-center1">
                     <p class="landing-main-text1">Live Yoga Classes</p>
                     <div class="landing-line-text">
-                        <div class="animation_middle">
-                            <div class="middle-line"></div>
-                        </div>
                         <p class="landing-main-text2">From world yoga capital to your home</p>
+
                     </div>
                     <a class="landing-main-button desktop" href="#get-started-section">Get Started</a>
                 </div>
-                <div class="animation_right"></div>
+                <div class="animation-container">
+                    <div class="animation_left"></div>
+                    <div class="landing-main-center landing-main-center2">
+                        <p class="landing-main-text1">Live Yoga Classes</p>
+                        <div class="landing-line-text">
+                            <div class="animation_middle">
+                                <div class="middle-line"></div>
+                            </div>
+                            <p class="landing-main-text2">From world yoga capital to your home</p>
+                        </div>
+                        <a class="landing-main-button desktop" href="#get-started-section">Get Started</a>
+                    </div>
+                    <div class="animation_right"></div>
+                </div>
+                <script src="./js/landing-animation.js"></script>
+                <div class="landing-container"></div>
+                <div class="mobile-animation">
+                    <img src="images/landing-animation.gif" />
+                </div>
             </div>
-            <script src="./js/landing-animation.js"></script>
-            <div class="landing-container"></div>
-            <div class="mobile-animation">
-                <img src="images/landing-animation.gif" />
             </div>
-        </div>
-        </div>
-        <!-- landing (END)-->
+            <!-- landing (END)-->
 
-        <!-- know more div (START) -->
-        <div class="know-more-div">
-            <a class="landing-main-button mobile" href="#get-started-section">Get Started</a>
-            <a href="#usp" class="know-more">Know More</a>
-            <a href="#usp" class="know-more"><i class="fa fa-arrow-down"></i></a>
-        </div>
-        <!-- know more div (END) -->
+            <!-- know more div (START) -->
+            <div class="know-more-div">
+                <a class="landing-main-button mobile" href="#get-started-section">Get Started</a>
+                <a href="#usp" class="know-more">Know More</a>
+                <a href="#usp" class="know-more"><i class="fa fa-arrow-down"></i></a>
+            </div>
+            <!-- know more div (END) -->
+
+        </section>
 
         <!-- About-Us Section (START) -->
         <section id="about-us" class="about-us-section">
