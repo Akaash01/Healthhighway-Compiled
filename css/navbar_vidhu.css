@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+.desktop-brandwrap {
+    display: none;
+}
+
+.mobile-brandwrap {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
 .header-for-navbar {
     position: sticky;
     top: 0;
@@ -18,7 +28,7 @@
     background-color: white;
 }
 
-.brandwrap-top img {
+.desktop-brandwrap img {
     width: 178px;
     height: 30px;
     object-fit: cover;
@@ -47,7 +57,7 @@
     background-color: #4CA9EE;
     color: white;
     border-radius: 1em;
-    font-weight: 600;
+    font-weight: 500;
     padding: .5em 1em;
 }
 
@@ -67,6 +77,12 @@
 }
 
 @media (min-width: 768px) {
+    .mobile-brandwrap {
+        display: none;
+    }
+    .desktop-brandwrap {
+        display: unset;
+    }
     .desk-link-nav {
         display: unset;
     }
