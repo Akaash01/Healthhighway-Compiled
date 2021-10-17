@@ -228,7 +228,6 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 800px) {
     #landing-main-div {
-        height: calc(100vh - 60px);
         justify-content: flex-start;
         padding-top: 125px;
         margin: 0;
@@ -690,8 +689,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 500px) {
     #landing-main-div {
-        height: calc(100vh - 160px);
-        padding-top: 80px;
+        padding-top: 50px;
     }
     .landing-main-button {
         padding: 10px 0 0 0;
