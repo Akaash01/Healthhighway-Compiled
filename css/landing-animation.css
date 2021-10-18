@@ -620,13 +620,6 @@
   }
 }
 
-@media only screen and (max-height: 995px) {
-  #landing-main-div {
-    height: 30vh;
-    padding-top: 5vh;
-  }
-}
-
 @media only screen and (max-height: 720px) {
   #landing-main-div {
     height: 75vh;
