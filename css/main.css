@@ -85,12 +85,12 @@ body::-webkit-scrollbar-thumb {
 
 #landing-main-div {
     width: 100vw;
-    height: auto;
+    height: 50vh;
     background-color: transparent;
     position: relative;
     display: flex;
     align-items: center;
-    margin: 150px 0 120px 0;
+    margin: 100px 0 0 0;
 }
 
 .landing-container {
@@ -175,6 +175,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+        margin-bottom: 25vh;
 }
 
 @media only screen and (max-width: 1200px) {
