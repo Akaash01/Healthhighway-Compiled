@@ -243,12 +243,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (min-height: 1024px) {
-    #landing-main-div {
-        height: 62vh;
-    }
-}
-
 @media only screen and (max-width: 580px) {
     .landing-main-text1 {
         font-size: 36px;
