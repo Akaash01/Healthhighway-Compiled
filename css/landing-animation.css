@@ -613,6 +613,20 @@
   }
 }
 
+@media only screen and (max-height: 1024px) {
+  #landing-main-div {
+    height: 20vh;
+    padding-top: 5vh;
+  }
+}
+
+@media only screen and (max-height: 720px) {
+  #landing-main-div {
+    height: 75vh;
+    padding-top: 5vh;
+  }
+}
+
 @media only screen and (max-height: 700px) {
   #landing-main-div {
     height: 68vh;
@@ -628,14 +642,14 @@
 
 @media only screen and (max-height: 680px) {
   #landing-main-div {
-    height: 84vh;
-    padding-top: 25vh;
+    height: 66vh;
+    padding-top: 5vh;
   }
   .mobile {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
   }
   .know-more-div {
-    margin-bottom: 22vh;
+    margin-bottom: 20vh;
   }
   .landing-main-center {
     margin-bottom: 10vh;
@@ -644,30 +658,33 @@
 
 @media only screen and (max-height: 640px) {
   #landing-main-div {
-    height: 70vh;
-    padding-top: 10vh;
+    height: 65vh;
+    padding-top: 5vh;
   }
   .mobile {
-    margin-bottom: 8vh;
-  }
-  .know-more-div {
-    margin-bottom: 7vh;
-  }
-}
-
-@media only screen and (max-height: 600px) {
-  #landing-main-div {
-    height: 82vh;
-    padding-top: 10vh;
-  }
-  .mobile {
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
   }
   .know-more-div {
     margin-bottom: 7vh;
   }
   .landing-main-center {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #landing-main-div {
+    height: 63vh;
+    padding-top: 3vh;
+  }
+  .mobile {
+    margin-bottom: 4vh;
+  }
+  .know-more-div {
+    margin-bottom: 7vh;
+  }
+  .landing-main-center {
+    margin-bottom: 3vh;
   }
 }
 
