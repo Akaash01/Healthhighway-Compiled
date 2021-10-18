@@ -354,13 +354,6 @@
         margin-bottom: 0;
         margin-top: -10px;
     }
-    .testimonial-controls {
-        margin-top: -10px;
-        margin: 0;
-    }
-    .testimonial {
-        align-items: flex-start;
-    }
     #testimonials-heading {
         margin-bottom: 1em;
     }
@@ -369,6 +362,13 @@
 @media (max-width: 400px) {
     #testimonial-main {
         width: 300px;
+    }
+    .testimonial-controls {
+        margin-top: -10px;
+        margin: 0;
+    }
+    .testimonial {
+        align-items: flex-start;
     }
 }
 
