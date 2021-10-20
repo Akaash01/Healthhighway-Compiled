@@ -1,4 +1,6 @@
-/* FOOTER CSS (start)*/
+* {
+    text-decoration: none;
+}
 
 footer {
     padding: 2em 5%;
@@ -112,6 +114,10 @@ footer {
     margin-top: .5em;
 }
 
+.desktop-only {
+    display: none;
+}
+
 @media(min-width:768px) {
     footer {
         padding: 2em 10%;
@@ -147,5 +153,8 @@ footer {
     }
     .social-links .footer-title {
         text-align: left;
+    }
+    .desktop-only {
+        display: unset;
     }
 }
