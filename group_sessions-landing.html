@@ -30,7 +30,8 @@
     <header class="header-for-navbar">
         <div class="navbar-top">
             <div class="brandwrap-top">
-                <a href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
+                <a class="desktop-brandwrap" href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/Group_1YBxSKuiyUd.svg?updatedAt=1633715883579" alt="logo"></a>
+                <a class="mobile-brandwrap" href="index.html"><img src="https://ik.imagekit.io/healthhighway2020/hhlogoH_5JuGbkrkE.svg?updatedAt=1634284862307" alt="logo"></a>
             </div>
             <nav>
                 <ul class="nav-links-top">
@@ -397,91 +398,58 @@
 
     </main>
 
-    <!-- login div -->
-    <div class="login-modal-bg">
-        <div class="login-modal">
-            <div class="loginBody" id="phoneDiv">
-                <img src="https://ik.imagekit.io/healthhighway2020/logo_DcXvHIoG7.svg?updatedAt=1631177447330" class="loginLogo">
-                <img src="https://ik.imagekit.io/healthhighway2020/logoText_Is7BIsFYx.svg?updatedAt=1631177452465" class="textLogo">
-                <p class="loginInput">+91 <i class="down-arrow"></i> <input class="loginInputBar" placeholder="Please Enter Your Phone Number" type="text" id="inputPhoneNo"></p><br>
-                <div style="margin-left:10px!important;margin-right: 10px!important;" id="recaptcha-verifier"></div>
-                <button type="button" class="btn btn-light loginButton" id="loginContinue" style="pointer-events:none">
-                  Continue
-              </button>
-                <p class="loginCondition">By Continuing you agree to the <a style="color:#29E7CD;text-decoration: underline">Terms of Services</a> and <a style="color:#29E7CD; text-decoration: underline">Privacy policy</a>.</p>
-                <button type="button" class="btn loginContinueButton" id="customBtn" style="display: flex; align-content: flex-start;">
-                  <img src="https://ik.imagekit.io/healthhighway2020/google_80EpslXEKg.png?updatedAt=1631177403407" class="google">Login Using Gmail</span>
-              </button>
-            </div>
-            <div id="OTP">
-                <p class="OTPTitle" id="backOTP"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-                <div class="loginBody">
-                    <p class="enterText">Please enter the code we just sent to <span id="phoneNumber"></span> proceed
-                    </p>
-                    <form class="otp" name="one-time-code" id="otp-div">
-                        <fieldset>
-                            <div>
-                                <input type="number" pattern="[0-9]*" value="" inputtype="numeric" autocomplete="one-time-code" id="otp-1" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-2" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-3" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-4" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-5" required>
-                                <input type="number" pattern="[0-9]*" min="0" max="9" maxlength="1" value="" inputtype="numeric" id="otp-6" required>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <button type="button" class="btn btn-light loginButton" id="confirmLogin">
-                      Confirm
-                  </button>
-                </div>
-            </div>
-            <div id="name">
-                <p class="nameTitle" id="backName"><i id="modalBack"></i><span class="OTPText" style="color: #4ca9ee">BACK</span></p>
-                <div class="loginBody">
-                    <img class="nameImg" src="https://ik.imagekit.io/healthhighway2020/nameDiv_cHk_VP7U6-.svg?updatedAt=1631378890462">
-                    <p class="nameText">Its always good to know each other before we get started :)
-                    </p>
-                    <input class="nameInput" placeholder="Please Enter Your Fullname ">
-                    <button type="button" class="btn btn-light loginButton" id="continueName">
-                      Continue
-                  </button>
-                </div>
-            </div>
-            <span> <i class="close"></i></span>
-        </div>
-    </div>
-    <!-- login div (END) -->
+
 
     <footer>
-        <div class="footer-nav">
+        <div class="contact-us">
+            <h3 class="footer-title">Contact Us</h3>
+            <p class="address">Health Highway Private Limited <br> Plot No.14, Shiva Enclave, Rishikesh Uttarakhand - 249401</p>
+            <a class="ph-link" href="#"><img src="https://ik.imagekit.io/healthhighway2020/phone-receiver-silhouette_3z8QpapNk.png?updatedAt=1634727835850" alt="ico">+91-9520785339</a>
+            <a class="mail-link" href="#"><img src="https://ik.imagekit.io/healthhighway2020/arroba_4oMa5o9C8nI.png?updatedAt=1634727995584" alt="ico">info@healthhighway.co.in</a>
+        </div>
+        <div class="more-about-us">
+            <h3 class="footer-title">More About us</h3>
             <nav>
-                <ul class="nav-links">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Book a session</a>
+                    </li>
+                    <li>
+                        <a href="#">Schedule a call back</a>
+                    </li>
+                    <li>
+                        <a href="#">Blogs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-links">
 
-                    <li class="desk-links"><a href="pricing.html">Private Sessions</a></li>
-                    <li class="desk-links"><a href="group_sessions-landing.html">Group Sessions</a></li>
-                    <li class="mob-links"><a href="index.html">Home</a></li>
-                    <li><a href="blogs/blogs.html">Blogs</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <p class="copyright"><span> &copy; </span> 2021 Health Highway. All Rights Reserved.</p>
-            <nav class="terms-privacy">
-                <ul>
-                    <li>
-                        <a href="#">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                </ul>
-            </nav>
+            <h3 class="footer-title">Social Links</h3>
+            <div class="container-social">
+                <div class="line"></div>
+                <a class="social-media" href="#"><img src="https://ik.imagekit.io/healthhighway2020/facebook_iGV5ZnVbO.png?updatedAt=1634728425492" alt="ico"></a>
+                <a class="social-media" href="#"><img src="https://ik.imagekit.io/healthhighway2020/instagram_Lj9W8mcHzAR.png?updatedAt=1634728263976" alt="ico"></a>
+                <a class="social-media" href="#"><img src="https://ik.imagekit.io/healthhighway2020/linkedin_8dwQ1H6AMjj.png?updatedAt=1634728496569" alt="ico"></a>
+                <div class="line"></div>
+            </div>
+            <button class="btn-contact-us">Contact Us</button>
+        </div>
+
+
+        <div class="copy-tnc">
+            <p class="copyright">Copyright © 2020-21 All Rights Reserved</p>
+            <a class="terms-privacy" href="#">Terms</a> | <a class="terms-privacy" href="#">Privacy</a>
         </div>
     </footer>
 
 
 
 
-    <script type="text/javascript" src="js/login.js" defer></script>
+
 </body>
 
 </html>
