@@ -95,5 +95,18 @@
     }
 }
 
+@media(max-width:320px) {
+    .cb-form {
+        flex-direction: column;
+    }
+    #phone-num {
+        width: 180px;
+        margin-bottom: 1em;
+    }
+    .call-back-btn {
+        max-width: max-content;
+    }
+}
+
 
 /* CAll back CSS (END) */
