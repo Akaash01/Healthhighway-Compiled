@@ -46,29 +46,31 @@
 
 .middle-line {
   height: 4px;
-  border-radius: 4px 200% 200% 4px;
-  background: linear-gradient(90deg, #4ca9ee, #29e7cd);
-  animation: middle-line 5s 2s forwards ease-in-out;
+  border-radius: 200% 4px 4px 200%;
+  background: linear-gradient(90deg, #29e7cd, #4ca9ee);
+  animation: middle-line 4s 2s forwards ease-in-out;
 }
 @keyframes middle-line {
   0% {
-    margin: 0;
+    margin-right: 100%;
     width: 0;
   }
   45% {
-    margin: 0 100% 0 0;
+    margin-right: 0;
     width: calc(100% - 40px);
     border-radius: 4px;
   }
   100% {
-    border-radius: 200% 4px 4px 200%;
-    background: linear-gradient(90deg, #29e7cd, #4ca9ee);
     width: 0;
+    border-radius: 200% 4px 4px 200%;
   }
 }
 
 /* dev animation starts here */
-:root {
+#dev{
+  opacity:0;
+}
+/* :root {
   --dev-delay-grp1: 1.25s;
   --dev-delay-grp2: 1.5s;
   --dev-delay-grp3: 1.75s;
@@ -77,7 +79,7 @@
 }
 #dev {
   opacity: 0;
-  /* animation: dev 1s var(--dev-opacity-delay) forwards ease-in-out; */
+  animation: dev 1s var(--dev-opacity-delay) forwards ease-in-out;
 }
 @keyframes dev {
   0% {
@@ -134,7 +136,7 @@
   to {
     stroke-dashoffset: 0;
   }
-}
+} */
 /* instructor animation starts here */
 :root {
   --instructor-opacity-delay: 1s;
@@ -260,8 +262,8 @@
 }
 /* client animation starts here */
 :root {
-  --client-delay: 6s;
-  --client-opacity-delay: 5s;
+  --client-delay: 5s;
+  --client-opacity-delay: 4s;
 }
 
 #client {
