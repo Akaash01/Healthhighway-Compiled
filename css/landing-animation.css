@@ -76,7 +76,8 @@
   --dev-opacity-delay: 4s;
 }
 #dev {
-  animation: dev 1s var(--dev-opacity-delay) forwards ease-in-out;
+  opacity: 0;
+  /* animation: dev 1s var(--dev-opacity-delay) forwards ease-in-out; */
 }
 @keyframes dev {
   0% {
@@ -136,8 +137,8 @@
 }
 /* instructor animation starts here */
 :root {
-  --instructor-opacity-delay: 3s;
-  --instructor-delay: 4s;
+  --instructor-opacity-delay: 1s;
+  --instructor-delay: 2s;
 }
 #instructor {
   opacity: 0;
@@ -259,8 +260,8 @@
 }
 /* client animation starts here */
 :root {
-  --client-delay: 7.5s;
-  --client-opacity-delay: 6.5s;
+  --client-delay: 6s;
+  --client-opacity-delay: 5s;
 }
 
 #client {
@@ -576,7 +577,6 @@
     height: 65vh;
     padding-top: 5vh;
   }
-
 }
 
 @media only screen and (max-height: 1024px) {
