@@ -20,23 +20,23 @@ main {
 
 .blogs-navlinks li {
     padding-bottom: 1em;
-    padding-right: .8em;
+    padding-right: .5em;
     margin-right: .5em;
 }
 
 .blogs-navlinks a {
     text-decoration: none;
     color: #A1A1A1;
-    font-size: 14px;
+    font-size: 12px;
     border-bottom: 2px solid #4CA9EE;
     padding-bottom: .5em;
 }
 
 .line {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #d1d1d1;
-    margin-top: -9.5px;
+    margin-top: -9px;
     z-index: -1;
     margin-bottom: 1em;
 }
