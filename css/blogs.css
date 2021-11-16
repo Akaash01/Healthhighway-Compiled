@@ -171,8 +171,6 @@ main {
         grid-column: 1/2;
         padding-right: .5em;
         padding-left: .5em;
-        /* overflow-y: scroll;
-        height: 80vh; */
     }
     .trending-blogs {
         grid-row: 2/5;
@@ -180,14 +178,11 @@ main {
         position: sticky;
     }
     .line-for-nav {
-        margin-top: -19px;
+        margin-top: -10px;
     }
     .blogs-navlinks a {
         padding: 0 .5em;
         padding-bottom: .5em;
-    }
-    .trending-heading {
-        margin-top: .5em;
     }
 }
 
