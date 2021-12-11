@@ -15,6 +15,10 @@
     <!-- all fonts imported -->
 
 
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar_vidhu.css" />
     <link rel="stylesheet" href="css/uspandaboutus.css" />
@@ -541,6 +545,34 @@
     <script src="js/video-component.js" defer></script>
     <script src="js/get-started.js" defer></script>
     <script src="js/login.js"></script>
+
+    <script>
+        let userHasScrolled = false;
+        window.onscroll = (e) => {
+            userHasScrolled = true;
+        }
+
+        function signupshow() {
+            if (userHasScrolled == true) {
+                $(window).scroll(function() {
+                    var offset = $(".get-started").offset().top;
+
+                    if ($(window).scrollTop() >= offset) {
+                        console.log("Display Signup"); //Function for signnup modal
+                    }
+                });
+            } else {
+                setTimeout(function() {
+                    console.log("Signup"); //function for signup modal
+                }, 5000);
+            }
+
+
+
+        }
+
+        setTimeout(signupshow, 5000);
+    </script>
 </body>
 
 </html>
