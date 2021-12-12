@@ -199,9 +199,24 @@ main {
         margin-top: 0;
     }
     .line-for-nav {
-        margin-top: -10px;
+        margin-top: -8px;
     }
     .blogs-navlinks li {
         padding-right: 2em;
+    }
+    .blogs-navlinks a {
+        font-size: 14px;
+    }
+    .trending-heading {
+        font-size: 24px;
+    }
+    .trending-title {
+        font-size: 18px;
+    }
+    .serial {
+        font-size: 48px;
+    }
+    .trend-card-info {
+        padding-left: 2em;
     }
 }

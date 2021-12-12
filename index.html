@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/videocomponent.css" />
     <link rel="stylesheet" href="css/get-started.css" />
     <link rel="stylesheet" href="css/download-app.css" />
+    <link rel="stylesheet" href="css/highlights.css" />
     <link rel="stylesheet" href="css/testimonials.css" />
     <link rel="stylesheet" href="css/callback.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -264,9 +265,25 @@
 
         <!-- Download app (END)-->
 
-        <!-- Events -->
+        <!-- Today's Highlights -->
+        <section class="highlights">
+            <h2 class="high-heading">Todays <span style="color: #4ca9ee;">Highlights</span></h2>
 
-        <!-- Events (END) -->
+
+            <div class="feed-swiper">
+                <div class="feed-nav-btn-ls">
+
+                </div>
+                <div class="feed-slide"></div>
+                <div class="feed-nav-btn-rs">
+
+                </div>
+            </div>
+
+
+
+        </section>
+        <!--Today's Highlights (END) -->
 
         <!-- Testimonials -->
         <section id="testimonials">
@@ -460,40 +477,9 @@
             </div>
         </div>
 
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
 
-        <script type="text/javascript">
-            var firebaseConfig = {
-                apiKey: "AIzaSyCj_0en8nIIHQXE_5aa-pwjnEgIJ3McA9w",
-                authDomain: "healthhighway-45963.firebaseapp.com",
-                databaseURL: "https://healthhighway-45963.firebaseio.com",
-                projectId: "healthhighway-45963",
-                storageBucket: "healthhighway-45963.appspot.com",
-                messagingSenderId: "716392922291",
-                appId: "1:716392922291:web:ef7708be5a170c42a544c6",
-                measurementId: "G-B3ZVBEZ2H2",
-            };
-            firebase.initializeApp(firebaseConfig);
-        </script>
-        <script>
-            window.onload = function() {
-                render();
-            };
 
-            async function render() {
-                window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
-                    "recaptcha-verifier"
-                );
-                recaptchaVerifier.render();
-                recaptchaVerifier.verify().then((token) => {
-                    console.log(token);
-                    document.getElementById("loginContinue").style.pointerEvents =
-                        "auto";
-                });
-            }
-        </script>
+
         <!-- login div (END) -->
 
         <!-- <div class="info-modal-bg info-bg-active">
