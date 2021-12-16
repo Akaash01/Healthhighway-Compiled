@@ -43,7 +43,7 @@
 /* SingleimgPost */
 
 .imgpost {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 

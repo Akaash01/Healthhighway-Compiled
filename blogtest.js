@@ -1,4 +1,10 @@
 const baseUrl = "https://api.healthhighway.co.in/admin/get-feeds/1/10";
+
+
+setTimeout(getFeeds, 5000)
+
+
+
 async function getFeeds() {
     const res = await axios.get(baseUrl);
     const feedobj = res.data.feeds
@@ -6,28 +12,41 @@ async function getFeeds() {
     feedobj.forEach(element => {
         if (element.image_urls.length == 0 && element.video_urls.length == 0) {
             console.log("Noimg")
+
         } else if (element.image_urls.length == 1) {
             singleImgPost(element);
+
+
         } else if (element.image_urls.length >= 2) {
             console.log("carousel")
         }
         if (element.video_urls.length == 1 && element.image_urls.length == 0) {
             console.log("Video")
         }
-
     });
+
+
+
+
+    slides = document.querySelectorAll('.feed-slide')
+
+    showslides(index);
+
 
 }
 
+let slides = [];
 
 //Refactor the code
 //Make functions for building every container
 //no image post, carousel post, img post and video post
 
-
+//after making the posts save them into an array for sliding purposes.
 
 const prev_btn = document.querySelector(".feed-nav-btn-ls")
-prev_btn.addEventListener('click', () => {})
+    // prev_btn.addEventListener('click', plusSlides(-1))
+const next_btn = document.querySelector(".feed-nav-btn-rs")
+    // next_btn.addEventListener('click', nextSlide(1));
 
 
 
@@ -101,4 +120,25 @@ function singleImgPost(feed) {
 
 
     imgpost.appendChild(post_text)
+}
+
+let index = 1;
+
+function nextSlide(n) {
+    showslides(index += n);
+}
+
+function showslides(n) {
+    let i = 0;
+
+
+
+    if (n > slides.length) { index = 1 }
+    if (n < 1) { index = slides.length }
+
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none'
+    }
+    slides[index - 1].style.display = "flex";
 }
