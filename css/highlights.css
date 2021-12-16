@@ -43,7 +43,7 @@
 /* SingleimgPost */
 
 .imgpost {
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
@@ -99,4 +99,131 @@
     position: absolute;
     bottom: 0;
     left: 35px;
+}
+
+@media(min-width:768px) {
+    .highlights {
+        padding: 2em 8%;
+    }
+    .post-cover {
+        width: 250px;
+        height: 250px;
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    .post-cover img {
+        width: 100%;
+        height: 250px;
+    }
+    .feed-slide {
+        width: 90%;
+    }
+    .imgpost {
+        display: grid;
+        grid-template-columns: 50% 40% 10%;
+        overflow-y: hidden;
+    }
+    .post-author {
+        grid-column: 2/3;
+        height: max-content;
+        width: max-content;
+        max-width: 100%;
+    }
+    .post-author p {
+        font-size: 15px;
+    }
+    .author-img {
+        width: 25px;
+        height: 25px;
+        align-self: flex-start;
+    }
+    .share-red {
+        grid-column: 3/4;
+        height: max-content;
+        padding: 0;
+        width: 100%;
+        padding-top: .25em;
+    }
+    .share {
+        width: 15px;
+    }
+    .redirect {
+        width: 18px;
+    }
+    .post-text {
+        grid-column: 2/4;
+        font-size: 12px;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+    .source-img {
+        left: 25.5px;
+        top: 15px;
+    }
+    .feed-nav-btn-ls img,
+    .feed-nav-btn-rs img {
+        width: 13px;
+    }
+    .feed-nav-btn-ls,
+    .feed-nav-btn-rs {
+        top: 155px;
+    }
+}
+
+@media(min-width:1440px) {
+    .high-heading {
+        font-size: 32px;
+    }
+    .post-cover {
+        width: 400px;
+        height: 400px;
+    }
+    .post-cover img {
+        width: 400px;
+        height: 400px;
+    }
+    .feed-nav-btn-ls img,
+    .feed-nav-btn-rs img {
+        width: 17px;
+    }
+    .feed-nav-btn-ls,
+    .feed-nav-btn-rs {
+        top: 220px;
+    }
+    .post-author p {
+        font-size: 17px;
+        padding-right: .25em;
+    }
+    .author-img {
+        width: 47px;
+        height: 47px;
+    }
+    .feed-slide {
+        width: 80%;
+        height: 450px;
+    }
+    .post-text {
+        font-size: 17px;
+    }
+    .share-red {
+        padding-top: .8em;
+    }
+    .share {
+        width: 23px;
+    }
+    .redirect {
+        width: 27px;
+    }
+    .source-img {
+        top: 32px;
+        width: 18px;
+        height: 18px;
+        left: 52px;
+    }
+    .post-text {
+        min-height: 300px;
+    }
+    .post-text::-webkit-scrollbar {
+        display: none;
+    }
 }

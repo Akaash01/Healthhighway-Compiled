@@ -100,7 +100,9 @@ function singleImgPost(feed) {
     //Share and redirect
     const shnred = document.createElement('DIV')
     const shareico = document.createElement('IMG')
+    shareico.classList.add('share')
     const redico = document.createElement('IMG')
+    redico.classList.add('redirect')
 
     shareico.src = "https://ik.imagekit.io/healthhighway2020/Share__1__g2V2rzCX6.svg"
     redico.src = "https://ik.imagekit.io/healthhighway2020/Direct_link_to_Source_TvLcvWJL3.svg"
@@ -141,4 +143,10 @@ function showslides(n) {
         slides[i].style.display = 'none'
     }
     slides[index - 1].style.display = "flex";
+    if (mediaQuery.matches) {
+        slides[index - 1].style.display = "grid";
+    }
 }
+
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+    // Check if the media query is true
