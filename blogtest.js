@@ -1,4 +1,4 @@
-const baseUrl = "https://api.healthhighway.co.in/admin/get-feeds/1/10";
+const baseUrl = "https://api.healthhighway.co.in/post/get-feeds/1/10";
 
 
 setTimeout(getFeeds, 5000)
